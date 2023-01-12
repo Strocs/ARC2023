@@ -1,0 +1,62 @@
+---
+import { MAP_ARC } from '../data/MAP_ARC'
+const { map, icons } = MAP_ARC
+---
+
+<main class='relative w-full h-full overflow-hidden'>
+	<section id='zoom' class='w-fit origin-top-left scale-100 translate-x-0 translate-y-0 cursor-grab'>
+		<img class='aspect-video' src={map.url} alt={map.alt} />
+	</section>
+</main>
+
+<script>
+	const mapElement = document.getElementById('zoom')
+	let scale = 1
+	let panning = false
+	let pointX = 325
+	let pointY = 100
+	let start = { x: 0, y: 0 }
+	mapElement.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`
+	function setTransform() {
+		mapElement.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`
+		console.log(mapElement.style.transform)
+	}
+
+	mapElement.onmousedown = e => {
+		e.preventDefault()
+		start = { x: e.clientX - pointX, y: e.clientY - pointY }
+		panning = true
+	}
+
+	mapElement.onmouseup = e => {
+		panning = false
+	}
+
+	mapElement.onmousemove = e => {
+		e.preventDefault()
+		if (!panning) {
+			return
+		}
+		pointX = e.clientX - start.x
+		pointY = e.clientY - start.y
+		setTransform()
+	}
+
+	mapElement.addEventListener(
+		'wheel',
+		e => {
+			if (e.deltaY > 0 && scale === 1) return
+			if (e.deltaY < 0 && scale === 1.728) return
+
+			let xs = (e.clientX - pointX) / scale
+			let ys = (e.clientY - pointY) / scale
+			let delta = e.deltaY
+			delta < 0 ? (scale *= 1.2) : (scale /= 1.2)
+			pointX = e.clientX - xs * scale
+			pointY = e.clientY - ys * scale
+
+			setTransform()
+		},
+		{ passive: true }
+	)
+</script>
