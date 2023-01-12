@@ -1,0 +1,29 @@
+---
+import { Icon } from 'astro-icon'
+import { ARC_2023 } from '../data/ARC_2023'
+const { location, days, socialMedia, webSite } = ARC_2023
+const { instagram, facebook, twitter } = socialMedia
+---
+
+<header class='flex w-full bg-black fixed top-0 justify-between h-14 sm:px-14 z-10'>
+	<div class='flex text-white items-center gap-3'>
+		<a href={webSite}>
+			<img class='h-10' width='120' height='40' src='https://via.placeholder.com/120x40' alt='' />
+		</a>
+		<div class='leading-none'>
+			<p class='font-semibold'>{days}</p>
+			<p class='font-light'>{location}</p>
+		</div>
+	</div>
+	<div class='flex gap-3 items-center'>
+		<a href={instagram}>
+			<Icon name='mdi:instagram' class='text-white w-8 h-8' />
+		</a>
+		<a href={facebook}>
+			<Icon name='mdi:facebook' class='text-white w-8 h-8' />
+		</a>
+		<a href={twitter}>
+			<Icon name='mdi:twitter' class='text-white w-8 h-8' />
+		</a>
+	</div>
+</header>
