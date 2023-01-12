@@ -1,37 +1,32 @@
 ---
-export interface Props {
-	title: string
-}
+import Header from '../components/Header.astro'
 
-const { title } = Astro.props
+const { title, description } = Astro.props
 ---
 
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='es'>
 	<head>
 		<meta charset='UTF-8' />
 		<meta name='viewport' content='width=device-width' />
 		<link rel='icon' type='image/png' href='/favicon.png' />
 		<meta name='generator' content={Astro.generator} />
-		<meta name="description" content="La nueva versión del Festival de las Artes Región de Coquimbo busca incidir en la forma en la que la comunidad habita su ciudad, a través de un nuevo formato que transformará los espacios públicos en un circuito artístico caminable, en el que convergerá la curiosidad del ciudadano de a pie con la belleza presente en las distintas disciplinas que conforman el sector artístico de nuestra región." />
+		<meta name='description' content={description} />
 		<title>{title}</title>
 		<link rel='preconnect' href='https://fonts.googleapis.com' />
 		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
 		<link href='https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap' rel='stylesheet' />
-		<meta property="og:title" content="Pronto Festival ARC 2023">
-		<meta property="og:description" content="La nueva versión del Festival de las Artes Región de Coquimbo busca incidir en la forma en la que la comunidad habita su ciudad, a través de un nuevo formato que transformará los espacios públicos en un circuito artístico caminable, en el que convergerá la curiosidad del ciudadano de a pie con la belleza presente en las distintas disciplinas que conforman el sector artístico de nuestra región.">
-		<meta property="og:image" content="https://static.wixstatic.com/media/1fc7ab_341bbfa5c41943ac8ba5cbd76af44655~mv2.png/v1/fill/w_809,h_413,al_c/1fc7ab_341bbfa5c41943ac8ba5cbd76af44655~mv2.png">
-		<meta property="og:image:width" content="809">
-		<meta property="og:image:height" content="413">
-		<meta property="og:url" content="https://www.festivalarc.cl">
-		<meta property="og:site_name" content="Pronto Festival ARC">
-		<meta property="og:type" content="website">
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="Pronto Festival ARC 2023">
-		<meta name="twitter:description" content="La nueva versión del Festival de las Artes Región de Coquimbo busca incidir en la forma en la que la comunidad habita su ciudad, a través de un nuevo formato que transformará los espacios públicos en un circuito artístico caminable, en el que convergerá la curiosidad del ciudadano de a pie con la belleza presente en las distintas disciplinas que conforman el sector artístico de nuestra región.">
-		<meta name="twitter:image" content="https://static.wixstatic.com/media/1fc7ab_341bbfa5c41943ac8ba5cbd76af44655~mv2.png/v1/fill/w_809,h_413,al_c/1fc7ab_341bbfa5c41943ac8ba5cbd76af44655~mv2.png">
+
+		<meta name='twitter:card' content='summary' />
+		<meta name='twitter:site' content='@festivalarc' />
+		<meta property='og:title' content={title} />
+		<meta property='og:description' content={description} />
+		<meta property='og:image' content='/cardArc.png' />
+		<meta property='og:url' content='https://www.festivalarc.cl' />
+		<meta property='og:site_name' content={title} />
 	</head>
 	<body>
+		<Header />
 		<slot />
 	</body>
 </html>
@@ -39,5 +34,9 @@ const { title } = Astro.props
 	html {
 		background-color: #db458c;
 		font-family: 'Nunito', system-ui, sans-serif;
+	}
+	body {
+		height: 100vh;
+		overflow: hidden;
 	}
 </style>
