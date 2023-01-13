@@ -1,29 +1,58 @@
 ---
 import { Icon } from 'astro-icon'
 import { ARC_2023 } from '../data/ARC_2023'
+import Menu from './icons/Menu.astro'
+import Navbar from './Navbar.astro'
 const { location, days, socialMedia, webSite } = ARC_2023
-const { instagram, facebook, twitter } = socialMedia
 ---
 
-<header class='flex w-full bg-black fixed top-0 justify-between h-14 sm:px-14 z-10'>
-	<div class='flex text-white items-center gap-3'>
-		<a href={webSite}>
-			<img class='h-10' width='120' height='40' src='https://via.placeholder.com/120x40' alt='' />
-		</a>
-		<div class='leading-none'>
-			<p class='font-semibold'>{days}</p>
-			<p class='font-light'>{location}</p>
-		</div>
+<header id='header' class='flex w-full h-14 items-center fixed top-0 bg-black sm:px-14 z-20 gap-14'>
+	<div>
+		<input type='checkbox' id='menu' hidden class='peer' />
+		<label for='menu' class='peer-checked:[&>.first]:hidden peer-checked:[&>.last]:block cursor-pointer transition peer-checked:rotate-90 rotate-0'>
+			<Menu />
+		</label>
 	</div>
-	<div class='flex gap-3 items-center'>
-		<a href={instagram}>
-			<Icon name='mdi:instagram' class='text-white w-8 h-8' />
-		</a>
-		<a href={facebook}>
-			<Icon name='mdi:facebook' class='text-white w-8 h-8' />
-		</a>
-		<a href={twitter}>
-			<Icon name='mdi:twitter' class='text-white w-8 h-8' />
-		</a>
+	<div class='flex text-white justify-between w-full'>
+		<div class='flex text-white items-center gap-3 h-14'>
+			<a href={webSite}>
+				<img class='h-10' width='120' height='40' src='https://via.placeholder.com/120x40' alt='' />
+			</a>
+			<div class='leading-none'>
+				<p class='font-semibold'>{days}</p>
+				<p class='font-light'>{location}</p>
+			</div>
+		</div>
+		<ul class='flex gap-3 items-center'>
+			{
+				socialMedia.map(social => (
+					<li>
+						<a href={social.url}>
+							<Icon name={`mdi:${social.name}`} class='text-white w-6 h-6' />
+						</a>
+					</li>
+				))
+			}
+		</ul>
 	</div>
 </header>
+<Navbar />
+
+<script type='module'>
+	const menuCheckbox = document.getElementById('menu')
+	const navbar = document.querySelector('#navbar')
+
+	navbar.querySelectorAll('a').forEach(anchor => {
+		anchor.addEventListener('click', () => {
+			showNavBar(false)
+		})
+	})
+	function showNavBar(value) {
+		if (value) {
+			navbar.style.left = '0'
+		} else {
+			navbar.style.left = '-320px'
+		}
+	}
+	menuCheckbox.addEventListener('change', e => (e.target.checked ? showNavBar(true) : showNavBar(false)))
+</script>
