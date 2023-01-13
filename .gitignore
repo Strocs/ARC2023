@@ -11,8 +11,10 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-package-lock.json
 .vscode
+.gitignore
+package-lock.json
+pnpm-lock.yaml
 
 # environment variables
 .env
