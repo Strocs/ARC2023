@@ -1,0 +1,16 @@
+---
+import Layout from '../../layouts/Layout.astro'
+
+export function getStaticPaths() {
+	return [{ params: { location: 'centenario', artist: 'ases-falsos' } }]
+}
+
+const { location, artist } = Astro.params
+---
+
+<Layout title='algo'>
+	<main>
+		<p>Lugar: {location}</p>
+		<p>Artista: {artist}</p>
+	</main>
+</Layout>

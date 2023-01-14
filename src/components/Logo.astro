@@ -1,0 +1,7 @@
+---
+const { sm, lg } = Astro.props
+---
+
+<a href='/'>
+	<img class={` aspect-[16/5] ${sm ? 'h-10 w-32' : lg ? 'h-20' : 'h-30'}`} width='128' height='40' src='/logo.svg' alt='Logo Festival ARC 2023' />
+</a>

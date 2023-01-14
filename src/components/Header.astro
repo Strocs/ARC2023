@@ -1,0 +1,58 @@
+---
+import { ARC_2023 } from '../data/ARC_2023'
+import Menu from './icons/Menu.astro'
+import Logo from './Logo.astro'
+import Navbar from './Navbar.astro'
+import NavLink from './NavLink.astro'
+const { city, days, socialNetwork, email } = ARC_2023
+---
+
+<header id='header' class='flex w-full h-14 items-center fixed top-0 bg-black bg-texture bg-sm sm:px-14 z-20 gap-14'>
+	<input type='checkbox' id='menu' hidden class='peer' />
+	<label for='menu' class='relative z-50 peer-checked:[&>.first]:hidden peer-checked:[&>.last]:block cursor-pointer transition hover:scale-110 peer-checked:-rotate-90 rotate-0'>
+		<Menu />
+	</label>
+	<div class='flex text-white justify-between w-full'>
+		<div class='flex text-white items-center gap-3 h-14'>
+			<Logo sm />
+			<div class='leading-none text-sm'>
+				<p class='font-semibold'>{days}</p>
+				<p class='font-light'>{city}</p>
+			</div>
+		</div>
+		<ul class='flex gap-3 items-center'>
+			<li>Descubre:</li>
+			<NavLink href={`mailto:${email}`} icon='mdi:email' />
+			{socialNetwork.map(social => <NavLink href={social.url} icon={`mdi:${social.name}`} />)}
+		</ul>
+	</div>
+</header>
+<Navbar />
+
+<script>
+	const menu = document.getElementById('menu')
+	const navbar = document.querySelector('#navbar')
+
+	function showNavBar(value) {
+		if (value) {
+			navbar.style.left = '0'
+			navbar.style.opacity = '1'
+		} else {
+			navbar.style.left = '-320px'
+		}
+	}
+
+	navbar.querySelectorAll('a').forEach(anchor => {
+		anchor.addEventListener('click', () => {
+			showNavBar(false)
+		})
+	})
+
+	navbar.addEventListener('transitionend', () => {
+		if (navbar.style.left === '-320px') {
+			navbar.style.opacity = '0'
+		}
+	})
+
+	menu.addEventListener('change', e => (e.target.checked ? showNavBar(true) : showNavBar(false)))
+</script>
