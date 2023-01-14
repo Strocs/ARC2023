@@ -1,6 +1,6 @@
 ---
 const sections = [
-	{ name: 'home', href: '/home' },
+	{ name: 'inicio', href: '/' },
 	{ name: 'festival', href: '/festival' },
 	{ name: 'contacto', href: '/contacto' },
 ]
@@ -13,7 +13,7 @@ const { id } = Astro.props
 		{
 			sections.map(section => (
 				<li>
-					<a href=''>{section.name.toUpperCase()}</a>
+					<a href={section.href}>{section.name.toUpperCase()}</a>
 				</li>
 			))
 		}

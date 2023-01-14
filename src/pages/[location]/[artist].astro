@@ -1,16 +1,21 @@
 ---
 import Layout from '../../layouts/Layout.astro'
+import { getArtistsPath } from '../../utils/getArtistsPath'
 
-export function getStaticPaths() {
-	return [{ params: { location: 'centenario', artist: 'ases-falsos' } }]
+export async function getStaticPaths() {
+	const allArtists = getArtistsPath()
+	return allArtists.map(artist => ({
+		params: { location: artist.path, artist: artist.artistInfo.id },
+		props: { ...artist.artistInfo },
+	}))
 }
 
-const { location, artist } = Astro.params
+const { id, name, links, description, extra } = Astro.props
 ---
 
 <Layout title='algo'>
-	<main>
-		<p>Lugar: {location}</p>
-		<p>Artista: {artist}</p>
+	<main class='flex flex-col items-center justify-center mt-14'>
+		<p>Lugar:</p>
+		<p>Artista: {name}</p>
 	</main>
 </Layout>

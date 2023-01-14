@@ -1,10 +1,10 @@
 ---
 import { CENTENARIO } from '../data/CENTENARIO'
-const { locationName, color, artists } = CENTENARIO
+const { name, id, color, artists } = CENTENARIO
 ---
 
-<section>
-	<h2 class='text-3xl font-bold py-2'>{locationName}</h2>
+<section class={`bg-${color}`}>
+	<h2 class='text-3xl font-bold py-2'>{name}</h2>
 	<p class='font-light'>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto necessitatibus. Beatae pariatur aliquid optio porro, adipisci minima, placeat molestias quo quibusdam iusto quaerat. Velit,
 		quidem aliquam. Veritatis, expedita a.
@@ -14,7 +14,9 @@ const { locationName, color, artists } = CENTENARIO
 		{
 			artists.map(artist => (
 				<li>
-					{artist.name} {'>'}
+					<a href={`${id}/${artist.id}`}>
+						{artist.name} {'>'}
+						</a>
 				</li>
 			))
 		}
