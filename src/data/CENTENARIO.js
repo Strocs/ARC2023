@@ -1,9 +1,11 @@
 export const CENTENARIO = {
+  id: 'teatro-centenario',
   title: 'Teatro Centenario',
   color: 'black-pink',
   svgImage: '',
   artists: [
     {
+      id: 'camila-moreno',
       name: 'Camila Moreno',
       links: [
         { name: 'web', url: 'https://www.camila-moreno.com/' },
@@ -24,6 +26,7 @@ export const CENTENARIO = {
       }
     },
     {
+      id: 'ases-falsos',
       name: 'Ases Falsos',
       links: {
         webSite: 'https://asesfalsos.cl',
@@ -34,6 +37,7 @@ export const CENTENARIO = {
         'Ases Falsos es una de las bandas ícono del rock alternativo chileno actual, integrada por Cristóbal Briceño, Simón Sánchez, Martín del Real, Francisco Rojas, Sergio Sanhueza y Hermes Villalobos.\nEl proyecto nace en el año 2011, a raíz del final simbólico de la banda Fother Muckers, hecho que generó una nueva era musical de la banda, encarnada a través del nombre “Ases Falsos”, cuyo origen se encuentra en el track 10 del disco “Justo y Necesario” de la primera, titulado “Los Ases Falsos”. Este cambio buscaría la evolución y madurez del estilo musical del grupo, pero manteniendo la esencia que había trabajado desde el año 2005.\nSu disco debut, Juventud Americana, estrenado el 3 de septiembre de 2012, fue elegido el mejor disco chileno de la década por Culto, la sección de arte y espectáculos del medio nacional La Tercera. La banda se caracteriza por la frescura de su sonido y la mezcla entre diferentes estilos musicales que convergen en un proyecto sólido, que se ha expresado en una variada discografía, compuesta por los discos Juventud Americana (2012), Conducción (2014), El Hombre Puede (2016), Mala Fama (2018), Tacto (2020) y Chocadito (2020).'
     },
     {
+      id: 'marineros',
       name: 'Marineros',
       links: {
         instagram: 'https://www.instagram.com/omarineros',
@@ -43,6 +47,7 @@ export const CENTENARIO = {
         'Citado por el diario español El País como una de las promesas musicales latinoamericanas del 2014 y apadrinadas musicalmente por Javiera Mena, una de las exponentes del pop chileno más importantes de las últimas décadas, Marineros, proyecto conformado por la cantante Constanza Espina y la guitarrista Soledad Puentes, ha desarrollado una poderosa carrera en el circuito musical nacional e internacional a través de su obra, definida por sus mismas autoras como un proyecto de “pop existencial”.\nEl proyecto debutó en el año 2015 con el álbum “O Marineros”, trabajo producido por Cristián Heyne, compositor y productor que ha desarrollado su carrera trabajando con artistas como Alex Anwandter, Javiera Mena, Gepe y Fernando Milagros, entre otros. Sobre este trabajo, el dúo expresó en distintas entrevistas a medios nacionales que este trabajo “son nuestros corazones traducidos en canciones. Lo escuchamos y se vuelve parte de nuestro flujo sanguíneo y brama al ritmo de nuestro palpitar (…)”.\nAdemás, cuentan con distintos sencillos como Torbellino (2016), Ámbar (2019), Todo a la Vez (2020), Rosas (2021), A Toda Velocidad (2022) y Loco (2022).'
     },
     {
+      id: 'yorka',
       name: 'Yorka',
       links: {
         instagram: 'https://www.instagram.com/yorkayork',
@@ -52,11 +57,13 @@ export const CENTENARIO = {
         'Yorka es un dúo pop chileno conformado por las hermanas Yorka y Daniela Pastenes, quienes, a través de su música, han logrado un espacio en la escena musical nacional, con cuatro discos de larga duración editados a la fecha: Imperio (2015), Humo (2018), MAL (2020) y Chao (2022).\nEl proyecto, formado a principios del año 2012, se caracteriza por su variedad de sonidos, desde melodías más bailables, hasta baladas propias del folk, acompañados de potentes letras que engloban reflexiones sobre la pérdida, el amor y el inevitable paso del tiempo.\nDentro de los hitos de este proyecto está su participación en el festival nacional Ruidosa (2017), donde compartió escenario con artistas como Francisca Valenzuela, Nicole, Mariel Mariel, Entrópica y Carolina Nissen, entro otras; su presentación en 2021 en el festival norteamericano South by Southwest (SXSW); su actuación en la versión 2022 de Lollapalooza Chile y su posterior gira por Argentina, en la que tocaron ante dos mil personas en el Centro Cultural Kirchner de Buenos Aires.'
     },
     {
+      id: 'flamantes',
       name: 'Flamantës',
       description:
         'anda chilena de indie pop, que nace en 2019 como un proyecto conformado por reconocidos músicos de la región de Coquimbo, con marcada influencia en el soul y el funk de los 70`s, Flamantës presenta un espectáculo ecléctico y bailable.\nRecientemente, Flamantës representó a la región de Coquimbo en el festival Rockódromo 2022 con gran recibimiento por parte del público en Valparaíso, donde dieron inicio a la gira de lanzamiento de su nuevo disco “Tres tristes tigres”, presentando entre otros, “La ciudad de las bestias” y “Fulgor”, ambos singles y videoclips inspirados en la poesía y literatura latinoamericana exploran la proyección del fantasma del espíritu siendo esta la marca visual del nuevo álbum.\nActualmente la banda se prepara para el lanzamiento de “Máscara”, tercer sencillo de Tres tristes tigres. Flamantës está conformado por Zacarías Pastén, Francisco Pinto, Cristian Vera y Esteban Guzmán.'
     },
     {
+      id: 'pajarxs-de-tierra',
       name: 'Pájarxs de Tierra',
       links: {
         instagram: 'https://www.instagram.com/pajarxsdetierra/'
@@ -65,6 +72,7 @@ export const CENTENARIO = {
         'Pájarxs de Tierra es un proyecto musical de la cuarta región, que comienza con la cantautora Roxana Ledezma quien interpretaba sus canciones de manera solista para luego integrar a músicos/amigos de la escena artística serenense y añadir mejores componentes sonoros al lenguaje musical, con influencias provenientes del rap, soul, funk, rock, y así conformando oficialmente una agrupación musical con composiciones propias.\nEl proyecto está compuesto por Roxana Ledezma (voces y guitarra), Jean Tabilo (guitarra y vientos), Carlos Milla (bajo) y Nicolás Guerrero (batería).\nEl grupo estrenó en enero de 2022 su primer videoclip de la canción “Violencia” y en abril del mismo año, lanzaron su segundo material audiovisual llamado “Falsa Modestia” En la actualidad se encuentran finalizando la grabación de su primer EP titulado “Violencia".'
     },
     {
+      id: 'sequia',
       name: 'Sequía',
       links: {},
       description:
