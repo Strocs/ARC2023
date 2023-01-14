@@ -5,67 +5,84 @@ const { map, icons } = MAP_ARC
 ---
 
 <section id='zoom' class='relative h-[100vmax] w-[100vmax] origin-top-left scale-100 translate-x-0 translate-y-0 cursor-grab touch-none'>
-	<img width="1200" height="1200" class='aspect-square h-[100vmax] w-[100vmax] object-cover' src={map.url} alt={map.alt} />
+	<img width='1200' height='1200' class='aspect-square h-[100vmax] w-[100vmax] object-cover' src={map.url} alt={map.alt} />
 	<MapPins />
 </section>
-	
+
 <script>
-	const mapElement = document.getElementById('zoom')
+	const map = document.getElementById('zoom')
+	const image = map.querySelector('img')
+	let navHeight = 0
 	let scale = 1
 	let panning = false
 	let pointX = 0
-	let pointY = 0
+	let pointY = navHeight
 	let start = { x: 0, y: 0 }
+	let limitX = window.innerWidth - image.width
+	let limitY = window.innerHeight - image.height + navHeight
+	let maxZoom = 1.728
+	let minZoom = 1
 
-	mapElement.querySelectorAll('a').forEach(anchor => {
+	function setTransform() {
+		map.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`
+	}
+
+	function setLimits() {
+		limitX = window.innerWidth - image.width * scale
+		limitY = window.innerHeight - image.height * scale + navHeight
+	}
+
+	window.addEventListener('resize', () => {
+		setLimits()
+		pointX = 0
+		pointY = 0
+		setTransform()
+	})
+
+	map.querySelectorAll('a').forEach(anchor => {
 		anchor.addEventListener('mouseup', e => {
 			e.preventDefault()
-			// if (!panning) {
-			// 	anchor.href = '#'
-			// } else {
-			// 	anchor.href = '/'
-			// }
 		})
 	})
 
-	mapElement.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`
-	function setTransform() {
-		mapElement.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`
-	}
-
-	mapElement.onpointerdown = e => {
+	map.onpointerdown = e => {
 		e.preventDefault()
 		start = { x: e.clientX - pointX, y: e.clientY - pointY }
 		panning = true
 	}
 
-	mapElement.onpointerup = e => {
+	map.onpointerup = () => {
 		panning = false
 	}
 
-	mapElement.onpointermove = e => {
+	map.onpointermove = e => {
 		e.preventDefault()
 		if (!panning) {
 			return
 		}
-		pointX = e.clientX - start.x
-		pointY = e.clientY - start.y
+		pointX = e.clientX - start.x > 0 || e.clientX - start.x < limitX ? pointX : e.clientX - start.x
+		pointY = e.clientY - start.y > 0 || e.clientY - start.y < limitY ? pointY : e.clientY - start.y
 		setTransform()
 	}
 
-	mapElement.addEventListener(
+	map.addEventListener(
 		'wheel',
 		e => {
-			if (e.deltaY > 0 && scale === 1) return
-			if (e.deltaY < 0 && scale === 1.728) return
+			if (e.deltaY > 0 && scale === minZoom) return
+			if (e.deltaY < 0 && scale === maxZoom) return
 
 			let xs = (e.clientX - pointX) / scale
 			let ys = (e.clientY - pointY) / scale
 			let delta = e.deltaY
 			delta < 0 ? (scale *= 1.2) : (scale /= 1.2)
-			pointX = e.clientX - xs * scale
-			pointY = e.clientY - ys * scale
-
+			
+			pointX = e.clientX - xs * scale > 0 || e.clientX - xs * scale > limitX ? 0 : e.clientX - xs * scale
+			// pointX = e.clientX - xs * scale
+			pointY = e.clientY - ys * scale > 0 || e.clientY - ys * scale > limitY ? 0 : e.clientY - ys * scale
+			// pointY = e.clientY - ys * scale
+			console.log(e.clientX - xs * scale, limitX);
+			
+			setLimits()
 			setTransform()
 		},
 		{ passive: true }
