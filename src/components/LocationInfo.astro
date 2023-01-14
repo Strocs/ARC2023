@@ -1,0 +1,22 @@
+---
+import { CENTENARIO } from '../data/CENTENARIO'
+const { locationName, color, artists } = CENTENARIO
+---
+
+<section>
+	<h2 class='text-3xl font-bold py-2'>{locationName}</h2>
+	<p class='font-light'>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto necessitatibus. Beatae pariatur aliquid optio porro, adipisci minima, placeat molestias quo quibusdam iusto quaerat. Velit,
+		quidem aliquam. Veritatis, expedita a.
+	</p>
+	<h3 class='text-2xl font-semibold py-4'>Artists</h3>
+	<ul class=''>
+		{
+			artists.map(artist => (
+				<li>
+					{artist.name} {'>'}
+				</li>
+			))
+		}
+	</ul>
+</section>
