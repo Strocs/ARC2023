@@ -1,0 +1,10 @@
+---
+import { Icon } from 'astro-icon'
+const { href, icon } = Astro.props
+---
+
+<li class='hover:bg-white p-1 group transition rounded-md'>
+	<a href={href}>
+		<Icon name={icon} class='text-white w-6 h-6 group-hover:text-black transition' />
+	</a>
+</li>
