@@ -4,18 +4,26 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        centro: '#db458c',
-        santaInes: '#ffec00',
-        centenario: '#ff0068',
-        gaviota: '#00c3ff',
-        teatro: '#540060',
-        estacionamiento: '#fc7200',
-        gore: '#45989e',
-        terraza: '#dcf132',
-        museo: '#010f70'
+        pink: '#db458c',
+        yellow: '#ffec00',
+        'black-pink': '#ff0068',
+        'pale-blue': '#00c3ff',
+        purple: '#540060',
+        orange: '#fc7200',
+        'water-green': '#45989e',
+        'pale-yellow': '#dcf132',
+        blue: '#010f70'
       },
       backgroundImage: {
-        image: 'url("https://i.ytimg.com/vi/yPWjkLcOvbg/maxresdefault.jpg")'
+        image: 'url("https://i.ytimg.com/vi/yPWjkLcOvbg/maxresdefault.jpg")',
+        texture: 'url(/textura.svg)'
+      },
+      backgroundSize: {
+        xs: '20%',
+        sm: '40%',
+        md: '60%',
+        lg: '80%',
+        xl: '100%'
       }
     }
   },
