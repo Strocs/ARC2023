@@ -2,12 +2,14 @@
 import Layout from '../layouts/Layout.astro'
 import { ARC_2023 } from '../data/ARC_2023'
 import Map from '../components/Map.astro'
+import LocationInfo from '../components/LocationInfo.astro';
 const { title, description } = ARC_2023
 
 ---
 
 <Layout title={title} description={description}>
 	<main class='relative w-full h-full overflow-hidden'>
-		<Map />
+		<!-- <Map /> -->
+		<LocationInfo />
 	</main>
 </Layout>
