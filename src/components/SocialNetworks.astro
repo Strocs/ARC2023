@@ -1,0 +1,11 @@
+---
+import { ARC_2023 } from '../data/ARC_2023'
+import NavLink from './NavLink.astro'
+const { socialNetwork, email } = ARC_2023
+---
+
+<ul class='gap-1 items-center hidden sm:flex'>
+	<li>Descubre:</li>
+	<NavLink href={`mailto:${email}`} icon='mdi:email' />
+	{socialNetwork.map(social => <NavLink href={social.url} icon={`mdi:${social.name}`} />)}
+</ul>

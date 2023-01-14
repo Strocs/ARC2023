@@ -1,37 +1,25 @@
 ---
-import { ARC_2023 } from '../data/ARC_2023'
-import Menu from './icons/Menu.astro'
-import Logo from './Logo.astro'
+import LogoWithText from './LogoWithText.astro'
 import Navbar from './Navbar.astro'
-import NavLink from './NavLink.astro'
-const { city, days, socialNetwork, email } = ARC_2023
+import SocialNetworks from './SocialNetworks.astro'
+import ToggleMenuButton from './ToggleMenuButton.astro'
 ---
 
-<header id='header' class='flex w-full h-14 items-center fixed top-0 bg-black bg-texture bg-sm sm:px-14 z-20 gap-14'>
-	<input type='checkbox' id='menu' hidden class='peer' />
-	<label for='menu' class='relative z-50 peer-checked:[&>.first]:hidden peer-checked:[&>.last]:block cursor-pointer transition hover:scale-110 peer-checked:-rotate-90 rotate-0'>
-		<Menu />
-	</label>
-	<div class='flex text-white justify-between w-full'>
-		<div class='flex text-white items-center gap-3 h-14'>
-			<Logo sm />
-			<div class='leading-none text-sm'>
-				<p class='font-semibold'>{days}</p>
-				<p class='font-light'>{city}</p>
-			</div>
+<header>
+	<div class='flex w-full items-center justify-between sm:justify-start sm:gap-14 fixed top-0 bg-black bg-texture sm:bg-sm bg-xl sm:px-14 px-4 py-2 z-50'>
+		<ToggleMenuButton id='menu' left />
+		<div class='flex text-white justify-between w-full'>
+			<LogoWithText />
+			<SocialNetworks />
 		</div>
-		<ul class='flex gap-3 items-center'>
-			<li>Descubre:</li>
-			<NavLink href={`mailto:${email}`} icon='mdi:email' />
-			{socialNetwork.map(social => <NavLink href={social.url} icon={`mdi:${social.name}`} />)}
-		</ul>
+		<ToggleMenuButton id='menu' />
 	</div>
+	<Navbar id='navbar' />
 </header>
-<Navbar />
 
-<script>
-	const menu = document.getElementById('menu')
-	const navbar = document.querySelector('#navbar')
+<script type='module'>
+	const menu = document.querySelectorAll('#menu')
+	const navbar = document.getElementById('navbar')
 
 	function showNavBar(value) {
 		if (value) {
@@ -54,5 +42,5 @@ const { city, days, socialNetwork, email } = ARC_2023
 		}
 	})
 
-	menu.addEventListener('change', e => (e.target.checked ? showNavBar(true) : showNavBar(false)))
+	menu.forEach(el => el.addEventListener('change', e => (e.target.checked ? showNavBar(true) : showNavBar(false))))
 </script>

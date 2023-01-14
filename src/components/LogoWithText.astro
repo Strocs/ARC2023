@@ -1,0 +1,13 @@
+---
+import { ARC_2023 } from '../data/ARC_2023'
+import Logo from './Logo.astro'
+const { city, days } = ARC_2023
+---
+
+<div class='flex text-white items-center gap-3 w-full'>
+	<Logo sm />
+	<div class='leading-none text-sm'>
+		<p class='font-semibold'>{days}</p>
+		<p class='font-light'>{city}</p>
+	</div>
+</div>

@@ -3,8 +3,11 @@ import Layout from '../layouts/Layout.astro'
 import { ARC_2023 } from '../data/ARC_2023'
 import Map from '../components/Map.astro'
 const { title, description } = ARC_2023
+
 ---
 
 <Layout title={title} description={description}>
-	<Map />
+	<main class='relative w-full h-full overflow-hidden'>
+		<Map />
+	</main>
 </Layout>
