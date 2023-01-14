@@ -4,13 +4,11 @@ import MapPins from './MapPins.astro'
 const { map, icons } = MAP_ARC
 ---
 
-<main class='relative w-full h-full'>
-	<section id='zoom' class='relative w-full h-full origin-top-left scale-100 translate-x-0 translate-y-0 cursor-grab object-contain bg-image bg-no-repeat bg-cover'>
-		<!-- <img width="1280" height="720" class='aspect-video h-screen w-auto object-contain' src={map.url} alt={map.alt} /> -->
-		<MapPins />
-	</section>
-</main>
-
+<section id='zoom' class='relative h-[100vmax] w-[100vmax] origin-top-left scale-100 translate-x-0 translate-y-0 cursor-grab touch-none'>
+	<img width="1200" height="1200" class='aspect-square h-[100vmax] w-[100vmax] object-cover' src={map.url} alt={map.alt} />
+	<MapPins />
+</section>
+	
 <script>
 	const mapElement = document.getElementById('zoom')
 	let scale = 1
@@ -35,17 +33,17 @@ const { map, icons } = MAP_ARC
 		mapElement.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`
 	}
 
-	mapElement.onmousedown = e => {
+	mapElement.onpointerdown = e => {
 		e.preventDefault()
 		start = { x: e.clientX - pointX, y: e.clientY - pointY }
 		panning = true
 	}
 
-	mapElement.onmouseup = e => {
+	mapElement.onpointerup = e => {
 		panning = false
 	}
 
-	mapElement.onmousemove = e => {
+	mapElement.onpointermove = e => {
 		e.preventDefault()
 		if (!panning) {
 			return
