@@ -9,7 +9,7 @@ const { title, description } = Astro.props
 	<head>
 		<meta charset='UTF-8' />
 		<meta name='viewport' content='width=device-width' />
-		<link rel='icon' type='image/png' href='/favicon.png' />
+		<link rel='icon' type='image/svg' href='/favicon.svg' />
 		<meta name='generator' content={Astro.generator} />
 		<meta name='description' content={description} />
 		<title>{title}</title>
@@ -21,7 +21,7 @@ const { title, description } = Astro.props
 		<meta name='twitter:site' content='@festivalarc' />
 		<meta property='og:title' content={title} />
 		<meta property='og:description' content={description} />
-		<meta property='og:image' content='/cardArc.png' />
+		<meta property='og:image' content='/og-card.png' />
 		<meta property='og:url' content='https://www.festivalarc.cl' />
 		<meta property='og:site_name' content={title} />
 	</head>
@@ -32,8 +32,8 @@ const { title, description } = Astro.props
 </html>
 <style is:global>
 	html {
-		background-color: #db458c;
 		font-family: 'Nunito', system-ui, sans-serif;
+		background: rgba(0, 0, 0, 0.9);
 	}
 	body {
 		height: 100vh;
