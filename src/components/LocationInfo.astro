@@ -1,22 +1,33 @@
 ---
-import { CENTENARIO } from '../data/CENTENARIO'
-const { name, id, color, artists } = CENTENARIO
+import { getLocationById } from '../utils/getLocationById'
+const { query } = Astro.props
+const { title, id, color, artists, description } = getLocationById(query)
+
+let newTitle = ''
+
+if (title.includes('Estacionamiento')) {
+	newTitle = title.replace('Estacionamiento', 'Estaciona_ miento')
+} else if (title.includes('Arqueológico')) {
+	newTitle = title.replace('Arqueológico', 'Arqueoló_ gico')
+} else {
+	newTitle = title
+}
 ---
 
-<section class={`bg-${color}`}>
-	<h2 class='text-3xl font-bold py-2'>{name}</h2>
-	<p class='font-light'>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto necessitatibus. Beatae pariatur aliquid optio porro, adipisci minima, placeat molestias quo quibusdam iusto quaerat. Velit,
-		quidem aliquam. Veritatis, expedita a.
-	</p>
-	<h3 class='text-2xl font-semibold py-4'>Artists</h3>
-	<ul class=''>
+<section id={id} class={`bg-${color} pt-24 w-full max-w-md p-10 h-screen absolute right-0 z-10 hidden`}>
+	<h2 class='text-6xl font-black py-2 leading-[3rem]'>{newTitle}</h2>
+	<p class='font-light mb-10'>{description}</p>
+	<h3 class='text-4xl font-bold py-4'>Artistas:</h3>
+	<ul class='flex flex-col gap-5'>
 		{
 			artists.map(artist => (
-				<li>
-					<a href={`${id}/${artist.id}`}>
-						{artist.name} {'>'}
-						</a>
+				<li class='font-normal text-xl group relative'>
+					<a class='block' href={`${id}/${artist.id}`}>
+						<p class='pl-6 '>{artist.name}</p>
+						<div class='group-hover:h-16 bg-black rounded-xl absolute -top-[1.125rem] -z-10 w-full h-0 transition-all overflow-hidden'>
+							<img class='text-sm' src='' alt={`Imágen de ${artist.name}`} />
+						</div>
+					</a>
 				</li>
 			))
 		}
