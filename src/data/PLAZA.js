@@ -1,6 +1,11 @@
 export const PLAZA = {
+  id: 'estacionamiento-plaza-de-armas',
   title: 'Estacionamiento Plaza de Armas',
   color: 'orange',
-  svgImage: '',
+  description: '',
+  locationImage: {
+    url: '',
+    position: {},
+  },
   artists: []
 }

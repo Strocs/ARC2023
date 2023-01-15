@@ -1,6 +1,11 @@
 export const MUSEO = {
+  id: 'museo-arqueologico',
   title: 'Museo Arqueológico',
   color: 'blue',
-  svgImage: '',
+  description: '',
+  locationImage: {
+    url: '',
+    position: {},
+  },
   artists: []
 }

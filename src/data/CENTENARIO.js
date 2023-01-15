@@ -1,8 +1,12 @@
 export const CENTENARIO = {
   id: 'teatro-centenario',
   title: 'Teatro Centenario',
+  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto necessitatibus. Beatae pariatur aliquid optio porro, adipisci minima, placeat molestias quo quibusdam iusto quaerat. Velit, quidem aliquam. Veritatis, expedita a.', 
   color: 'black-pink',
-  svgImage: '',
+  locationImage: {
+    url: '',
+    position: {},
+  },
   artists: [
     {
       id: 'camila-moreno',

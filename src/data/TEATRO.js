@@ -1,6 +1,11 @@
 export const TEATRO = {
+  id: 'teatro-municipal',
   title: 'Teatro Municipal',
   color: 'purple',
-  svgImage: '',
+  description: '',
+  locationImage: {
+    url: '',
+    position: {},
+  },
   artists: []
 }

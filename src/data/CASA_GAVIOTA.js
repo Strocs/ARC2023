@@ -1,6 +1,11 @@
 export const CASA_GAVIOTA = {
+  id: 'casa-gaviota',
   title: 'Casa Gaviota',
   color: 'pale-blue',
-  svgImage: '',
+  description: '',
+  locationImage: {
+    url: '',
+    position: {},
+  },
   artists: []
 }

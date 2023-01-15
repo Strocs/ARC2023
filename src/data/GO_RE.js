@@ -1,6 +1,11 @@
 export const GO_RE = {
+  id: 'frontis-gobierno-regional',
   title: 'Frontis Gobierno Regional',
   color: 'water-green',
-  svgImage: '',
+  description: '',
+  locationImage: {
+    url: '',
+    position: {},
+  },
   artists: []
 }
