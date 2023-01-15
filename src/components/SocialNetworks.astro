@@ -4,8 +4,7 @@ import NavLink from './NavLink.astro'
 const { socialNetwork, email } = ARC_2023
 ---
 
-<ul class='gap-1 items-center hidden sm:flex'>
-	<li>Descubre:</li>
-	<NavLink href={`mailto:${email}`} icon='mdi:email' />
+<ul class='gap-3 items-center hidden sm:flex'>
+	<li>Síguenos:</li>
 	{socialNetwork.map(social => <NavLink href={social.url} icon={`mdi:${social.name}`} />)}
 </ul>
