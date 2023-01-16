@@ -7,6 +7,9 @@ export function getArtistsPath() {
 		location.artists.map(artist => {
 			return {
 				path: location.id,
+				location: location.title,
+				backgroundColor: location.backgroundColor,
+				textColor: location.textColor,
 				artistInfo: artist,
 			}
 		})
