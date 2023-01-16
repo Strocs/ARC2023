@@ -2,22 +2,13 @@
 import Layout from '../layouts/Layout.astro'
 import { ARC_2023 } from '../data/ARC_2023'
 import Map from '../components/Map.astro'
-import LocationInfo from '../components/LocationInfo.astro';
-const { title, description } = ARC_2023
-
+import LocationInfo from '../components/LocationInfo.astro'
+const { title, description, locations } = ARC_2023
 ---
 
 <Layout title={title} description={description}>
 	<main class='relative w-full h-full overflow-hidden'>
-		<LocationInfo query='casa-gaviota' />
-		<LocationInfo query='teatro-centenario' />
-		<LocationInfo query='centro-la-serena' />
-		<LocationInfo query='frontis-gobierno-regional' />
-		<LocationInfo query='museo-arqueologico' />
-		<LocationInfo query='estacionamiento-plaza-de-armas' />
-		<LocationInfo query='centro-cultural-santa-ines' />
-		<LocationInfo query='teatro-municipal' />
-		<LocationInfo query='terraza-arc' />
+		{locations.map(location => <LocationInfo query={location.id} />)}
 		<Map />
 	</main>
 </Layout>
