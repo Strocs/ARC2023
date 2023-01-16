@@ -1,11 +1,11 @@
 export const CASA_GAVIOTA = {
   id: 'casa-gaviota',
   title: 'Casa Gaviota',
-  color: 'pale-blue',
+  color: 'bg-pale-blue',
   description: '',
   locationImage: {
     url: '',
-    position: {},
+    position: {top: '40%', left: '60%'},
   },
   artists: []
 }

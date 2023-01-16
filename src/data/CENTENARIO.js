@@ -2,10 +2,10 @@ export const CENTENARIO = {
   id: 'teatro-centenario',
   title: 'Teatro Centenario',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto necessitatibus. Beatae pariatur aliquid optio porro, adipisci minima, placeat molestias quo quibusdam iusto quaerat. Velit, quidem aliquam. Veritatis, expedita a.', 
-  color: 'black-pink',
+  color: 'bg-black-pink',
   locationImage: {
     url: '',
-    position: {},
+    position: {top: '50%', left: '50%'},
   },
   artists: [
     {
