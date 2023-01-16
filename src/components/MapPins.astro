@@ -1,8 +1,23 @@
 ---
-import Circle from './icons/Circle.astro'
+import { ARC_2023 } from '../data/ARC_2023'
+import Pins from './Pins.astro'
+const { locations } = ARC_2023
 ---
 
-<Circle position={{ top: '10%', left: '50%' }} id='centenario' />
-<Circle position={{ top: '50%', left: '20%' }} />
-<Circle position={{ top: '10%', left: '70%' }} />
-<Circle position={{ top: '78%', left: '42%' }} />
+{locations.map(location => <Pins position={location.locationImage.position} id={location.id} img={location.locationImage.url} title={location.title} />)}
+
+<script type='module'>
+	const buttons = document.getElementById('map').querySelectorAll('#image-button')
+	const locations = document.querySelectorAll('#location-info')
+
+	buttons.forEach((button, index) =>
+		button.addEventListener('click', () => {
+			locations.forEach(location => {
+				location.style.right = '-448px'
+				location.style.opacity = '0'
+			})
+			locations[index].style.right = '0'
+			locations[index].style.opacity = '1'
+		})
+	)
+</script>
