@@ -1,8 +1,10 @@
 ---
 import { Icon } from 'astro-icon'
 import { getLocationById } from '../utils/getLocationById'
+import BackButton from './BackButton.astro'
+import EventsList from './EventsList.astro'
 const { query } = Astro.props
-const { title, id, color, artists, description } = getLocationById(query)
+const { title, id, backgroundColor, textColor, description } = getLocationById(query)
 
 let newTitle = ''
 
@@ -15,29 +17,26 @@ if (title.includes('Estacionamiento')) {
 }
 ---
 
-<section aria-label={id} id='location-info' class={`${color} pt-24 w-full max-w-md p-10 -right-[448px] opacity-0 h-screen absolute transition-[right] duration-200 z-10`} style={{ display: 'hidden' }}>
+<section
+	aria-label={id}
+	id='location-info'
+	class={`${backgroundColor} bg-texture bg-2xl pt-24 w-full md:max-w-md p-10 -right-[448px] opacity-0 h-full absolute z-10 motion-reduce:animate-none`}
+	style={{ display: 'hidden' }}
+>
 	<div>
 		<h2 class='text-6xl font-black py-2 leading-[3rem]'>{newTitle}</h2>
 		<p class='font-light'>{description}</p>
 	</div>
 	<div>
-		<h3 class='text-4xl font-bold py-4'>Artistas:</h3>
-		<ul class='flex flex-col gap-5'>
-			{
-				artists.map(artist => (
-					<li class='font-normal text-xl group relative'>
-						<a class='block' href={`${id}/${artist.id}`}>
-							<p class='pl-6 '>{artist.name}</p>
-							<div class='group-hover:h-16 bg-black rounded-xl absolute -top-[1.125rem] -z-10 w-full h-0 transition-all overflow-hidden'>
-								<img class='text-sm' src='' alt={`Imágen de ${artist.name}`} />
-							</div>
-						</a>
-					</li>
-				))
-			}
-		</ul>
+		<h3 class='text-4xl font-bold py-4'>Eventos:</h3>
+		<EventsList query={id} />
 	</div>
-	<button class='hover:bg-white group'>
-		<Icon class={`text-white w-8 h-8 group-hover:${color.replace('bg-', 'text-')}}`} name='mdi:arrow-right-bold' />
-	</button>
+	<BackButton textColor={textColor} />
 </section>
+
+<style>
+	section {
+		transition: right 500ms;
+		transition-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+	}
+</style>
