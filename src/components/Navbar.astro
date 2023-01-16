@@ -8,7 +8,7 @@ const sections = [
 const { id } = Astro.props
 ---
 
-<nav id={id} class='bg-black max-w-xs h-screen w-full absolute top-0 z-10 -left-[320px] pt-20 transition-[left] opacity-0 duration-200 ease-linear'>
+<nav id={id} class='bg-black max-w-xs h-screen w-full absolute top-0 z-10 -left-[320px] pt-20 opacity-0 motion-reduce:animate-none'>
 	<ul class='text-white text-4xl p-14 flex flex-col gap-5'>
 		{
 			sections.map(section => (
@@ -19,3 +19,10 @@ const { id } = Astro.props
 		}
 	</ul>
 </nav>
+
+<style>
+	nav {
+		transition: left 500ms;
+		transition-timing-function: cubic-bezier(0.45,0.05,0.55,0.95);
+	}
+</style>
