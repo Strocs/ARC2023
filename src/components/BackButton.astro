@@ -1,0 +1,10 @@
+---
+import { Icon } from "astro-icon";
+
+const { textColor } = Astro.props
+---
+
+<button class='hover:bg-white group absolute bottom-10 right-10 flex items-center px-3 py-1 rounded-md transition-all duration-200'>
+	<p class={textColor}>Volver</p>
+	<Icon class={`text-white w-8 h-8 ${textColor}`} name='mdi:arrow-right-bold' />
+</button>
