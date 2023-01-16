@@ -2,32 +2,35 @@
 import MapPins from './MapPins.astro'
 ---
 
-<section id='map' class='relative h-[100vmax] w-[100vmax] origin-top-left scale-100 translate-x-0 translate-y-0 cursor-grab touch-none'>
-	<img width='1200' height='1200' class='aspect-square h-[100vmax] w-[100vmax] object-cover' src='/mapa-laserena.png' alt='Ilustración del Centro de La Serena por Camipepe' />
-	<MapPins />
+<section class='w-screen h-screen'>
+	<div id='map' class='relative h-[100vmax] w-[100vmax] origin-top-left scale-100 cursor-grab touch-none'>
+		<img width='900' height='900' class='aspect-square h-[100vmax] w-[100vmax] object-cover' src='/mapa-evento-camipepe.jpg' alt='Ilustración del Centro de La Serena por Camipepe' />
+		<MapPins />
+	</div>
 </section>
 
 <script>
 	const map = document.getElementById('map')
 	const image = map.querySelector('img')
-	let navHeight = 0
 	let scale = 1
 	let panning = false
 	let pointX = 0
-	let pointY = navHeight
+	let pointY = -window.innerHeight * 0.5
 	let start = { x: 0, y: 0 }
 	let limitX = window.innerWidth - image.width
-	let limitY = window.innerHeight - image.height + navHeight
+	let limitY = window.innerHeight - image.height
 	let maxZoom = 1.728
 	let minZoom = 1
-
+	
+	
 	function setTransform() {
 		map.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`
 	}
-
+	
+	setTransform()
 	function setLimits() {
 		limitX = window.innerWidth - image.width * scale
-		limitY = window.innerHeight - image.height * scale + navHeight
+		limitY = window.innerHeight - image.height * scale
 	}
 
 	window.addEventListener('resize', () => {
@@ -52,8 +55,10 @@ import MapPins from './MapPins.astro'
 		if (!panning) {
 			return
 		}
-		pointX = e.clientX - start.x > 0 || e.clientX - start.x < limitX ? pointX : e.clientX - start.x
-		pointY = e.clientY - start.y > 0 || e.clientY - start.y < limitY ? pointY : e.clientY - start.y
+		// pointX = e.clientX - start.x > 0 || e.clientX - start.x < limitX ? pointX : e.clientX - start.x
+		// pointY = e.clientY - start.y > 0 || e.clientY - start.y < limitY ? pointY : e.clientY - start.y
+		pointX = e.clientX - start.x
+		pointY = e.clientY - start.y
 		setTransform()
 	}
 
@@ -67,12 +72,12 @@ import MapPins from './MapPins.astro'
 			let ys = (e.clientY - pointY) / scale
 			let delta = e.deltaY
 			delta < 0 ? (scale *= 1.2) : (scale /= 1.2)
-			
+
 			// pointX = e.clientX - xs * scale > 0 || e.clientX - xs * scale > limitX ? 0 : e.clientX - xs * scale
 			pointX = e.clientX - xs * scale
 			// pointY = e.clientY - ys * scale > 0 || e.clientY - ys * scale > limitY ? 0 : e.clientY - ys * scale
 			pointY = e.clientY - ys * scale
-			
+
 			setLimits()
 			setTransform()
 		},
