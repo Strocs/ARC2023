@@ -29,7 +29,6 @@ export const ARC_2023 = {
   locations: [
     CENTENARIO,
     CASA_GAVIOTA,
-    CENTRO,
     GO_RE,
     MUSEO,
     PLAZA,

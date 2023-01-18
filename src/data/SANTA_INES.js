@@ -3,10 +3,11 @@ export const SANTA_INES = {
 	title: 'Centro Cultural Santa Inés',
 	backgroundColor: 'bg-yellow',
 	textColor: 'group-hover:text-yellow',
+	extract: '',
 	description: '',
 	locationImage: {
-		url: '',
-		position: { top: '64%', left: '18%' },
+		url: '/santa-ines/santa-ines.svg',
+		position: { top: '59.5%', left: '14%' },
 	},
 	artists: [
 		{

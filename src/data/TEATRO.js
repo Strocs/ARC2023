@@ -3,6 +3,7 @@ export const TEATRO = {
 	title: 'Teatro Municipal',
 	backgroundColor: 'bg-purple',
 	textColor: 'group-hover:text-purple',
+	extract: '',
 	description: '',
 	locationImage: {
 		url: '',

@@ -3,6 +3,7 @@ export const PLAZA = {
 	title: 'Estacionamiento Plaza de Armas',
 	backgroundColor: 'bg-orange',
 	textColor: 'group-hover:text-orange',
+	extract: '',
 	description: '',
 	locationImage: {
 		url: '',

@@ -3,6 +3,7 @@ export const MUSEO = {
 	title: 'Museo Arqueológico',
 	backgroundColor: 'bg-blue',
 	textColor: 'group-hover:text-blue',
+	extract: '',
 	description: '',
 	locationImage: {
 		url: '',

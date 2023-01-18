@@ -1,6 +1,5 @@
 export * from './CASA_GAVIOTA'
 export * from './CENTENARIO'
-export * from './CENTRO'
 export * from './GO_RE'
 export * from './MUSEO'
 export * from './PLAZA'

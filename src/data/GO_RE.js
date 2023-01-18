@@ -3,6 +3,7 @@ export const GO_RE = {
 	title: 'Frontis Gobierno Regional',
 	backgroundColor: 'bg-water-green',
 	textColor: 'group-hover:text-water-green',
+	extract: '',
 	description: '',
 	locationImage: {
 		url: '',
