@@ -1,7 +1,7 @@
 ---
 import { Icon } from 'astro-icon'
 import BackButton from '../../components/BackButton.astro'
-import EventsList from '../../components/EventsList.astro'
+import Schedule from '../../components/Schedule.astro'
 import Header from '../../components/Header.astro'
 import PageContainer from '../../components/PageContainer.astro'
 import Title from '../../components/Title.astro'
@@ -73,10 +73,12 @@ const descriptionSplited = description.split('\n')
 			}
 		</Fragment>
 		<Fragment slot='second-section'>
-			<img class='absolute -top-14 w-28 -left-4' src={locationImage.url} alt='' />
-			<h2 class='text-5xl leading-9 font-bold'>En {title}</h2>
-			<EventsList query={locationId} />
-			<BackButton groupHoverTextColor={styles.groupHoverTextColor} Element='a' link={`/${locationId}`} />
+			<div class="flex items-center">
+				<h2 class='text-4xl leading-9 font-bold'>En {title}</h2>
+				<img class='h-20' src={locationImage.url} alt='' />
+			</div>
+			<Schedule locationId={locationId} eventId={eventId} />
+			<BackButton hoverBackgroundColor={styles.hoverBackgroundColor} Element='a' link={`/${locationId}`} />
 		</Fragment>
 	</PageContainer>
 </Layout>
