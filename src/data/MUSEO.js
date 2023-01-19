@@ -1,26 +1,22 @@
 export const MUSEO = {
 	id: 'museo-arqueologico',
 	title: 'Museo Arqueológico',
-	backgroundColor: 'bg-blue',
-	textColor: 'group-hover:text-blue',
+	address: '',
 	extract: '',
 	description: '',
+	links: { title: '', url: '' },
+	backgroundColor: 'bg-blue',
+	textColor: 'hover:text-blue',
 	locationImage: {
 		url: '',
 		position: { top: '42%', left: '72%' },
 	},
-	artists: [
-		{
-			id: '',
-			name: '',
-			image: { url: '', position: { marginTop: '3rem' }, alt: '' },
-			links: [],
-			description: '',
-			extra: {
-				text: '',
-				subTitle: '',
-				list: [],
-			},
-		},
-	],
+	schedule: {
+		byTime: [],
+		byDays: [
+			{ day: '', events: [] },
+			{ day: '', events: [] },
+			{ day: '', events: [] },
+		],
+	},
 }
