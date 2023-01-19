@@ -53,7 +53,7 @@ import MapPins from './MapPins.astro'
 			this._onPointerDown = event => {
 				if (event.type === 'mousedown' && event.button !== 0) return
 				if (!this._shouldCaptureFunc(event.target)) return
-				event.preventDefault()
+				// event.preventDefault()
 
 				this._lastPoints = getPoints(event)
 				this._active++
@@ -100,10 +100,10 @@ import MapPins from './MapPins.astro'
 
 			// bound events
 			eventArea.addEventListener('mousedown', this._onPointerDown)
-			eventArea.addEventListener('touchstart', this._onPointerDown)
+			eventArea.addEventListener('touchstart', this._onPointerDown, {passive: true})
 
 			// unbound
-			eventArea.addEventListener('wheel', event => this._onWheel(event))
+			eventArea.addEventListener('wheel', event => this._onWheel(event), {passive: true})
 		}
 
 		reset() {
@@ -115,7 +115,7 @@ import MapPins from './MapPins.astro'
 
 		_onWheel(event) {
 			if (!this._shouldCaptureFunc(event.target)) return
-			event.preventDefault()
+			// event.preventDefault()
 
 			const { left, top } = this._target.getBoundingClientRect()
 			let delta = event.deltaY
