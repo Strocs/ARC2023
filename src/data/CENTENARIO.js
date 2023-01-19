@@ -7,8 +7,13 @@ export const CENTENARIO = {
 	description:
 		'Desde su edificación en el año 1945, el Teatro Centenario ha significado un espacio esencial para el arte y la cultura de la ciudad de La Serena, desarrollando en sus orígenes una cartelera relacionada con el entretenimiento más popular, en contraste con la figura del Teatro Nacional, espacio que en aquellos tiempos presentaba a la comunidad trabajos orquestales de música clásica y ópera.\nDe esta manera, este espacio funcionó principalmente como sala de cine desde su inauguración hasta 1999,  funcionamiento que estuvo a cargo de la Organización Cinematográfica Norte Limitada (ORCINOR).\nEmpezando el nuevo milenio hasta el año 2018, el Teatro Centenario desarrolló una variada cartelera, con diversas expresiones artísticas nacionales, locales e internacionales, en la que destacan festivales musicales, películas y documentales, estrenos exclusivos, entre otros.\nActualmente, el espacio presenta una renovada infraestructura, gracias al trabajo liderado por la empresa Teatro Centenario SPA, que ha desarrollado una variada programación musical con la que se busca dar nueva vida al espacio, devolviéndole la importancia que tenía para el desarrollo cultural de la ciudad.',
 	links: { title: 'Conoce más en', url: 'https://teatrocentenario.cl/' },
-	backgroundColor: 'bg-black-pink',
-	textColor: 'hover:text-black-pink',
+	styles: {
+		backgroundColor: 'bg-black-pink',
+		textColor: 'text-black-pink',
+		hoverTextColor: 'hover:text-black-pink',
+		groupHoverTextColor: 'group-hover:text-black-pink',
+		borderColor: 'border-black-pink',
+	},
 	locationImage: {
 		url: '/centenario/centenario.svg',
 		position: { top: '120%', left: '69%' },
@@ -58,20 +63,15 @@ export const CENTENARIO = {
 						name: 'Moyanovsky',
 						image: { url: '/centenario/moyanovsky.webp', position: { marginTop: '3rem' }, alt: 'Imagen de la banda regional Sequía' },
 						links: [
-							{ name: 'youtube', url: 'https://www.youtube.com/@MrMoyanovsky' },
 							{ name: 'spotify', url: 'https://open.spotify.com/artist/2eOTz2ayXSbgg70UbP3LGl' },
+							{ name: 'youtube', url: 'https://www.youtube.com/@MrMoyanovsky' },
 							{ name: 'soundcloud', url: 'https://soundcloud.com/amoyanop' },
 						],
 						description:
-							'Moyanovsky es el seudónimo del músico Antonio Moyano Polanco, nacido en Illapel. Da sus primeros pasos musicales el año 1982, luego en 1989 forma la banda Los Bufones del Rey donde fue guitarrista y cantante. En 1997 funda el grupo EME desarrollándose como cantante, guitarrista y compositor en un estilo rock pop.\nEn el año 2000, forma el grupo Kasimir mezclando rock, pop y electrónica, obteniendo excelentes críticas, para luego ingresar de lleno a la música electrónica. \nEn 2012, ganó un proyecto del Gobierno Regional de la Región de Coquimbo, con el que financió el proyecto llamado Sulfuro, en el que se incluyó flauta traversa, voces, percusión y electrónica.\nMoyano es un compositor muy prolífico, socio de la SCD con más de 140 temas inscritos y con una larga trayectoria y versatilidad musical.\nDentro de sus hitos está el primer lugar en concurso de remezclas Ether Soma Laboratory: The Ministry of anticulture remixes, disco editado por Orion Network, plataforma colectiva y colaborativa que promueve la innovación, la tecnología y la creatividad musical en Chile.\nLa experimentación siempre está presente en la música de Moyanovsky, llevándolo a crear un sonido y estilo particular en la música electrónica nacional.\nEl artista ha editado cinco trabajos de estudio: <b>Nine Features (2008), Antimateria (2016), Electrónica Free (2018), Eléctrica (2020) y Scientific Noise (2021)</b>. ',
+							'Moyanovsky es el seudónimo del músico Antonio Moyano Polanco, nacido en Illapel. Da sus primeros pasos musicales el año 1982, luego en 1989 forma la banda Los Bufones del Rey donde fue guitarrista y cantante. En 1997 funda el grupo EME desarrollándose como cantante, guitarrista y compositor en un estilo rock pop.\nEn el año 2000, forma el grupo Kasimir mezclando rock, pop y electrónica, obteniendo excelentes críticas, para luego ingresar de lleno a la música electrónica. \nEn 2012, ganó un proyecto del Gobierno Regional de la Región de Coquimbo, con el que financió el proyecto llamado Sulfuro, en el que se incluyó flauta traversa, voces, percusión y electrónica.\nMoyano es un compositor muy prolífico, socio de la SCD con más de 140 temas inscritos y con una larga trayectoria y versatilidad musical.\nDentro de sus hitos está el primer lugar en concurso de remezclas Ether Soma Laboratory: The Ministry of anticulture remixes, disco editado por Orion Network, plataforma colectiva y colaborativa que promueve la innovación, la tecnología y la creatividad musical en Chile.\nLa experimentación siempre está presente en la música de Moyanovsky, llevándolo a crear un sonido y estilo particular en la música electrónica nacional.\nEl artista ha editado cinco trabajos de estudio: \bNine Features (2008), Antimateria (2016), Electrónica Free (2018), Eléctrica (2020) y Scientific Noise (2021)\b. ',
 						extra: {
 							subTitle: '',
-							list: [
-								{
-									title: 'Sus miembros son:',
-									text: ['Gabriel Tapia (batería y secuencias)', 'Jorge Cortés (guitarra)', 'Fabian Zorricueta (sintetizador y voz)', 'Cris Vera (Guitarra y sintetizador)', 'Francisco Pinto (Bajo)'],
-								},
-							],
+							list: [],
 						},
 					},
 				],
@@ -89,7 +89,7 @@ export const CENTENARIO = {
 							{ name: 'facebook', url: 'https://www.facebook.com/yorkaoficial' },
 						],
 						description:
-							'Yorka es un dúo pop chileno conformado por las hermanas Yorka y Daniela Pastenes, quienes, a través de su música, han logrado un espacio en la escena musical nacional, con cuatro discos de larga duración editados a la fecha: <b>Imperio (2015), Humo (2018), MAL (2020) y Chao (2022)</b>.\nEl proyecto, formado a principios del año 2012, se caracteriza por su variedad de sonidos, desde melodías más bailables, hasta baladas propias del folk, acompañados de potentes letras que engloban reflexiones sobre la pérdida, el amor y el inevitable paso del tiempo.\nDentro de los hitos de este proyecto está su participación en el festival nacional Ruidosa (2017), donde compartió escenario con artistas como Francisca Valenzuela, Nicole, Mariel Mariel, Entrópica y Carolina Nissen, entro otras; su presentación en 2021 en el festival norteamericano South by Southwest (SXSW); su actuación en la versión 2022 de Lollapalooza Chile y su posterior gira por Argentina, en la que tocaron ante dos mil personas en el Centro Cultural Kirchner de Buenos Aires.',
+							'Yorka es un dúo pop chileno conformado por las hermanas Yorka y Daniela Pastenes, quienes, a través de su música, han logrado un espacio en la escena musical nacional, con cuatro discos de larga duración editados a la fecha: \bImperio (2015), Humo (2018), MAL (2020) y Chao (2022)\b.\nEl proyecto, formado a principios del año 2012, se caracteriza por su variedad de sonidos, desde melodías más bailables, hasta baladas propias del folk, acompañados de potentes letras que engloban reflexiones sobre la pérdida, el amor y el inevitable paso del tiempo.\nDentro de los hitos de este proyecto está su participación en el festival nacional Ruidosa (2017), donde compartió escenario con artistas como Francisca Valenzuela, Nicole, Mariel Mariel, Entrópica y Carolina Nissen, entro otras; su presentación en 2021 en el festival norteamericano South by Southwest (SXSW); su actuación en la versión 2022 de Lollapalooza Chile y su posterior gira por Argentina, en la que tocaron ante dos mil personas en el Centro Cultural Kirchner de Buenos Aires.',
 						extra: {
 							subTitle: '',
 							list: [],
@@ -101,13 +101,13 @@ export const CENTENARIO = {
 						image: { url: '/centenario/marineros.webp', position: { marginTop: '3rem' }, alt: 'Imagen de la banda nacional Marineros' },
 						links: [
 							{ name: 'spotify', url: 'https://open.spotify.com/artist/6EwwcDTg6CKzsuWq7Xbd7D' },
-							{ name: 'bandcamp', url: 'https://soundcloud.com/omarineros' },
+							{ name: 'soundcloud', url: 'https://soundcloud.com/omarineros' },
 							{ name: 'instagram', url: 'https://www.instagram.com/omarineros' },
 							{ name: 'facebook', url: 'https://www.facebook.com/omarineros' },
 							{ name: 'twitter', url: 'https://twitter.com/omarineros' },
 						],
 						description:
-							'Citado por el diario español El País como una de las promesas musicales latinoamericanas del 2014 y apadrinadas musicalmente por Javiera Mena, una de las exponentes del pop chileno más importantes de las últimas décadas, Marineros, proyecto conformado por la cantante Constanza Espina y la guitarrista Soledad Puentes, ha desarrollado una poderosa carrera en el circuito musical nacional e internacional a través de su obra, definida por sus mismas autoras como un proyecto de “pop existencial”.\nEl proyecto debutó en el año 2015 con el álbum <b>“O Marineros”</b>, trabajo producido por Cristián Heyne, compositor y productor que ha desarrollado su carrera trabajando con artistas como Alex Anwandter, Javiera Mena, Gepe y Fernando Milagros, entre otros. Sobre este trabajo, el dúo expresó en distintas entrevistas a medios nacionales que este trabajo “son nuestros corazones traducidos en canciones. Lo escuchamos y se vuelve parte de nuestro flujo sanguíneo y brama al ritmo de nuestro palpitar (…)”.\nAdemás, cuentan con distintos sencillos como <b>Torbellino (2016), Ámbar (2019), Todo a la Vez (2020), Rosas (2021), A Toda Velocidad (2022) y Loco (2022)</b>.',
+							'Citado por el diario español El País como una de las promesas musicales latinoamericanas del 2014 y apadrinadas musicalmente por Javiera Mena, una de las exponentes del pop chileno más importantes de las últimas décadas, Marineros, proyecto conformado por la cantante Constanza Espina y la guitarrista Soledad Puentes, ha desarrollado una poderosa carrera en el circuito musical nacional e internacional a través de su obra, definida por sus mismas autoras como un proyecto de “pop existencial”.\nEl proyecto debutó en el año 2015 con el álbum \b“O Marineros”\b, trabajo producido por Cristián Heyne, compositor y productor que ha desarrollado su carrera trabajando con artistas como Alex Anwandter, Javiera Mena, Gepe y Fernando Milagros, entre otros. Sobre este trabajo, el dúo expresó en distintas entrevistas a medios nacionales que este trabajo “son nuestros corazones traducidos en canciones. Lo escuchamos y se vuelve parte de nuestro flujo sanguíneo y brama al ritmo de nuestro palpitar (…)”.\nAdemás, cuentan con distintos sencillos como \bTorbellino (2016), Ámbar (2019), Todo a la Vez (2020), Rosas (2021), A Toda Velocidad (2022) y Loco (2022)\b.',
 						extra: {
 							subTitle: '',
 							list: [],
@@ -124,7 +124,7 @@ export const CENTENARIO = {
 							{ name: 'facebook', url: 'https://www.facebook.com/hesperbanda/' },
 						],
 						description:
-							'Hesper es una banda del norte de Chile,valle del Limarí, transversal a la cordillera de los Andes. Su inspiración es la vida en el campo, la naturaleza, los valles y ríos.\nDesde 2017 han publicado tres discos, dos editados de manera profesional; <b>El Arte de los Planetas, La Simplicidad y El Huerto</b>, lanzado el reciente año,que les ha permitido conectar con personas de México, Perú, Argentina y de todos los rincones de Chile.\nLa banda ha participado en importantes escenarios a nivel nacional e internacional, tales como Feria Pulsar de Santiago, ARC de Coquimbo, Circuito Nacional de Valparaiso, Alianza de México, Dímelo Tuanis de Santiago y Ovalle Cultura.\nActualmente los músicos se encuentran promocionando su último disco El Huerto (2021), que fue grabado por el reconocido ingeniero Killy Gonzalez, quien ya había trabajado en el disco La Simplicidad (2019) de la banda junto a Martin del Real (Ases Falsos). Gonzalez también es reconocido por trabajar con artistas como Nicole, Alex Anwandter, Gepe y Ases Falsos.',
+							'Hesper es una banda del norte de Chile,valle del Limarí, transversal a la cordillera de los Andes. Su inspiración es la vida en el campo, la naturaleza, los valles y ríos.\nDesde 2017 han publicado tres discos, dos editados de manera profesional; \bEl Arte de los Planetas, La Simplicidad y El Huerto\b, lanzado el reciente año,que les ha permitido conectar con personas de México, Perú, Argentina y de todos los rincones de Chile.\nLa banda ha participado en importantes escenarios a nivel nacional e internacional, tales como Feria Pulsar de Santiago, ARC de Coquimbo, Circuito Nacional de Valparaiso, Alianza de México, Dímelo Tuanis de Santiago y Ovalle Cultura.\nActualmente los músicos se encuentran promocionando su último disco El Huerto (2021), que fue grabado por el reconocido ingeniero Killy Gonzalez, quien ya había trabajado en el disco La Simplicidad (2019) de la banda junto a Martin del Real (Ases Falsos). Gonzalez también es reconocido por trabajar con artistas como Nicole, Alex Anwandter, Gepe y Ases Falsos.',
 						extra: {
 							subTitle: '',
 							list: [
@@ -145,7 +145,7 @@ export const CENTENARIO = {
 							{ name: 'instagram', url: ' https://www.instagram.com/luminarbanda/' },
 						],
 						description:
-							'Luminar es una banda nacida en Coquimbo en el año 2017, y que actualmente se encuentra formada por Constanza Cáceres en batería/voces, Bárbara Brockway en guitarra melódica/voces, Victoria Morales en bajo y Aracelly Pizarro en guitarra rítmica y voz. Las canciones tratan de representar lo que muchas veces nos cuesta decir y que nos lleva a emociones escondidas, especialmente para esos días grises. Continuamos trabajando tanto lo lanzado por plataformas, como material nuevo.\nEn 2018 publicaron su EP debut, llamado <b>“Todos los caminos conducen al mar</b>”',
+							'Luminar es una banda nacida en Coquimbo en el año 2017, y que actualmente se encuentra formada por Constanza Cáceres en batería/voces, Bárbara Brockway en guitarra melódica/voces, Victoria Morales en bajo y Aracelly Pizarro en guitarra rítmica y voz. Las canciones tratan de representar lo que muchas veces nos cuesta decir y que nos lleva a emociones escondidas, especialmente para esos días grises. Continuamos trabajando tanto lo lanzado por plataformas, como material nuevo.\nEn 2018 publicaron su EP debut, llamado \b“Todos los caminos conducen al mar\b”',
 						extra: {
 							subTitle: '',
 							list: [],
@@ -167,7 +167,7 @@ export const CENTENARIO = {
 							{ name: 'facebook', url: 'https://www.facebook.com/asesfalsos' },
 						],
 						description:
-							'Ases Falsos es una de las bandas ícono del rock alternativo chileno actual, integrada por Cristóbal Briceño, Simón Sánchez, Martín del Real, Francisco Rojas, Sergio Sanhueza y Hermes Villalobos.\nEl proyecto nace en el año 2011, a raíz del final simbólico de la banda Fother Muckers, hecho que generó una nueva era musical de la banda, encarnada a través del nombre “Ases Falsos”, cuyo origen se encuentra en el track 10 del disco “Justo y Necesario” de la primera, titulado “Los Ases Falsos”. Este cambio buscaría la evolución y madurez del estilo musical del grupo, pero manteniendo la esencia que había trabajado desde el año 2005.\nSu disco debut, Juventud Americana, estrenado el 3 de septiembre de 2012, fue elegido el mejor disco chileno de la década por Culto, la sección de arte y espectáculos del medio nacional La Tercera. La banda se caracteriza por la frescura de su sonido y la mezcla entre diferentes estilos musicales que convergen en un proyecto sólido, que se ha expresado en una variada discografía, compuesta por los discos <b>Juventud Americana (2012), Conducción (2014), El Hombre Puede (2016), Mala Fama (2018), Tacto (2020) y Chocadito (2020)</b>.',
+							'Ases Falsos es una de las bandas ícono del rock alternativo chileno actual, integrada por Cristóbal Briceño, Simón Sánchez, Martín del Real, Francisco Rojas, Sergio Sanhueza y Hermes Villalobos.\nEl proyecto nace en el año 2011, a raíz del final simbólico de la banda Fother Muckers, hecho que generó una nueva era musical de la banda, encarnada a través del nombre “Ases Falsos”, cuyo origen se encuentra en el track 10 del disco “Justo y Necesario” de la primera, titulado “Los Ases Falsos”. Este cambio buscaría la evolución y madurez del estilo musical del grupo, pero manteniendo la esencia que había trabajado desde el año 2005.\nSu disco debut, Juventud Americana, estrenado el 3 de septiembre de 2012, fue elegido el mejor disco chileno de la década por Culto, la sección de arte y espectáculos del medio nacional La Tercera. La banda se caracteriza por la frescura de su sonido y la mezcla entre diferentes estilos musicales que convergen en un proyecto sólido, que se ha expresado en una variada discografía, compuesta por los discos \bJuventud Americana (2012), Conducción (2014), El Hombre Puede (2016), Mala Fama (2018), Tacto (2020) y Chocadito (2020)\b.',
 						extra: {
 							subTitle: '',
 							list: [],

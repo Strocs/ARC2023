@@ -7,8 +7,13 @@ export const CASA_GAVIOTA = {
 	description:
 		'Espacio La Gaviota se encuentra en la ciudad de La Serena, específicamente en el Barrio Almagro, el cual es parte del casco histórico de la ciudad declarado zona típica en el año 1981. El inmueble fue construido en el año 1920 y posee un estilo ecléctico característico de las construcciones que datan entre los años 1880 y 1940.\nEsta construcción que posee 100 años fue durante gran parte de su historia la vivienda de la familia Mascaró. A partir del año 1997 deja de ser una vivienda y sus dueños buscan nuevos arrendatarios. En el año 1998 y debido a la elección de la entonces senadora por la 4 º circunscripción, Evelyn Matthei, la casona pasa a ser la sede de la Unión Demócrata Independiente en la ciudad de La Serena, lo cual se mantuvo hasta el año 2014.\nEl año 2015 el inmueble se convierte en un espacio cultural dedicado a la creación, exhibición, investigación y difusión de las artes escénicas de la mano de la organización TeatroPuerto, quienes gracias a la adjudicación del programa Otras Instituciones Colaboradoras del Estado otorgado por el Ministerio de las Culturas, las artes y el patrimonio logran instalarse en este histórico barrio patrimonial y acrecentar la oferta artística y cultural de la ciudad.',
 	links: { title: '', url: '' },
-	backgroundColor: 'bg-pale-blue',
-	textColor: 'hover:text-pale-blue',
+	styles: {
+		backgroundColor: 'bg-pale-blue',
+		textColor: 'text-pale-blue',
+		hoverTextColor: 'hover:text-pale-blue',
+		groupHoverTextColor: 'group-hover:text-pale-blue',
+		borderColor: 'border-pale-blue',
+	},
 	locationImage: {
 		url: '/gaviota/casa-gaviota.svg',
 		position: { top: '70%', left: '19.5%' },
@@ -27,7 +32,7 @@ export const CASA_GAVIOTA = {
 						description:
 							'Una densa bruma oculta los recuerdos de la miseria, alojados en desgastados muebles volcados, vasos derramados y ropajes repartidos que nos presentan un imaginario del mundo de la prostitución. Entre risas, llantos y tacones, se abren paso melodías de dos grandes obras del teatro nacional, “La Negra Ester” de Andrés Pérez y “Amores de Cantina” de Juán Radrigán dando origen a “La Cantina de la Negra”, una historia que se desarrolla en un prostíbulo de pueblo en el que trabajan Berta, Luana, Rosa y La China, quienes, a través de relatos biográficos, removidas por el luto, nos invitan a reflexionar sobre el mundo íntimo de las trabajadoras sexuales, sus dolores, sus heridas y sus anhelos.',
 						extra: {
-							subTitle: '<b>Compañía</b>: La Chinchilla Subversiva',
+							subTitle: '\bCompañía\b: La Chinchilla Subversiva',
 							list: [
 								{ title: 'Elenco:', text: ['Natalia Peña', 'Yaritza Rodríguez', 'Javiera Sepúlveda', 'Vianni Tapia', 'Ángelo Orrego', 'Rodrigo Piñones', 'Evelyn Rodríguez', 'Turquesa Fernández'] },
 							],

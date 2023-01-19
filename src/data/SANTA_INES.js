@@ -5,8 +5,13 @@ export const SANTA_INES = {
 	extract: '',
 	description: '',
 	links: { title: '', url: '' },
-	backgroundColor: 'bg-yellow',
-	textColor: 'hover:text-yellow',
+	styles: {
+		backgroundColor: 'bg-yellow',
+		textColor: 'text-yellow',
+		hoverTextColor: 'hover:text-yellow',
+		groupHoverTextColor: 'group-hover:text-yellow',
+		borderColor: 'border-yellow',
+	},
 	locationImage: {
 		url: '/santa-ines/santa-ines.svg',
 		position: { top: '59.5%', left: '14%' },

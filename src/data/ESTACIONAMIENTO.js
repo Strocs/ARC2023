@@ -5,8 +5,14 @@ export const ESTACIONAMIENTO = {
 	extract: '',
 	description: '',
 	links: { title: '', url: '' },
-	backgroundColor: 'bg-orange',
-	textColor: 'hover:text-orange',
+	styles: {
+		backgroundColor: 'bg-orange',
+		textColor: 'text-orange',
+		hoverTextColor: 'hover:text-orange',
+		groupHoverTextColor: 'group-hover:text-orange',
+		borderColor: 'border-orange',
+		
+	},
 	locationImage: {
 		url: '',
 		position: { top: '56%', left: '53%' },

@@ -5,8 +5,13 @@ export const GO_RE = {
 	extract: '',
 	description: '',
 	links: { title: '', url: '' },
-	backgroundColor: 'bg-water-green',
-	textColor: 'hover:text-water-green',
+	styles: {
+		backgroundColor: 'bg-water-green',
+		textColor: 'text-water-green',
+		hoverTextColor: 'hover:text-water-green',
+		groupHoverTextColor: 'group-hover:text-water-green',
+		borderColor: 'border-water-green',
+	},
 	locationImage: {
 		url: '',
 		position: { top: '64%', left: '42%' },

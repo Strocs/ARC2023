@@ -5,8 +5,13 @@ export const MUSEO = {
 	extract: '',
 	description: '',
 	links: { title: '', url: '' },
-	backgroundColor: 'bg-blue',
-	textColor: 'hover:text-blue',
+	styles: {
+		backgroundColor: 'bg-blue',
+		textColor: 'text-blue',
+		hoverTextColor: 'hover:text-blue',
+		groupHoverTextColor: 'group-hover:text-blue',
+		borderColor: 'border-blue',
+	},
 	locationImage: {
 		url: '',
 		position: { top: '42%', left: '72%' },

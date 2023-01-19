@@ -5,8 +5,13 @@ export const MUNICIPAL = {
 	extract: '',
 	description: '',
 	links: { title: '', url: '' },
-	backgroundColor: 'bg-purple',
-	textColor: 'hover:text-purple',
+	styles: {
+		backgroundColor: 'bg-purple',
+		textColor: 'text-purple',
+		hoverTextColor: 'hover:text-purple',
+		groupHoverTextColor: 'group-hover:text-purple',
+		borderColor: 'border-purple',
+	},
 	locationImage: {
 		url: '',
 		position: { top: '28%', left: '68%' },
