@@ -11,7 +11,9 @@ export const CASA_GAVIOTA = {
 		backgroundColor: 'bg-pale-blue',
 		textColor: 'text-pale-blue',
 		hoverTextColor: 'hover:text-pale-blue',
+		hoverBackgroundColor: 'hover:bg-pale-blue',
 		groupHoverTextColor: 'group-hover:text-pale-blue',
+		groupHoverBackgroundColor: 'group-hover:bg-pale-blue',
 		borderColor: 'border-pale-blue',
 	},
 	locationImage: {
@@ -22,7 +24,7 @@ export const CASA_GAVIOTA = {
 		byTime: [],
 		byDays: [
 			{
-				day: '10 de Febrero / 19:00 horas',
+				day: '10 de Febrero | 19:00hrs',
 				events: [
 					{
 						id: 'la-cantina-de-la-negra',
@@ -41,7 +43,7 @@ export const CASA_GAVIOTA = {
 				],
 			},
 			{
-				day: '11 de Febrero / 19:00 horas ',
+				day: '11 de Febrero | 19:00hrs ',
 				events: [
 					{
 						id: 'preciosas-y-ridiculas',
@@ -61,7 +63,7 @@ export const CASA_GAVIOTA = {
 				],
 			},
 			{
-				day: '12 de Febrero / 19:00 horas',
+				day: '12 de Febrero | 19:00hrs',
 				events: [
 					{
 						id: 'los-de-alla',

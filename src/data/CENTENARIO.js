@@ -11,7 +11,9 @@ export const CENTENARIO = {
 		backgroundColor: 'bg-black-pink',
 		textColor: 'text-black-pink',
 		hoverTextColor: 'hover:text-black-pink',
+		hoverBackgroundColor: 'hover:bg-black-pink',
 		groupHoverTextColor: 'group-hover:text-black-pink',
+		groupHoverBackgroundColor: 'group-hover:bg-black-pink',
 		borderColor: 'border-black-pink',
 	},
 	locationImage: {
