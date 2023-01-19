@@ -6,18 +6,3 @@ const { locations } = ARC_2023
 
 {locations.map(location => <Pins position={location.locationImage.position} id={location.id} img={location.locationImage.url} title={location.title} />)}
 
-<script type='module'>
-	const buttons = document.getElementById('map').querySelectorAll('#image-button')
-	const locations = document.querySelectorAll('#location-info')
-
-	buttons.forEach((button, index) =>
-		button.addEventListener('click', () => {
-			locations.forEach(location => {
-				location.style.right = '-448px'
-				location.style.opacity = '0'
-			})
-			locations[index].style.right = '0'
-			locations[index].style.opacity = '1'
-		})
-	)
-</script>

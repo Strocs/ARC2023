@@ -4,17 +4,51 @@ import { ARC_2023 } from '../data/ARC_2023'
 import Map from '../components/Map.astro'
 import LocationInfo from '../components/LocationInfo.astro'
 import Controls from '../components/Controls.astro'
-import { getEventsPath } from '../utils/getEventPaths'
 import Header from '../components/Header.astro'
 const { title, description, locations } = ARC_2023
-
 ---
 
 <Layout title={title} description={description}>
 	<Header />
-	<main class='relative w-full h-full overflow-hidden'>
+	<main id='main-page' class='relative w-full h-full overflow-hidden'>
 		{locations.map(location => <LocationInfo query={location.id} />)}
 		<Map />
 		<Controls />
 	</main>
 </Layout>
+
+<script type='module'>
+	const mapIcon = document.getElementById('map').querySelectorAll('#image-button')
+	const locations = document.querySelectorAll('[aria-label="location-info"]')
+	function showLocationsInfo(element, show) {
+		if (show) {
+			element.style.right = '0'
+			element.style.zIndex = '20'
+			element.style.opacity = '1'
+			return
+		}
+		element.style.zIndex = '10'
+		element.style.right = '-448px'
+	}
+	
+	mapIcon.forEach((icon, index) =>
+	icon.addEventListener('click', () => {
+		locations.forEach(location => {
+			showLocationsInfo(location, false)
+		})
+			showLocationsInfo(locations[index], true)
+		})
+	)
+
+	locations.forEach(location => {
+		location.addEventListener('transitionend', () => {
+			if (location.style.right === '-448px') {
+				console.log(location)
+				location.style.opacity = '0'
+			}
+		})
+		location.querySelector('button').addEventListener('click', () => {
+			showLocationsInfo(location, false)
+		})
+	})
+</script>
