@@ -1,0 +1,30 @@
+---
+import { Icon } from 'astro-icon'
+import { getScheduleByLocationId, getLocationById } from '../utils'
+const { locationId, eventId } = Astro.props
+const schedule = getScheduleByLocationId(locationId)
+const { styles } = getLocationById(locationId)
+---
+
+<div class='flex flex-col gap-2'>
+	{
+		schedule.map(({ day, events }) => (
+			<div class='font-normal text-base relative'>
+				<p class='text-lg font-medium'>
+					<Icon name='mdi:calendar-multiselect' class={`w-6 inline ${styles.textColor}`} /> {day}
+				</p>
+				<ul class="flex flex-col gap-2">
+					{events.map(event => (
+						<a
+							class={`${styles.hoverBackgroundColor} ${event.id === eventId ? styles.backgroundColor : ''} w-fit group ml-6 flex items-center gap-1 transition-[background-color] duration-200`}
+							href={`/${locationId}/${event.id}`}
+						>
+							<Icon name='mdi:play' class={`w-5 inline ${event.id === eventId ? 'text-white' : 'text-slate-400'}  group-hover:text-white`} />
+							<p class={`font-normal group-hover:text-white pr-3 ${event.id === eventId ? 'text-white' : 'text-slate-900'}`}>{event.name}</p>
+						</a>
+					))}
+				</ul>
+			</div>
+		))
+	}
+</div>
