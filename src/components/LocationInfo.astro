@@ -1,10 +1,9 @@
 ---
-import { Icon } from 'astro-icon'
 import { getLocationById } from '../utils/getLocationById'
 import BackButton from './BackButton.astro'
-import EventsList from './EventsList.astro'
+import Centenario from './icons/Centenario.astro'
 const { query } = Astro.props
-const { title, id, backgroundColor, textColor, description } = getLocationById(query)
+const { id, title, extract, backgroundColor, textColor, locationImage } = getLocationById(query)
 
 let newTitle = ''
 
@@ -20,18 +19,15 @@ if (title.includes('Estacionamiento')) {
 <section
 	aria-label={id}
 	id='location-info'
-	class={`${backgroundColor} bg-texture bg-2xl pt-24 w-full md:max-w-md p-10 -right-[448px] opacity-0 h-full absolute z-10 motion-reduce:animate-none`}
+	class={`${backgroundColor} bg-texture flex flex-col justify-between bg-2xl pt-24 w-full md:max-w-md p-10 -right-[448px] opacity-0 h-full absolute z-10 motion-reduce:animate-none`}
 	style={{ display: 'hidden' }}
 >
-	<div>
+	<div class="flex flex-col gap-4">
 		<h2 class='text-6xl font-black py-2 leading-[3rem]'>{newTitle}</h2>
-		<p class='font-light'>{description}</p>
+		<p class='font-normal'>{extract}</p>
+		<a class="font-bold text-lg" href={id}>Más información</a>
 	</div>
-	<div>
-		<h3 class='text-4xl font-bold py-4'>Eventos:</h3>
-		<EventsList query={id} />
-	</div>
-	<BackButton textColor={textColor} />
+	<BackButton textColor={textColor} Element='button' />
 </section>
 
 <style>

@@ -1,12 +1,11 @@
 import {
   CASA_GAVIOTA,
   CENTENARIO,
-  CENTRO,
   GO_RE,
   MUSEO,
-  PLAZA,
+  ESTACIONAMIENTO,
   SANTA_INES,
-  TEATRO,
+  MUNICIPAL,
   TERRAZA
 } from '.'
 
@@ -29,11 +28,11 @@ export const ARC_2023 = {
   locations: [
     CENTENARIO,
     CASA_GAVIOTA,
-    GO_RE,
-    MUSEO,
-    PLAZA,
-    SANTA_INES,
-    TEATRO,
-    TERRAZA
+    // GO_RE,
+    // MUSEO,
+    // ESTACIONAMIENTO,
+    // SANTA_INES,
+    // MUNICIPAL,
+    // TERRAZA
   ]
 }

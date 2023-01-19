@@ -2,6 +2,6 @@
 const { position, img, id, title } = Astro.props
 ---
 
-<button class='h-16 w-16 bg-black rounded-full absolute hover:scale-150 transition-all cursor-pointer' style={position}>
-  <img id='image-button' aria-label={id} src={`/locations/${img}`} alt={`Imágen de ${title}`}>
+<button class=' w-44 absolute hover:scale-110 transition-all cursor-pointer' style={position}>
+  <img id='image-button' aria-label={id} src={`${img}`} alt={`Imágen de ${title}`}>
 </button>

@@ -3,12 +3,18 @@ import Layout from '../layouts/Layout.astro'
 import { ARC_2023 } from '../data/ARC_2023'
 import Map from '../components/Map.astro'
 import LocationInfo from '../components/LocationInfo.astro'
+import Controls from '../components/Controls.astro'
+import { getEventsPath } from '../utils/getEventPaths'
+import Header from '../components/Header.astro'
 const { title, description, locations } = ARC_2023
+
 ---
 
 <Layout title={title} description={description}>
+	<Header />
 	<main class='relative w-full h-full overflow-hidden'>
 		{locations.map(location => <LocationInfo query={location.id} />)}
 		<Map />
+		<Controls />
 	</main>
 </Layout>

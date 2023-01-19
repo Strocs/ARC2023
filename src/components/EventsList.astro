@@ -1,20 +1,22 @@
 ---
-import { getLocationById } from "../utils/getLocationById"
+import { getScheduleByLocationId, getLocationById } from '../utils'
 const { query } = Astro.props
-const { artists, id } = getLocationById(query)
+const schedule = getScheduleByLocationId(query)
+const { backgroundColor, textColor } = getLocationById(query)
+
 ---
 
-<ul class='flex flex-col gap-12'>
-  {
-    artists.map(artist => (
-      <li class='font-normal text-xl group relative'>
-        <a class='' href={`/${id}/${artist.id}`}>
-          <p class='px-3 absolute z-20 group-hover:bg-black transition-[background-color] duration-200'>{artist.name}</p>
-          <div class='group-hover:h-16 bg-black rounded-xl absolute -top-[1.125rem] z-10 w-full h-0 transition-all overflow-hidden flex items-center'>
-            <img class='text-sm w-full h-fit' style={artist.image.position} src={artist.image.url} alt={artist.image.alt} />
-          </div>
-        </a>
-      </li>
-    ))
-  }
+<ul class='flex flex-col gap-2'>
+	{
+		schedule.map(({ day, events }) => (
+			<li class='font-normal text-lg relative w-fit'>
+				<p class="text-xl font-bold">{day}</p>
+				{events.map(event => (
+					<a class='block group' href={`/${query}/${event.id}`}>
+						<p class={` ${textColor} font-normal px-2 group-hover:bg-white transition-[background-color] duration-200 `}>{event.name}</p>
+					</a>
+				))}
+			</li>
+		))
+	}
 </ul>
