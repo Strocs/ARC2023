@@ -1,9 +1,11 @@
 ---
+import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title='Ups! Página no encontrada'>
+	<Header />
 	<main class='flex items-center justify-center h-screen'>
-		<h1 class=''>Ups! Nuestros robots aún no trabajan en la página que buscabas</h1>
+		<h1 class='text-xl text-slate-900'>Ups! Nuestros robots aún no trabajan en la página que buscabas</h1>
 	</main>
 </Layout>
