@@ -7,7 +7,7 @@ const { backgroundColor, borderColor } = Astro.props
 		<section class={`flex flex-col gap-6 w-full max-w-2xl p-10 border-8 ${borderColor} bg-stone-100 text-slate-900`}>
 			<slot name='first-section' />
 		</section>
-		<section class={`flex flex-col h-fit gap-8 ${backgroundColor} w-full max-w-sm p-10 justify-self-end relative`}>
+		<section class={`flex flex-col h-fit gap-8 bg-stone-100 border-8 ${borderColor} text-slate-900 w-full max-w-sm p-10 justify-self-end relative`}>
 			<slot name='second-section' />
 		</section>
 	</article>
