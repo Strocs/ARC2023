@@ -42,7 +42,8 @@ const { backgroundColor = 'bg-main', hoverTextColor = 'hover:text-main', groupHo
 		})
 	})
 
-	navbar.addEventListener('transitionend', () => {
+	navbar.addEventListener('transitionend', e => {
+		if (navbar !== e.target) return
 		if (navbar.style.left === '-320px') {
 			navbar.style.opacity = '0'
 		}

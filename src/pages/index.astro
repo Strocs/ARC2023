@@ -25,28 +25,32 @@ const { title, description, locations } = ARC_2023
 			element.style.right = '0'
 			element.style.zIndex = '20'
 			element.style.opacity = '1'
-			return
+		} else {
+			element.style.zIndex = '10'
+			element.style.right = '-448px'
 		}
-		element.style.zIndex = '10'
-		element.style.right = '-448px'
 	}
-	
+
 	mapIcon.forEach((icon, index) =>
-	icon.addEventListener('click', () => {
-		locations.forEach(location => {
-			showLocationsInfo(location, false)
-		})
+		icon.addEventListener('click', () => {
+			locations.forEach(location => {
+				showLocationsInfo(location, false)
+			})
 			showLocationsInfo(locations[index], true)
 		})
 	)
 
 	locations.forEach(location => {
-		location.addEventListener('transitionend', () => {
-			if (location.style.right === '-448px') {
-				console.log(location)
-				location.style.opacity = '0'
-			}
-		})
+		location.addEventListener(
+			'transitionend',
+			e => {
+				if (location !== e.target) return
+				if (location.style.right === '-448px') {
+					location.style.opacity = '0'
+				}
+			},
+			false
+		)
 		location.querySelector('button').addEventListener('click', () => {
 			showLocationsInfo(location, false)
 		})
