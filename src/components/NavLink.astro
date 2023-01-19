@@ -1,11 +1,11 @@
 ---
 import { Icon } from 'astro-icon'
 const { href, icon } = Astro.props
-const { color = 'hover:text-main' } = Astro.props
+const { color = 'group-hover:text-main' } = Astro.props
 ---
 
 <li>
 	<a class='hover:bg-white group p-1 transition rounded-md block' href={href}>
-		<Icon name={icon} class={`text-white w-7 h-7 group-${color} transition`} />
+		<Icon name={icon} class={`text-white w-7 h-7 ${color} transition`} />
 	</a>
 </li>

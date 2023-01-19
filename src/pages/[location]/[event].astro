@@ -21,14 +21,14 @@ const { location: locationId, event: eventId } = Astro.props
 const eventInfo = getEventById(eventId)
 const locationInfo = getLocationById(locationId)
 const { name, image, links, description, extra } = eventInfo
-const { backgroundColor, textColor, title, locationImage } = locationInfo
+const { styles, title, locationImage } = locationInfo
 
 const descriptionSplited = description.split('\n')
 ---
 
 <Layout title={`ARC 2023 | ${name}`}>
-	<Header backgroundColor={backgroundColor} textColor={textColor} />
-	<PageContainer color={backgroundColor}>
+	<Header backgroundColor={styles.backgroundColor} hoverTextColor={styles.hoverTextColor} groupHoverTextColor={styles.groupHoverTextColor} />
+	<PageContainer backgroundColor={styles.backgroundColor} borderColor={styles.borderColor}>
 		<Fragment slot='first-section'>
 			<Title>{name}</Title>
 			{!!extra.subTitle && <span class='-mt-4 text-sm'>{extra.subTitle}</span>}
@@ -47,7 +47,15 @@ const descriptionSplited = description.split('\n')
 			}
 			<img width='576px' class='w-full h-fit object-contain' src={image.url} alt={image.alt} />
 			<div class='flex flex-col gap-4'>
-				{descriptionSplited.map(description => <p class='font-normal text-justify'>{description}</p>)}
+				{
+					descriptionSplited.map(description => (
+						<p class='font-normal text-justify'>
+							{description.split('\b')[0]}
+							<b>{!!description.split('\b')[1] && description.split('\b')[1]}</b>
+							{!!description.split('\b')[2] && description.split('\b')[2]}
+						</p>
+					))
+				}
 			</div>
 			{
 				extra.list.length !== 0 && (
@@ -65,10 +73,10 @@ const descriptionSplited = description.split('\n')
 			}
 		</Fragment>
 		<Fragment slot='second-section'>
-			<img class='absolute -top-12 w-32 left-0 ml-5' src={locationImage.url} alt='' />
-			<h2 class='text-4xl leading-6 font-bold'>{title}</h2>
+			<img class='absolute -top-14 w-28 -left-4' src={locationImage.url} alt='' />
+			<h2 class='text-5xl leading-9 font-bold'>En {title}</h2>
 			<EventsList query={locationId} />
-			<BackButton textColor={textColor} Element='a' link={`/${locationId}`} />
+			<BackButton groupHoverTextColor={styles.groupHoverTextColor} Element='a' link={`/${locationId}`} />
 		</Fragment>
 	</PageContainer>
 </Layout>

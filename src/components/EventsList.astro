@@ -2,7 +2,7 @@
 import { getScheduleByLocationId, getLocationById } from '../utils'
 const { query } = Astro.props
 const schedule = getScheduleByLocationId(query)
-const { backgroundColor, textColor } = getLocationById(query)
+const { styles } = getLocationById(query)
 
 ---
 
@@ -13,7 +13,7 @@ const { backgroundColor, textColor } = getLocationById(query)
 				<p class="text-xl font-bold">{day}</p>
 				{events.map(event => (
 					<a class='block group' href={`/${query}/${event.id}`}>
-						<p class={` ${textColor} font-normal px-2 group-hover:bg-white transition-[background-color] duration-200 `}>{event.name}</p>
+						<p class={` ${styles.hoverTextColor} font-normal px-3 group-hover:bg-white transition-[background-color] duration-200 `}>{event.name}</p>
 					</a>
 				))}
 			</li>

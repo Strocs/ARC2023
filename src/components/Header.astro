@@ -4,7 +4,7 @@ import Navbar from './Navbar.astro'
 import SocialNetworks from './SocialNetworks.astro'
 import ToggleMenuButton from './ToggleMenuButton.astro'
 
-const { backgroundColor = 'bg-main', textColor = 'hover:text-main' } = Astro.props
+const { backgroundColor = 'bg-main', hoverTextColor = 'hover:text-main', groupHoverTextColor = 'group-hover:text-main' } = Astro.props
 ---
 
 <header>
@@ -14,9 +14,9 @@ const { backgroundColor = 'bg-main', textColor = 'hover:text-main' } = Astro.pro
 			<LogoWithText />
 			<div class='items-center gap-3 hidden md:flex -ml-24'>
 				<p class='w-full'>Descarga el programa aquí:</p>
-				<button class={`text-white outline outline-2 hover:outline-none py-1 px-3 font-normal hover:bg-white ${textColor} transition-all`}>Programa</button>
+				<button class={`text-white outline outline-2 hover:outline-none py-1 px-3 font-normal hover:bg-white ${hoverTextColor} transition-all`}>Programa</button>
 			</div>
-			<SocialNetworks color={textColor} />
+			<SocialNetworks color={groupHoverTextColor} />
 		</div>
 		<ToggleMenuButton id='menu-mobile' />
 	</div>
@@ -27,8 +27,8 @@ const { backgroundColor = 'bg-main', textColor = 'hover:text-main' } = Astro.pro
 	const menu = document.querySelectorAll('input')
 	const navbar = document.getElementById('navbar')
 
-	function showNavBar(value) {
-		if (value) {
+	function showNavBar(show) {
+		if (show) {
 			navbar.style.left = '0'
 			navbar.style.opacity = '1'
 		} else {
