@@ -1,0 +1,74 @@
+---
+import { Icon } from 'astro-icon'
+import BackButton from '../../components/BackButton.astro'
+import EventsList from '../../components/EventsList.astro'
+import Header from '../../components/Header.astro'
+import PageContainer from '../../components/PageContainer.astro'
+import Title from '../../components/Title.astro'
+import Layout from '../../layouts/Layout.astro'
+import { getEventById, getEventsPath, getLocationById } from '../../utils/'
+
+export function getStaticPaths() {
+	const eventsPath = getEventsPath()
+	return eventsPath.map(eventPath => ({
+		params: { location: eventPath.location, event: eventPath.event },
+		props: { ...eventPath },
+	}))
+}
+
+const { location: locationId, event: eventId } = Astro.props
+
+const eventInfo = getEventById(eventId)
+const locationInfo = getLocationById(locationId)
+const { name, image, links, description, extra } = eventInfo
+const { backgroundColor, textColor, title, locationImage } = locationInfo
+
+const descriptionSplited = description.split('\n')
+---
+
+<Layout title={`ARC 2023 | ${name}`}>
+	<Header backgroundColor={backgroundColor} textColor={textColor} />
+	<PageContainer color={backgroundColor}>
+		<Fragment slot='first-section'>
+			<Title>{name}</Title>
+			{!!extra.subTitle && <span class='-mt-4 text-sm'>{extra.subTitle}</span>}
+			{
+				links.lenght !== 0 && (
+					<ul class='flex gap-2'>
+						{links.map(link => (
+							<li>
+								<a href={link.url}>
+									<Icon class='h-6 w-6' name={`mdi:${link.name}`} />
+								</a>
+							</li>
+						))}
+					</ul>
+				)
+			}
+			<img width='576px' class='w-full h-fit object-contain' src={image.url} alt={image.alt} />
+			<div class='flex flex-col gap-4'>
+				{descriptionSplited.map(description => <p class='font-normal text-justify'>{description}</p>)}
+			</div>
+			{
+				extra.list.length !== 0 && (
+					<ul>
+						{extra.list.map(items => (
+							<>
+								<li class='text-xl font-bold'>{items.title}</li>
+								{items.text.map(item => (
+									<li class='font-normal'>{item}</li>
+								))}
+							</>
+						))}
+					</ul>
+				)
+			}
+		</Fragment>
+		<Fragment slot='second-section'>
+			<img class='absolute -top-12 w-32 left-0 ml-5' src={locationImage.url} alt='' />
+			<h2 class='text-4xl leading-6 font-bold'>{title}</h2>
+			<EventsList query={locationId} />
+			<BackButton textColor={textColor} Element='a' link={`/${locationId}`} />
+		</Fragment>
+	</PageContainer>
+</Layout>

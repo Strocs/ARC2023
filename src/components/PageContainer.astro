@@ -1,0 +1,14 @@
+---
+const { color } = Astro.props
+---
+
+<main class={`flex w-full h-full min-h-screen bg-texture bg-xl`}>
+	<article class='flex py-28 gap-10 mx-auto max-w-7xl w-full justify-center flex-wrap relative'>
+		<section class={`flex flex-col gap-6 w-full max-w-2xl p-10 border-8 ${color.replace('bg-', 'border-')} bg-stone-100 text-slate-900`}>
+			<slot name='first-section' />
+		</section>
+		<section class={`flex flex-col h-fit gap-8 ${color} w-full max-w-sm p-10 justify-self-end relative`}>
+			<slot name='second-section' />
+		</section>
+	</article>
+</main>
