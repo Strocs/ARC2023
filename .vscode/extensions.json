@@ -1,4 +1,9 @@
 {
-  "recommendations": ["astro-build.astro-vscode"],
-  "unwantedRecommendations": []
+  "unwantedRecommendations": [],
+    "recommendations": [
+      "astro-build.astro-vscode",
+      "esbenp.prettier-vscode",
+      "usernamehw.errorlens",
+      "dbaeumer.vscode-eslint",
+    ]
 }

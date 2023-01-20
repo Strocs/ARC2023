@@ -4,17 +4,26 @@ import Navbar from './Navbar.astro'
 import SocialNetworks from './SocialNetworks.astro'
 import ToggleMenuButton from './ToggleMenuButton.astro'
 
-const { backgroundColor = 'bg-main', hoverTextColor = 'hover:text-main', groupHoverTextColor = 'group-hover:text-main' } = Astro.props
+const {
+	backgroundColor = 'bg-main',
+	hoverTextColor = 'hover:text-main',
+	groupHoverTextColor = 'group-hover:text-main'
+} = Astro.props
 ---
 
 <header>
-	<div class={`flex w-full items-center justify-between sm:justify-start sm:gap-14 fixed top-0 ${backgroundColor} bg-xl sm:px-14 px-4 py-2 z-50`}>
+	<div
+		class={`flex w-full items-center justify-between sm:justify-start sm:gap-14 fixed top-0 ${backgroundColor} bg-xl sm:px-14 px-4 py-2 z-50`}
+	>
 		<ToggleMenuButton left id='menu' />
 		<div class='flex text-white justify-between w-full'>
 			<LogoWithText />
 			<div class='items-center gap-3 hidden md:flex -ml-24'>
 				<p class='w-full'>Descarga el programa aquí:</p>
-				<button class={`text-white outline outline-2 hover:outline-none py-1 px-3 font-normal hover:bg-white ${hoverTextColor} transition-all`}>Programa</button>
+				<button
+					class={`text-white outline outline-2 hover:outline-none py-1 px-3 font-normal hover:bg-white ${hoverTextColor} transition-all`}
+					>Programa</button
+				>
 			</div>
 			<SocialNetworks color={groupHoverTextColor} />
 		</div>
@@ -36,18 +45,20 @@ const { backgroundColor = 'bg-main', hoverTextColor = 'hover:text-main', groupHo
 		}
 	}
 
-	navbar.querySelectorAll('a').forEach(anchor => {
+	navbar.querySelectorAll('a').forEach((anchor) => {
 		anchor.addEventListener('click', () => {
 			showNavBar(false)
 		})
 	})
 
-	navbar.addEventListener('transitionend', e => {
+	navbar.addEventListener('transitionend', (e) => {
 		if (navbar !== e.target) return
 		if (navbar.style.left === '-320px') {
 			navbar.style.opacity = '0'
 		}
 	})
 
-	menu.forEach(el => el.addEventListener('change', e => (e.target.checked ? showNavBar(true) : showNavBar(false))))
+	menu.forEach((el) =>
+		el.addEventListener('change', (e) => (e.target.checked ? showNavBar(true) : showNavBar(false)))
+	)
 </script>

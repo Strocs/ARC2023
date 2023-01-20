@@ -1,6 +1,6 @@
 export const MUNICIPAL = {
-	id: 'teatro-municipal',
-	title: 'Teatro Municipal',
+	id: 'teatro-municipal-de-la-serena',
+	title: 'Teatro Municipal de La Serena',
 	address: '',
 	extract: '',
 	description: '',
@@ -9,17 +9,19 @@ export const MUNICIPAL = {
 		backgroundColor: 'bg-purple',
 		textColor: 'text-purple',
 		hoverTextColor: 'hover:text-purple',
+		hoverBackgroundColor: 'hover:bg-purple',
 		groupHoverTextColor: 'group-hover:text-purple',
-		borderColor: 'border-purple',
+		groupHoverBackgroundColor: 'group-hover:bg-purple',
+		borderColor: 'border-purple'
 	},
 	locationImage: {
-		url: '',
-		position: { top: '28%', left: '68%' },
+		url: '/municipal/municipal.svg',
+		position: { top: '28%', left: '68%' }
 	},
 	schedule: {
-		byTime: [{ time: '', events: [] }],
-		byDays: [],
-	},
+		byTime: [{ day: '', events: [] }],
+		byDays: []
+	}
 }
 
 // artists: [

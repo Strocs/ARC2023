@@ -1,10 +1,9 @@
 ---
-import Centenario from './icons/Centenario.astro';
 import Mapa from './icons/Mapa.astro'
 import MapPins from './MapPins.astro'
 ---
 
-<section id="map-container" class='w-screen h-screen relative'>
+<section id='map-container' class='w-screen h-screen relative'>
 	<div id='map' class='absolute top-0 right-0 left-0 bottom-0 origin-top-left touch-none'>
 		<Mapa />
 		<MapPins />
@@ -15,7 +14,7 @@ import MapPins from './MapPins.astro'
 	function getXY(obj) {
 		return {
 			x: obj.pageX,
-			y: obj.pageY,
+			y: obj.pageY
 		}
 	}
 
@@ -28,12 +27,12 @@ import MapPins from './MapPins.astro'
 	function getMidpoint(point1, point2) {
 		return {
 			x: (point1.x + point2.x) / 2,
-			y: (point1.y + point2.y) / 2,
+			y: (point1.y + point2.y) / 2
 		}
 	}
 
 	function getPoints(event) {
-		return event.touches ? [...event.touches].map(touch => getXY(touch)) : [getXY(event)]
+		return event.touches ? [...event.touches].map((touch) => getXY(touch)) : [getXY(event)]
 	}
 
 	class PanZoom {
@@ -50,7 +49,7 @@ import MapPins from './MapPins.astro'
 			// Ideally these would use public class fields, but around 1.7% of users
 			// are on old Safari versions that don't support them. We should be able
 			// to switch over soon.
-			this._onPointerDown = event => {
+			this._onPointerDown = (event) => {
 				if (event.type === 'mousedown' && event.button !== 0) return
 				if (!this._shouldCaptureFunc(event.target)) return
 				// event.preventDefault()
@@ -61,7 +60,7 @@ import MapPins from './MapPins.astro'
 				if (this._active === 1) this._onFirstPointerDown()
 			}
 
-			this._onPointerMove = event => {
+			this._onPointerMove = (event) => {
 				event.preventDefault()
 				const points = getPoints(event)
 				const averagePoint = points.reduce(getMidpoint)
@@ -72,7 +71,9 @@ import MapPins from './MapPins.astro'
 				this._dy += averagePoint.y - averageLastPoint.y
 
 				if (points[1]) {
-					const scaleDiff = touchDistance(points[0], points[1]) / touchDistance(this._lastPoints[0], this._lastPoints[1])
+					const scaleDiff =
+						touchDistance(points[0], points[1]) /
+						touchDistance(this._lastPoints[0], this._lastPoints[1])
 					this._scale *= scaleDiff
 					this._dx -= (averagePoint.x - left) * (scaleDiff - 1)
 					this._dy -= (averagePoint.y - top) * (scaleDiff - 1)
@@ -82,7 +83,7 @@ import MapPins from './MapPins.astro'
 				this._lastPoints = points
 			}
 
-			this._onPointerUp = event => {
+			this._onPointerUp = (event) => {
 				event.preventDefault()
 				this._active--
 				this._lastPoints.pop()
@@ -100,10 +101,10 @@ import MapPins from './MapPins.astro'
 
 			// bound events
 			eventArea.addEventListener('mousedown', this._onPointerDown)
-			eventArea.addEventListener('touchstart', this._onPointerDown, {passive: true})
+			eventArea.addEventListener('touchstart', this._onPointerDown, { passive: true })
 
 			// unbound
-			eventArea.addEventListener('wheel', event => this._onWheel(event), {passive: true})
+			eventArea.addEventListener('wheel', (event) => this._onWheel(event), { passive: true })
 		}
 
 		reset() {
@@ -152,14 +153,12 @@ import MapPins from './MapPins.astro'
 		}
 	}
 
-
 	const map = document.querySelector('#map')
 	const svgContainer = document.querySelector('#map-container')
 
-	new PanZoom(map, {
-		eventArea: svgContainer,
+	PanZoom(map, {
+		eventArea: svgContainer
 	})
-
 </script>
 
 <!-- <script>
@@ -174,12 +173,11 @@ import MapPins from './MapPins.astro'
 	// let limitY = window.innerHeight - image.height
 	let maxZoom = 1.46
 	let minZoom = .8
-	
-	
+
 	function setTransform() {
 		map.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`
 	}
-	
+
 	setTransform()
 	// function setLimits() {
 	// 	limitX = window.innerWidth - image.width * scale

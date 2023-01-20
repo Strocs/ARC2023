@@ -9,16 +9,17 @@ export const ESTACIONAMIENTO = {
 		backgroundColor: 'bg-orange',
 		textColor: 'text-orange',
 		hoverTextColor: 'hover:text-orange',
+		hoverBackgroundColor: 'hover:bg-orange',
 		groupHoverTextColor: 'group-hover:text-orange',
-		borderColor: 'border-orange',
-		
+		groupHoverBackgroundColor: 'group-hover:bg-orange',
+		borderColor: 'border-orange'
 	},
 	locationImage: {
-		url: '',
-		position: { top: '56%', left: '53%' },
+		url: '/estacionamiento/estacionamiento.svg',
+		position: { top: '56%', left: '53%' }
 	},
 	schedule: {
-		byTime: [{ time: '', events: [] }],
-		byDays: [],
-	},
+		byTime: [{ day: '', events: [] }],
+		byDays: []
+	}
 }

@@ -9,15 +9,17 @@ export const SANTA_INES = {
 		backgroundColor: 'bg-yellow',
 		textColor: 'text-yellow',
 		hoverTextColor: 'hover:text-yellow',
+		hoverBackgroundColor: 'hover:bg-yellow',
 		groupHoverTextColor: 'group-hover:text-yellow',
-		borderColor: 'border-yellow',
+		groupHoverBackgroundColor: 'group-hover:bg-yellow',
+		borderColor: 'border-yellow'
 	},
 	locationImage: {
 		url: '/santa-ines/santa-ines.svg',
-		position: { top: '59.5%', left: '14%' },
+		position: { top: '59.5%', left: '14%' }
 	},
 	schedule: {
-		byTime: [{ time: '', events: [] }],
-		byDays: [],
-	},
+		byTime: [{ day: '', events: [] }],
+		byDays: []
+	}
 }

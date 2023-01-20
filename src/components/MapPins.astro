@@ -4,5 +4,13 @@ import Pins from './Pins.astro'
 const { locations } = ARC_2023
 ---
 
-{locations.map(location => <Pins position={location.locationImage.position} id={location.id} img={location.locationImage.url} title={location.title} />)}
-
+{
+	locations.map((location) => (
+		<Pins
+			position={location.locationImage.position}
+			id={location.id}
+			img={location.locationImage.url}
+			title={location.title}
+		/>
+	))
+}

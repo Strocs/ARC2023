@@ -5,6 +5,6 @@ export function getEventsByLocationId(query) {
 	if (location.schedule.byTime.length !== 0) {
 		return location.schedule.byTime.events
 	} else if (location.schedule.byDays.length !== 0) {
-		return location.schedule.byDays.flatMap(day => day.events)
+		return location.schedule.byDays.flatMap((day) => day.events)
 	}
 }

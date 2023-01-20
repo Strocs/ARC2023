@@ -9,26 +9,34 @@ import Header from '../components/Header.astro'
 
 export function getStaticPaths() {
 	const { locations } = ARC_2023
-	return locations.map(location => ({
+	return locations.map((location) => ({
 		params: { location: location.id },
-		props: { ...location },
+		props: { ...location }
 	}))
 }
 
-const { id, title, address, description, links, styles, locationImage, schedule } = Astro.props
+const { id, title, address, description, links, styles, locationImage } = Astro.props
 
 const descriptionSplited = description.split('\n')
 ---
 
 <Layout title={`ARC 2023 | ${title}`}>
-	<Header backgroundColor={styles.backgroundColor} hoverTextColor={styles.hoverTextColor} groupHoverTextColor={styles.groupHoverTextColor} />
+	<Header
+		backgroundColor={styles.backgroundColor}
+		hoverTextColor={styles.hoverTextColor}
+		groupHoverTextColor={styles.groupHoverTextColor}
+	/>
 	<PageContainer backgroundColor={styles.backgroundColor} borderColor={styles.borderColor}>
 		<Fragment slot='first-section'>
 			<Title>{title}</Title>
 			<span class='leading-none -mt-4 font-medium'>{address}</span>
 			<img src={locationImage.url} alt='' />
 			<div class='flex flex-col gap-4'>
-				{descriptionSplited.map(description => <p class='font-normal text-justify'>{description}</p>)}
+				{
+					descriptionSplited.map((description) => (
+						<p class='font-normal text-justify'>{description}</p>
+					))
+				}
 			</div>
 			<div class='flex gap-1'>
 				<p>{links.title}</p>
