@@ -4,7 +4,7 @@ export const SANTA_INES = {
 	address: '',
 	extract: '',
 	description: '',
-	links: [{ name: '', url: '' }],
+	links: [],
 	styles: {
 		backgroundColor: 'bg-yellow',
 		textColor: 'text-yellow',

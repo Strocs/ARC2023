@@ -4,7 +4,7 @@ export const MUSEO = {
 	address: '',
 	extract: '',
 	description: '',
-	links: [{ name: '', url: '' }],
+	links: [],
 	styles: {
 		backgroundColor: 'bg-blue',
 		textColor: 'text-blue',
