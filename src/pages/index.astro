@@ -20,12 +20,16 @@ const { title, description, locations } = ARC_2023
 <script type='module'>
 	const mapIcon = document.getElementById('map').querySelectorAll('#image-button')
 	const locations = document.querySelectorAll('[aria-label="location-info"]')
+	const header = document.querySelector('header').querySelector('div')
+
 	function showLocationsInfo(element, show) {
 		if (show) {
+			header.classList.add(element.classList[0])
 			element.style.right = '0'
 			element.style.zIndex = '20'
 			element.style.opacity = '1'
 		} else {
+			header.classList.remove(element.classList[0])
 			element.style.zIndex = '10'
 			element.style.right = '-448px'
 		}
