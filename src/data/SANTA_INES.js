@@ -4,7 +4,7 @@ export const SANTA_INES = {
 	address: '',
 	extract: '',
 	description: '',
-	links: { title: '', url: '' },
+	links: [{ name: '', url: '' }],
 	styles: {
 		backgroundColor: 'bg-yellow',
 		textColor: 'text-yellow',
@@ -14,12 +14,9 @@ export const SANTA_INES = {
 		groupHoverBackgroundColor: 'group-hover:bg-yellow',
 		borderColor: 'border-yellow'
 	},
-	locationImage: {
+	image: {
 		url: '/santa-ines/santa-ines.svg',
 		position: { top: '59.5%', left: '14%' }
 	},
-	schedule: {
-		byTime: [{ day: '', events: [] }],
-		byDays: []
-	}
+	schedule: []
 }

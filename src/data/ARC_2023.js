@@ -1,7 +1,7 @@
 import {
-	CASA_GAVIOTA,
+	GAVIOTA,
 	CENTENARIO,
-	PLAZA,
+	FRONTIS,
 	MUSEO,
 	ESTACIONAMIENTO,
 	SANTA_INES,
@@ -25,14 +25,5 @@ export const ARC_2023 = {
 		{ url: 'https://www.facebook.com/FestivalARC', name: 'facebook' },
 		{ url: 'https://twitter.com/FestivalARC', name: 'twitter' }
 	],
-	locations: [
-		CENTENARIO,
-		CASA_GAVIOTA,
-		PLAZA,
-		MUSEO,
-		ESTACIONAMIENTO,
-		SANTA_INES,
-		MUNICIPAL,
-		AZOTEA
-	]
+	locations: [CENTENARIO, GAVIOTA, FRONTIS, MUSEO, ESTACIONAMIENTO, SANTA_INES, MUNICIPAL, AZOTEA]
 }

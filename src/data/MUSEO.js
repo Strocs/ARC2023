@@ -4,7 +4,7 @@ export const MUSEO = {
 	address: '',
 	extract: '',
 	description: '',
-	links: { title: '', url: '' },
+	links: [{ name: '', url: '' }],
 	styles: {
 		backgroundColor: 'bg-blue',
 		textColor: 'text-blue',
@@ -14,16 +14,9 @@ export const MUSEO = {
 		groupHoverBackgroundColor: 'group-hover:bg-blue',
 		borderColor: 'border-blue'
 	},
-	locationImage: {
+	image: {
 		url: '/arqueologico/arqueologico.svg',
 		position: { top: '42%', left: '72%' }
 	},
-	schedule: {
-		byTime: [],
-		byDays: [
-			{ day: '', events: [] },
-			{ day: '', events: [] },
-			{ day: '', events: [] }
-		]
-	}
+	schedule: [{ day: '', events: [] }]
 }
