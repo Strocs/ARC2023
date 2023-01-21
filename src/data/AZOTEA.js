@@ -102,7 +102,7 @@ export const AZOTEA = {
 					description:
 						'Hola me llamo Niño Pan, me dedico a la ilustración digital y no sabría muy bien cómo definir mi estilo pero diría que es un tanto variable pero a la vez reconocible, dependiendo de lo que quiero dibujar, aplico distintas formas de trazado y coloreado.\nPor lo general lo que me inspira a dibujar son cosas que me pasan, que siento, que pienso, los espacios que habito, algunas personas que quiero, perritos que andan por la calle, la tristeza, los besitos, dudas existenciales y otras más. 🙂',
 
-					list: [{ title: 'Contacto:', text: '+569 76730830' }]
+					list: [{ title: 'Contacto:', text: ['+56 9 76730830'] }]
 				},
 				{
 					id: 'blue-straycatt-art',

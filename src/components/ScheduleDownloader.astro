@@ -1,0 +1,10 @@
+---
+const { hoverTextColor, mobile } = Astro.props
+---
+
+<div class={`gap-3 items-center ${mobile ? 'flex md:hidden' : 'hidden md:flex'}`}>
+	<button
+		class={`text-white outline outline-2 hover:outline-none py-1 px-3 font-normal hover:bg-white ${hoverTextColor} transition-all`}
+		>Descarga el programa</button
+	>
+</div>

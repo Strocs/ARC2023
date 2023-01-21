@@ -1,16 +1,25 @@
 ---
+import { Icon } from 'astro-icon'
 import { ARC_2023 } from '../data/ARC_2023'
-import NavLink from './NavLink.astro'
 const { socialNetwork } = ARC_2023
 
-const { color } = Astro.props
+const { groupHoverTextColor, mobile } = Astro.props
 ---
 
-<ul class='gap-3 items-center hidden lg:flex'>
-	<li>Síguenos:</li>
-	{
-		socialNetwork.map((social) => (
-			<NavLink color={color} href={social.url} icon={`mdi:${social.name}`} />
-		))
-	}
-</ul>
+<div class={`gap-3 items-center ${mobile ? 'flex lg:hidden' : 'hidden lg:flex'}`}>
+	<p>Síguenos:</p>
+	<ul class='flex gap-1'>
+		{
+			socialNetwork.map((social) => (
+				<li>
+					<a class='hover:bg-white group p-1 transition block' href={social.url}>
+						<Icon
+							name={`mdi:${social.name}`}
+							class={`text-white w-7 h-7 ${groupHoverTextColor} transition`}
+						/>
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</div>

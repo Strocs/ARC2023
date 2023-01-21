@@ -2,10 +2,12 @@
 const { borderColor } = Astro.props
 ---
 
-<main class={'flex w-full h-full min-h-screen bg-texture bg-xl'}>
-	<article class='flex py-28 gap-10 mx-auto max-w-7xl w-full justify-center flex-wrap relative'>
+<main class='flex w-full h-full min-h-screen bg-texture bg-md'>
+	<article
+		class='flex py-28 gap-10 mx-auto max-w-7xl w-full px-4 justify-center flex-wrap relative'
+	>
 		<section
-			class={`flex flex-col gap-6 w-full max-w-2xl p-10 border-8 ${borderColor} bg-stone-100 text-slate-900`}
+			class={`flex flex-col gap-4 w-full max-w-2xl p-10 border-8 ${borderColor} bg-stone-100 text-slate-900`}
 		>
 			<slot name='first-section' />
 		</section>

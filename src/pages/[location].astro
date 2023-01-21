@@ -31,7 +31,7 @@ const { id, title, address, extract, description, links, styles, image } = Astro
 	<PageContainer backgroundColor={styles.backgroundColor} borderColor={styles.borderColor}>
 		<Fragment slot='first-section'>
 			<Title>{title}</Title>
-			<span class='leading-none -mt-3 font-medium'>{address}</span>
+			<span class='leading-none font-normal sm:font-medium'>{address}</span>
 			<Contacts links={links} hoverTextColor={styles.hoverTextColor} />
 			<Image url={image.url} alt={image.alt} />
 			<Paragraph description={description} />

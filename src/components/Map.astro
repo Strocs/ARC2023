@@ -156,11 +156,9 @@ import MapPins from './MapPins.astro'
 	const map = document.querySelector('#map')
 	const svgContainer = document.querySelector('#map-container')
 
-	const launch = new PanZoom(map, {
+	new PanZoom(map, {
 		eventArea: svgContainer
 	})
-
-	launch()
 </script>
 
 <!-- <script>

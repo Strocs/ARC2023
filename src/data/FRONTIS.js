@@ -110,8 +110,8 @@ export const FRONTIS = {
 			day: 'Domingo 12',
 			events: [
 				{
-					id: 'calle-obra-de-circo-contemporaneo',
-					name: 'Calle, obra de circo contemporáneo',
+					id: 'calle',
+					name: 'Calle',
 					subTitle: {},
 					category: 'Circo',
 					time: '',
