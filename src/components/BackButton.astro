@@ -1,26 +1,10 @@
 ---
-import { Icon } from 'astro-icon'
-
-const {
-	groupHoverTextColor = 'group-hover:text-white',
-	hoverBackgroundColor = 'hover:bg-white',
-	link,
-	Element
-} = Astro.props
+const { hoverBackgroundColor = 'hover:bg-white', link, Element } = Astro.props
 ---
 
 <Element
 	href={link}
 	class={`${hoverBackgroundColor} group px-2 gap-1 py-1 w-fit transition-all duration-200 cursor-pointer flex  items-center self-end`}
 >
-	<p class={`inline ${groupHoverTextColor}`}>
-		{Element === 'a' ? 'Volver' : 'Cerrar'}
-	</p>
-	{
-		Element === 'a' ? (
-			<Icon class={`inline h-5 ${groupHoverTextColor}`} name='mdi:arrow-u-left-top' />
-		) : (
-			<Icon class={`inline h-6 ${groupHoverTextColor}`} name='mdi:arrow-right' />
-		)
-	}
+	<slot />
 </Element>

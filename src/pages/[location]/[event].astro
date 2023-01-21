@@ -6,6 +6,9 @@ import Header from '../../components/Header.astro'
 import PageContainer from '../../components/PageContainer.astro'
 import Title from '../../components/Title.astro'
 import Layout from '../../layouts/Layout.astro'
+import Paragraph from '../../components/Paragraph.astro'
+import Contacts from '../../components/Contacts.astro'
+import Image from '../../components/Image.astro'
 import { getEventById, getEventsPath, getLocationById } from '../../utils/'
 
 export function getStaticPaths() {
@@ -20,13 +23,12 @@ const { location: locationId, event: eventId } = Astro.props
 
 const eventInfo = getEventById(eventId)
 const locationInfo = getLocationById(locationId)
-const { name, image, links, description, extra } = eventInfo
-const { styles, title, locationImage } = locationInfo
 
-const descriptionSplited = description.split('\n')
+const { name, image, links, description, subTitle, list } = eventInfo
+const { styles, title } = locationInfo
 ---
 
-<Layout title={`ARC 2023 | ${name}`}>
+<Layout title={`ARC 2023 | ${name}`} description={description}>
 	<Header
 		backgroundColor={styles.backgroundColor}
 		hoverTextColor={styles.hoverTextColor}
@@ -35,39 +37,24 @@ const descriptionSplited = description.split('\n')
 	<PageContainer backgroundColor={styles.backgroundColor} borderColor={styles.borderColor}>
 		<Fragment slot='first-section'>
 			<Title>{name}</Title>
-			{!!extra.subTitle && <span class='-mt-4 text-sm'>{extra.subTitle}</span>}
 			{
-				links.lenght !== 0 && (
-					<ul class='flex gap-2'>
-						{links.map((link) => (
-							<li>
-								<a href={link.url}>
-									<Icon class='h-6 w-6' name={`mdi:${link.name}`} />
-								</a>
-							</li>
-						))}
-					</ul>
+				Object.keys(subTitle).length !== 0 && (
+					<p class='-mt-3 text-md'>
+						<b>{subTitle.title}</b>
+						{subTitle.text}
+					</p>
 				)
 			}
-			<img width='576px' class='w-full h-fit object-contain' src={image.url} alt={image.alt} />
-			<div class='flex flex-col gap-4'>
-				{
-					descriptionSplited.map((description) => (
-						<p class='font-normal text-justify'>
-							{description.split('\b')[0]}
-							<b>{!!description.split('\b')[1] && description.split('\b')[1]}</b>
-							{!!description.split('\b')[2] && description.split('\b')[2]}
-						</p>
-					))
-				}
-			</div>
+			<Contacts links={links} hoverTextColor={styles.hoverTextColor} />
+			<Image url={image.url} alt={image.alt} />
+			<Paragraph description={description} />
 			{
-				extra.list.length !== 0 && (
+				list.length !== 0 && (
 					<ul>
-						{extra.list.map((items) => (
+						{list.map((items) => (
 							<>
-								<li class='text-xl font-bold'>{items.title}</li>
-								{items.text.map((item) => (
+								<li class='text-lg font-bold mt-2'>{items.title}</li>
+								{items.text.map((item: string) => (
 									<li class='font-normal'>{item}</li>
 								))}
 							</>
@@ -79,14 +66,17 @@ const descriptionSplited = description.split('\n')
 		<Fragment slot='second-section'>
 			<div class='flex items-center'>
 				<h2 class='text-4xl leading-9 font-bold'>En {title}</h2>
-				<img class='h-20' src={locationImage.url} alt='' />
+				<!-- <img class='h-20' src={locationImage.url} alt={locationImage.url} /> -->
 			</div>
 			<Schedule locationId={locationId} eventId={eventId} />
 			<BackButton
 				hoverBackgroundColor={styles.hoverBackgroundColor}
 				Element='a'
 				link={`/${locationId}`}
-			/>
+			>
+				<p class='inline group-hover:text-white'>Volver</p>
+				<Icon class='inline h-5 group-hover:text-white' name='mdi:arrow-u-left-top' />
+			</BackButton>
 		</Fragment>
 	</PageContainer>
 </Layout>

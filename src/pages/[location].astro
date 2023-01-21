@@ -1,11 +1,15 @@
 ---
+import { Icon } from 'astro-icon'
+import { ARC_2023 } from '../data/ARC_2023'
 import Layout from '../layouts/Layout.astro'
 import Title from '../components/Title.astro'
 import Schedule from '../components/Schedule.astro'
-import { ARC_2023 } from '../data/ARC_2023'
 import BackButton from '../components/BackButton.astro'
 import PageContainer from '../components/PageContainer.astro'
 import Header from '../components/Header.astro'
+import Paragraph from '../components/Paragraph.astro'
+import Contacts from '../components/Contacts.astro'
+import Image from '../components/Image.astro'
 
 export function getStaticPaths() {
 	const { locations } = ARC_2023
@@ -15,12 +19,10 @@ export function getStaticPaths() {
 	}))
 }
 
-const { id, title, address, description, links, styles, locationImage } = Astro.props
-
-const descriptionSplited = description.split('\n')
+const { id, title, address, extract, description, links, styles, image } = Astro.props
 ---
 
-<Layout title={`ARC 2023 | ${title}`}>
+<Layout title={`ARC 2023 | ${title}`} description={extract}>
 	<Header
 		backgroundColor={styles.backgroundColor}
 		hoverTextColor={styles.hoverTextColor}
@@ -29,24 +31,18 @@ const descriptionSplited = description.split('\n')
 	<PageContainer backgroundColor={styles.backgroundColor} borderColor={styles.borderColor}>
 		<Fragment slot='first-section'>
 			<Title>{title}</Title>
-			<span class='leading-none -mt-4 font-medium'>{address}</span>
-			<img src={locationImage.url} alt='' />
-			<div class='flex flex-col gap-4'>
-				{
-					descriptionSplited.map((description) => (
-						<p class='font-normal text-justify'>{description}</p>
-					))
-				}
-			</div>
-			<div class='flex gap-1'>
-				<p>{links.title}</p>
-				<a href={links.url}>{links.url}</a>
-			</div>
+			<span class='leading-none -mt-3 font-medium'>{address}</span>
+			<Contacts links={links} hoverTextColor={styles.hoverTextColor} />
+			<Image url={image.url} alt={image.alt} />
+			<Paragraph description={description} />
 		</Fragment>
 		<Fragment slot='second-section'>
 			<h2 class='text-5xl leading-9 font-bold'>Programa</h2>
 			<Schedule locationId={id} />
-			<BackButton hoverBackgroundColor={styles.hoverBackgroundColor} Element='a' link='/' />
+			<BackButton hoverBackgroundColor={styles.hoverBackgroundColor} Element='a' link='/'>
+				<p class='inline group-hover:text-white'>Volver</p>
+				<Icon class='inline h-5 group-hover:text-white' name='mdi:arrow-u-left-top' />
+			</BackButton>
 		</Fragment>
 	</PageContainer>
 </Layout>

@@ -1,4 +1,5 @@
 ---
+import { Icon } from 'astro-icon'
 import { getLocationById } from '../utils/getLocationById'
 import BackButton from './BackButton.astro'
 const { query } = Astro.props
@@ -29,7 +30,10 @@ if (title.includes('Estacionamiento')) {
 			href={id}>Mira el Programa y Descubre más sobre {title}</a
 		>
 	</div>
-	<BackButton groupHoverTextColor={styles.groupHoverTextColor} Element='button' />
+	<BackButton Element='button'>
+		<p class={`inline ${styles.groupHoverTextColor}`}>Cerrar</p>
+		<Icon class={`inline h-6 ${styles.groupHoverTextColor}`} name='mdi:arrow-right' />
+	</BackButton>
 </section>
 
 <style>

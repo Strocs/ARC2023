@@ -1,0 +1,22 @@
+---
+import { Icon } from 'astro-icon'
+
+const { links, hoverTextColor } = Astro.props
+---
+
+{
+	links.lenght !== 0 && (
+		<ul class='flex gap-2'>
+			{links.map((link) => (
+				<li>
+					<a href={link.url}>
+						<Icon
+							class={`${hoverTextColor} h-6 w-6 transition-all duration-200`}
+							name={`mdi:${link.name}`}
+						/>
+					</a>
+				</li>
+			))}
+		</ul>
+	)
+}
