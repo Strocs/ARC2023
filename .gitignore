@@ -10,7 +10,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-
+design
 package-lock.json
 .vscode
 .gitignore
