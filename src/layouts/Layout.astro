@@ -1,4 +1,6 @@
 ---
+import TrackVitals from '../components/TrackVitals.astro'
+
 const { title, description } = Astro.props
 ---
 
@@ -25,8 +27,10 @@ const { title, description } = Astro.props
 		<meta property='og:image' content='/og-card.png' />
 		<meta property='og:url' content='https://www.festivalarc.cl' />
 		<meta property='og:site_name' content={title} />
+		<script defer src='/_vercel/insights/script.js'></script>
 	</head>
 	<body class='min-h-screen h-full bg-stone-200 text-white bg-texture'>
+		<TrackVitals />
 		<slot />
 	</body>
 </html>
