@@ -1,17 +1,16 @@
 name: Deploy Astro to GitHub Pages
+on:
+    push:
+        branches:
+            [main]
 
-    on:
-      push:
-        branches: [ main ]
-      workflow_dispatch:
+permissions:
+    contents: read
+    pages: write
+    id-token: write
 
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
-    jobs:
-      build:
+jobs:
+    build:
         runs-on: ubuntu-latest
         steps:
         - name: Check out your repository using git
@@ -34,7 +33,7 @@ name: Deploy Astro to GitHub Pages
           with:
             path: ./dist
 
-      deploy:
+    deploy:
         environment:
           name: github-pages
           url: ${{ steps.deployment.outputs.page_url }}
