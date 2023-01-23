@@ -1,6 +1,0 @@
-name: Astro Deploy
-  uses: Strocs/ARC2023
-  with:
-    path: 
-    node-version: 18
-    package-manager:
