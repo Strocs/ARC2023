@@ -8,6 +8,7 @@ import {
 	MUNICIPAL,
 	AZOTEA
 } from '.'
+import { CENTRO } from './CENTRO'
 
 export const ARC_2023 = {
 	title: 'Festival ARC 2023',
@@ -25,5 +26,15 @@ export const ARC_2023 = {
 		{ url: 'https://www.facebook.com/FestivalARC', name: 'facebook' },
 		{ url: 'https://twitter.com/FestivalARC', name: 'twitter' }
 	],
-	locations: [CENTENARIO, GAVIOTA, FRONTIS, MUSEO, ESTACIONAMIENTO, SANTA_INES, MUNICIPAL, AZOTEA]
+	locations: [
+		SANTA_INES,
+		GAVIOTA,
+		AZOTEA,
+		CENTENARIO,
+		CENTRO,
+		ESTACIONAMIENTO,
+		FRONTIS,
+		MUSEO,
+		MUNICIPAL
+	]
 }
