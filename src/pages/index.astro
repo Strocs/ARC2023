@@ -18,7 +18,7 @@ const { title, description, locations } = ARC_2023
 </Layout>
 
 <script type='module'>
-	const mapIcon = document.getElementById('map').querySelectorAll('#image-button')
+	const mapIcon = document.getElementById('map').querySelectorAll('.names')
 	const locations = document.querySelectorAll('[aria-label="location-info"]')
 	const header = document.querySelector('header').querySelector('div')
 
@@ -37,6 +37,14 @@ const { title, description, locations } = ARC_2023
 
 	mapIcon.forEach((icon, index) =>
 		icon.addEventListener('click', () => {
+			locations.forEach((location) => {
+				showLocationsInfo(location, false)
+			})
+			showLocationsInfo(locations[index], true)
+		})
+	)
+	mapIcon.forEach((icon, index) =>
+		icon.addEventListener('touchend', () => {
 			locations.forEach((location) => {
 				showLocationsInfo(location, false)
 			})
