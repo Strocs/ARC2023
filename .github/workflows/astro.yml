@@ -1,5 +1,5 @@
 name: Astro Deploy
-  uses: withastro/action@v0
+  uses: Strocs/ARC2023
   with:
     path: 
     node-version: 18
