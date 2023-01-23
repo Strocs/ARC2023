@@ -19,8 +19,10 @@ const {
 		<ToggleMenuButton id='menu' />
 		<div class='flex text-white justify-between w-full gap-6'>
 			<LogoWithText />
-			<ScheduleDownloader hoverTextColor={hoverTextColor} />
-			<SocialNetworks groupHoverTextColor={groupHoverTextColor} />
+			<div class='flex gap-14'>
+				<SocialNetworks groupHoverTextColor={groupHoverTextColor} />
+				<ScheduleDownloader hoverTextColor={hoverTextColor} />
+			</div>
 		</div>
 		<ToggleMenuButton mobile id='menu-mobile' />
 	</div>
