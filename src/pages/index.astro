@@ -10,7 +10,7 @@ const { title, description, locations } = ARC_2023
 
 <Layout title={title} description={description}>
 	<Header />
-	<main id='main-page' class='relative w-full h-full overflow-hidden'>
+	<main id='main-page' class='relative w-full h-full max-h-screen overflow-hidden'>
 		{locations.map((location) => <LocationInfo query={location.id} />)}
 		<Map />
 		<Controls />
