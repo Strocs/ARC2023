@@ -1,0 +1,49 @@
+---
+import { Icon } from 'astro-icon'
+
+const { styles, locationId, event, eventId } = Astro.props
+---
+
+<li
+	class={`${styles.hoverBackgroundColor} ${
+		event.id === eventId ? styles.backgroundColor : ''
+	} w-full group pl-6 transition-[background-color] py-1 duration-200 ease-in`}
+>
+	<a href={`/${locationId}/${event.id}`}>
+		<div class='flex items-center gap-1 w-full'>
+			<div class='flex items-center gap-1 w-full'>
+				<Icon
+					name='mdi:play'
+					class={`w-5 inline flex-shrink-0 ${
+						event.id === eventId ? 'text-white' : 'text-slate-400'
+					}  group-hover:text-white`}
+				/>
+				<p
+					class={`font-medium leading-4 group-hover:text-white pr-3 ${
+						event.id === eventId ? 'text-white' : 'text-slate-900'
+					}`}
+				>
+					{event.name}
+				</p>
+			</div>
+			<span
+				class={`${
+					event.id === eventId ? 'text-white' : 'text-slate-900'
+				}  font-normal text-sm block pr-2 group-hover:text-white`}
+			>
+				{event.time}
+			</span>
+		</div>
+		{
+			locationId !== 'azotea-arc' && (
+				<span
+					class={` ${
+						event.id === eventId ? 'text-white' : 'text-slate-900'
+					} font-light text-sm block -mt-1 pl-6 group-hover:text-white`}
+				>
+					{event.category}
+				</span>
+			)
+		}
+	</a>
+</li>
