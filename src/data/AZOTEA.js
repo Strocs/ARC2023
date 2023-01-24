@@ -7,7 +7,7 @@ export const AZOTEA = {
 		'Dj sets, ilustración, fotografía autoral y bandas de la Región de Coquimbo darán vida al espacio Azotea ARC, un lugar en el que las expresiones artísticas transforman un espacio no convencional en un espacio ideal para disfrutar del paso de la tarde desde una hermosa vista, como parte del concepto del Festival ARC 2023, que es transformar la forma en la que habitamos nuestra ciudad.',
 	description:
 		'Dj sets, ilustración, fotografía autoral y bandas de la Región de Coquimbo darán vida al espacio Azotea ARC, un lugar en el que las expresiones artísticas transforman un espacio no convencional en un espacio ideal para disfrutar del paso de la tarde desde una hermosa vista, como parte del concepto del Festival ARC 2023, que es transformar la forma en la que habitamos nuestra ciudad.',
-	links: [],
+	links: [{ name: 'ticket', url: 'https://www.portaldisc.com/evento/arc2023' }],
 	styles: {
 		backgroundColor: 'bg-pale-yellow',
 		textColor: 'text-pale-yellow',
@@ -23,7 +23,7 @@ export const AZOTEA = {
 	},
 	schedule: [
 		{
-			day: 'de 17:00 a 20:30hrs',
+			day: 'Sábado 11 y Domingo 12\nDe 16:00 a 20:30 horas',
 			events: [
 				{
 					id: 'anima-red',

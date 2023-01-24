@@ -4,7 +4,7 @@ export const MUSEO = {
 	address: '',
 	extract: '',
 	description: '',
-	links: [],
+	links: [{ name: 'ticket', url: 'https://www.portaldisc.com/evento/arc2023' }],
 	styles: {
 		backgroundColor: 'bg-blue',
 		textColor: 'text-blue',
