@@ -26,14 +26,14 @@ const { id, title, address, extract, description, links, styles, image } = Astro
 <Layout title={`ARC 2023 | ${title}`} description={extract}>
 	<Header
 		backgroundColor={styles.backgroundColor}
-		hoverTextColor={styles.hoverTextColor}
+		textColor={styles.textColor}
 		groupHoverTextColor={styles.groupHoverTextColor}
 	/>
 	<PageContainer backgroundColor={styles.backgroundColor} borderColor={styles.borderColor}>
 		<Fragment slot='first-section'>
 			<Title>{title}</Title>
 			<span class='leading-none font-normal sm:font-medium'>{address}</span>
-			<Contacts links={links} hoverTextColor={styles.hoverTextColor} />
+			<Contacts links={links} hoverTextColor={styles.hoverTextColor} borderColor={styles.borderColor}/>
 			<Image url={image.url} alt={image.alt} />
 			<Paragraph description={description} />
 		</Fragment>

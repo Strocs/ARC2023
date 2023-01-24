@@ -7,7 +7,7 @@ import ToggleMenuButton from './ToggleMenuButton.astro'
 
 const {
 	backgroundColor = 'bg-main',
-	hoverTextColor = 'hover:text-main',
+	textColor = 'text-main',
 	groupHoverTextColor = 'group-hover:text-main'
 } = Astro.props
 ---
@@ -21,7 +21,7 @@ const {
 			<LogoWithText />
 			<div class='flex gap-14'>
 				<SocialNetworks groupHoverTextColor={groupHoverTextColor} />
-				<ScheduleDownloader hoverTextColor={hoverTextColor} />
+				<ScheduleDownloader textColor={textColor} />
 			</div>
 		</div>
 		<ToggleMenuButton mobile id='menu-mobile' />
