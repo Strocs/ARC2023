@@ -3,6 +3,7 @@ import { Icon } from 'astro-icon'
 import BackButton from '../../components/BackButton.astro'
 import Schedule from '../../components/Schedule.astro'
 import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
 import PageContainer from '../../components/PageContainer.astro'
 import Title from '../../components/Title.astro'
 import Layout from '../../layouts/Layout.astro'
@@ -79,4 +80,5 @@ const { styles, title } = locationInfo
 			</BackButton>
 		</Fragment>
 	</PageContainer>
+	<Footer backgroundColor={styles.backgroundColor} />
 </Layout>

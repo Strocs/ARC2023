@@ -5,6 +5,7 @@ import Map from '../components/Map.astro'
 import LocationInfo from '../components/LocationInfo.astro'
 import Controls from '../components/Controls.astro'
 import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 const { title, description, locations } = ARC_2023
 ---
 
@@ -15,21 +16,25 @@ const { title, description, locations } = ARC_2023
 		<Map />
 		<Controls />
 	</main>
+	<Footer fixed />
 </Layout>
 
 <script type='module'>
 	const mapIcon = document.getElementById('map').querySelectorAll('.names')
 	const locations = document.querySelectorAll('[aria-label="location-info"]')
 	const header = document.querySelector('header').querySelector('div')
+	const footer = document.querySelector('footer')
 
 	function showLocationsInfo(element, show) {
 		if (show) {
 			header.classList.add(element.classList[0])
+			footer.classList.add(element.classList[0])
 			element.style.right = '0'
 			element.style.zIndex = '20'
 			element.style.opacity = '1'
 		} else {
 			header.classList.remove(element.classList[0])
+			footer.classList.remove(element.classList[0])
 			element.style.zIndex = '10'
 			element.style.right = '-448px'
 		}
