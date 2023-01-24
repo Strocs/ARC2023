@@ -3,7 +3,7 @@ import Mapa from './icons/Mapa.astro'
 ---
 
 <section id='map-container' class='w-screen h-screen relative'>
-	<div id='map' class='absolute top-0 right-0 left-0 bottom-0 origin-top-left touch-none'>
+	<div id='map' class='absolute w-[150%] sm:w-1/2 top-20 right-0 sm:left-0 -left-16 bottom-0 m-auto origin-top-left touch-none'>
 		<Mapa />
 	</div>
 </section>
@@ -131,7 +131,8 @@ import Mapa from './icons/Mapa.astro'
 			const scaleDiff = delta / 250 + 1
 
 			// avoid to-small values
-			if (this._scale * scaleDiff < 0.05) return
+			if (this._scale * scaleDiff < 0.8) return
+			if (this._scale * scaleDiff > 3.8) return
 
 			this._scale *= scaleDiff
 			this._dx -= (event.pageX - left) * (scaleDiff - 1)
