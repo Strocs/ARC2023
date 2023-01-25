@@ -22,7 +22,7 @@ export const CENTENARIO = {
 	},
 	schedule: [
 		{
-			day: 'Viernes 10',
+			day: 'Viernes 10\nDesde las 22:00 horas',
 			events: [
 				{
 					id: 'camila-moreno',
@@ -31,7 +31,7 @@ export const CENTENARIO = {
 					category: 'Música',
 					time: '',
 					image: {
-						url: '',
+						url: '/centenario/camila-moreno.jpg',
 						alt: 'Imagen de la artista nacional Camila Moreno'
 					},
 					links: [
@@ -56,7 +56,7 @@ export const CENTENARIO = {
 					category: 'Música',
 					time: '',
 					image: {
-						url: '/centenario/pajarxs-de-tierra.webp',
+						url: '/centenario/pajarxs.jpg',
 						alt: 'Imagen de la banda regional Pájaros de Tierra'
 					},
 					links: [
@@ -74,7 +74,7 @@ export const CENTENARIO = {
 					category: 'Música',
 					time: '',
 					image: {
-						url: '/centenario/moyanovsky.webp',
+						url: '/centenario/moyanovsky.jpg',
 						alt: 'Imagen de la banda regional Sequía'
 					},
 					links: [
@@ -89,7 +89,7 @@ export const CENTENARIO = {
 			]
 		},
 		{
-			day: 'Sábado 11',
+			day: 'Sábado 11\nDesde las 22:00 horas',
 			events: [
 				{
 					id: 'yorka',
@@ -98,7 +98,7 @@ export const CENTENARIO = {
 					category: 'Música',
 					time: '',
 					image: {
-						url: '/centenario/yorka.webp',
+						url: '/centenario/yorka.jpg',
 						alt: 'Imagen de la banda nacional Yorka'
 					},
 					links: [
@@ -117,7 +117,7 @@ export const CENTENARIO = {
 					category: 'Música',
 					time: '',
 					image: {
-						url: '/centenario/marineros.webp',
+						url: '/centenario/marineros.jpg',
 						alt: 'Imagen de la banda nacional Marineros'
 					},
 					links: [
@@ -138,7 +138,7 @@ export const CENTENARIO = {
 					category: 'Música',
 					time: '',
 					image: {
-						url: '/centenario/hesper.webp',
+						url: '/centenario/hesper.jpg',
 						alt: 'Imagen de la banda regional Sequía'
 					},
 					links: [
@@ -169,7 +169,7 @@ export const CENTENARIO = {
 					category: 'Música',
 					time: '',
 					image: {
-						url: '/centenario/luminar.webp',
+						url: '/centenario/luminar.jpg',
 						alt: 'Imagen de la banda nacional Ases Falsos'
 					},
 					links: [
@@ -183,7 +183,7 @@ export const CENTENARIO = {
 			]
 		},
 		{
-			day: 'Domingo 12',
+			day: 'Domingo 12\nDesde las 22:00 horas',
 			events: [
 				{
 					id: 'ases-falsos',
@@ -192,7 +192,7 @@ export const CENTENARIO = {
 					category: 'Música',
 					time: '',
 					image: {
-						url: '',
+						url: '/centenario/ases-falsos.jpg',
 						alt: 'Imagen de la banda nacional Ases Falsos'
 					},
 					links: [
@@ -212,7 +212,7 @@ export const CENTENARIO = {
 					category: 'Música',
 					time: '',
 					image: {
-						url: '/centenario/flamantës.webp',
+						url: '/centenario/flamantes.jpg',
 						alt: 'Imagen de la banda regional Flamantës'
 					},
 					links: [
@@ -236,7 +236,7 @@ export const CENTENARIO = {
 					category: 'Música',
 					time: '',
 					image: {
-						url: '/centenario/sequía.webp',
+						url: '/centenario/sequia.jpg',
 						alt: 'Imagen de la banda regional Sequía'
 					},
 					links: [],

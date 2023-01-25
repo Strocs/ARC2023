@@ -14,7 +14,7 @@ const ilustratorsSchedule =
 		? schedule[0].events.filter((item) => item.category === 'Ilustración')
 		: null
 
-const splittedDay = locationId === 'azotea-arc' ? schedule[0].day.split('\n') : null
+// const splittedDay = schedule[0].day.split('\n')
 ---
 
 <div class='flex flex-col gap-5'>
@@ -24,9 +24,9 @@ const splittedDay = locationId === 'azotea-arc' ? schedule[0].day.split('\n') : 
 				<div class="leading-3">
 					<p class='text-lg font-semibold'>
 						<Icon name='mdi:calendar-multiselect' class={`w-6 inline ${styles.textColor}`} />
-						{!splittedDay ? day : (splittedDay[0])}
+						{day.split('\n')[0]}
 					</p>
-					{!!splittedDay && <span class="font-normal text-base leading-3 pl-[1.85rem]">{splittedDay[1]}</span>}
+					{!!day.split('\n')[1] && <span class="font-normal text-base leading-3 pl-[1.85rem]">{day.split('\n')[1]}</span>}
 				</div>
 				{ilustratorsSchedule
 				? (
@@ -55,7 +55,7 @@ const splittedDay = locationId === 'azotea-arc' ? schedule[0].day.split('\n') : 
 					</ul>
 				)}
 
-				{!!musicSchedule && (
+				{musicSchedule && (
 					<ul class='flex flex-col gap-2 mt-5'>
 						<li class='text-xl pl-7 font-normal'>Música</li>
 						{musicSchedule.map((event) => (

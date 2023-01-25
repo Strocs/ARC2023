@@ -17,7 +17,7 @@ export const GAVIOTA = {
 		borderColor: 'border-pale-blue'
 	},
 	image: {
-		url: '/gaviota/casa-gaviota.svg',
+		url: '/gaviota/gaviota.svg',
 		position: { top: '70%', left: '19.5%' }
 	},
 	schedule: [
@@ -65,7 +65,7 @@ export const GAVIOTA = {
 					category: 'Teatro',
 					time: '19:00',
 					image: {
-						url: '/images',
+						url: '/gaviota/preciosas-y-ridiculas.jpg',
 						alt: 'Imagen de la presentación de la obra teatral Preciosas y Ridículas'
 					},
 					links: [],
@@ -103,7 +103,7 @@ export const GAVIOTA = {
 					category: 'Teatro',
 					time: '19:00',
 					image: {
-						url: '/gaviota/los-de-allá.jpg',
+						url: '/gaviota/los-de-alla.jpg',
 						alt: 'Imagen de la presentación de la obra teatral Los de Allá'
 					},
 					links: [],

@@ -1,7 +1,7 @@
 export const ESTACIONAMIENTO = {
 	id: 'estacionamiento-plaza-de-armas',
 	title: 'Estacionamiento Plaza de Armas',
-	address: '',
+	address: 'Calle Los Carrera con Arturo Prat, a un costado del Gobierno Regional (Plaza de los Periodistas)',
 	extract:
 		'Siguiendo la línea de dar un nuevo sentido a los espacios públicos no convencionales de la ciudad, dotándolos de un significado distinto ligado a las artes, se desarrollará la creación de un espacio inmersivo de proyecciones y visualidades que invitarán a la comunidad a reflexionar a través de sus sentidos, una obra inédita a cargo de La Velocidad de la Luz, colectivo artístico.',
 	description:

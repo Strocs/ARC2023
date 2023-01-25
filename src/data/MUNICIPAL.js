@@ -31,8 +31,8 @@ export const MUNICIPAL = {
 					category: 'Teatro',
 					time: '12:00',
 					image: {
-						url: '',
-						alt: ''
+						url: '/municipal/los-pasos-de-selena.jpg',
+						alt: 'Imagen de la presentación de Los Pasos de Selena'
 					},
 					links: [],
 					description:
@@ -58,8 +58,8 @@ export const MUNICIPAL = {
 					category: 'Teatro',
 					time: '19:00',
 					image: {
-						url: '',
-						alt: ''
+						url: '/municipal/greta.jpg',
+						alt: 'Imagen de la presentación de Greta'
 					},
 					links: [],
 					description:
@@ -83,8 +83,8 @@ export const MUNICIPAL = {
 					category: 'Teatro',
 					time: '12:00',
 					image: {
-						url: '',
-						alt: ''
+						url: '/municipal/soy.jpg',
+						alt: 'Imagen de la presentación de Soy'
 					},
 					links: [],
 					description:
@@ -116,8 +116,8 @@ export const MUNICIPAL = {
 					category: 'Teatro',
 					time: '19:00',
 					image: {
-						url: '',
-						alt: ''
+						url: '/municipal/en-este-lugar-una-y-otra-vez.jpg',
+						alt: 'Imagen de la presentación de En Este Lugar Una y Otra Vez'
 					},
 					links: [],
 					description:
@@ -145,8 +145,8 @@ export const MUNICIPAL = {
 					category: 'Teatro',
 					time: '12:00',
 					image: {
-						url: '',
-						alt: ''
+						url: '/municipal/la-raiz-del-rosal.jpg',
+						alt: 'Imagen de la presentación de La Raíz del Rosal'
 					},
 					links: [],
 					description:
@@ -166,8 +166,8 @@ export const MUNICIPAL = {
 					category: 'Teatro',
 					time: '19:00',
 					image: {
-						url: '',
-						alt: ''
+						url: '/municipal/mandrágora-el-sueño-continúa.jpg',
+						alt: 'Imagen de la presentación de Mandrágora, el sueño continúa'
 					},
 					links: [],
 					description:

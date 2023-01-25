@@ -17,7 +17,7 @@ export const FRONTIS = {
 		borderColor: 'border-water-green'
 	},
 	image: {
-		url: '/plaza/plaza.svg',
+		url: '/frontis/frontis.svg',
 		position: { top: '64%', left: '42%' }
 	},
 	schedule: [
@@ -31,7 +31,7 @@ export const FRONTIS = {
 					category: 'Circo',
 					time: '',
 					image: {
-						url: '/plaza/mushi.jpg',
+						url: '/frontis/mushi.jpg',
 						position: { marginTop: '2rem' },
 						alt: 'Imagen de la presentación de Mushi, un espectáculo de bichos'
 					},
@@ -74,7 +74,7 @@ export const FRONTIS = {
 					category: 'Música',
 					time: '',
 					image: {
-						url: '',
+						url: '/frontis/orquesta-PAC.jpg',
 						alt: 'Imagen de la presentación del Concierto El Señor de los Anillos Sinfónico'
 					},
 					links: [],
@@ -116,7 +116,7 @@ export const FRONTIS = {
 					category: 'Circo',
 					time: '',
 					image: {
-						url: '',
+						url: '/frontis/calle.jpg',
 						alt: 'Imagen de la presentación de Calle, obra de circo contemporáneo'
 					},
 					links: [],
