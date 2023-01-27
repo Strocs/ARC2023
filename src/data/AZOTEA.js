@@ -31,7 +31,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/dj-kabir.jpg', alt: 'Imagen del DJ Kabir' },
 					links: [],
 					description:
 						'Dj Kabir aka Don Pingüino (1982) tiene sus comienzos en la música en el año 2001 en la ciudad de Santiago. Se acerca a las máquinas de ritmo y sintetizadores , invitado por su gran amigo Bryan Phillips aka Galambo. Su inquietud por la música radica en la exploración de nuevos sonidos, que están plasmados en sus primeros live sets.\nLas primeras incursiones musicales se dan en contexto de extensas sesiones de jamming en diversos eventos privados, destacando su buen gusto musical principalmente electrónico y rock.\nA mediados del año 2015 conoce al dj Claudio Val, con el cual comienza una relación de amistad e intercambio de conocimiento además de producir en conjunto eventos masivos del género. También comienza a relacionarse con la escena de su ciudad La Serena, conociendo a los dj en ejercicio y participando con estos en diversos eventos y reuniones.\nDesde el año 2018, y al alero de Pingüino Club, comienza un ciclo de sesiones de música electrónica, denominas “Electroschop”, logrando consolidar una escena desde el underground, pasando por este evento grandes artistas nacionales como Umho , Mañungo, Alejandro Vivanco, además de exponentes internacionales, como el dj y productor, Valentino Kanzyani y el tornamesista argentino, Lucas Ferro.\nKabir,  a la fecha ha participado en innumerables eventos del género electrónico,  compartiendo escenario con grandes artistas nacionales e internacionales. Su estilo va arraigado al underground, como el \bminimal/techno/house, saliéndose de lo masivo y popular.\b',
@@ -44,7 +44,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/ria-orange.jpg', alt: 'Imagen de la banda Ría Orange' },
 					links: [
 						{ name: 'spotify', url: 'https://www.instagram.com/riaorangee/' },
 						{ name: 'youtube', url: 'https://www.youtube.com/channel/UCaFtDdOkWCbR9mcRWnaZbTw' }
@@ -60,7 +60,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/duerme-cae.jpg', alt: 'Imagen de la banda Duerme y cae!' },
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/5RMewTvifqaXzb2uFHPNHu' },
 						{ name: 'instagram', url: 'https://www.instagram.com/duermeycae/' }
@@ -75,7 +75,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
-					image: { url: '', alt: '' },
+					image: {
+						url: '/azotea/rosario-alfonso.jpg',
+						alt: 'Imagen de la artista Rosario Alfonso'
+					},
 					links: [
 						{
 							name: 'spotify',
@@ -99,7 +102,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/quad.jpg', alt: 'Imagen de la banda QUAD' },
 					links: [{ name: 'soundcloud', url: 'https://soundcloud.com/proyectoquad' }],
 					description:
 						'QUAD es un proyecto musical y sonoro que se basa en la utilización de cuadrafonía en sus presentaciones en directo, en donde por medio de atmósferas y texturas muy cambiantes, además de sonoridades contratantes entre la oscuridad, el brillo, la complejidad y la simpleza, generan un entorno sonoro envolvente, dinámico y avasallador sin dejar de lado sensaciones de introspección, imaginación, tranquilidad y belleza.\nEn esta línea, la cuadrafonía (tecnología de sonido envolvente consistente en 4 altavoces que rodean al auditor) aporta un espacio de escucha escasamente visto en espacios no especializados y que entrega una experiencia sonora totalmente nueva y atractiva al público.\nDespués del lanzamiento del disco Estado de Ida el año 2018, QUAD ha realizado presentaciones en variados espacios y contextos, tales como museos, playas, salas de eventos y salas de conciertos, teniendo todos ellos en común la habilitación de un espacio para la escucha cuadrafónica y la participación libre del público.\nTras un largo tiempo de inactividad, este 2023 QUAD retoma su trabajo, preparando su segundo álbum titulado Curriculum Vitae el cual verá la luz el segundo semestre de este año, renovando su lenguaje musical al incorporar instrumentos y elementos del rock y el metal progresivo que complementan a las sonoridades electrónicas y atmosféricas que caracterizan su anterior entrega.',
@@ -112,7 +115,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/lig-folil.jpg', alt: 'Imagen de la artista Lig Folil' },
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/0Jh3Pqoi2DyUN3XrK7QBPE' },
 						{ name: 'soundcloud', url: 'https://soundcloud.com/lig-folil' },
@@ -120,7 +123,7 @@ export const AZOTEA = {
 						{ name: 'facebook', url: 'https://www.facebook.com/carolina.millalonco' }
 					],
 					description:
-						'\bLig Folil Millalonko\b: es una cantante de rap soul, nacida en Iquique , quien se erradicó en Coquimbo hace ya 13 años . Comenzó en la cultura Hip hop desde los 15 años y el año 2016 sacó su primer disco “La Raíz Kon Sabor”. \nEn 2020 lanza su 2do disco, llamado “Transmutación”, obra que presenta tiene mezclas de rap, reggae, funk ,soul entre varios estilos. Actualmente prepara proyectos musicales tales como un Huayno Rap , el video de una versión del tema “La Carta” de Violeta Parra , entre varios.',
+						'\bLig Folil Millalonko\b es una cantante de rap soul, nacida en Iquique , quien se erradicó en Coquimbo hace ya 13 años . Comenzó en la cultura Hip hop desde los 15 años y el año 2016 sacó su primer disco “La Raíz Kon Sabor”. \nEn 2020 lanza su 2do disco, llamado “Transmutación”, obra que presenta tiene mezclas de rap, reggae, funk ,soul entre varios estilos. Actualmente prepara proyectos musicales tales como un Huayno Rap , el video de una versión del tema “La Carta” de Violeta Parra , entre varios.',
 
 					list: []
 				},
@@ -130,7 +133,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
-					image: { url: '', alt: '' },
+					image: {
+						url: '/azotea/oscar-hauyon.jpg',
+						alt: 'Imagen del artista regional Oscar Hauyon'
+					},
 					links: [
 						{ name: 'web', url: 'https://oscarhauyon.cl/' },
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/0tPZaIQwb3eoQzfRn9XPas' },
@@ -147,7 +153,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/adione.jpg', alt: 'Imagen del artista regional Adione' },
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/1I2pJ2vYfZH0WND1diKJ1l' },
 						{ name: 'instagram', url: 'https://www.instagram.com/adionemusic/?hl=es' }
@@ -168,7 +174,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/anima-red.jpg', alt: 'Imagen de la Ilustradora Regional Anima Red' },
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/anima.red' }],
 
 					description:
@@ -182,7 +188,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/javivis.jpg', alt: 'Imagen del Ilustrador Regional Javivis' },
 					links: [
 						{
 							name: 'instagram',
@@ -201,7 +207,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/kunturi-y-yakana-milo-ys.jpg', alt: 'Imagen de los Ilustradores Kunturi & Yakana | Milo_ys' },
 					links: [
 						{
 							name: 'instagram',
@@ -221,7 +227,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/leeneal-studio.jpg', alt: 'Imagen de la Ilustradora Regional Leeneal Studio' },
 					links: [{ name: 'instagram', url: 'www.instagram.com/lunagatuna.art' }],
 					description:
 						'Soy una artista tradicional de técnica mixta y tatuadora de estilo dotwork. Mi trabajo está inspirado en la brujería, misticismo y la fantasía oscura. Muchas de mis obras están intervenidas de forma manual, algunos, como mis libretas, son un trabajo artesanal desde el corte hasta el armado. Mi trayectoria es hacer artículos duraderos y que todos se lleven una pieza única <3',
@@ -234,7 +240,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/nino-pan.jpg', alt: 'Imagen del Ilustrador Regional Niño Pan' },
 					links: [{ name: 'instagram', url: 'www.instagram.com/elninopan' }],
 					description:
 						'Hola me llamo Niño Pan, me dedico a la ilustración digital y no sabría muy bien cómo definir mi estilo pero diría que es un tanto variable pero a la vez reconocible, dependiendo de lo que quiero dibujar, aplico distintas formas de trazado y coloreado.\nPor lo general lo que me inspira a dibujar son cosas que me pasan, que siento, que pienso, los espacios que habito, algunas personas que quiero, perritos que andan por la calle, la tristeza, los besitos, dudas existenciales y otras más. 🙂',
@@ -247,7 +253,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/blue-straycatt-art.jpg', alt: 'Imagen de la Ilustradora Regional Blue Straycatt Art' },
 					links: [
 						{
 							name: 'instagram',
@@ -269,7 +275,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/valestrina.jpg', alt: 'Imagen de la Ilustradora Regional Valestrina' },
 					links: [
 						{
 							name: 'instagram',
@@ -287,7 +293,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/rotten-monkey-inc.jpg', alt: 'Imagen del Ilustrador Regional Rotten Monkey Inc' },
 					links: [
 						{
 							name: 'instagram',
@@ -305,7 +311,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/pablo-design.jpg', alt: 'Imagen del Ilustrador Regional Pablo Design' },
 					links: [
 						{
 							name: 'instagram',
@@ -323,7 +329,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/cleib.jpg', alt: 'Imagen de la Ilustradora Regional Cleib' },
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/_cleib/' }],
 					description:
 						'Mi trabajo está inspirado en el cartoon antiguo hasta los dibujos de los 90`s, esas líneas definen lo que hago jasta el día de hoy. Me agrada elegir ideas que representan mi realidad y creo que la de muchas personas, provoca que conectemos con situaciones que nos han pasado a todxs en algún punto, con un toque de ironía para reírme y burlarme de lo evidente, crudo y difícil que es vivir. Siempre sin ánimos de ofender claro, pero es gan subjetivo como es recibido el contenido que hago que entiendo que no puedo agradar a todxs y tampoco es la idea, porque primero dibujar para uno y después para lxs demás.',
@@ -336,7 +342,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/tsuki.jpg', alt: 'Imagen de la Ilustradora Regional Tsuki' },
 					links: [
 						{
 							name: 'instagram',
@@ -355,7 +361,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/camila-guaman.jpg', alt: 'Imagen de la Ilustradora Regional Camila Guamán' },
 					links: [
 						{
 							name: 'instagram',
@@ -377,7 +383,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/fran-koneko.jpg', alt: 'Imagen de la Ilustradora Regional Fran.koneko' },
 					links: [
 						{
 							name: 'email',
@@ -402,7 +408,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/ce-hache.jpg', alt: 'Imagen de el emprendimiento Regional CE HACHE' },
 					links: [
 						{
 							name: 'email',
@@ -423,7 +429,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/seh-yuk.jpg', alt: 'Imagen de la Ilustradora Regional Seh yuk' },
 					links: [
 						{
 							name: 'instagram',
@@ -440,7 +446,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/isabela-fuentes.jpg', alt: 'Imagen de la Ilustradora Regional Isabela Fuentes' },
 					links: [
 						{
 							name: 'email',
@@ -461,7 +467,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/astro-glitter.jpg', alt: 'Imagen de la Ilustradora Regional Astro Glitter' },
 					links: [
 						{
 							name: 'instagram',
@@ -478,7 +484,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/intecultural-arte.jpg', alt: 'Imagen de la Ilustradora Regional Intecultural arte' },
 					links: [
 						{
 							name: 'instagram',
@@ -490,12 +496,12 @@ export const AZOTEA = {
 					list: []
 				},
 				{
-					id: 'arodrigo49 ',
+					id: 'arodrigo49',
 					name: 'Arodrigo49',
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '', alt: '' },
+					image: { url: '/azotea/arodrigo49.jpg', alt: 'Imagen del Ilustrador Regional Arodrigo49' },
 					links: [
 						{
 							name: 'instagram',

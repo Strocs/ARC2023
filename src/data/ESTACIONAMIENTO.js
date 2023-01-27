@@ -32,7 +32,7 @@ export const ESTACIONAMIENTO = {
 					category: 'Performance',
 					time: '',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
+						url: '/estacionamiento/velocidad-de-la-luz.jpg',
 						alt: 'Imagen de la presentación de Los Pasos de Selena'
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/lavelocidad.delaluz/' }],

@@ -31,7 +31,7 @@ export const MUSEO = {
 					category: 'Documental',
 					time: '18:00',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
+						url: '/municipal/el-arte-del-tiempo.jpg',
 						alt: 'Imagen del documental El Arte del Tiempo'
 					},
 					links: [],
@@ -54,8 +54,8 @@ export const MUSEO = {
 					category: 'Documental',
 					time: '19:15',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
-						alt: 'Imagen de la presentación de Los Pasos de Selena'
+						url: '/municipal/aqui-se-construye.jpg',
+						alt: 'Imagen del documental Aquí se Construye (o Ya no existe el lugar donde nací)'
 					},
 					links: [],
 					description:
@@ -81,8 +81,8 @@ export const MUSEO = {
 					category: 'Cortometraje',
 					time: '18:00',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
-						alt: 'Imagen del documental El Arte del Tiempo'
+						url: '/municipal/redención.jpg',
+						alt: 'Imagen del cortometraje Redención'
 					},
 					links: [],
 					description:
@@ -101,14 +101,14 @@ export const MUSEO = {
 					]
 				},
 				{
-					id: ' proyecto-fantasma',
-					name: ' Proyecto Fantasma',
+					id: 'proyecto-fantasma',
+					name: 'Proyecto Fantasma',
 					subTitle: {},
 					category: 'Largometraje',
 					time: '18:30',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
-						alt: 'Imagen de la presentación de Los Pasos de Selena'
+						url: '/municipal/proyecto-fantasma.jpg',
+						alt: 'Imagen del largometraje Proyecto Fantasma'
 					},
 					links: [],
 					description:
@@ -140,8 +140,8 @@ export const MUSEO = {
 					category: 'Exposición de Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
-						alt: 'Imagen del documental El Arte del Tiempo'
+						url: '/municipal/r@stros.jpg',
+						alt: 'Imagen de la Exposición de artes visuales R@stros'
 					},
 					links: [],
 					description:
@@ -169,8 +169,8 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
-						alt: 'Imagen del documental El Arte del Tiempo'
+						url: '/municipal/mauricio-álvarez-collao.jpg',
+						alt: 'Imagen del artista visual Mauricio Álvarez Collao'
 					},
 					links: [
 						{ name: 'instagram', url: 'https://www.instagram.com/mauricioalvarezcollao/?hl=es' },
@@ -187,8 +187,8 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
-						alt: 'Imagen del documental El Arte del Tiempo'
+						url: '/municipal/claudia-campos-mendoza.jpg',
+						alt: 'Imagen de la artista visual Claudia Campos Mendoza'
 					},
 					links: [
 						{ name: 'instagram', url: 'https://www.instagram.com/artistaclaudiacampos/?hl=es' },
@@ -205,8 +205,8 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
-						alt: 'Imagen del documental El Arte del Tiempo'
+						url: '/municipal/paz-alvial-reculé.jpg',
+						alt: 'Imagen de la artista visual Paz Alvial Reculé'
 					},
 					links: [{ name: 'web', url: ' http://pazalvial.blogspot.com/' }],
 					description:
@@ -220,8 +220,8 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
-						alt: 'Imagen del documental El Arte del Tiempo'
+						url: '/municipal/claudia-suárez-jansson.jpg',
+						alt: 'Imagen de la artista visual Claudia Suárez Jansson'
 					},
 					links: [
 						{ name: 'web', url: 'https://www.claudiasuarezjansson.com/' },
@@ -239,8 +239,8 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
-						alt: 'Imagen del documental El Arte del Tiempo'
+						url: '/municipal/aude-gutiérrez-barraza.jpg',
+						alt: 'Imagen de la artista visual Aude Gutiérrez Barraza'
 					},
 					links: [
 						{ name: 'web', url: 'http://audegutierrezb.blogspot.com/' },
@@ -257,8 +257,8 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
-						alt: 'Imagen del documental El Arte del Tiempo'
+						url: '/municipal/mauricio-toro-goya.jpg',
+						alt: 'Imagen del artista visual Mauricio Toro Goya'
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/torogoya/?hl=es' }],
 					description:
@@ -272,8 +272,8 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
-						alt: 'Imagen del documental El Arte del Tiempo'
+						url: '/municipal/tatiana-alfaro-chávez.jpg',
+						alt: 'Imagen de la artista visual Tatiana Alfaro Chávez'
 					},
 					links: [
 						{ name: 'instagram', url: 'https://www.instagram.com/noisyeyesimagen/?hl=es' },
@@ -290,8 +290,8 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/los-pasos-de-selena.jpg',
-						alt: 'Imagen del documental El Arte del Tiempo'
+						url: '/municipal/oskar-huerta.jpg',
+						alt: 'Imagen del artista visual Oskar Huerta'
 					},
 					links: [
 						{
