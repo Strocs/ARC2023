@@ -8,13 +8,13 @@ export const MUNICIPAL = {
 		'El Teatro Municipal de La Serena, emplazado a un costado del emblemático Liceo de Niñas Gabriela Mistral, fue construido entre los años 1945 y 1952 e inaugurado durante el gobierno del expresidente Gabriel González Videla.\nPosteriormente, fue remodelado con la colaboración de la Embajada de Japón en Chile en el marco del "Programa de Asistencia Comunitaria Cultural", (APCC) en agosto de 2009.\nActualmente administrado por la Ilustre Municipalidad de La Serena, destaca por las distintas presentaciones de conciertos sinfónicos y de cámara, danza y teatro que se realizan en su infraestructura. \nEl espacio es un importante centro de expresión cultural de la ciudad, por ser escenario fundamental de las creaciones y manifestaciones artísticas regionales, como también nacionales.',
 	links: [{ name: 'ticket', url: 'https://www.portaldisc.com/evento/arc2023' }],
 	styles: {
-		backgroundColor: 'bg-purple',
-		textColor: 'text-purple',
-		hoverTextColor: 'hover:text-purple',
-		hoverBackgroundColor: 'hover:bg-purple',
-		groupHoverTextColor: 'group-hover:text-purple',
-		groupHoverBackgroundColor: 'group-hover:bg-purple',
-		borderColor: 'border-purple'
+		backgroundColor: 'bg-pale-blue',
+		textColor: 'text-pale-blue',
+		hoverTextColor: 'hover:text-pale-blue',
+		hoverBackgroundColor: 'hover:bg-pale-blue',
+		groupHoverTextColor: 'group-hover:text-pale-blue',
+		fillColor: 'fill-pale-blue',
+		borderColor: 'border-pale-blue'
 	},
 	image: {
 		url: '/municipal/municipal.svg',

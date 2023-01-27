@@ -13,7 +13,7 @@ export const FRONTIS = {
 		hoverTextColor: 'hover:text-water-green',
 		hoverBackgroundColor: 'hover:bg-water-green',
 		groupHoverTextColor: 'group-hover:text-water-green',
-		groupHoverBackgroundColor: 'group-hover:bg-water-green',
+		fillColor: 'fill-water-green',
 		borderColor: 'border-water-green'
 	},
 	image: {

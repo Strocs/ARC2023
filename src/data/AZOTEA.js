@@ -9,19 +9,156 @@ export const AZOTEA = {
 		'Dj sets, ilustración, fotografía autoral y bandas de la Región de Coquimbo darán vida al espacio Azotea ARC, un lugar en el que las expresiones artísticas transforman un espacio no convencional en un espacio ideal para disfrutar del paso de la tarde desde una hermosa vista, como parte del concepto del Festival ARC 2023, que es transformar la forma en la que habitamos nuestra ciudad.',
 	links: [{ name: 'ticket', url: 'https://www.portaldisc.com/evento/arc2023' }],
 	styles: {
-		backgroundColor: 'bg-pale-yellow',
-		textColor: 'text-pale-yellow',
-		hoverTextColor: 'hover:text-pale-yellow',
-		hoverBackgroundColor: 'hover:bg-pale-yellow',
-		groupHoverTextColor: 'group-hover:text-pale-yellow',
-		groupHoverBackgroundColor: 'group-hover:bg-pale-yellow',
-		borderColor: 'border-pale-yellow'
+		backgroundColor: 'bg-black-pink',
+		textColor: 'text-black-pink',
+		fillColor: 'fill-black-pink',
+		hoverTextColor: 'hover:text-black-pink',
+		hoverBackgroundColor: 'hover:bg-black-pink',
+		groupHoverTextColor: 'group-hover:text-black-pink',
+		borderColor: 'border-black-pink'
 	},
 	image: {
 		url: '/azotea/azotea.svg',
 		position: { top: '51%', left: '35%' }
 	},
 	schedule: [
+		{
+			day: 'Sábado 11\nDe 16:00 a 20:30 horas',
+			events: [
+				{
+					id: 'dj-kabir',
+					name: 'Dj Kabir',
+					subTitle: {},
+					category: 'Música',
+					time: '',
+					image: { url: '', alt: '' },
+					links: [],
+					description:
+						'Dj Kabir aka Don Pingüino (1982) tiene sus comienzos en la música en el año 2001 en la ciudad de Santiago. Se acerca a las máquinas de ritmo y sintetizadores , invitado por su gran amigo Bryan Phillips aka Galambo. Su inquietud por la música radica en la exploración de nuevos sonidos, que están plasmados en sus primeros live sets.\nLas primeras incursiones musicales se dan en contexto de extensas sesiones de jamming en diversos eventos privados, destacando su buen gusto musical principalmente electrónico y rock.\nA mediados del año 2015 conoce al dj Claudio Val, con el cual comienza una relación de amistad e intercambio de conocimiento además de producir en conjunto eventos masivos del género. También comienza a relacionarse con la escena de su ciudad La Serena, conociendo a los dj en ejercicio y participando con estos en diversos eventos y reuniones.\nDesde el año 2018, y al alero de Pingüino Club, comienza un ciclo de sesiones de música electrónica, denominas “Electroschop”, logrando consolidar una escena desde el underground, pasando por este evento grandes artistas nacionales como Umho , Mañungo, Alejandro Vivanco, además de exponentes internacionales, como el dj y productor, Valentino Kanzyani y el tornamesista argentino, Lucas Ferro.\nKabir,  a la fecha ha participado en innumerables eventos del género electrónico,  compartiendo escenario con grandes artistas nacionales e internacionales. Su estilo va arraigado al underground, como el \bminimal/techno/house, saliéndose de lo masivo y popular.\b',
+
+					list: []
+				},
+				{
+					id: 'ria-orange',
+					name: 'Ría  Orange',
+					subTitle: {},
+					category: 'Música',
+					time: '',
+					image: { url: '', alt: '' },
+					links: [
+						{ name: 'spotify', url: 'https://www.instagram.com/riaorangee/' },
+						{ name: 'youtube', url: 'https://www.youtube.com/channel/UCaFtDdOkWCbR9mcRWnaZbTw' }
+					],
+					description:
+						'Ría  Orange  te  hace  sentir lo ácido  más dulce , como la primera mordida de una naranja, se expresa en un hilo que no se corta, en uno hilo que va cosiendo cada parte de su sentir, por eso le es tan importante escribir sus canciones.\nEscribe letras desde los siete años de edad y jamás parará, porque esta es su manera de vivir.\nLleva años haciendo música y los últimos tres años estudiando, aprendiendo, impregnándose de todo lo que quiere y quiere ser.\nCon dos singles lanzados, “Escúchame y “Averno”, y próxima a lanzar su primer EP, Ría Orange es uno de los proyectos nuevos más interesantes de la región, con una gran proyección a futuro.',
+
+					list: []
+				},
+				{
+					id: 'duerme-&-cae!',
+					name: 'Duerme & Cae!',
+					subTitle: {},
+					category: 'Música',
+					time: '',
+					image: { url: '', alt: '' },
+					links: [
+						{ name: 'spotify', url: 'https://open.spotify.com/artist/5RMewTvifqaXzb2uFHPNHu' },
+						{ name: 'instagram', url: 'https://www.instagram.com/duermeycae/' }
+					],
+					description:
+						'Duerme & Cae! es una banda de La Serena y Coquimbo, compuesta por Sebastián Olivares, Sofía Cortés, Matias Zepeda, Brayton Cortés, y Taís Montecinos.\nSu sonido tiene influencias de artistas como Teleradio Donoso, Coldplay y The Smiths.',
+					list: []
+				},
+				{
+					id: 'rosario-alfonso',
+					name: 'Rosario Alfonso',
+					subTitle: {},
+					category: 'Música',
+					time: '',
+					image: { url: '', alt: '' },
+					links: [
+						{
+							name: 'spotify',
+							url: 'https://open.spotify.com/album/4pYSsYWtj0fPzTXF5tES60?si=uN_f0u7ARZuGd0Nl3BJedw&utm_medium=share&utm_source=linktree&nd=1'
+						},
+						{ name: 'youtube', url: 'https://www.youtube.com/channel/UCPFNSNBcZcZLwPYT5EyI3pw' },
+						{ name: 'facebook', url: 'https://www.facebook.com/RosarioAlfonsoMusica' }
+					],
+					description:
+						'Rosario Alfonso es una cantautora y artista visual chilena integrante del sello Uva Robot. En su música destacan los instrumentos acústicos, como el cuatro venezolano, guitarra y ukelele que despliegan una sonoridad latinoamericana.\nA finales de 2018 lanzó su disco debut “Lo Primero”, que le significó una nominación a “artista revelación” en los Premios Pulsar 2019.\nDurante enero de 2022 la artista estrenó su segundo LP “De Canciones Tristes y Otras Sutilezas”. Material en que además de su estilo y característico, explora nuevas sonoridades, arreglos y temáticas, dando paso a un trabajo más maduro, lo cual ha sido muy bien recibido por la crítica musical especializada. Con letras sencillas, pero profundas, invita tanto a reflexionar como a chasconearse.',
+					list: []
+				}
+			]
+		},
+		{
+			day: 'Domingo 12\nDe 16:00 a 20:30 horas',
+			events: [
+				{
+					id: 'proyecto-quad',
+					name: 'Proyecto QUAD',
+					subTitle: {},
+					category: 'Música',
+					time: '',
+					image: { url: '', alt: '' },
+					links: [{ name: 'soundcloud', url: 'https://soundcloud.com/proyectoquad' }],
+					description:
+						'QUAD es un proyecto musical y sonoro que se basa en la utilización de cuadrafonía en sus presentaciones en directo, en donde por medio de atmósferas y texturas muy cambiantes, además de sonoridades contratantes entre la oscuridad, el brillo, la complejidad y la simpleza, generan un entorno sonoro envolvente, dinámico y avasallador sin dejar de lado sensaciones de introspección, imaginación, tranquilidad y belleza.\nEn esta línea, la cuadrafonía (tecnología de sonido envolvente consistente en 4 altavoces que rodean al auditor) aporta un espacio de escucha escasamente visto en espacios no especializados y que entrega una experiencia sonora totalmente nueva y atractiva al público.\nDespués del lanzamiento del disco Estado de Ida el año 2018, QUAD ha realizado presentaciones en variados espacios y contextos, tales como museos, playas, salas de eventos y salas de conciertos, teniendo todos ellos en común la habilitación de un espacio para la escucha cuadrafónica y la participación libre del público.\nTras un largo tiempo de inactividad, este 2023 QUAD retoma su trabajo, preparando su segundo álbum titulado Curriculum Vitae el cual verá la luz el segundo semestre de este año, renovando su lenguaje musical al incorporar instrumentos y elementos del rock y el metal progresivo que complementan a las sonoridades electrónicas y atmosféricas que caracterizan su anterior entrega.',
+
+					list: []
+				},
+				{
+					id: 'lig-folil',
+					name: 'Lig Folil',
+					subTitle: {},
+					category: 'Música',
+					time: '',
+					image: { url: '', alt: '' },
+					links: [
+						{ name: 'spotify', url: 'https://open.spotify.com/artist/0Jh3Pqoi2DyUN3XrK7QBPE' },
+						{ name: 'soundcloud', url: 'https://soundcloud.com/lig-folil' },
+						{ name: 'instagram', url: 'https://www.instagram.com/lig_folil/' },
+						{ name: 'facebook', url: 'https://www.facebook.com/carolina.millalonco' }
+					],
+					description:
+						'\bLig Folil Millalonko\b: es una cantante de rap soul, nacida en Iquique , quien se erradicó en Coquimbo hace ya 13 años . Comenzó en la cultura Hip hop desde los 15 años y el año 2016 sacó su primer disco “La Raíz Kon Sabor”. \nEn 2020 lanza su 2do disco, llamado “Transmutación”, obra que presenta tiene mezclas de rap, reggae, funk ,soul entre varios estilos. Actualmente prepara proyectos musicales tales como un Huayno Rap , el video de una versión del tema “La Carta” de Violeta Parra , entre varios.',
+
+					list: []
+				},
+				{
+					id: 'oscar-hauyon',
+					name: 'Oscar Hauyon',
+					subTitle: {},
+					category: 'Música',
+					time: '',
+					image: { url: '', alt: '' },
+					links: [
+						{ name: 'web', url: 'https://oscarhauyon.cl/' },
+						{ name: 'spotify', url: 'https://open.spotify.com/artist/0tPZaIQwb3eoQzfRn9XPas' },
+						{ name: 'instagram', url: 'https://www.instagram.com/oscarhauyon/?hl=es' }
+					],
+					description:
+						'Oscar Hauyon es cantautor, periodista y gestor cultural. Durante 20 años de trayectoria ha intervenido en diversos proyectos musicales, audiovisuales y patrimoniales. En música, ha sido parte de proyectos como la banda Polter y el Colectivo Rap Mistral, con diferentes grados de reconocimiento nacional e internacional. Su propuesta como solista, es acompañada desde 2019 por el guitarrista Felipe Marcello, con quien mezcla sonidos del synthpop y el rock alternativo.',
+
+					list: []
+				},
+				{
+					id: 'adione',
+					name: 'Adione',
+					subTitle: {},
+					category: 'Música',
+					time: '',
+					image: { url: '', alt: '' },
+					links: [
+						{ name: 'spotify', url: 'https://open.spotify.com/artist/1I2pJ2vYfZH0WND1diKJ1l' },
+						{ name: 'instagram', url: 'https://www.instagram.com/adionemusic/?hl=es' }
+					],
+					description:
+						'Adione es un artista urbano de la Región de Coquimbo, cuya trayectoria emerge desde los cerros del puerto de Coquimbo, lugar en el que desde muy temprana edad encuentra en el arte del rap una fuente de expresión en el que concentra sus vivencias y emociones más profundas, plasmando en sus letras cargadas de poesía, un fuerte compromiso social. \nEn el año 2019, firmó con el sello Warner Music, hito que le permitió expandir su carrera musical, siendo parte de grandes producciones, colaboraciones musicales y escenarios de la música urbana, sin dejar las aulas de su barrio, en el que enseña a niños, niñas y adolescentes como artista educador.\nSu proyecto musical está compuesto por los albums \bLo Real No Cambia, Telonero y Madurez\b, lanzados en 2018, más una serie de potentes sencillos.',
+
+					list: []
+				}
+			]
+		},
 		{
 			day: 'Sábado 11 y Domingo 12\nDe 16:00 a 20:30 horas',
 			events: [
@@ -235,55 +372,138 @@ export const AZOTEA = {
 					list: []
 				},
 				{
-					id: 'adione',
-					name: 'Adione',
+					id: 'fran-koneko',
+					name: 'Fran.koneko',
 					subTitle: {},
-					category: 'Música',
+					category: 'Ilustración',
 					time: '',
 					image: { url: '', alt: '' },
-					links: [],
+					links: [
+						{
+							name: 'email',
+							url: 'mailto:fran.koneko.owo@gmail.com'
+						},
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/koneko_shop__/'
+						},
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/fran.koneko/'
+						}
+					],
 					description:
-						'Adione es un artista urbano de la Región de Coquimbo, cuya trayectoria emerge desde los cerros del puerto de Coquimbo, lugar en el que desde muy temprana edad encuentra en el arte del rap una fuente de expresión en el que concentra sus vivencias y emociones más profundas, plasmando en sus letras cargadas de poesía, un fuerte compromiso social. \nEn el año 2019, firmó con el sello Warner Music, hito que le permitió expandir su carrera musical, siendo parte de grandes producciones, colaboraciones musicales y escenarios de la música urbana, sin dejar las aulas de su barrio, en el que enseña a niños, niñas y adolescentes como artista educador.\nSu proyecto musical está compuesto por los albums \bLo Real No Cambia, Telonero y Madurez\b, lanzados en 2018, más una serie de potentes sencillos.',
-
+						'Ilustradora digital autodidacta de personajes y animales en un estilo tierno y amigable al público.\nInicio en 2020 en periodo de pandemia. Participé en la feria del libro de La Serena 2021 y 2022, feria del libro de Vicuña 2021 y eventos de la comunidad local de Serena. Creadora de la tienda Koneko_Shop donde se realizan stickers, prints, peluches estampados con ilustraciones y accesorios artesanales en resina.',
 					list: []
 				},
 				{
-					id: 'lig-folil',
-					name: 'Lig Folil',
+					id: 'ce-hache',
+					name: 'CE HACHE',
 					subTitle: {},
-					category: 'Música',
+					category: 'Ilustración',
 					time: '',
 					image: { url: '', alt: '' },
-					links: [],
+					links: [
+						{
+							name: 'email',
+							url: 'mailto:ch.info.contacto@gmail.com'
+						},
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/ce.hache.il/'
+						}
+					],
 					description:
-						'Lig Folil Millalonko: es una cantante de rap soul, nacida en Iquique , quien se erradicó en Coquimbo hace ya 13 años . Comenzó en la cultura Hip hop desde los 15 años y el año 2016 sacó su primer disco “La Raíz Kon Sabor”. \nEn 2020 lanza su 2do disco, llamado “Transmutación”, obra que presenta tiene mezclas de rap, reggae, funk ,soul entre varios estilos. Actualmente prepara proyectos musicales tales como un Huayno Rap , el video de una versión del tema “La Carta” de Violeta Parra , entre varios.',
-
+						'CE HACHE es un emprendimiento que se dedica a la serigrafía, técnica milenaria de estampado textil la cual tiene una alta resistencia y durabilidad, en nuestro taller realizamos principalmente dos servicios:\n- Productos con diseños originales al “estilo CE HACHE” creados por nuestro ilustrador Christian Herrera.\n- Producción en masa para terceros, tales como pymes, empresas y/o personas comunes con diseños propios del cliente (ej. logos) o personalizados.',
 					list: []
 				},
 				{
-					id: 'ria-orange',
-					name: 'Ría  Orange',
+					id: 'seh-yuk',
+					name: 'Seh yuk',
 					subTitle: {},
-					category: 'Música',
+					category: 'Ilustración',
 					time: '',
 					image: { url: '', alt: '' },
-					links: [],
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/7seyuk/'
+						}
+					],
 					description:
-						'Ría  Orange  te  hace  sentirlo  ácido  más dulce , como la primera mordida de una naranja, se expresa en un hilo que no se corta, en uno hilo que va cosiendo cada parte de su sentir, por eso le es tan importante escribir sus canciones.\nEscribe letras desde los siete años de edad y jamás parará, porque esta es su manera de vivir.\nLleva años haciendo música y los últimos tres años estudiando, aprendiendo, impregnándose de todo lo que quiere y quiere ser.\nCon dos singles lanzados, “Escúchame y “Averno”, y próxima a lanzar su primer EP, Ría Orange es uno de los proyectos nuevos más interesantes de la región, con una gran proyección a futuro.',
-
+						'7Seyuk se caracteriza por sus ilustraciones de líneas definidas y renderizados saturados, busca generar textura a base de pequeños detalles en los colores planos y principalmente se inspira en la mitología griega y oriental, retratando demonios y criaturas fantásticas humanizadas. El enfoque del ilustrador es implementar su estilo en creaciones propias, fanarts, contenido BL y arte sugerente.',
 					list: []
 				},
 				{
-					id: 'rosario-alfonso',
-					name: 'Rosario Alfonso',
+					id: 'isabela-fuentes',
+					name: 'Isabela Fuentes',
 					subTitle: {},
-					category: 'Música',
+					category: 'Ilustración',
 					time: '',
 					image: { url: '', alt: '' },
-					links: [],
+					links: [
+						{
+							name: 'email',
+							url: 'mailto:isabela.fuentttes@gmail.com'
+						},
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/isabela.fuentttes'
+						}
+					],
 					description:
-						'Rosario Alfonso es una cantautora y artista visual chilena integrante del sello Uva Robot. En su música destacan los instrumentos acústicos, como el cuatro venezolano, guitarra y ukelele que despliegan una sonoridad latinoamericana.\nA finales de 2018 lanzó su disco debut “Lo Primero”, que le significó una nominación a “artista revelación” en los Premios Pulsar 2019.',
-
+						'Isabela Fuentes (Santiago, 1990) es Arquitecta, reside y trabaja entre La Serena y Santiago. Participa constantemente en diversos proyectos de arquitectura y paisajismo a través de Estudio MIFM y Aire Arquitectos.\nDesde 2018 decidió diversificar sus expresiones artísticas hacia la ilustración y la pintura. Sus proyectos de arte se centran actualmente en arte digital, trabajo de acuarela y diseño de tatuajes.',
+					list: []
+				},
+				{
+					id: 'astro-glitter',
+					name: 'Astro Glitter',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: { url: '', alt: '' },
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/astroglitter.studio/'
+						}
+					],
+					description:
+						'En mis ilustraciones busco plasmar seres humanoides, flora y fauna de mundos de fantasía y psicodelia.',
+					list: []
+				},
+				{
+					id: 'intecultural-arte',
+					name: 'Intecultural arte',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: { url: '', alt: '' },
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/intercultural_arte_/'
+						}
+					],
+					description:
+						'Mi trabajo consiste en el rescate gráfico del patrimonio natural y cultural del territorio. Cada ilustración cuenta una historia.\nUtilizo diversas técnicas artísticas cómo el dibujo, la ilustración digital, la pintura y principalmente la serigrafía.',
+					list: []
+				},
+				{
+					id: 'arodrigo49 ',
+					name: 'Arodrigo49',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: { url: '', alt: '' },
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/arodrigo49/'
+						}
+					],
+					description:
+						'Mi trabajo se basa en el rescate del patrimonio natural e histórico local donde se desarrolla mi arte. Principalmente intervengo en el espacio urbano realizando “arte público”.\nA través de la ilustración y la reproducción fine Art, entrego un catálogo de productos que se pueden adquirir por encargo, ferias artesanales o a través de sitio web, pudiendo encontrar reproducciones intervenidas con carácter de pieza única pero en las que poder interpretaciones variadas de un mismo diseño.',
 					list: []
 				}
 			]

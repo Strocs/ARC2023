@@ -6,13 +6,13 @@ export const SANTA_INES = {
 	description: '',
 	links: [],
 	styles: {
-		backgroundColor: 'bg-yellow',
-		textColor: 'text-yellow',
-		hoverTextColor: 'hover:text-yellow',
-		hoverBackgroundColor: 'hover:bg-yellow',
-		groupHoverTextColor: 'group-hover:text-yellow',
-		groupHoverBackgroundColor: 'group-hover:bg-yellow',
-		borderColor: 'border-yellow'
+		backgroundColor: 'bg-radioactive-green',
+		textColor: 'text-radioactive-green',
+		hoverTextColor: 'hover:text-radioactive-green',
+		hoverBackgroundColor: 'hover:bg-radioactive-green',
+		groupHoverTextColor: 'group-hover:text-radioactive-green',
+		fillColor: 'fill-radioactive-green',
+		borderColor: 'border-radioactive-green'
 	},
 	image: {
 		url: '/santa-ines/santa-ines.svg',

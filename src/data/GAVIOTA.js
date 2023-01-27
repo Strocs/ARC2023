@@ -8,13 +8,13 @@ export const GAVIOTA = {
 		'Espacio La Gaviota se encuentra en la ciudad de La Serena, específicamente en el Barrio Almagro, el cual es parte del casco histórico de la ciudad declarado zona típica en el año 1981. El inmueble fue construido en el año 1920 y posee un estilo ecléctico característico de las construcciones que datan entre los años 1880 y 1940.\nEsta construcción que posee 100 años fue durante gran parte de su historia la vivienda de la familia Mascaró. A partir del año 1997 deja de ser una vivienda y sus dueños buscan nuevos arrendatarios. En el año 1998 y debido a la elección de la entonces senadora por la 4 º circunscripción, Evelyn Matthei, la casona pasa a ser la sede de la Unión Demócrata Independiente en la ciudad de La Serena, lo cual se mantuvo hasta el año 2014.\nEl año 2015 el inmueble se convierte en un espacio cultural dedicado a la creación, exhibición, investigación y difusión de las artes escénicas de la mano de la organización TeatroPuerto, quienes gracias a la adjudicación del programa Otras Instituciones Colaboradoras del Estado otorgado por el Ministerio de las Culturas, las artes y el patrimonio logran instalarse en este histórico barrio patrimonial y acrecentar la oferta artística y cultural de la ciudad.',
 	links: [{ name: 'ticket', url: 'https://www.portaldisc.com/evento/arc2023' }],
 	styles: {
-		backgroundColor: 'bg-pale-blue',
-		textColor: 'text-pale-blue',
-		hoverTextColor: 'hover:text-pale-blue',
-		hoverBackgroundColor: 'hover:bg-pale-blue',
-		groupHoverTextColor: 'group-hover:text-pale-blue',
-		groupHoverBackgroundColor: 'group-hover:bg-pale-blue',
-		borderColor: 'border-pale-blue'
+		backgroundColor: 'bg-orange',
+		textColor: 'text-orange',
+		hoverTextColor: 'hover:text-orange',
+		hoverBackgroundColor: 'hover:bg-orange',
+		groupHoverTextColor: 'group-hover:text-orange',
+		fillColor: 'fill-orange',
+		borderColor: 'border-orange'
 	},
 	image: {
 		url: '/gaviota/gaviota.svg',
