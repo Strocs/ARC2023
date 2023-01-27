@@ -1,9 +1,61 @@
 ---
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
+import Title from '../components/Title.astro'
 import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title='Conoce más de esta nueva versión'>
-	<main class='flex flex-col items-center justify-center mt-14'>
-		<h1 class='text-white mt-14 font-black text-6xl'>Festival</h1>
+	<Header />
+	<main class='flex w-full h-full min-h-screen bg-icons bg-no-repeat bg-center bg-contain'>
+		<article
+			class='flex py-28 gap-10 mx-auto max-w-7xl w-full px-4 justify-center flex-wrap relative'
+		>
+			<section class='flex flex-col gap-10 w-full max-w-2xl py-10 px-8 bg-stone-100 text-slate-900'>
+				<Title>Festival ARC 2023</Title>
+				<div class='flex flex-col gap-3 text-justify'>
+					<p>
+						La experiencia de pandemia sanitaria durante los años anteriores significó un cambio en
+						los hábitos de las personas, obligando a un repliegue hacia los espacios privados,
+						aislamiento y desuso de calles, plazas y centros culturales, impactando indudablemente
+						en el estado de ánimo y comportamiento de la población.
+					</p>
+					<p>
+						La recuperación de los espacios públicos representa un desafío para las instituciones y
+						especialmente para nuestro Ministerio. Existe una preocupación por la seguridad pública
+						como eje trascendental para que las personas vuelvan a circular por las calles y, además
+						de ello, está presente el reto de generar espacios atractivos y de impacto cultural en
+						la ciudadanía y es ahí donde nuestra Seremi de las Culturas, Artes y Patrimonio, asume
+						este desafío.
+					</p>
+					<p>
+						En ese contexto, el Festival ARC 2023 busca incidir en la forma de habitar la ciudad,
+						modificándola a través del desarrollo de un circuito artístico cultural caminable en la
+						ciudad de La Serena, donde la comunidad podrá recorrer a pie espacios destinados a la
+						literatura, la ilustración, las artes escénicas, el circo, artes visuales y música. De
+						esta manera, nuestra propuesta busca resignificar la experiencia de caminar la ciudad,
+						haciendo que las personas se apropien de las calles desde la cultura y las artes,
+						ofreciendo un panorama veraniego alternativo y novedoso para la región, ocupando
+						espacios convencionales y no convencionales para las manifestaciones artísticas.
+					</p>
+					<p>
+						Además, es de interés programático resaltar los y las artistas e iniciativas culturales
+						de la Región de Coquimbo. El compromiso del Festival ARC desde sus orígenes es dar
+						espacio a las distintas expresiones artísticas de las Provincias de Choapa, Limarí y
+						Elqui. Para ello, se contempla la participación de artistas y compañías locales de
+						destacada trayectoria y de gran proyección.
+					</p>
+					<p>
+						El fin último es poner en el centro la cultura como un derecho humano, contribuyendo a
+						la democratización cultural y promoviendo con estas acciones la democracia cultural,
+						donde el arte crea comunidad, fortaleciendo los vínculos y el tejido social. De esta
+						forma, queremos propender a que las personas, comunidades y territorios puedan
+						desarrollar sus expresiones y manifestaciones culturales y que puedan, también, tener el
+						derecho a acceder y participar de la cultura libremente.
+					</p>
+				</div>
+			</section>
+		</article>
 	</main>
+	<Footer />
 </Layout>
