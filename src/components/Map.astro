@@ -2,10 +2,10 @@
 import Mapa from './icons/Mapa.astro'
 ---
 
-<section id='map-container' class='w-screen h-screen relative'>
+<section id='map-container' class='w-screen h-screen relative touch-none'>
 	<div
 		id='map'
-		class='absolute w-[150%] h-fit sm:w-1/2 top-0 right-0 sm:left-0 -left-20 bottom-0 m-auto origin-top-left touch-none'
+		class='absolute w-[150%] h-fit sm:w-1/2 top-0 right-0 sm:left-0 -left-20 bottom-0 m-auto origin-top-left'
 	>
 		<Mapa />
 	</div>
@@ -62,7 +62,7 @@ import Mapa from './icons/Mapa.astro'
 			}
 
 			this._onPointerMove = (event) => {
-				event.preventDefault()
+				// event.preventDefault()
 				const points = getPoints(event)
 				const averagePoint = points.reduce(getMidpoint)
 				const averageLastPoint = this._lastPoints.reduce(getMidpoint)
@@ -107,7 +107,7 @@ import Mapa from './icons/Mapa.astro'
 			}
 
 			// bound events
-			eventArea.addEventListener('mousedown', this._onPointerDown)
+			eventArea.addEventListener('mousedown', this._onPointerDown, { passive: true })
 			eventArea.addEventListener('touchstart', this._onPointerDown, { passive: true })
 
 			// unbound

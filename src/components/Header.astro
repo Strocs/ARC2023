@@ -2,7 +2,7 @@
 import LogoWithText from './LogoWithText.astro'
 import Navbar from './Navbar.astro'
 import ScheduleDownloader from './ScheduleDownloader.astro'
-import SocialNetworks from './SocialNetworks.astro'
+// import SocialNetworks from './SocialNetworks.astro'
 import ToggleMenuButton from './ToggleMenuButton.astro'
 
 const {
@@ -21,7 +21,7 @@ const {
 		<div class='flex text-white justify-between w-full gap-6'>
 			<LogoWithText fillColor={fillColor} />
 			<div class='flex gap-14'>
-				<SocialNetworks hoverTextColor={hoverTextColor} />
+				<!-- <SocialNetworks hoverTextColor={hoverTextColor} /> -->
 				<ScheduleDownloader textColor={textColor} />
 			</div>
 		</div>
@@ -57,6 +57,12 @@ const {
 	})
 
 	menu.forEach((el) =>
-		el.addEventListener('change', (e) => (e.target.checked ? showNavBar(true) : showNavBar(false)))
+		el.addEventListener('change', (e) => {
+			if (e.target.checked) {
+				showNavBar(true)
+				return
+			}
+			showNavBar(false)
+		})
 	)
 </script>

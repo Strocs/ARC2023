@@ -6,7 +6,7 @@ const { socialNetwork } = ARC_2023
 const { hoverTextColor, mobile } = Astro.props
 ---
 
-<div class={`gap-3 items-center ${mobile ? 'flex lg:hidden' : 'hidden lg:flex'}`}>
+<div class={`gap-3 items-center ${mobile ? 'flex ' : ' flex'}`}>
 	<p>Síguenos:</p>
 	<ul class='flex gap-1'>
 		{
