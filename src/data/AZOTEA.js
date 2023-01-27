@@ -7,7 +7,7 @@ export const AZOTEA = {
 		'Dj sets, ilustración, fotografía autoral y bandas de la Región de Coquimbo darán vida al espacio Azotea ARC, un lugar en el que las expresiones artísticas transforman un espacio no convencional en un espacio ideal para disfrutar del paso de la tarde desde una hermosa vista, como parte del concepto del Festival ARC 2023, que es transformar la forma en la que habitamos nuestra ciudad.',
 	description:
 		'Dj sets, ilustración, fotografía autoral y bandas de la Región de Coquimbo darán vida al espacio Azotea ARC, un lugar en el que las expresiones artísticas transforman un espacio no convencional en un espacio ideal para disfrutar del paso de la tarde desde una hermosa vista, como parte del concepto del Festival ARC 2023, que es transformar la forma en la que habitamos nuestra ciudad.',
-	links: [{ name: 'ticket', url: 'https://www.portaldisc.com/evento/arc2023' }],
+	links: [{ name: 'ticket', url: 'https://www.portaldisc.com/evento/azoteacarc2023' }],
 	styles: {
 		backgroundColor: 'bg-black-pink',
 		textColor: 'text-black-pink',
@@ -174,7 +174,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/anima-red.jpg', alt: 'Imagen de la Ilustradora Regional Anima Red' },
+					image: {
+						url: '/azotea/anima-red.jpg',
+						alt: 'Imagen de la Ilustradora Regional Anima Red'
+					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/anima.red' }],
 
 					description:
@@ -207,7 +210,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/kunturi-y-yakana-milo-ys.jpg', alt: 'Imagen de los Ilustradores Kunturi & Yakana | Milo_ys' },
+					image: {
+						url: '/azotea/kunturi-y-yakana-milo-ys.jpg',
+						alt: 'Imagen de los Ilustradores Kunturi & Yakana | Milo_ys'
+					},
 					links: [
 						{
 							name: 'instagram',
@@ -227,7 +233,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/leeneal-studio.jpg', alt: 'Imagen de la Ilustradora Regional Leeneal Studio' },
+					image: {
+						url: '/azotea/leeneal-studio.jpg',
+						alt: 'Imagen de la Ilustradora Regional Leeneal Studio'
+					},
 					links: [{ name: 'instagram', url: 'www.instagram.com/lunagatuna.art' }],
 					description:
 						'Soy una artista tradicional de técnica mixta y tatuadora de estilo dotwork. Mi trabajo está inspirado en la brujería, misticismo y la fantasía oscura. Muchas de mis obras están intervenidas de forma manual, algunos, como mis libretas, son un trabajo artesanal desde el corte hasta el armado. Mi trayectoria es hacer artículos duraderos y que todos se lleven una pieza única <3',
@@ -253,7 +262,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/blue-straycatt-art.jpg', alt: 'Imagen de la Ilustradora Regional Blue Straycatt Art' },
+					image: {
+						url: '/azotea/blue-straycatt-art.jpg',
+						alt: 'Imagen de la Ilustradora Regional Blue Straycatt Art'
+					},
 					links: [
 						{
 							name: 'instagram',
@@ -275,7 +287,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/valestrina.jpg', alt: 'Imagen de la Ilustradora Regional Valestrina' },
+					image: {
+						url: '/azotea/valestrina.jpg',
+						alt: 'Imagen de la Ilustradora Regional Valestrina'
+					},
 					links: [
 						{
 							name: 'instagram',
@@ -293,7 +308,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/rotten-monkey-inc.jpg', alt: 'Imagen del Ilustrador Regional Rotten Monkey Inc' },
+					image: {
+						url: '/azotea/rotten-monkey-inc.jpg',
+						alt: 'Imagen del Ilustrador Regional Rotten Monkey Inc'
+					},
 					links: [
 						{
 							name: 'instagram',
@@ -311,7 +329,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/pablo-design.jpg', alt: 'Imagen del Ilustrador Regional Pablo Design' },
+					image: {
+						url: '/azotea/pablo-design.jpg',
+						alt: 'Imagen del Ilustrador Regional Pablo Design'
+					},
 					links: [
 						{
 							name: 'instagram',
@@ -361,7 +382,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/camila-guaman.jpg', alt: 'Imagen de la Ilustradora Regional Camila Guamán' },
+					image: {
+						url: '/azotea/camila-guaman.jpg',
+						alt: 'Imagen de la Ilustradora Regional Camila Guamán'
+					},
 					links: [
 						{
 							name: 'instagram',
@@ -383,7 +407,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/fran-koneko.jpg', alt: 'Imagen de la Ilustradora Regional Fran.koneko' },
+					image: {
+						url: '/azotea/fran-koneko.jpg',
+						alt: 'Imagen de la Ilustradora Regional Fran.koneko'
+					},
 					links: [
 						{
 							name: 'email',
@@ -408,7 +435,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/ce-hache.jpg', alt: 'Imagen de el emprendimiento Regional CE HACHE' },
+					image: {
+						url: '/azotea/ce-hache.jpg',
+						alt: 'Imagen de el emprendimiento Regional CE HACHE'
+					},
 					links: [
 						{
 							name: 'email',
@@ -446,7 +476,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/isabela-fuentes.jpg', alt: 'Imagen de la Ilustradora Regional Isabela Fuentes' },
+					image: {
+						url: '/azotea/isabela-fuentes.jpg',
+						alt: 'Imagen de la Ilustradora Regional Isabela Fuentes'
+					},
 					links: [
 						{
 							name: 'email',
@@ -467,7 +500,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/astro-glitter.jpg', alt: 'Imagen de la Ilustradora Regional Astro Glitter' },
+					image: {
+						url: '/azotea/astro-glitter.jpg',
+						alt: 'Imagen de la Ilustradora Regional Astro Glitter'
+					},
 					links: [
 						{
 							name: 'instagram',
@@ -484,7 +520,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/intecultural-arte.jpg', alt: 'Imagen de la Ilustradora Regional Intecultural arte' },
+					image: {
+						url: '/azotea/intecultural-arte.jpg',
+						alt: 'Imagen de la Ilustradora Regional Intecultural arte'
+					},
 					links: [
 						{
 							name: 'instagram',
@@ -501,7 +540,10 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/arodrigo49.jpg', alt: 'Imagen del Ilustrador Regional Arodrigo49' },
+					image: {
+						url: '/azotea/arodrigo49.jpg',
+						alt: 'Imagen del Ilustrador Regional Arodrigo49'
+					},
 					links: [
 						{
 							name: 'instagram',
