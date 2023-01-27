@@ -19,7 +19,7 @@ export const AZOTEA = {
 	},
 	image: {
 		url: '/azotea/azotea.svg',
-		position: { top: '51%', left: '35%' }
+		alt: 'Ilustración de la Azotea Arc por Camipepe'
 	},
 	schedule: [
 		{

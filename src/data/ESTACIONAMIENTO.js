@@ -19,7 +19,7 @@ export const ESTACIONAMIENTO = {
 	},
 	image: {
 		url: '/estacionamiento/estacionamiento.svg',
-		position: { top: '56%', left: '53%' }
+		alt: 'Ilustración del Estacionamiento Plaza de Armas por Camipepe'
 	},
 	schedule: [
 		{

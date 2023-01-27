@@ -18,7 +18,7 @@ export const GAVIOTA = {
 	},
 	image: {
 		url: '/gaviota/gaviota.svg',
-		position: { top: '70%', left: '19.5%' }
+		alt: 'Ilustración de Espacio La Gaviota por Camipepe'
 	},
 	schedule: [
 		{

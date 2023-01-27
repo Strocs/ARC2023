@@ -17,19 +17,19 @@ export const CENTRO = {
 		borderColor: 'border-pink'
 	},
 	image: {
-		url: '/arqueologico/arqueologico.svg',
-		position: { top: '42%', left: '72%' }
+		url: '/centro/centro.svg',
+		alt: 'Ilustración del Centro de La Serena por Camipepe'
 	},
 	schedule: [
 		{
-			day: '',
+			day: 'Domingo 11',
 			events: [
 				{
 					id: 'la-pelea-del-siglo',
 					name: 'La Pelea del Siglo',
 					subTitle: { title: 'Lugar:', text: 'Sector de la Catedral' },
 					category: 'Circo',
-					time: '',
+					time: '12:00',
 					image: {
 						url: '/municipal/.jpg',
 						alt: 'Imagen de la presentación de La Pelea del Siglo'

@@ -18,7 +18,7 @@ export const FRONTIS = {
 	},
 	image: {
 		url: '/frontis/frontis.svg',
-		position: { top: '64%', left: '42%' }
+		alt: 'Ilustración del Frontis Gobierno Regional por Camipepe'
 	},
 	schedule: [
 		{

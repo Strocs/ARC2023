@@ -18,7 +18,7 @@ export const MUSEO = {
 	},
 	image: {
 		url: '/arqueologico/museo.svg',
-		position: { top: '42%', left: '72%' }
+		alt: 'Ilustración del Museo Arqueológico por Camipepe'
 	},
 	schedule: [
 		{

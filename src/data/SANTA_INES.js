@@ -17,7 +17,7 @@ export const SANTA_INES = {
 	},
 	image: {
 		url: '/santa-ines/santa-ines.svg',
-		position: { top: '59.5%', left: '14%' }
+		alt: 'Ilustración del Centro Cultural Santa Inés por Camipepe'
 	},
 	schedule: []
 }

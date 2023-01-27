@@ -18,7 +18,7 @@ export const MUNICIPAL = {
 	},
 	image: {
 		url: '/municipal/municipal.svg',
-		position: { top: '28%', left: '68%' }
+		alt: 'Ilustración del Teatro Municipal por Camipepe'
 	},
 	schedule: [
 		{

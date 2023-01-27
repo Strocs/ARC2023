@@ -21,7 +21,7 @@ export const CENTENARIO = {
 	},
 	image: {
 		url: '/centenario/centenario.svg',
-		position: { top: '120%', left: '69%' }
+		alt: 'Ilustración del Teatro Centenario por Camipepe'
 	},
 	schedule: [
 		{
