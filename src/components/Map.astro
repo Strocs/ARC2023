@@ -3,12 +3,15 @@ import Mapa from './icons/Mapa.astro'
 ---
 
 <section id='map-container' class='w-screen h-screen relative'>
-	<div id='map' class='absolute w-[150%] sm:w-1/2 top-20 right-0 sm:left-0 -left-16 bottom-0 m-auto origin-top-left touch-none'>
+	<div
+		id='map'
+		class='absolute w-[150%] sm:w-1/2 top-20 right-0 sm:left-0 -left-16 bottom-0 m-auto origin-top-left touch-none'
+	>
 		<Mapa />
 	</div>
 </section>
 
-<script type='module'>
+<script>
 	function getXY(obj) {
 		return {
 			x: obj.pageX,
@@ -72,9 +75,15 @@ import Mapa from './icons/Mapa.astro'
 					const scaleDiff =
 						touchDistance(points[0], points[1]) /
 						touchDistance(this._lastPoints[0], this._lastPoints[1])
-					this._scale *= scaleDiff
-					this._dx -= (averagePoint.x - left) * (scaleDiff - 1)
-					this._dy -= (averagePoint.y - top) * (scaleDiff - 1)
+					if (this._scale * scaleDiff < 0.8) {
+						this._scale = 0.8
+					} else if (this._scale * scaleDiff > 3.8) {
+						this._scale = 3.8
+					} else {
+						this._scale *= scaleDiff
+						this._dx -= (averagePoint.x - left) * (scaleDiff - 1)
+						this._dy -= (averagePoint.y - top) * (scaleDiff - 1)
+					}
 				}
 
 				this._update()
@@ -159,78 +168,3 @@ import Mapa from './icons/Mapa.astro'
 		eventArea: svgContainer
 	})
 </script>
-
-<!-- <script>
-	const map = document.getElementById('map')
-	// const image = map.querySelector('img')
-	let scale = 1
-	let panning = false
-	let pointX = 0
-	let pointY = -window.innerHeight * 0.5
-	let start = { x: 0, y: 0 }
-	// let limitX = window.innerWidth - image.width
-	// let limitY = window.innerHeight - image.height
-	let maxZoom = 1.46
-	let minZoom = .8
-
-	function setTransform() {
-		map.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`
-	}
-
-	setTransform()
-	// function setLimits() {
-	// 	limitX = window.innerWidth - image.width * scale
-	// 	limitY = window.innerHeight - image.height * scale
-	// }
-
-	window.addEventListener('resize', () => {
-		// setLimits()
-		pointX = 0
-		pointY = 0
-		setTransform()
-	})
-
-	map.onpointerdown = e => {
-		e.preventDefault()
-		start = { x: e.clientX - pointX, y: e.clientY - pointY }
-		panning = true
-	}
-
-	map.onpointerup = () => {
-		panning = false
-	}
-
-	map.onpointermove = e => {
-		e.preventDefault()
-		if (!panning) {
-			return
-		}
-		// pointX = e.clientX - start.x > 0 || e.clientX - start.x < limitX ? pointX : e.clientX - start.x
-		// pointY = e.clientY - start.y > 0 || e.clientY - start.y < limitY ? pointY : e.clientY - start.y
-		pointX = e.clientX - start.x
-		pointY = e.clientY - start.y
-		setTransform()
-	}
-
-	map.addEventListener(
-		'wheel',
-		e => {
-			if (e.deltaY > 0 && scale === minZoom) return
-			if (e.deltaY < 0 && scale === maxZoom) return
-
-			let xs = (e.clientX - pointX) / scale
-			let ys = (e.clientY - pointY) / scale
-			let delta = e.deltaY
-			delta < 0 ? (scale *= 1.2) : (scale /= 1.2)
-
-			// pointX = e.clientX - xs * scale > 0 || e.clientX - xs * scale > limitX ? 0 : e.clientX - xs * scale
-			pointX = e.clientX - xs * scale
-			// pointY = e.clientY - ys * scale > 0 || e.clientY - ys * scale > limitY ? 0 : e.clientY - ys * scale
-			pointY = e.clientY - ys * scale
-
-			// setLimits()
-			setTransform()
-		},
-		{ passive: true }
-	)
-</script> -->

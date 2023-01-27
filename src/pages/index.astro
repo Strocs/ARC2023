@@ -11,30 +11,102 @@ const { title, description, locations } = ARC_2023
 
 <Layout title={title} description={description}>
 	<Header />
-	<main id='main-page' class='relative w-full h-full max-h-screen overflow-hidden'>
+	<main id='main-page' class='relative w-full h-auto overflow-hidden'>
 		{locations.map((location) => <LocationInfo query={location.id} />)}
 		<Map />
 		<Controls />
 	</main>
-	<Footer fixed />
+	<!-- <Footer fixed /> -->
 </Layout>
 
-<script type='module'>
+<script>
 	const mapIcon = document.getElementById('map').querySelectorAll('.names')
 	const locations = document.querySelectorAll('[aria-label="location-info"]')
 	const header = document.querySelector('header').querySelector('div')
-	const footer = document.querySelector('footer')
+	const logo = document.getElementById('logo-text')
+	const buttons = header.querySelector('button')
+	const links = header.querySelectorAll('#social-networks')
+	const controls = document.querySelector('#controls')
 
-	function showLocationsInfo(element, show) {
+	const colors = [
+		{
+			textColor: 'text-radioactive-green',
+			fillColor: 'fill-radioactive-green',
+			bgColor: 'bg-radioactive-green',
+			hoverColor: 'hover:text-radioactive-green'
+		},
+		{
+			textColor: 'text-orange',
+			fillColor: 'fill-orange',
+			bgColor: 'bg-orange',
+			hoverColor: 'hover:text-orange'
+		},
+		{
+			textColor: 'text-black-pink',
+			fillColor: 'fill-black-pink',
+			bgColor: 'bg-black-pink',
+			hoverColor: 'hover:text-black-pink'
+		},
+		{
+			textColor: 'text-purple',
+			fillColor: 'fill-purple',
+			bgColor: 'bg-purple',
+			hoverColor: 'hover:text-purple'
+		},
+		{
+			textColor: 'text-pink',
+			fillColor: 'fill-pink',
+			bgColor: 'bg-pink',
+			hoverColor: 'hover:text-pink'
+		},
+		{
+			textColor: 'text-yellow',
+			fillColor: 'fill-yellow',
+			bgColor: 'bg-yellow',
+			hoverColor: 'hover:text-yellow'
+		},
+		{
+			textColor: 'text-water-green',
+			fillColor: 'fill-water-green',
+			bgColor: 'bg-water-green',
+			hoverColor: 'hover:text-water-green'
+		},
+		{
+			textColor: 'text-blue',
+			fillColor: 'fill-blue',
+			bgColor: 'bg-blue',
+			hoverColor: 'hover:text-blue'
+		},
+		{
+			textColor: 'text-pale-blue',
+			fillColor: 'fill-pale-blue',
+			bgColor: 'bg-pale-blue',
+			hoverColor: 'hover:text-pale-blue'
+		}
+	]
+
+	function showLocationsInfo(element, show, index) {
 		if (show) {
-			header.classList.add(element.classList[0])
-			footer.classList.add(element.classList[0])
+			header.classList.add(colors[index].bgColor)
+			controls.classList.add(colors[index].bgColor)
+			logo.classList.add(colors[index].fillColor)
+			buttons.classList.add(colors[index].textColor)
+			links.forEach((link) => {
+				link.classList.remove('hover:text-main')
+				link.classList.add(colors[index].hoverColor)
+			})
 			element.style.right = '0'
 			element.style.zIndex = '20'
 			element.style.opacity = '1'
 		} else {
-			header.classList.remove(element.classList[0])
-			footer.classList.remove(element.classList[0])
+			header.classList.remove(colors[index].bgColor)
+			controls.classList.remove(colors[index].bgColor)
+			logo.classList.remove(colors[index].fillColor)
+			buttons.classList.remove(colors[index].textColor)
+			links.forEach((link) => {
+				link.classList.remove(colors[index].hoverColor)
+				link.classList.add('hover:text-main')
+			})
 			element.style.zIndex = '10'
 			element.style.right = '-448px'
 		}
@@ -42,22 +114,23 @@ const { title, description, locations } = ARC_2023
 
 	mapIcon.forEach((icon, index) =>
 		icon.addEventListener('click', () => {
-			locations.forEach((location) => {
-				showLocationsInfo(location, false)
+			locations.forEach((location, index) => {
+				showLocationsInfo(location, false, index)
 			})
-			showLocationsInfo(locations[index], true)
-		})
-	)
-	mapIcon.forEach((icon, index) =>
-		icon.addEventListener('touchend', () => {
-			locations.forEach((location) => {
-				showLocationsInfo(location, false)
-			})
-			showLocationsInfo(locations[index], true)
+			showLocationsInfo(locations[index], true, index)
 		})
 	)
 
-	locations.forEach((location) => {
+	mapIcon.forEach((icon, index) =>
+		icon.addEventListener('touchend', () => {
+			locations.forEach((location) => {
+				showLocationsInfo(location, false, index)
+			})
+			showLocationsInfo(locations[index], true, index)
+		})
+	)
+
+	locations.forEach((location, index) => {
 		location.addEventListener(
 			'transitionend',
 			(e) => {
@@ -69,7 +142,7 @@ const { title, description, locations } = ARC_2023
 			false
 		)
 		location.querySelector('button').addEventListener('click', () => {
-			showLocationsInfo(location, false)
+			showLocationsInfo(location, false, index)
 		})
 	})
 </script>

@@ -12,20 +12,24 @@ const { hoverTextColor, groupHoverTextColor } = Astro.props
 ---
 
 <nav
-	class='bg-main max-w-xs h-full max-h-screen w-full absolute flex flex-col justify-between top-0 z-40 -left-[320px] pt-20 opacity-0 motion-reduce:animate-none'
+	class='bg-main max-w-xs h-full w-full fixed flex flex-col gap-14 top-0 z-40 -left-[320px] pt-32 opacity-0 px-14 motion-reduce:animate-none'
 >
-	<ul class='text-white text-4xl p-14 flex flex-col gap-5'>
+	<ul class='text-white text-4xl flex flex-col gap-5'>
 		{
 			sections.map((section) => (
-				<li>
+				<li class='hover:underline transition-all duration-200 ease-in'>
 					<a href={section.href}>{section.name.toUpperCase()}</a>
 				</li>
 			))
 		}
 	</ul>
-	<div class='p-14 flex flex-col gap-6'>
+	<div class='flex flex-col gap-6'>
 		<ScheduleDownloader mobile hoverTextColor={hoverTextColor} />
 		<SocialNetworks mobile groupHoverTextColor={groupHoverTextColor} />
+	</div>
+	<div class='flex flex-col absolute bottom-0 py-6'>
+		<p class="font-bold text-lg">ARC 2023</p>
+		<p class="font-light">Desarrollado por <a class="underline" target='_blank' href='https://github.com/Strocs'>Strocs</a></p>
 	</div>
 </nav>
 

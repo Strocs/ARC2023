@@ -1,11 +1,14 @@
 ---
 import { ARC_2023 } from '../data/ARC_2023'
-import Logo from './Logo.astro'
+import Logo from './icons/Logo.astro'
 const { city, days } = ARC_2023
+const { fillColor } = Astro.props
 ---
 
 <div class='flex text-white items-center gap-3'>
-	<Logo sm />
+	<a href='/' class='w-32'>
+		<Logo fillColor={fillColor} />
+	</a>
 	<div class='text-xs sm:text-sm'>
 		<p class='leading-4 font-semibold'>{days}</p>
 		<p class='leading-4 font-light'>{city}</p>

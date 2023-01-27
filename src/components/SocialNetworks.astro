@@ -3,7 +3,7 @@ import { Icon } from 'astro-icon'
 import { ARC_2023 } from '../data/ARC_2023'
 const { socialNetwork } = ARC_2023
 
-const { groupHoverTextColor, mobile } = Astro.props
+const { hoverTextColor, mobile } = Astro.props
 ---
 
 <div class={`gap-3 items-center ${mobile ? 'flex lg:hidden' : 'hidden lg:flex'}`}>
@@ -12,10 +12,10 @@ const { groupHoverTextColor, mobile } = Astro.props
 		{
 			socialNetwork.map((social) => (
 				<li>
-					<a class='hover:bg-white group p-1 transition block' href={social.url}>
+					<a id="social-networks" class={`hover:bg-white group p-1 transition-all duration-200 ease-in block text-white ${hoverTextColor}`} href={social.url}>
 						<Icon
 							name={`mdi:${social.name}`}
-							class={`text-white w-7 h-7 ${groupHoverTextColor} transition`}
+							class={'w-7 h-7'}
 						/>
 					</a>
 				</li>

@@ -27,7 +27,8 @@ const { id, title, address, extract, description, links, styles, image } = Astro
 	<Header
 		backgroundColor={styles.backgroundColor}
 		textColor={styles.textColor}
-		groupHoverTextColor={styles.groupHoverTextColor}
+		hoverTextColor={styles.hoverTextColor}
+		fillColor={styles.fillColor}
 	/>
 	<PageContainer backgroundColor={styles.backgroundColor} borderColor={styles.borderColor}>
 		<Fragment slot='first-section'>
@@ -38,7 +39,7 @@ const { id, title, address, extract, description, links, styles, image } = Astro
 			<Paragraph description={description} />
 		</Fragment>
 		<Fragment slot='second-section'>
-			<h2 class='text-5xl leading-9 font-bold'>Programa</h2>
+			<h2 class='text-4xl sm:text-5xl leading-9 font-bold'>Programación</h2>
 			<Schedule locationId={id} />
 			<BackButton hoverBackgroundColor={styles.hoverBackgroundColor} Element='a' link='/'>
 				<p class='inline group-hover:text-white'>Volver</p>

@@ -8,19 +8,20 @@ import ToggleMenuButton from './ToggleMenuButton.astro'
 const {
 	backgroundColor = 'bg-main',
 	textColor = 'text-main',
-	groupHoverTextColor = 'group-hover:text-main'
+	hoverTextColor = 'hover:text-main',
+	fillColor = 'fill-main'
 } = Astro.props
 ---
 
 <header>
 	<div
-		class={`flex w-full items-center justify-between sm:justify-start sm:gap-14 fixed top-0 ${backgroundColor} bg-xl sm:px-14 px-4 py-2 z-50 transition-[background-color] duration-200 ease-in`}
+		class={`flex w-full items-center justify-between sm:justify-start sm:gap-14 fixed top-0 ${backgroundColor} bg-texture bg-4xl sm:bg-xl sm:px-14 px-4 py-2 z-50 transition-[background-color] duration-200 ease-in`}
 	>
 		<ToggleMenuButton id='menu' />
 		<div class='flex text-white justify-between w-full gap-6'>
-			<LogoWithText />
+			<LogoWithText fillColor={fillColor} />
 			<div class='flex gap-14'>
-				<SocialNetworks groupHoverTextColor={groupHoverTextColor} />
+				<SocialNetworks hoverTextColor={hoverTextColor} />
 				<ScheduleDownloader textColor={textColor} />
 			</div>
 		</div>
@@ -29,7 +30,7 @@ const {
 	<Navbar id='navbar' />
 </header>
 
-<script type='module'>
+<script>
 	const menu = document.querySelectorAll('input')
 	const navbar = document.querySelector('nav')
 
