@@ -6,18 +6,19 @@ module.exports = {
 			colors: {
 				main: '#db458c',
 				pink: '#db458c',
-				yellow: '#ffec00',
+				yellow: '#ffe800',
 				'black-pink': '#ff0068',
 				'pale-blue': '#00c3ff',
 				purple: '#540060',
 				orange: '#fc7200',
 				'water-green': '#45989e',
-				'pale-yellow': '#dcf132',
+				'radioactive-green': '#79f132',
 				blue: '#010f70'
 			},
 			backgroundImage: {
 				image: 'url("https://i.ytimg.com/vi/yPWjkLcOvbg/maxresdefault.jpg")',
-				texture: 'url(/textura.svg)'
+				texture: 'url(/textura.svg)',
+				icons: 'url(/bg.svg)'
 			},
 			backgroundSize: {
 				xs: '20%',
@@ -25,7 +26,9 @@ module.exports = {
 				md: '60%',
 				lg: '80%',
 				xl: '100%',
-				'2xl': '200%'
+				'2xl': '200%',
+				'3xl': '300%',
+				'4xl': '400%'
 			}
 		}
 	},
