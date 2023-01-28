@@ -211,7 +211,7 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					image: {
-						url: '/azotea/kunturi-y-yakana-milo-ys.jpg',
+						url: '/azotea/kunturi-yakana-milo.jpg',
 						alt: 'Imagen de los Ilustradores Kunturi & Yakana | Milo_ys'
 					},
 					links: [
@@ -234,8 +234,27 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					image: {
-						url: '/azotea/leeneal-studio.jpg',
-						alt: 'Imagen de la Ilustradora Regional Leeneal Studio'
+						url: '/azotea/leeneal.jpg',
+						alt: 'Imagen del equipo de ilustración Regional Leeneal Studio'
+					},
+					links: [
+						{ name: 'instagram', url: 'https://www.instagram.com/leeneal__/' },
+						{ name: 'tiktok', url: ' https://www.tiktok.com/@leeneal_' },
+						{ name: 'twitter', url: 'https://twitter.com/Leeneal__' }
+					],
+					description:
+						'Leeneal Ilustración, nace en diciembre del 2021 y se activa en septiembre del 2022 en el primer evento en el qué participamos.\nRealizamos ilustraciones en un estilo Cute o Kawaii, el que usamos para crear diferentes productos, como papeleria en general (Stickers, libretas, prints entre otros.)\nAdemás presentamos productos sublimados y con serigrafí (Monederos, estuches, totebags, coles y más.)\nAl principio nuestras inspiraciones fueron las ilustraciones en el estilo lineal y por eso el nombre Leeneal, pero con el pasar del tiempo, hemos ido estudiando y agregando más colores y formas en mis composiciones.\nNuestro enfoque principal es poder crear productos funcionales para el día a día con lindos diseños, por eso los estuches, monederos, libretas y más.',
+					list: [{ title: 'Contacto:', text: ['+56 9 76730830'] }]
+				},
+				{
+					id: 'luna-gatuna',
+					name: 'Luna Gatuna',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: {
+						url: '/azotea/luna-gatuna.jpg',
+						alt: 'Imagen de la Ilustradora Regional Luna Gatuna'
 					},
 					links: [{ name: 'instagram', url: 'www.instagram.com/lunagatuna.art' }],
 					description:
@@ -249,12 +268,12 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/nino-pan.jpg', alt: 'Imagen del Ilustrador Regional Niño Pan' },
+					image: { url: '/azotea/niño-pan.jpg', alt: 'Imagen del Ilustrador Regional Niño Pan' },
 					links: [{ name: 'instagram', url: 'www.instagram.com/elninopan' }],
 					description:
 						'Hola me llamo Niño Pan, me dedico a la ilustración digital y no sabría muy bien cómo definir mi estilo pero diría que es un tanto variable pero a la vez reconocible, dependiendo de lo que quiero dibujar, aplico distintas formas de trazado y coloreado.\nPor lo general lo que me inspira a dibujar son cosas que me pasan, que siento, que pienso, los espacios que habito, algunas personas que quiero, perritos que andan por la calle, la tristeza, los besitos, dudas existenciales y otras más. 🙂',
 
-					list: [{ title: 'Contacto:', text: ['+56 9 76730830'] }]
+					list: []
 				},
 				{
 					id: 'blue-straycatt-art',
@@ -263,7 +282,7 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					image: {
-						url: '/azotea/blue-straycatt-art.jpg',
+						url: '/azotea/blue.jpg',
 						alt: 'Imagen de la Ilustradora Regional Blue Straycatt Art'
 					},
 					links: [
@@ -309,7 +328,7 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					image: {
-						url: '/azotea/rotten-monkey-inc.jpg',
+						url: '/azotea/rotten-monkey.jpg',
 						alt: 'Imagen del Ilustrador Regional Rotten Monkey Inc'
 					},
 					links: [
@@ -383,7 +402,7 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					image: {
-						url: '/azotea/camila-guaman.jpg',
+						url: '/azotea/cami-guaman.jpg',
 						alt: 'Imagen de la Ilustradora Regional Camila Guamán'
 					},
 					links: [
@@ -408,7 +427,7 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					image: {
-						url: '/azotea/fran-koneko.jpg',
+						url: '/azotea/koneko.jpg',
 						alt: 'Imagen de la Ilustradora Regional Fran.koneko'
 					},
 					links: [
@@ -436,7 +455,7 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					image: {
-						url: '/azotea/ce-hache.jpg',
+						url: '/azotea/ch.jpg',
 						alt: 'Imagen de el emprendimiento Regional CE HACHE'
 					},
 					links: [
@@ -459,7 +478,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/seh-yuk.jpg', alt: 'Imagen de la Ilustradora Regional Seh yuk' },
+					image: { url: '/azotea/seyuk.jpg', alt: 'Imagen de la Ilustradora Regional Seh yuk' },
 					links: [
 						{
 							name: 'instagram',
@@ -477,7 +496,7 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					image: {
-						url: '/azotea/isabela-fuentes.jpg',
+						url: '/azotea/isafuentes.jpg',
 						alt: 'Imagen de la Ilustradora Regional Isabela Fuentes'
 					},
 					links: [
@@ -501,7 +520,7 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					image: {
-						url: '/azotea/astro-glitter.jpg',
+						url: '/azotea/astroglitter.jpg',
 						alt: 'Imagen de la Ilustradora Regional Astro Glitter'
 					},
 					links: [
@@ -521,7 +540,7 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					image: {
-						url: '/azotea/intecultural-arte.jpg',
+						url: '/azotea/intercultural.jpg',
 						alt: 'Imagen de la Ilustradora Regional Intecultural arte'
 					},
 					links: [
@@ -541,7 +560,7 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					image: {
-						url: '/azotea/arodrigo49.jpg',
+						url: '/azotea/alvaro-rodrigo.jpg',
 						alt: 'Imagen del Ilustrador Regional Arodrigo49'
 					},
 					links: [

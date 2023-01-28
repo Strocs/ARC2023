@@ -29,7 +29,7 @@ export const FRONTIS = {
 					name: 'Mushi, un espectáculo de bichos',
 					subTitle: { title: 'Compañía:', text: 'Circo Mushi' },
 					category: 'Circo',
-					time: '',
+					time: '21:00',
 					image: {
 						url: '/frontis/mushi.jpg',
 						position: { marginTop: '2rem' },
@@ -72,7 +72,7 @@ export const FRONTIS = {
 					name: 'Concierto El Señor de los Anillos Sinfónico',
 					subTitle: {},
 					category: 'Música',
-					time: '',
+					time: '21:00',
 					image: {
 						url: '/frontis/orquesta-PAC.jpg',
 						alt: 'Imagen de la presentación del Concierto El Señor de los Anillos Sinfónico'
@@ -114,7 +114,7 @@ export const FRONTIS = {
 					name: 'Calle',
 					subTitle: {},
 					category: 'Circo',
-					time: '',
+					time: '21:00',
 					image: {
 						url: '/frontis/calle.jpg',
 						alt: 'Imagen de la presentación de Calle, obra de circo contemporáneo'

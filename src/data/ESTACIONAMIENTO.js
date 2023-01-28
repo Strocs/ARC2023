@@ -23,7 +23,7 @@ export const ESTACIONAMIENTO = {
 	},
 	schedule: [
 		{
-			day: '',
+			day: 'Viernes 10 hasta Domingo 12\nDesde las 10:00 horas',
 			events: [
 				{
 					id: 'la-velocidad-de-la-luz',

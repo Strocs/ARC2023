@@ -34,7 +34,7 @@ export const MUSEO = {
 						url: '/municipal/el-arte-del-tiempo.jpg',
 						alt: 'Imagen del documental El Arte del Tiempo'
 					},
-					links: [],
+					links: [{ name: 'video', url: 'https://youtu.be/g8rAcq5wzdU' }],
 					description:
 						'La construcción de la carretera panamericana que conecta Chile de norte a sur, tropieza con el sitio arqueológico más grande de la región de Coquimbo: El Olivar, un enorme asentamiento que alberga las sepulturas de diferentes culturas prehistóricas de la región, entre ellas, el apogeo de la cultura Diaguita (800 - 1536 d.C). Esta cultura, estudiada por los arqueólogos desde la década de 1920 en adelante, y conocida por su sofisticada alfarería, contiene más de 700 años de prehistoria chilena y su relación con el territorio, revelando esta vez, una profunda concepción del tiempo y la muerte.',
 					list: [
@@ -84,7 +84,7 @@ export const MUSEO = {
 						url: '/municipal/redención.jpg',
 						alt: 'Imagen del cortometraje Redención'
 					},
-					links: [],
+					links: [{ name: 'video', url: 'https://vimeo.com/702180992' }],
 					description:
 						'Alfonso ha escapado con suerte de un fallido asalto junto a Reinaldo, su brazo derecho. Herido y fugitivo, guiado por Reinaldo, pretende refugiarse en el paraíso que lo vio nacer, una remota granja escondida entre las densas montañas de Los Andes Chilenos. Alfonso desea borrar sus culpas y recomponer su destino pero la muerte viene más cerca para atraparlo y dejar a Reinaldo frente a una oportunidad difícil de rechazar para empezar de cero.',
 					list: [
@@ -110,9 +110,9 @@ export const MUSEO = {
 						url: '/municipal/proyecto-fantasma.jpg',
 						alt: 'Imagen del largometraje Proyecto Fantasma'
 					},
-					links: [],
+					links: [{ name: 'video', url: 'https://www.youtube.com/watch?v=R7QBysJcLKQ' }],
 					description:
-						'Pablo  es un joven de 30 años que sueña con actuar en películas de cine, pero para sobrevivir trabaja como paciente simulado y en extrañas sesiones de terapias alternativas. Su vida viene cuesta abajo, acaba de terminar una relación y su compañero de casa desaparece, dejándole deudas y un sin fin de problemas… entre ellos, un fantasma. Este será el comienzo de su travesía por el barrio de Ñuñoa, conociendo a sus vecinos, haciendo nuevos amigos y descubriendo que el camino para cumplir su sueño será más enredado y complicado de lo que parece.',
+						'Pablo es un joven de 30 años que sueña con actuar en películas de cine, pero para sobrevivir trabaja como paciente simulado y en extrañas sesiones de terapias alternativas. Su vida viene cuesta abajo, acaba de terminar una relación y su compañero de casa desaparece, dejándole deudas y un sin fin de problemas… entre ellos, un fantasma. Este será el comienzo de su travesía por el barrio de Ñuñoa, conociendo a sus vecinos, haciendo nuevos amigos y descubriendo que el camino para cumplir su sueño será más enredado y complicado de lo que parece.',
 					list: [
 						{ title: 'Dirección:', text: ['Roberto Doveris'] },
 						{
