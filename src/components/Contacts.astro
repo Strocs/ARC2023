@@ -13,7 +13,7 @@ const { links, hoverTextColor, borderColor } = Astro.props
 					<a href={url}>
 						<Icon
 							class={`${hoverTextColor} h-6 w-6 transition-all duration-200`}
-							name={`mdi:${name}`}
+							name={ name === 'tiktok' ? 'ic:baseline-tiktok' : `mdi:${name}`}
 						/>
 					</a>
 				</li>
