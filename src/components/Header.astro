@@ -1,0 +1,59 @@
+---
+import LogoWithText from './LogoWithText.astro'
+import Navbar from './Navbar.astro'
+import ToggleMenuButton from './ToggleMenuButton.astro'
+const {
+	backgroundColor = 'bg-main',
+	textColor = 'text-main',
+	hoverTextColor = 'hover:text-main',
+	fillColor = 'fill-main'
+} = Astro.props
+---
+
+<header>
+	<div
+		class={`flex w-full items-center justify-between sm:justify-start sm:gap-14 fixed top-0 ${backgroundColor} bg-texture bg-4xl sm:bg-xl sm:px-14 px-4 py-2 z-50 transition-[background-color] duration-200 ease-in`}
+	>
+		<ToggleMenuButton id='menu' />
+		<div class='flex text-white justify-between w-full gap-6'>
+			<LogoWithText fillColor={fillColor} />
+			<div class='flex gap-14'>
+			</div>
+		</div>
+		<ToggleMenuButton mobile id='menu-mobile' />
+	</div>
+	<Navbar hoverTextColor={hoverTextColor} backgroundColor={backgroundColor} textColor={textColor} />
+</header>
+
+<script>
+	const menu = document.querySelectorAll('input')
+	const navbar = document.querySelector('nav')
+	function showNavBar(show) {
+		if (show) {
+			navbar.style.left = '0'
+			navbar.style.opacity = '1'
+		} else {
+			navbar.style.left = '-320px'
+		}
+	}
+	navbar.querySelectorAll('a').forEach((anchor) => {
+		anchor.addEventListener('click', () => {
+			showNavBar(false)
+		})
+	})
+	navbar.addEventListener('transitionend', (e) => {
+		if (navbar !== e.target) return
+		if (navbar.style.left === '-320px') {
+			navbar.style.opacity = '0'
+		}
+	})
+	menu.forEach((el) =>
+		el.addEventListener('change', (e) => {
+			if (e.target.checked) {
+				showNavBar(true)
+				return
+			}
+			showNavBar(false)
+		})
+	)
+</script>

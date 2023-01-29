@@ -16,10 +16,6 @@ const { title } = Astro.props
 			content='La nueva versión del Festival de las Artes Región de Coquimbo busca incidir en la forma en la que la comunidad habita su ciudad, a través de un nuevo formato que transformará los espacios públicos en un circuito artístico caminable, en el que convergerá la curiosidad del ciudadano de a pie con la belleza presente en las distintas disciplinas que conforman el sector artístico de nuestra región.'
 		/>
 		<title>{title}</title>
-		<link rel='preconnect' href='https://fonts.googleapis.com' />
-		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-		<link href='https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap' rel='stylesheet' />
-
 		<meta name='twitter:card' content='summary' />
 		<meta name='twitter:site' content='@festivalarc' />
 		<meta property='og:title' content='Pronto Festival ARC 2023' />
@@ -30,16 +26,16 @@ const { title } = Astro.props
 		<meta property='og:image' content='/cardArc.png' />
 		<meta property='og:url' content='https://www.festivalarc.cl' />
 		<meta property='og:site_name' content='Pronto Festival ARC 2023' />
-		<script defer src='/_vercel/insights/script.js'></script>
+		<!-- <script defer src='/_vercel/insights/script.js'></script> -->
 	</head>
-	<body>
+	<body class='text-white h-full'>
 		<TrackVitals />
 		<slot />
 	</body>
 </html>
-<style is:global>
+
+<style>
 	html {
-		background-color: #db458c;
-		font-family: 'Nunito', system-ui, sans-serif;
+		background-color: #1d011a;
 	}
 </style>

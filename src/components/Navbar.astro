@@ -1,0 +1,35 @@
+---
+import SocialNetworks from './SocialNetworks.astro'
+const sections = [
+	{ name: 'inicio', href: '/' },
+	{ name: 'festival', href: '/festival-arc' },
+]
+---
+
+<nav class={`bg-main flex flex-col gap-14 py-24 w-full max-w-xs px-10 h-screen top-0 bottom-0 overflow-auto fixed z-40 motion-reduce:animate-none`} style={{ opacity: '0', left: '-320px' }}>
+	<ul class='text-white text-4xl flex flex-col gap-5'>
+		{
+			sections.map(section => (
+				<li class='hover:underline transition-all duration-200 ease-in'>
+					<a href={section.href}>{section.name.toUpperCase()}</a>
+				</li>
+			))
+		}
+	</ul>
+	<div class='flex flex-col gap-6'>
+		<SocialNetworks />
+	</div>
+	<div class='flex flex-col absolute bottom-0 py-6'>
+		<p class='font-bold text-lg'>ARC 2023</p>
+		<p class='font-light'>
+			Desarrollado por <a class='underline' target='_blank' href='https://github.com/Strocs'>Strocs</a>
+		</p>
+	</div>
+</nav>
+
+<style>
+	nav {
+		transition: left 500ms;
+		transition-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+	}
+</style>
