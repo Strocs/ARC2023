@@ -5,7 +5,7 @@ import Map from '../components/Map.astro'
 import LocationInfo from '../components/LocationInfo.astro'
 import Controls from '../components/Controls.astro'
 import Header from '../components/Header.astro'
-// import Footer from '../components/Footer.astro'
+import Footer from '../components/Footer.astro'
 const { title, description, locations } = ARC_2023
 ---
 
@@ -16,13 +16,14 @@ const { title, description, locations } = ARC_2023
 		<Map />
 		<Controls />
 	</main>
-	<!-- <Footer fixed /> -->
+	<Footer fixed />
 </Layout>
 
 <script>
 	const mapIcon = document.getElementById('map').querySelectorAll('.names')
 	const locations = document.querySelectorAll('[aria-label="location-info"]')
 	const header = document.querySelector('header').querySelector('div')
+	const footer = document.querySelector('footer')
 	const logo = document.getElementById('logo-text')
 	const buttons = header.querySelector('button')
 	const links = header.querySelectorAll('#social-networks')
@@ -30,10 +31,10 @@ const { title, description, locations } = ARC_2023
 
 	const colors = [
 		{
-			textColor: 'text-blue',
-			fillColor: 'fill-blue',
-			bgColor: 'bg-blue',
-			hoverColor: 'hover:text-blue'
+			textColor: 'text-pale-purple',
+			fillColor: 'fill-pale-purple',
+			bgColor: 'bg-pale-purple',
+			hoverColor: 'hover:text-pale-purple'
 		},
 		{
 			textColor: 'text-orange',
@@ -66,10 +67,10 @@ const { title, description, locations } = ARC_2023
 			hoverColor: 'hover:text-yellow'
 		},
 		{
-			textColor: 'text-water-green',
-			fillColor: 'fill-water-green',
-			bgColor: 'bg-water-green',
-			hoverColor: 'hover:text-water-green'
+			textColor: 'text-blue',
+			fillColor: 'fill-blue',
+			bgColor: 'bg-blue',
+			hoverColor: 'hover:text-blue'
 		},
 		{
 			textColor: 'text-red',
@@ -88,6 +89,7 @@ const { title, description, locations } = ARC_2023
 	function showLocationsInfo(element, show, index) {
 		if (show) {
 			header.classList.add(colors[index].bgColor)
+			footer.classList.add(colors[index].bgColor)
 			controls.classList.add(colors[index].bgColor)
 			logo.classList.add(colors[index].fillColor)
 			buttons.classList.add(colors[index].textColor)
@@ -100,6 +102,7 @@ const { title, description, locations } = ARC_2023
 			element.style.opacity = '1'
 		} else {
 			header.classList.remove(colors[index].bgColor)
+			footer.classList.remove(colors[index].bgColor)
 			controls.classList.remove(colors[index].bgColor)
 			logo.classList.remove(colors[index].fillColor)
 			buttons.classList.remove(colors[index].textColor)

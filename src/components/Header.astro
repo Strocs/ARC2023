@@ -39,7 +39,7 @@ const {
 			navbar.style.left = '0'
 			navbar.style.opacity = '1'
 		} else {
-			navbar.style.left = '-320px'
+			navbar.style.left = '-448px'
 		}
 	}
 
@@ -51,7 +51,7 @@ const {
 
 	navbar.addEventListener('transitionend', (e) => {
 		if (navbar !== e.target) return
-		if (navbar.style.left === '-320px') {
+		if (navbar.style.left === '-448px') {
 			navbar.style.opacity = '0'
 		}
 	})

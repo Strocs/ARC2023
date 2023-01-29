@@ -29,7 +29,7 @@ export const ESTACIONAMIENTO = {
 					id: 'la-velocidad-de-la-luz',
 					name: 'La Velocidad de la Luz',
 					subTitle: {},
-					category: 'Performance',
+					category: 'Nuevos Medios',
 					time: '',
 					image: {
 						url: '/estacionamiento/velocidad-de-la-luz.jpg',
