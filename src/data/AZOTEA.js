@@ -251,6 +251,30 @@ export const AZOTEA = {
 					list: []
 				},
 				{
+					id: 'camellia-liz',
+					name: 'Camellia Liz',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: {
+						url: '/azotea/camellia.jpg',
+						alt: 'Imagen de la Ilustradora Regional Camellia Liz'
+					},
+					links: [
+						{
+							name: 'web',
+							url: 'www.camellializ.com'
+						},
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/camellia.liz/'
+						}
+					],
+					description:
+						'Artista especializada en ilustraciones semi-realistas en técnicas tradicionales como la acuarela, gouache y lápices de colores, inspiradas en los cuentos de hadas, la naturaleza y el realismo mágico.',
+					list: []
+				},
+				{
 					id: 'camila-guaman',
 					name: 'Camila Guamán',
 					subTitle: {},
@@ -276,6 +300,30 @@ export const AZOTEA = {
 					list: []
 				},
 				{
+					id: 'canela',
+					name: 'Canela',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: {
+						url: '/azotea/canela.jpg',
+						alt: 'Imagen de la Ilustradora Regional Canela'
+					},
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/canela_qq1/'
+						},
+						{
+							name: 'tiktok',
+							url: 'https://www.tiktok.com/@canela_qq1/'
+						}
+					],
+					description:
+						'Artista autodidacta desde los 13 años, describo mi estilo como un híbrido entre cartoon y anime. Me encanta mi estilo infantil. Me presenté por primera vez en frijol mágico el año 2020, a los 14 años de edad, siendo la más pequeña de todos los artistas participantes, recibiendo una buena acogida y mucho cariño, desde ahí he desarrollado mi talento y poco a poco he crecido en las redes sociales.',
+					list: []
+				},
+				{
 					id: 'ce-hache',
 					name: 'CE HACHE',
 					subTitle: {},
@@ -297,6 +345,22 @@ export const AZOTEA = {
 					],
 					description:
 						'CE HACHE es un emprendimiento que se dedica a la serigrafía, técnica milenaria de estampado textil la cual tiene una alta resistencia y durabilidad, en nuestro taller realizamos principalmente dos servicios:\n- Productos con diseños originales al “estilo CE HACHE” creados por nuestro ilustrador Christian Herrera.\n- Producción en masa para terceros, tales como pymes, empresas y/o personas comunes con diseños propios del cliente (ej. logos) o personalizados.',
+					list: []
+				},
+				{
+					id: 'chilensis',
+					name: 'Chilensis',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: { url: '/azotea/chilensis.jpg', alt: 'Imagen del Ilustrador Regional Chilensis' },
+					links: [
+						{ name: 'instagram', url: 'https://www.instagram.com/chilensisboy/' },
+						{ name: 'email', url: 'mailto:chilensisboy@gmail.com' }
+					],
+					description:
+						'Comencé como dibujante aproximadamente el 2010 en un proyecto de comics regionales llamado Dharmix, el cual logró completar 2 números de comics originales, desde ahí comencé a dibujar fanart, arte sobre series de la tele y películas, para poder suplir mi necesidad de dibujos de personajes que de los que no había o existía muy poco material. Desde ese punto empecé a participar en talleres y eventos de animé como dibujante, hasta llegar a la feria del libro de La Serena el 2012 junto a Ojo en Tinta, taller organizado por el centro cultural Santa Inés en La Serena, desde ahí se ha mantenido el dibujo como un oficio regular, un hobby y un entretenimiento al que sigo metiéndole tiempo cuando puedo, para no perder la práctica y poder “volver a salir al mundo”. \nMi estilo está influenciado por el manga, la fantasía medieval con magia y dragones y el no querer hacer tramas muy profundas.',
+
 					list: []
 				},
 				{
@@ -358,6 +422,26 @@ export const AZOTEA = {
 					],
 					description:
 						'Mi trabajo consiste en el rescate gráfico del patrimonio natural y cultural del territorio. Cada ilustración cuenta una historia.\nUtilizo diversas técnicas artísticas cómo el dibujo, la ilustración digital, la pintura y principalmente la serigrafía.',
+					list: []
+				},
+				{
+					id: 'isa-edaliz',
+					name: 'Isa Edaliz',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: {
+						url: '/azotea/isaedaliz.jpg',
+						alt: 'Imagen de la Ilustradora Regional Isa Edaliz'
+					},
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/edaliz.cl/'
+						}
+					],
+					description:
+						'Mi trabajo es un emprendimiento del área de papelería, creo cuadernos, stickers, marcapáginas, mousepads, entre otros productos inspirados en ilustración infantil, mi principal forma de creación es mediante medios digitales. Me inspiran las ilustraciones infantiles antiguas, como los libros de colorear y las tarjetas de felicitaciones. A futuro me gustaría profesionalizar mi trabajo pudiéndome dedicar a tiempo completo a él.',
 					list: []
 				},
 				{
@@ -531,6 +615,23 @@ export const AZOTEA = {
 					],
 					description:
 						'7Seyuk se caracteriza por sus ilustraciones de líneas definidas y renderizados saturados, busca generar textura a base de pequeños detalles en los colores planos y principalmente se inspira en la mitología griega y oriental, retratando demonios y criaturas fantásticas humanizadas. El enfoque del ilustrador es implementar su estilo en creaciones propias, fanarts, contenido BL y arte sugerente.',
+					list: []
+				},
+				{
+					id: 'shobian',
+					name: 'Shobian',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: { url: '/azotea/shobian.jpg', alt: 'Imagen del Ilustrador Shobian' },
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/shobian.art/'
+						}
+					],
+					description:
+						'Mi estilo se basa en jugar con las texturas análogas que se pueden lograr con herramientas digitales, otorgándole calidez a mis ilustraciones y retratando así animales, la naturaleza, diferentes comidas y elementos de la vida cotidiana. Me inspira mucho la música a la hora de dibujar, el trabajo de otros ilustradores, la narrativa y la fotografía, entre otros.\nHe estado presente en diversas ferias de ilustración y emprendimiento, destacando la participación que tuve en dos versiones anteriores del Festival Frijol Mágico, en 2020 y 2022.',
 					list: []
 				},
 				{
