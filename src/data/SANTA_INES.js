@@ -21,14 +21,79 @@ export const SANTA_INES = {
 	},
 	schedule: [
 		{
-			day: 'Viernes 10',
+			day: 'Viernes 10\nLa matria',
 			events: [
 				{
-					id: 'elvira-hernández',
-					name: 'Lanzamiento libro Elvira Hernández',
+					id: 'colectivo-la-manada',
+					name: 'Colectivo de danza La Manada',
 					subTitle: {},
-					category: '',
-					time: '17:00',
+					category: 'Danza',
+					time: '15:30',
+					image: {
+						url: '/santa-ines/colectivo-la-manada.jpg',
+						alt: 'Imagen de la presentación del Colectivo La Manada'
+					},
+					links: [],
+					description:
+						'Se comienza a gestar el año 2015 en la Región de Coquimbo y agrupa a mujeres profesionales de la danza unidas por una propuesta artística, social y política en común, que busca generar espacios de encuentro, creación e intercambio de experiencias artísticas.\nPara La Manada la danza contemporánea es una re-unión, en la cual vivimos, compartimos afectos, vínculos de respeto, el cuidado entre nosotras, la escucha y en la que la convivencia con los ritmos de la maternidad marca nuestro hacer. Dentro de sus creaciones se destacan la obra para la familia Danzando hacia la Pachamama, Carnaval de la Tierra, Cuerpos en viaje a la memoria, la gestión de Encuentros en Movimiento y el trabajo colaborativo con agrupaciones artísticas, educativas y culturales de la Región.',
+					list: [
+						{
+							title: 'Integrantes:',
+							text: [
+								'Amaya Aristegui Muñoz',
+								'Natalie Gutiérrez Marín',
+								'Rayén Pojomovsky Aliste',
+								'Daniela Reinoso Olmos',
+								'Rodolfo Lucero Figueroa (audiovisualista/técnico)'
+							]
+						}
+					]
+				},
+				{
+					id: 'de-contruyendo-la-nacionalidad',
+					name: '(de)contruyendo la nacionalidad',
+					subTitle: {},
+					category: 'Intervención Urbana',
+					time: '16:00',
+					image: {
+						url: '/santa-ines/deconstruyendo.jpg',
+						alt: 'Imagen de la Intervención Urbana (de)contruyendo la nacionalidad'
+					},
+					links: [],
+					description: '',
+					list: []
+				},
+				{
+					id: 'dj-free-tangas',
+					name: 'DJ: Free-tangas',
+					subTitle: { title: '', text: 'Lecturas poéticas feministas' },
+					category: 'Música',
+					time: '16:30',
+					image: {
+						url: '/santa-ines/free-tangas.jpg',
+						alt: 'Imagen de la presentación de DJ Free-tangas'
+					},
+					links: [],
+					description: '',
+					list: [
+						{
+							title: 'Integrantes:',
+							text: [
+								'Amaya Aristegui Muñoz',
+								'Natalie Gutiérrez Marín',
+								'Rayén Pojomovsky Aliste',
+								'Daniela Reinoso Olmos',
+								'Rodolfo Lucero Figueroa (audiovisualista/técnico)'
+							]
+						}
+					]
+				},
+				{
+					id: 'elvira-hernández',
+					name: 'Elvira Hernández',
+					subTitle: {},
+					category: 'Literatura',
+					time: '17:30',
 					image: {
 						url: '/santa-ines/elvira-hernández.jpg',
 						alt: 'Imagen del Lanzamiento del libro Elvira Hernández'
@@ -37,18 +102,88 @@ export const SANTA_INES = {
 					description:
 						'La obra de Elvira Hernández destaca entre la poesía femenina de la década de 1980 por su carácter experimental, razón por la que su trabajo ha sido clasificado dentro de la llamada neo-vanguardia, grupo en el que se incluye la obra de poetas como Raúl Zurita, Soledad Fariña, Verónica Zondek y Juan Luis Martínez. Con ellos Elvira Hernández comparte no sólo el mismo contexto político, ya que sus obras surgieron y se desarrollaron en medio de la dictadura de Augusto Pinochet, sino también algunos rasgos característicos, entre los cuales sobresalen el quiebre de la sintaxis tradicional y el uso de múltiples recursos discursivos provenientes del ámbito popular y de la cultura tradicional.',
 					list: []
+				},
+				{
+					id: 'las-quintralas-de-la-cuarta',
+					name: 'Las Quintralas de la Cuarta',
+					subTitle: { title: 'Lema:', text: '"Cuecas en voz de mujer"' },
+					category: 'Música',
+					time: '19:00',
+					image: {
+						url: '/santa-ines/elvira-hernández.jpg',
+						alt: 'Imagen de la Presentación de Las Quintralas de la Cuarta'
+					},
+					links: [],
+					description:
+						'Nace en enero del 2017 a raíz de la inquietud de tener en la región de Coquimbo (Chile) un grupo con voces femeninas en el estilo de cueca urbana, bajo el alero del desarrollo del Canto a la Rueda en La Serena.\nAl comienzo, en la agrupación sólo eran 2 mujeres cantando y dos hombres en instrumentos, pero el anhelo de su fundadora (Luisa Carrasco) era que el grupo estuviera integrado sólo por mujeres, lo que se llevó a cabo gracias a la grabación de su primer single "Damasco en flor";, el cual fue estrenado en formato audiovisual en agosto del 2021. A la fecha, han participado en numerosos eventos públicos, privados y a beneficio. Dándose a conocer en el circuito local y nacional por incluir en su repertorio cuecas originales, populares y de la tradición.',
+					list: [
+						{
+							title: 'Integrantes:',
+							text: [
+								'Luisa Carrasco',
+								'Paulina Torres',
+								'Dana Romero',
+								'Carolina Cáceres',
+								'Camila Donoso'
+							]
+						}
+					]
 				}
 			]
 		},
 		{
-			day: 'Sábado 11',
+			day: 'Sábado 11\nDiversidad y derechos',
 			events: [
 				{
-					id: 'pía-barros',
-					name: 'Presentación Pía Barros',
+					id: 'valu',
+					name: 'Valu',
+					subTitle: { title: '', text: 'Habitus/Campo/Memoria (2020-2023)' },
+					category: 'Performance',
+					time: '15:30',
+					image: {
+						url: '/santa-ines/valu.jpg',
+						alt: 'Imagen de la Performance Habitus/Campo/Memoria (2020-2023)'
+					},
+					links: [],
+					description:
+						'Pieza Relacional basada en artefacto. La semilla de clavel rojo, símbolo de la memoria corporizada, invita a pensar el territorio como lugar de auto-enunciación y disputa identitaria.',
+					list: []
+				},
+				{
+					id: 'sueños-diversos-y-derechos-con-versos',
+					name: 'Sueños diversos y derechos con versos',
 					subTitle: {},
-					category: '',
-					time: '17:00',
+					category: 'Intervención Urbana',
+					time: '16:00',
+					image: {
+						url: '/santa-ines/sueños.jpg',
+						alt: 'Imagen de la Performance Sueños diversos y derechos con versos'
+					},
+					links: [],
+					description: '',
+					list: []
+				},
+				{
+					id: 'hit-latino-de-keimara',
+					name: 'Hit Latino de Keimara',
+					subTitle: {},
+					category: 'Literatura',
+					time: '16:30',
+					image: {
+						url: '/santa-ines/keimara.jpg',
+						alt: 'Imagen de la Presentación del Libro Hit Latino de Keimara'
+					},
+					links: [],
+					description:
+						'Hit Latino es un cómic sobre el estallido social de Chile del año 2019 que cuenta como estudiantes secundarios que, en vista de las injusticias y violencia hacia el pueblo, deciden crear un héroe que defienda a quienes luchan.',
+					list: []
+				},
+				{
+					id: 'pía-barros',
+					name: 'Pía Barros',
+					subTitle: { title: '', text: 'Narrativa de la memoria en mujeres escritoras' },
+					category: 'Literatura',
+					time: '17:30',
 					image: {
 						url: '/santa-ines/pía-barros.jpg',
 						alt: 'Imagen de la Presentación de Pía Barros'
@@ -56,6 +191,21 @@ export const SANTA_INES = {
 					links: [],
 					description:
 						'Es una de las escritoras más activas y renombradas de la literatura chilena actual. Su nombre generalmente se vincula a la literatura feminista y su obra tiene una marcada connotación erótica y social. \nEntre sus publicaciones se cuentan: Miedos transitorios (1985), A horcajadas (Mosquito Editores), El tono menor del deseo (Editorial Cuarto Propio, 1990), Signos bajo la piel (Editorial Grijalbo, 1994), Ropa usada (Ediciones Asterión, 2000) y Los que sobran (Ediciones Asterión, 2002).\nSus cuentos han aparecido en numerosas antologías de Chile y el extranjero. Ha publicado una treintena de libros-objeto, con material literario ilustrado por destacados artistas gráficos y tiene a su haber la primera novela chilena publicada en formato digital: Lo que ya nos encontró, editada por Chilelibro.com en el año 2000.\nLa autora ha desarrollado también una labor docente, cultivando nuevos talentos literarios a través de los talleres Ergo Sum, que dirige desde 1976.',
+					list: []
+				},
+				{
+					id: 'pae',
+					name: 'PAE',
+					subTitle: {},
+					category: 'Música',
+					time: '19:00',
+					image: {
+						url: '/santa-ines/pae.jpg',
+						alt: 'Imagen de la Presentación de PAE'
+					},
+					links: [],
+					description:
+						'Cantautora ovallina, profesora de canto y fundadora de la academia crearte de la ciudad de Ovalle.\nHa representado a la región en diversos festivales a nivel nacional y ha sido parte de festivales de cantautores de la región de coquimbo como festival ARC, Astromúsica, Ovalle cultura.\nActualmente está participando en el proyecto alma de música que busca reactivar las creaciones de Gabriela mistral en manos de 12 cantautoras de la región.',
 					list: []
 				}
 			]
