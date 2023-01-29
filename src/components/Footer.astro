@@ -4,7 +4,7 @@ const { fixed, backgroundColor = 'bg-main' } = Astro.props
 
 <footer
 	class={`flex flex-col md:flex-row justify-between items-center w-full py-2 gap-2 md:px-14 ${backgroundColor} ${
-		fixed ? 'absolute' : ''
+		fixed ? 'fixed' : ''
 	} bottom-0 left-0 right-0 z-50 transition-[background-color] duration-200 ease-in bg-texture bg-4xl sm:bg-xl`}
 >
 <div class="flex justify-center md:items-center gap-4 md:gap-10">
