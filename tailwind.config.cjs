@@ -12,7 +12,7 @@ module.exports = {
 				purple: '#540060',
 				orange: '#fc7200',
 				'water-green': '#45989e',
-				'radioactive-green': '#79f132',
+				red: '#BF0001',
 				blue: '#010f70'
 			},
 			backgroundImage: {

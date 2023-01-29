@@ -8,13 +8,13 @@ export const MUSEO = {
 		'El Museo Arqueológico de La Serena nace como consecuencia de las investigaciones realizadas por don Francisco Cornely Bachman en la década de 1930. Con los auspicios de la Primera Municipalidad de La Serena, fue fundado el 3 de abril de 1943 por el mismo investigador, quien se dedicó a estudiar la Cultura Diaguita en el Valle de Elqui, y posteriormente originó las primeras colecciones del museo.\nLa comunidad con entusiasmo y sus múltiples donaciones amplió las responsabilidades patrimoniales del museo, lo que permitió seguir adelante con un fecundo trabajo y desarrollo al servicio de la comunidad.\nEn 1948 fue transferido a la Dirección de Bibliotecas, Archivos y Museos (Dibam). Durante ese mismo año fue incorporado en el Plan Serena del presidente Gabriel González Videla, lo que significó la construcción de un edificio exclusivo para el museo que se finalizó en 1954, emplazándose en la esquina de las calles Cienfuegos con Cordovéz, en la zona típica de la ciudad. Su fachada incorporó un portal barroco, rescatado de una antigua casa colonial de la ciudad, perteneciente al Conde de Villa Señor.\nÚltimamente cuenta con una reciente ampliación de sus dependencias (edificio de 4 pisos aéreos y 2 pisos subterráneos), junto con una mejorada infraestructura y museografía.',
 	links: [{ name: 'ticket', url: 'https://www.portaldisc.com/evento/cinearc2023' }],
 	styles: {
-		backgroundColor: 'bg-blue',
-		textColor: 'text-blue',
-		hoverTextColor: 'hover:text-blue',
-		hoverBackgroundColor: 'hover:bg-blue',
-		groupHoverTextColor: 'group-hover:text-blue',
-		fillColor: 'fill-blue',
-		borderColor: 'border-blue'
+		backgroundColor: 'bg-red',
+		textColor: 'text-red',
+		hoverTextColor: 'hover:text-red',
+		hoverBackgroundColor: 'hover:bg-red',
+		groupHoverTextColor: 'group-hover:text-red',
+		fillColor: 'fill-red',
+		borderColor: 'border-red'
 	},
 	image: {
 		url: '/arqueologico/museo.svg',
