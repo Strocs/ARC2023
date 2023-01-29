@@ -1,9 +1,13 @@
 ---
+import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro'
 import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title='Pronto Festival ARC 2023'>
 	<Header />
-	<main class='min-h-screen bg-soon bg-2xl lg:bg-lg lg:bg-center bg-top bg-no-repeat mt-14 lg:mt-12'></main>
+	<main class='grid place-content-center'>
+		<img class="h-full mt-14 lg:mt-10" src="/ARC23.jpg" alt="">
+	</main>
+	<Footer fixed />
 </Layout>
