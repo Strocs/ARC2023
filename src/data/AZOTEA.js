@@ -186,6 +186,205 @@ export const AZOTEA = {
 					list: []
 				},
 				{
+					id: 'arodrigo49',
+					name: 'Arodrigo49',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: {
+						url: '/azotea/alvaro-rodrigo.jpg',
+						alt: 'Imagen del Ilustrador Regional Arodrigo49'
+					},
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/arodrigo49/'
+						}
+					],
+					description:
+						'Mi trabajo se basa en el rescate del patrimonio natural e histórico local donde se desarrolla mi arte. Principalmente intervengo en el espacio urbano realizando “arte público”.\nA través de la ilustración y la reproducción fine Art, entrego un catálogo de productos que se pueden adquirir por encargo, ferias artesanales o a través de sitio web, pudiendo encontrar reproducciones intervenidas con carácter de pieza única pero en las que poder interpretaciones variadas de un mismo diseño.',
+					list: []
+				},
+				{
+					id: 'astro-glitter',
+					name: 'Astro Glitter',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: {
+						url: '/azotea/astroglitter.jpg',
+						alt: 'Imagen de la Ilustradora Regional Astro Glitter'
+					},
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/astroglitter.studio/'
+						}
+					],
+					description:
+						'En mis ilustraciones busco plasmar seres humanoides, flora y fauna de mundos de fantasía y psicodelia.',
+					list: []
+				},
+				{
+					id: 'blue-straycatt-art',
+					name: 'Blue Straycatt Art',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: {
+						url: '/azotea/blue.jpg',
+						alt: 'Imagen de la Ilustradora Regional Blue Straycatt Art'
+					},
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/blue_straycatt_art/'
+						},
+						{
+							name: 'facebook',
+							url: 'https://www.facebook.com/blue.straycatt.art'
+						}
+					],
+					description:
+						'Mi trabajo se basa principalmente en la temática de fantasía oscura y  mi estilo de dibujo se desarrolla en el valor de las sombras, la aparición de luces y algunos colores que puedan potenciar esta idea. Como me gustan mucho los elementos medievales y mundos fantasiosos que evoquen cierto tipo de emociones, busco referentes como Kentaro Miura, Yoshikata Amano, escritores como H.P Lovecraft o J.R.R. Tolkien, quienes muestran en sus obras todos los elementos estéticos y emociones que quiero conseguir en mis ilustraciones.',
+
+					list: []
+				},
+				{
+					id: 'camila-guaman',
+					name: 'Camila Guamán',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: {
+						url: '/azotea/cami-guaman.jpg',
+						alt: 'Imagen de la Ilustradora Regional Camila Guamán'
+					},
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/camilaguaman.ilustracion/'
+						},
+						{
+							name: 'email',
+							url: 'mailto:camilaguaman.ilustracion@gmail.com'
+						}
+					],
+					description:
+						'Camila Guamán, Egresada de Arquitectura, ilustradora naturalista desde hace más de 5 años, enamorada de la flora nativa, fauna local, la tierra como material de construcción, el aprendizaje y la enseñanza a través del arte.',
+
+					list: []
+				},
+				{
+					id: 'ce-hache',
+					name: 'CE HACHE',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: {
+						url: '/azotea/ch.jpg',
+						alt: 'Imagen de el emprendimiento Regional CE HACHE'
+					},
+					links: [
+						{
+							name: 'email',
+							url: 'mailto:ch.info.contacto@gmail.com'
+						},
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/ce.hache.il/'
+						}
+					],
+					description:
+						'CE HACHE es un emprendimiento que se dedica a la serigrafía, técnica milenaria de estampado textil la cual tiene una alta resistencia y durabilidad, en nuestro taller realizamos principalmente dos servicios:\n- Productos con diseños originales al “estilo CE HACHE” creados por nuestro ilustrador Christian Herrera.\n- Producción en masa para terceros, tales como pymes, empresas y/o personas comunes con diseños propios del cliente (ej. logos) o personalizados.',
+					list: []
+				},
+				{
+					id: 'cleib',
+					name: 'Cleib',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: { url: '/azotea/cleib.jpg', alt: 'Imagen de la Ilustradora Regional Cleib' },
+					links: [{ name: 'instagram', url: 'https://www.instagram.com/_cleib/' }],
+					description:
+						'Mi trabajo está inspirado en el cartoon antiguo hasta los dibujos de los 90`s, esas líneas definen lo que hago jasta el día de hoy. Me agrada elegir ideas que representan mi realidad y creo que la de muchas personas, provoca que conectemos con situaciones que nos han pasado a todxs en algún punto, con un toque de ironía para reírme y burlarme de lo evidente, crudo y difícil que es vivir. Siempre sin ánimos de ofender claro, pero es gan subjetivo como es recibido el contenido que hago que entiendo que no puedo agradar a todxs y tampoco es la idea, porque primero dibujar para uno y después para lxs demás.',
+
+					list: []
+				},
+				{
+					id: 'fran-koneko',
+					name: 'Fran.koneko',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: {
+						url: '/azotea/koneko.jpg',
+						alt: 'Imagen de la Ilustradora Regional Fran.koneko'
+					},
+					links: [
+						{
+							name: 'email',
+							url: 'mailto:fran.koneko.owo@gmail.com'
+						},
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/koneko_shop__/'
+						},
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/fran.koneko/'
+						}
+					],
+					description:
+						'Ilustradora digital autodidacta de personajes y animales en un estilo tierno y amigable al público.\nInicio en 2020 en periodo de pandemia. Participé en la feria del libro de La Serena 2021 y 2022, feria del libro de Vicuña 2021 y eventos de la comunidad local de Serena. Creadora de la tienda Koneko_Shop donde se realizan stickers, prints, peluches estampados con ilustraciones y accesorios artesanales en resina.',
+					list: []
+				},
+				{
+					id: 'intecultural-arte',
+					name: 'Intecultural arte',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: {
+						url: '/azotea/intercultural.jpg',
+						alt: 'Imagen de la Ilustradora Regional Intecultural arte'
+					},
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/intercultural_arte_/'
+						}
+					],
+					description:
+						'Mi trabajo consiste en el rescate gráfico del patrimonio natural y cultural del territorio. Cada ilustración cuenta una historia.\nUtilizo diversas técnicas artísticas cómo el dibujo, la ilustración digital, la pintura y principalmente la serigrafía.',
+					list: []
+				},
+				{
+					id: 'isabela-fuentes',
+					name: 'Isabela Fuentes',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: {
+						url: '/azotea/isafuentes.jpg',
+						alt: 'Imagen de la Ilustradora Regional Isabela Fuentes'
+					},
+					links: [
+						{
+							name: 'email',
+							url: 'mailto:isabela.fuentttes@gmail.com'
+						},
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/isabela.fuentttes'
+						}
+					],
+					description:
+						'Isabela Fuentes (Santiago, 1990) es Arquitecta, reside y trabaja entre La Serena y Santiago. Participa constantemente en diversos proyectos de arquitectura y paisajismo a través de Estudio MIFM y Aire Arquitectos.\nDesde 2018 decidió diversificar sus expresiones artísticas hacia la ilustración y la pintura. Sus proyectos de arte se centran actualmente en arte digital, trabajo de acuarela y diseño de tatuajes.',
+					list: []
+				},
+				{
 					id: 'javivis',
 					name: 'Javivis',
 					subTitle: {},
@@ -260,7 +459,7 @@ export const AZOTEA = {
 					description:
 						'Soy una artista tradicional de técnica mixta y tatuadora de estilo dotwork. Mi trabajo está inspirado en la brujería, misticismo y la fantasía oscura. Muchas de mis obras están intervenidas de forma manual, algunos, como mis libretas, son un trabajo artesanal desde el corte hasta el armado. Mi trayectoria es hacer artículos duraderos y que todos se lleven una pieza única <3',
 
-					list: [{ title: 'Contacto:', text: ['+56 9 76730830'] }]
+					list: []
 				},
 				{
 					id: 'nino-pan',
@@ -272,73 +471,6 @@ export const AZOTEA = {
 					links: [{ name: 'instagram', url: 'www.instagram.com/elninopan' }],
 					description:
 						'Hola me llamo Niño Pan, me dedico a la ilustración digital y no sabría muy bien cómo definir mi estilo pero diría que es un tanto variable pero a la vez reconocible, dependiendo de lo que quiero dibujar, aplico distintas formas de trazado y coloreado.\nPor lo general lo que me inspira a dibujar son cosas que me pasan, que siento, que pienso, los espacios que habito, algunas personas que quiero, perritos que andan por la calle, la tristeza, los besitos, dudas existenciales y otras más. 🙂',
-
-					list: []
-				},
-				{
-					id: 'blue-straycatt-art',
-					name: 'Blue Straycatt Art',
-					subTitle: {},
-					category: 'Ilustración',
-					time: '',
-					image: {
-						url: '/azotea/blue.jpg',
-						alt: 'Imagen de la Ilustradora Regional Blue Straycatt Art'
-					},
-					links: [
-						{
-							name: 'instagram',
-							url: 'https://www.instagram.com/blue_straycatt_art/'
-						},
-						{
-							name: 'facebook',
-							url: 'https://www.facebook.com/blue.straycatt.art'
-						}
-					],
-					description:
-						'Mi trabajo se basa principalmente en la temática de fantasía oscura y  mi estilo de dibujo se desarrolla en el valor de las sombras, la aparición de luces y algunos colores que puedan potenciar esta idea. Como me gustan mucho los elementos medievales y mundos fantasiosos que evoquen cierto tipo de emociones, busco referentes como Kentaro Miura, Yoshikata Amano, escritores como H.P Lovecraft o J.R.R. Tolkien, quienes muestran en sus obras todos los elementos estéticos y emociones que quiero conseguir en mis ilustraciones.',
-
-					list: []
-				},
-				{
-					id: 'valestrina',
-					name: 'Valestrina',
-					subTitle: {},
-					category: 'Ilustración',
-					time: '',
-					image: {
-						url: '/azotea/valestrina.jpg',
-						alt: 'Imagen de la Ilustradora Regional Valestrina'
-					},
-					links: [
-						{
-							name: 'instagram',
-							url: 'https://www.instagram.com/valestrina_art/'
-						}
-					],
-					description:
-						'Definiría mi gráfica como  una mezcla de tinta china que aplica el pincel seco y achurados complementados con una paleta de colores vibrantes, tanto la línea como los rellenos en las formas deben significar algo. Mi arte se basa en la sensación de la emoción, expresada en hojas, hongos y patrones  danzarines, manchas de tinta esparcidas con movimiento y colores que ambientan lo que quiero transmitir, esas mismas emociones me inspiran para seguir creando cada día, incluyendo mi negatividad y mi ansiedad que he retratado ampliamente buscando representar eso mismo, para que los otros puedan entender tanto visual como físicamente la intensidad de las emociones que me atañen.',
-
-					list: []
-				},
-				{
-					id: 'rotten-monkey-inc',
-					name: 'Rotten Monkey Inc',
-					subTitle: {},
-					category: 'Ilustración',
-					time: '',
-					image: {
-						url: '/azotea/rotten-monkey.jpg',
-						alt: 'Imagen del Ilustrador Regional Rotten Monkey Inc'
-					},
-					links: [
-						{
-							name: 'instagram',
-							url: 'https://www.instagram.com/rottenmonkey_inc/'
-						}
-					],
-					description:
-						'Dibujo cómics, viñetas de humor e historias largas. Me gusta retratar historias extrañas, personales y decadentes, pero también contrasto con un estilo de humor rápido y absurdo. En mis productos hay referencias a memes y cultura pop televisiva de los 90’s y 2000 de la televisión chilena, además de mascotas y personajes del imaginario chileno.',
 
 					list: []
 				},
@@ -364,16 +496,41 @@ export const AZOTEA = {
 					list: []
 				},
 				{
-					id: 'cleib',
-					name: 'Cleib',
+					id: 'rotten-monkey-inc',
+					name: 'Rotten Monkey Inc',
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
-					image: { url: '/azotea/cleib.jpg', alt: 'Imagen de la Ilustradora Regional Cleib' },
-					links: [{ name: 'instagram', url: 'https://www.instagram.com/_cleib/' }],
+					image: {
+						url: '/azotea/rotten-monkey.jpg',
+						alt: 'Imagen del Ilustrador Regional Rotten Monkey Inc'
+					},
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/rottenmonkey_inc/'
+						}
+					],
 					description:
-						'Mi trabajo está inspirado en el cartoon antiguo hasta los dibujos de los 90`s, esas líneas definen lo que hago jasta el día de hoy. Me agrada elegir ideas que representan mi realidad y creo que la de muchas personas, provoca que conectemos con situaciones que nos han pasado a todxs en algún punto, con un toque de ironía para reírme y burlarme de lo evidente, crudo y difícil que es vivir. Siempre sin ánimos de ofender claro, pero es gan subjetivo como es recibido el contenido que hago que entiendo que no puedo agradar a todxs y tampoco es la idea, porque primero dibujar para uno y después para lxs demás.',
+						'Dibujo cómics, viñetas de humor e historias largas. Me gusta retratar historias extrañas, personales y decadentes, pero también contrasto con un estilo de humor rápido y absurdo. En mis productos hay referencias a memes y cultura pop televisiva de los 90’s y 2000 de la televisión chilena, además de mascotas y personajes del imaginario chileno.',
 
+					list: []
+				},
+				{
+					id: 'seh-yuk',
+					name: 'Seh yuk',
+					subTitle: {},
+					category: 'Ilustración',
+					time: '',
+					image: { url: '/azotea/seyuk.jpg', alt: 'Imagen de la Ilustradora Regional Seh yuk' },
+					links: [
+						{
+							name: 'instagram',
+							url: 'https://www.instagram.com/7seyuk/'
+						}
+					],
+					description:
+						'7Seyuk se caracteriza por sus ilustraciones de líneas definidas y renderizados saturados, busca generar textura a base de pequeños detalles en los colores planos y principalmente se inspira en la mitología griega y oriental, retratando demonios y criaturas fantásticas humanizadas. El enfoque del ilustrador es implementar su estilo en creaciones propias, fanarts, contenido BL y arte sugerente.',
 					list: []
 				},
 				{
@@ -396,181 +553,24 @@ export const AZOTEA = {
 					list: []
 				},
 				{
-					id: 'camila-guaman',
-					name: 'Camila Guamán',
+					id: 'valestrina',
+					name: 'Valestrina',
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
 					image: {
-						url: '/azotea/cami-guaman.jpg',
-						alt: 'Imagen de la Ilustradora Regional Camila Guamán'
+						url: '/azotea/valestrina.jpg',
+						alt: 'Imagen de la Ilustradora Regional Valestrina'
 					},
 					links: [
 						{
 							name: 'instagram',
-							url: 'https://www.instagram.com/camilaguaman.ilustracion/'
-						},
-						{
-							name: 'email',
-							url: 'mailto:camilaguaman.ilustracion@gmail.com'
+							url: 'https://www.instagram.com/valestrina_art/'
 						}
 					],
 					description:
-						'Camila Guamán, Egresada de Arquitectura, ilustradora naturalista desde hace más de 5 años, enamorada de la flora nativa, fauna local, la tierra como material de construcción, el aprendizaje y la enseñanza a través del arte.',
+						'Definiría mi gráfica como  una mezcla de tinta china que aplica el pincel seco y achurados complementados con una paleta de colores vibrantes, tanto la línea como los rellenos en las formas deben significar algo. Mi arte se basa en la sensación de la emoción, expresada en hojas, hongos y patrones  danzarines, manchas de tinta esparcidas con movimiento y colores que ambientan lo que quiero transmitir, esas mismas emociones me inspiran para seguir creando cada día, incluyendo mi negatividad y mi ansiedad que he retratado ampliamente buscando representar eso mismo, para que los otros puedan entender tanto visual como físicamente la intensidad de las emociones que me atañen.',
 
-					list: []
-				},
-				{
-					id: 'fran-koneko',
-					name: 'Fran.koneko',
-					subTitle: {},
-					category: 'Ilustración',
-					time: '',
-					image: {
-						url: '/azotea/koneko.jpg',
-						alt: 'Imagen de la Ilustradora Regional Fran.koneko'
-					},
-					links: [
-						{
-							name: 'email',
-							url: 'mailto:fran.koneko.owo@gmail.com'
-						},
-						{
-							name: 'instagram',
-							url: 'https://www.instagram.com/koneko_shop__/'
-						},
-						{
-							name: 'instagram',
-							url: 'https://www.instagram.com/fran.koneko/'
-						}
-					],
-					description:
-						'Ilustradora digital autodidacta de personajes y animales en un estilo tierno y amigable al público.\nInicio en 2020 en periodo de pandemia. Participé en la feria del libro de La Serena 2021 y 2022, feria del libro de Vicuña 2021 y eventos de la comunidad local de Serena. Creadora de la tienda Koneko_Shop donde se realizan stickers, prints, peluches estampados con ilustraciones y accesorios artesanales en resina.',
-					list: []
-				},
-				{
-					id: 'ce-hache',
-					name: 'CE HACHE',
-					subTitle: {},
-					category: 'Ilustración',
-					time: '',
-					image: {
-						url: '/azotea/ch.jpg',
-						alt: 'Imagen de el emprendimiento Regional CE HACHE'
-					},
-					links: [
-						{
-							name: 'email',
-							url: 'mailto:ch.info.contacto@gmail.com'
-						},
-						{
-							name: 'instagram',
-							url: 'https://www.instagram.com/ce.hache.il/'
-						}
-					],
-					description:
-						'CE HACHE es un emprendimiento que se dedica a la serigrafía, técnica milenaria de estampado textil la cual tiene una alta resistencia y durabilidad, en nuestro taller realizamos principalmente dos servicios:\n- Productos con diseños originales al “estilo CE HACHE” creados por nuestro ilustrador Christian Herrera.\n- Producción en masa para terceros, tales como pymes, empresas y/o personas comunes con diseños propios del cliente (ej. logos) o personalizados.',
-					list: []
-				},
-				{
-					id: 'seh-yuk',
-					name: 'Seh yuk',
-					subTitle: {},
-					category: 'Ilustración',
-					time: '',
-					image: { url: '/azotea/seyuk.jpg', alt: 'Imagen de la Ilustradora Regional Seh yuk' },
-					links: [
-						{
-							name: 'instagram',
-							url: 'https://www.instagram.com/7seyuk/'
-						}
-					],
-					description:
-						'7Seyuk se caracteriza por sus ilustraciones de líneas definidas y renderizados saturados, busca generar textura a base de pequeños detalles en los colores planos y principalmente se inspira en la mitología griega y oriental, retratando demonios y criaturas fantásticas humanizadas. El enfoque del ilustrador es implementar su estilo en creaciones propias, fanarts, contenido BL y arte sugerente.',
-					list: []
-				},
-				{
-					id: 'isabela-fuentes',
-					name: 'Isabela Fuentes',
-					subTitle: {},
-					category: 'Ilustración',
-					time: '',
-					image: {
-						url: '/azotea/isafuentes.jpg',
-						alt: 'Imagen de la Ilustradora Regional Isabela Fuentes'
-					},
-					links: [
-						{
-							name: 'email',
-							url: 'mailto:isabela.fuentttes@gmail.com'
-						},
-						{
-							name: 'instagram',
-							url: 'https://www.instagram.com/isabela.fuentttes'
-						}
-					],
-					description:
-						'Isabela Fuentes (Santiago, 1990) es Arquitecta, reside y trabaja entre La Serena y Santiago. Participa constantemente en diversos proyectos de arquitectura y paisajismo a través de Estudio MIFM y Aire Arquitectos.\nDesde 2018 decidió diversificar sus expresiones artísticas hacia la ilustración y la pintura. Sus proyectos de arte se centran actualmente en arte digital, trabajo de acuarela y diseño de tatuajes.',
-					list: []
-				},
-				{
-					id: 'astro-glitter',
-					name: 'Astro Glitter',
-					subTitle: {},
-					category: 'Ilustración',
-					time: '',
-					image: {
-						url: '/azotea/astroglitter.jpg',
-						alt: 'Imagen de la Ilustradora Regional Astro Glitter'
-					},
-					links: [
-						{
-							name: 'instagram',
-							url: 'https://www.instagram.com/astroglitter.studio/'
-						}
-					],
-					description:
-						'En mis ilustraciones busco plasmar seres humanoides, flora y fauna de mundos de fantasía y psicodelia.',
-					list: []
-				},
-				{
-					id: 'intecultural-arte',
-					name: 'Intecultural arte',
-					subTitle: {},
-					category: 'Ilustración',
-					time: '',
-					image: {
-						url: '/azotea/intercultural.jpg',
-						alt: 'Imagen de la Ilustradora Regional Intecultural arte'
-					},
-					links: [
-						{
-							name: 'instagram',
-							url: 'https://www.instagram.com/intercultural_arte_/'
-						}
-					],
-					description:
-						'Mi trabajo consiste en el rescate gráfico del patrimonio natural y cultural del territorio. Cada ilustración cuenta una historia.\nUtilizo diversas técnicas artísticas cómo el dibujo, la ilustración digital, la pintura y principalmente la serigrafía.',
-					list: []
-				},
-				{
-					id: 'arodrigo49',
-					name: 'Arodrigo49',
-					subTitle: {},
-					category: 'Ilustración',
-					time: '',
-					image: {
-						url: '/azotea/alvaro-rodrigo.jpg',
-						alt: 'Imagen del Ilustrador Regional Arodrigo49'
-					},
-					links: [
-						{
-							name: 'instagram',
-							url: 'https://www.instagram.com/arodrigo49/'
-						}
-					],
-					description:
-						'Mi trabajo se basa en el rescate del patrimonio natural e histórico local donde se desarrolla mi arte. Principalmente intervengo en el espacio urbano realizando “arte público”.\nA través de la ilustración y la reproducción fine Art, entrego un catálogo de productos que se pueden adquirir por encargo, ferias artesanales o a través de sitio web, pudiendo encontrar reproducciones intervenidas con carácter de pieza única pero en las que poder interpretaciones variadas de un mismo diseño.',
 					list: []
 				}
 			]
