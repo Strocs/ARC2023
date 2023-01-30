@@ -1,0 +1,25 @@
+---
+const { backgroundColor = 'bg-main', anchor, href, className } = Astro.props
+
+const Element = anchor ? 'a' : 'button'
+---
+
+<Element
+	class={`button w-fit font-medium rounded-md leading-4 border-none bg-white transition-all ease-in duration-200 ${className}`}
+	href={href}
+>
+	<span
+		class={`button_top block text-center ${backgroundColor} border-white rounded-md text-white border-2 py-2 px-6 -translate-y-[0.15rem] transition-all ease-in duration-100`}
+		><slot /></span
+	>
+</Element>
+
+<style>
+	.button:hover .button_top {
+		transform: translateY(-0.25em);
+	}
+
+	.button:active .button_top {
+		transform: translateY(0);
+	}
+</style>

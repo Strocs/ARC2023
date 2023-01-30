@@ -1,9 +1,9 @@
 ---
-import Button from './Button.astro'
+import ButtonLink from './ButtonLink.astro'
 
 const { backgroundColor, mobile } = Astro.props
 ---
 
 <div class={`gap-3 items-center ${mobile ? 'flex md:hidden' : 'hidden md:flex'}`}>
-	<Button backgroundColor={backgroundColor}>Descarga la Programación</Button>
+	<ButtonLink backgroundColor={backgroundColor}>Descarga la Programación</ButtonLink>
 </div>

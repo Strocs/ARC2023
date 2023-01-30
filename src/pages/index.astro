@@ -23,11 +23,14 @@ const { title, description, locations } = ARC_2023
 	const mapIcon = document.getElementById('map').querySelectorAll('.names')
 	const locations = document.querySelectorAll('[aria-label="location-info"]')
 	const header = document.querySelector('header').querySelector('div')
+	const scheduleBtn = document.querySelector('header').querySelector('span')
 	const footer = document.querySelector('footer')
 	const logo = document.getElementById('logo-text')
 	const buttons = header.querySelector('button')
 	const links = header.querySelectorAll('#social-networks')
 	const controls = document.querySelector('#controls')
+
+	console.log(scheduleBtn);
 
 	const colors = [
 		{
@@ -90,6 +93,7 @@ const { title, description, locations } = ARC_2023
 		if (show) {
 			header.classList.add(colors[index].bgColor)
 			footer.classList.add(colors[index].bgColor)
+			scheduleBtn.classList.add(colors[index].bgColor)
 			controls.classList.add(colors[index].bgColor)
 			logo.classList.add(colors[index].fillColor)
 			buttons.classList.add(colors[index].textColor)
@@ -103,6 +107,7 @@ const { title, description, locations } = ARC_2023
 		} else {
 			header.classList.remove(colors[index].bgColor)
 			footer.classList.remove(colors[index].bgColor)
+			scheduleBtn.classList.remove(colors[index].bgColor)
 			controls.classList.remove(colors[index].bgColor)
 			logo.classList.remove(colors[index].fillColor)
 			buttons.classList.remove(colors[index].textColor)

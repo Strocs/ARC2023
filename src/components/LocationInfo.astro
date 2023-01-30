@@ -2,6 +2,7 @@
 import { Icon } from 'astro-icon'
 import { getLocationById } from '../utils/getLocationById'
 import BackButton from './BackButton.astro'
+import ButtonLink from './ButtonLink.astro'
 const { query } = Astro.props
 const { id, title, extract, styles } = getLocationById(query)
 
@@ -25,15 +26,13 @@ if (title.includes('Estacionamiento')) {
 	<div class='flex flex-col gap-10'>
 		<h2 class='text-5xl leading-10 sm:text-6xl font-black py-2 sm:leading-[3rem]'>{newTitle}</h2>
 		<p class='font-normal text-justify'>{extract}</p>
-		<a
-			class={`font-bold p-2 text-lg bg-white outline-white -outline-offset-[3px] outline hover:bg-transparent hover:text-white self-center text-center leading-6 ${styles.textColor} transition-[background-color,color] duration-200 ease-in`}
-			href={id}>Mira el Programa y Descubre más sobre {title}</a
-		>
+		<ButtonLink backgroundColor={styles.backgroundColor} anchor href={id} className='self-center'>
+			Más información y Programación<Icon name='mdi:arrow-top-right-thick' class='h-5 inline' />
+		</ButtonLink>
 	</div>
-	<BackButton Element='button'>
-		<p class={`inline ${styles.groupHoverTextColor}`}>Cerrar</p>
-		<Icon class={`inline h-6 ${styles.groupHoverTextColor}`} name='mdi:arrow-right' />
-	</BackButton>
+	<ButtonLink backgroundColor={styles.backgroundColor} className='self-center'>
+		Cerrar <Icon class={`inline h-5 ml-1 ${styles.groupHoverTextColor}`} name='mdi:arrow-right-bold' />
+	</ButtonLink>
 </section>
 
 <style>
