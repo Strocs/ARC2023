@@ -1,25 +1,49 @@
 ---
+import ButtonLink from './ButtonLink.astro'
 import Mapa from './icons/Mapa.astro'
 ---
 
-<section id='map-container' class='w-screen h-screen relative'>
+<section id='map-container' class='w-screen h-screen relative cursor-grab'>
 	<div
 		id='map'
 		class='absolute w-[150%] h-fit sm:w-1/2 top-0 right-0 sm:left-0 -left-20 bottom-0 m-auto origin-top-left'
 	>
 		<Mapa />
 	</div>
+	<div class='absolute bottom-16 md:bottom-20 z-50 w-full flex justify-center'>
+		<ButtonLink style={{ opacity: '0' }} invertedColors>Volver a Centrar</ButtonLink>
+	</div>
 </section>
 
 <script>
 	const map = document.querySelector < HTMLElement > ('#map')
-	const svgContainer = document.querySelector('#map-container')
-
+	const mapContainer = document.querySelector('#map-container')
+	const resetButton = mapContainer.querySelector('button')
+	const mapGuide = document.querySelector < HTMLElement > ('#map-guide')
 	let dx = 0
 	let dy = 0
 	let scale = 1
 	let panning = 0
 	let lastPoints = []
+
+	function changeCursorOnGrab() {
+		if (panning === 1) {
+			mapContainer.classList.remove('cursor-grab')
+			mapContainer.classList.add('cursor-grabbing')
+			return
+		}
+		mapContainer.classList.remove('cursor-grabbing')
+		mapContainer.classList.add('cursor-grab')
+	}
+
+	function showResetButton() {
+		if (mapGuide.style.opacity === '1') {
+			mapGuide.style.opacity = '0'
+		}
+		if (resetButton.style.opacity === '0') {
+			resetButton.style.opacity = '1'
+		}
+	}
 
 	function update() {
 		map.style.transform = `translate(${dx}px, ${dy}px) scale(${scale})`
@@ -64,6 +88,7 @@ import Mapa from './icons/Mapa.astro'
 		dx -= (event.pageX - left) * (scaleDiff - 1)
 		dy -= (event.pageY - top) * (scaleDiff - 1)
 		update()
+		showResetButton()
 	}
 
 	function getPoints(event) {
@@ -83,6 +108,8 @@ import Mapa from './icons/Mapa.astro'
 			document.addEventListener('touchmove', onPointerMove)
 			document.addEventListener('touchend', onPointerUp)
 		}
+		changeCursorOnGrab()
+		showResetButton()
 	}
 
 	const onPointerMove = (event) => {
@@ -108,7 +135,7 @@ import Mapa from './icons/Mapa.astro'
 				dy -= (averagePoint.y - top) * (scaleDiff - 1)
 			}
 		}
-
+		changeCursorOnGrab()
 		update()
 		lastPoints = points
 	}
@@ -123,6 +150,8 @@ import Mapa from './icons/Mapa.astro'
 			return
 		}
 
+		changeCursorOnGrab()
+
 		document.removeEventListener('mousemove', onPointerMove)
 		document.removeEventListener('mouseup', onPointerUp)
 		document.removeEventListener('touchmove', onPointerMove)
@@ -130,17 +159,20 @@ import Mapa from './icons/Mapa.astro'
 	}
 
 	// bound events
-	svgContainer.addEventListener('mousedown', onPointerDown)
-	svgContainer.addEventListener('touchstart', onPointerDown)
+	mapContainer.addEventListener('mousedown', onPointerDown)
+	mapContainer.addEventListener('touchstart', onPointerDown)
 
 	// unbound
-	svgContainer.addEventListener('wheel', (event) => onWheel(event))
+	mapContainer.addEventListener('wheel', (event) => onWheel(event))
 
-	// fn
-	// function reset() {
-	// 	dx = 0
-	// 	dy = 0
-	// 	scale = 1
-	// 	update()
-	// }
+	function reset() {
+		dx = 0
+		dy = 0
+		scale = 1
+		update()
+	}
+
+	resetButton.addEventListener('click', () => {
+		reset()
+	})
 </script>

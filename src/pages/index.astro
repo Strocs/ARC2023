@@ -27,13 +27,16 @@ const { title, description, locations } = ARC_2023
 	const logo = document.getElementById('logo-text')
 	const downloadScheduleBtn = header.querySelector('span')
 	const socialMediaLinks = header.querySelectorAll('#social-networks')
-	const mapGuide = document.querySelector('#map-guide')
 	const navbar = document.querySelector('nav')
+	const resetButton = document.querySelector('#map-container').querySelector('button')
+	const spanResetButton = resetButton.querySelector('span')
 
 	function getStylesByColor(color = '') {
 		return {
 			backgroundColor: `bg-${color}`,
 			fillColor: `fill-${color}`,
+			borderColor: `border-${color}`,
+			textColor: `text-${color}`,
 			hoverTextColor: `hover:text-${color}`
 		}
 	}
@@ -51,11 +54,13 @@ const { title, description, locations } = ARC_2023
 	]
 
 	function changeElementStyles(change, index) {
-		const changeBackgroundElements = [header, footer, downloadScheduleBtn, mapGuide, navbar]
+		const changeBackgroundElements = [header, footer, downloadScheduleBtn, navbar, resetButton]
 		if (change) {
 			changeBackgroundElements.forEach((element) => {
 				element.classList.add(colors[index].backgroundColor)
 			})
+			spanResetButton.classList.add(colors[index].borderColor, colors[index].textColor)
+			spanResetButton.classList.remove('border-main', 'text-main')
 			logo.classList.add(colors[index].fillColor)
 			logo.classList.remove('fill-main')
 			socialMediaLinks.forEach((link) => {
@@ -66,6 +71,8 @@ const { title, description, locations } = ARC_2023
 			changeBackgroundElements.forEach((element) => {
 				element.classList.remove(colors[index].backgroundColor)
 			})
+			spanResetButton.classList.remove(colors[index].borderColor, colors[index].textColor)
+			spanResetButton.classList.add('border-main', 'text-main')
 			logo.classList.remove(colors[index].fillColor)
 			logo.classList.add('fill-main')
 			socialMediaLinks.forEach((link) => {
