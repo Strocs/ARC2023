@@ -1,7 +1,7 @@
 ---
 import { Icon } from 'astro-icon'
 import { getLocationById } from '../utils'
-import ScheduleList from './ScheduleList.astro'
+import ScheduleItem from './ScheduleItem.astro'
 const { locationId, eventId } = Astro.props
 const { styles, schedule } = getLocationById(locationId)
 ---
@@ -21,7 +21,7 @@ const { styles, schedule } = getLocationById(locationId)
 				</div>
 				<ul class='flex flex-col gap-1 mt-3'>
 					{events.map((event) => (
-						<ScheduleList styles={styles} locationId={locationId} event={event} eventId={eventId} />
+						<ScheduleItem styles={styles} locationId={locationId} event={event} eventId={eventId} />
 					))}
 				</ul>
 			</div>

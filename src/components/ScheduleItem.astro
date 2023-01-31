@@ -14,7 +14,7 @@ const { styles, locationId, event, eventId } = Astro.props
 			<div class='flex items-center gap-1 w-full'>
 				<Icon
 					name='mdi:play'
-					class={`w-5 inline flex-shrink-0 ${
+					class={`w-5 inline flex-shrink-0 self-start ${
 						event.id === eventId ? 'text-white' : 'text-neutral-400'
 					}  group-hover:text-white`}
 				/>
@@ -29,7 +29,7 @@ const { styles, locationId, event, eventId } = Astro.props
 			<span
 				class={`${
 					event.id === eventId ? 'text-white' : 'text-neutral-700'
-				}  font-normal text-sm block pr-2 group-hover:text-white`}
+				}  font-normal text-sm block pr-3 self-start group-hover:text-white`}
 			>
 				{event.time}
 			</span>
