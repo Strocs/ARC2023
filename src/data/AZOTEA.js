@@ -35,7 +35,6 @@ export const AZOTEA = {
 					links: [],
 					description:
 						'Dj Kabir aka Don Pingüino (1982) tiene sus comienzos en la música en el año 2001 en la ciudad de Santiago. Se acerca a las máquinas de ritmo y sintetizadores , invitado por su gran amigo Bryan Phillips aka Galambo. Su inquietud por la música radica en la exploración de nuevos sonidos, que están plasmados en sus primeros live sets.\nLas primeras incursiones musicales se dan en contexto de extensas sesiones de jamming en diversos eventos privados, destacando su buen gusto musical principalmente electrónico y rock.\nA mediados del año 2015 conoce al dj Claudio Val, con el cual comienza una relación de amistad e intercambio de conocimiento además de producir en conjunto eventos masivos del género. También comienza a relacionarse con la escena de su ciudad La Serena, conociendo a los dj en ejercicio y participando con estos en diversos eventos y reuniones.\nDesde el año 2018, y al alero de Pingüino Club, comienza un ciclo de sesiones de música electrónica, denominas “Electroschop”, logrando consolidar una escena desde el underground, pasando por este evento grandes artistas nacionales como Umho , Mañungo, Alejandro Vivanco, además de exponentes internacionales, como el dj y productor, Valentino Kanzyani y el tornamesista argentino, Lucas Ferro.\nKabir,  a la fecha ha participado en innumerables eventos del género electrónico,  compartiendo escenario con grandes artistas nacionales e internacionales. Su estilo va arraigado al underground, como el \bminimal/techno/house, saliéndose de lo masivo y popular.\b',
-
 					list: []
 				},
 				{
@@ -51,7 +50,6 @@ export const AZOTEA = {
 					],
 					description:
 						'Ría  Orange  te  hace  sentir lo ácido  más dulce , como la primera mordida de una naranja, se expresa en un hilo que no se corta, en uno hilo que va cosiendo cada parte de su sentir, por eso le es tan importante escribir sus canciones.\nEscribe letras desde los siete años de edad y jamás parará, porque esta es su manera de vivir.\nLleva años haciendo música y los últimos tres años estudiando, aprendiendo, impregnándose de todo lo que quiere y quiere ser.\nCon dos singles lanzados, “Escúchame y “Averno”, y próxima a lanzar su primer EP, Ría Orange es uno de los proyectos nuevos más interesantes de la región, con una gran proyección a futuro.',
-
 					list: []
 				},
 				{
@@ -181,7 +179,7 @@ export const AZOTEA = {
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/anima.red' }],
 
 					description:
-						'Alma, hija y hermana originaria de la IV Región de Chile. Ilustradora, encuadernadora y Licenciada en arquitectura.\nLos primeros rayones en vez de palabras comienzan en febrero de 1997, utilizando siempre el dibujo y los trazos como método de comunicación.\nDesde sus comienzos se apega a la ilustración de seres fantásticos que rondan por su mente y sueños, creando de forma tanto digital como tradicional, experimentando en diversas ocasiones con varios estilos y materiales durante el desarrollo. Se desempeña cómodamente en el estilo boceto o sketch. “Los primeros trazos son la proyección del ser”. \nMi trabajo se enfoca en la ilustración de seres fantásticos y mágicos rodeados por la naturaleza. Las técnicas que utilizo son las de acuarela, acrílico, sketch e ilustración en digital.',
+						'Alma, hija y hermana originaria de la IV Región de Chile. Ilustradora, encuadernadora y Licenciada en arquitectura.\nLos primeros rayones en vez de palabras comienzan en febrero de 1997, utilizando siempre el dibujo y los trazos como método de comunicación.\nDesde sus comienzos se apega a la ilustración de seres fantásticos que rondan por su mente y sueños, creando de forma tanto digital como tradicional, experimentando en diversas ocasiones con varios estilos y materiales durante el desarrollo. Se desempeña cómodamente en el estilo boceto o sketch. “Los primeros trazos son la proyección del ser”.\nMi trabajo se enfoca en la ilustración de seres fantásticos y mágicos rodeados por la naturaleza. Las técnicas que utilizo son las de acuarela, acrílico, sketch e ilustración en digital.',
 
 					list: []
 				},
@@ -202,7 +200,7 @@ export const AZOTEA = {
 						}
 					],
 					description:
-						'Mi trabajo se basa en el rescate del patrimonio natural e histórico local donde se desarrolla mi arte. Principalmente intervengo en el espacio urbano realizando “arte público”.\nA través de la ilustración y la reproducción fine Art, entrego un catálogo de productos que se pueden adquirir por encargo, ferias artesanales o a través de sitio web, pudiendo encontrar reproducciones intervenidas con carácter de pieza única pero en las que poder interpretaciones variadas de un mismo diseño.',
+						'Su trabajo se basa en el rescate del patrimonio natural e histórico local donde se desarrolla su arte. Principalmente interviene en el espacio urbano realizando “arte público”.\nA través de la ilustración y la reproducción fine Art, entrega un catálogo de productos que se pueden adquirir por encargo, ferias artesanales o a través de sitio web, pudiendo encontrar reproducciones intervenidas con carácter de pieza única pero en las que poder interpretaciones variadas de un mismo diseño.',
 					list: []
 				},
 				{
@@ -222,7 +220,7 @@ export const AZOTEA = {
 						}
 					],
 					description:
-						'En mis ilustraciones busco plasmar seres humanoides, flora y fauna de mundos de fantasía y psicodelia.',
+						'En sus ilustraciones busca plasmar seres humanoides, flora y fauna de mundos de fantasía y psicodelia.',
 					list: []
 				},
 				{
@@ -246,8 +244,7 @@ export const AZOTEA = {
 						}
 					],
 					description:
-						'Mi trabajo se basa principalmente en la temática de fantasía oscura y  mi estilo de dibujo se desarrolla en el valor de las sombras, la aparición de luces y algunos colores que puedan potenciar esta idea. Como me gustan mucho los elementos medievales y mundos fantasiosos que evoquen cierto tipo de emociones, busco referentes como Kentaro Miura, Yoshikata Amano, escritores como H.P Lovecraft o J.R.R. Tolkien, quienes muestran en sus obras todos los elementos estéticos y emociones que quiero conseguir en mis ilustraciones.',
-
+						'Su trabajo se basa principalmente en la temática de fantasía oscura, su estilo de dibujo se desarrolla en el valor de las sombras, la aparición de luces y algunos colores que puedan potenciar esta idea.\nLe gustan mucho los elementos medievales y mundos fantasiosos que evoquen cierto tipo de emociones, busca referentes como Kentaro Miura, Yoshikata Amano, escritores como H.P Lovecraft o J.R.R. Tolkien, quienes muestran en sus obras todos los elementos estéticos y emociones que quiere conseguir en sus  ilustraciones.',
 					list: []
 				},
 				{
@@ -295,7 +292,7 @@ export const AZOTEA = {
 						}
 					],
 					description:
-						'Camila Guamán, Egresada de Arquitectura, ilustradora naturalista desde hace más de 5 años, enamorada de la flora nativa, fauna local, la tierra como material de construcción, el aprendizaje y la enseñanza a través del arte.',
+						'Camila Guamán, egresada de Arquitectura, ilustradora naturalista desde hace más de 5 años, enamorada de la flora nativa, fauna local, la tierra como material de construcción, el aprendizaje y la enseñanza a través del arte.',
 
 					list: []
 				},
@@ -320,7 +317,7 @@ export const AZOTEA = {
 						}
 					],
 					description:
-						'Artista autodidacta desde los 13 años, describo mi estilo como un híbrido entre cartoon y anime. Me encanta mi estilo infantil. Me presenté por primera vez en frijol mágico el año 2020, a los 14 años de edad, siendo la más pequeña de todos los artistas participantes, recibiendo una buena acogida y mucho cariño, desde ahí he desarrollado mi talento y poco a poco he crecido en las redes sociales.',
+						'Artista autodidacta desde los 13 años, describe su estilo como un híbrido entre cartoon y anime. Se presentó en el Festival Frijol Mágico el 2020, a los 14 años de edad, siendo la más joven de las y los artistas participantes, recibiendo una muy buena acogida. Desde ese momento, ha desarrollado su arte y crecido poco a poco en sus redes sociales.',
 					list: []
 				},
 				{
@@ -359,7 +356,7 @@ export const AZOTEA = {
 						{ name: 'email', url: 'mailto:chilensisboy@gmail.com' }
 					],
 					description:
-						'Comencé como dibujante aproximadamente el 2010 en un proyecto de comics regionales llamado Dharmix, el cual logró completar 2 números de comics originales, desde ahí comencé a dibujar fanart, arte sobre series de la tele y películas, para poder suplir mi necesidad de dibujos de personajes que de los que no había o existía muy poco material. Desde ese punto empecé a participar en talleres y eventos de animé como dibujante, hasta llegar a la feria del libro de La Serena el 2012 junto a Ojo en Tinta, taller organizado por el centro cultural Santa Inés en La Serena, desde ahí se ha mantenido el dibujo como un oficio regular, un hobby y un entretenimiento al que sigo metiéndole tiempo cuando puedo, para no perder la práctica y poder “volver a salir al mundo”. \nMi estilo está influenciado por el manga, la fantasía medieval con magia y dragones y el no querer hacer tramas muy profundas.',
+						'Comenzó como dibujante aproximadamente el 2010 en un proyecto de comics regionales llamado Dharmix, el cual logró completar 2 números originales, desde ahí comenzó a dibujar fanart, arte sobre series de la tele y películas, para poder suplir su necesidad de dibujos de personajes que de los que no había o existía muy poco material.\nDesde ese punto empezó a participar en talleres y eventos de animé como dibujante, hasta llegar a la feria del libro de La Serena el 2012 junto a Ojo en Tinta, taller organizado por el Centro Cultural Santa Inés en La Serena. Desde esa fecha, ha mantenido el dibujo como un oficio regular, un hobby y un entretenimiento al que sigue utilizando tiempo cuando puede, para no perder la práctica y poder “volver a salir al mundo”.\nSu estilo está influenciado por el manga, la fantasía medieval con magia y dragones y el no querer hacer tramas muy profundas.',
 
 					list: []
 				},
@@ -372,8 +369,7 @@ export const AZOTEA = {
 					image: { url: '/azotea/cleib.jpg', alt: 'Imagen de la Ilustradora Regional Cleib' },
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/_cleib/' }],
 					description:
-						'Mi trabajo está inspirado en el cartoon antiguo hasta los dibujos de los 90`s, esas líneas definen lo que hago jasta el día de hoy. Me agrada elegir ideas que representan mi realidad y creo que la de muchas personas, provoca que conectemos con situaciones que nos han pasado a todxs en algún punto, con un toque de ironía para reírme y burlarme de lo evidente, crudo y difícil que es vivir. Siempre sin ánimos de ofender claro, pero es gan subjetivo como es recibido el contenido que hago que entiendo que no puedo agradar a todxs y tampoco es la idea, porque primero dibujar para uno y después para lxs demás.',
-
+						'Su trabajo está inspirado en el cartoon antiguo hasta los dibujos de los 90`s, esas líneas definen lo que hace hasta el día de hoy.\nLe agrada elegir ideas que representan su realidad y la de muchas personas, lo que genera una conexión con situaciones que son parte de la cotidianidad de la gente, con un toque de ironía que llama a reírse y burlarse de lo evidente, crudo y difícil de la vida, siempre sin ánimos de ofender, pero respetando esa subjetividad que provoca el arte.',
 					list: []
 				},
 				{
@@ -401,7 +397,7 @@ export const AZOTEA = {
 						}
 					],
 					description:
-						'Ilustradora digital autodidacta de personajes y animales en un estilo tierno y amigable al público.\nInicio en 2020 en periodo de pandemia. Participé en la feria del libro de La Serena 2021 y 2022, feria del libro de Vicuña 2021 y eventos de la comunidad local de Serena. Creadora de la tienda Koneko_Shop donde se realizan stickers, prints, peluches estampados con ilustraciones y accesorios artesanales en resina.',
+						'Ilustradora digital autodidacta de personajes y animales en un estilo tierno y amigable al público.\nInició en 2020 en periodo de pandemia. Participó en distintos eventos, como la Feria del Libro de La Serena (2021 y 2022), la Feria del Libro de Vicuña (2021) y eventos locales en La Serena.\nCreadora de la tienda Koneko_Shop, donde se realizan stickers, prints, peluches estampados con ilustraciones y accesorios artesanales en resina.',
 					list: []
 				},
 				{
@@ -421,7 +417,7 @@ export const AZOTEA = {
 						}
 					],
 					description:
-						'Mi trabajo consiste en el rescate gráfico del patrimonio natural y cultural del territorio. Cada ilustración cuenta una historia.\nUtilizo diversas técnicas artísticas cómo el dibujo, la ilustración digital, la pintura y principalmente la serigrafía.',
+						'Su trabajo consiste en el rescate gráfico del patrimonio natural y cultural del territorio. Cada ilustración cuenta una historia.\nUtiliza diversas técnicas artísticas cómo el dibujo, la ilustración digital, la pintura y principalmente la serigrafía.',
 					list: []
 				},
 				{
@@ -441,7 +437,7 @@ export const AZOTEA = {
 						}
 					],
 					description:
-						'Mi trabajo es un emprendimiento del área de papelería, creo cuadernos, stickers, marcapáginas, mousepads, entre otros productos inspirados en ilustración infantil, mi principal forma de creación es mediante medios digitales. Me inspiran las ilustraciones infantiles antiguas, como los libros de colorear y las tarjetas de felicitaciones. A futuro me gustaría profesionalizar mi trabajo pudiéndome dedicar a tiempo completo a él.',
+						'Su trabajo es un emprendimiento del área de papelería. Crea cuadernos, stickers, marcapáginas, mousepads, entre otros productos inspirados en ilustración infantil.\nSu principal forma de creación es mediante medios digitales. Le inspiran las ilustraciones infantiles antiguas, como los libros de colorear y las tarjetas de felicitaciones.\nA futuro le gustaría profesionalizar mi trabajo, viendo la posibilidad de dedicar todo su tiempo a la ilustración.',
 					list: []
 				},
 				{
@@ -483,30 +479,28 @@ export const AZOTEA = {
 					],
 
 					description:
-						'En mis trabajos predominan los colores suaves, las líneas y fondos simples, me gusta la estética y las diferentes representaciones de sentimientos que se puede lograr con cada uno de los personaje que me inspiran, Soy fan del Halloween, los payasos, arlequines y el arte circense en general, los cuales, presentan una gran influencia en mis trabajos. Con el arte que creo, busco compartir mis gustos, con la creación de personajes propios y  Fan art de mis artistas y animaciones favoritas, desde mi más íntima apreciación.',
+						'En los trabajos de esta ilustradora predominan los colores suaves, las líneas y fondos simples, siempre poniendo atención a lo estético y las diferentes representaciones de los sentimientos que pueden lograrse con los personajes que la inspiran.\nEs fan de Halloween, los payasos, arlequines y el arte circense en general, los cuales, presentan una gran influencia en sus trabajos.\nCon el arte que crea, busca compartir sus gustos, con la creación de personajes propios y Fan art de sus artistas y animaciones favoritas, desde su más íntima apreciación.',
 
 					list: []
 				},
 				{
-					id: 'kunturi-y-yakana-milo-ys',
-					name: 'Kunturi & Yakana | Milo_ys',
+					id: 'kunturi-y-yakana',
+					name: 'Kunturi & Yakana',
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
 					image: {
-						url: '/azotea/kunturi-yakana-milo.jpg',
-						alt: 'Imagen de los Ilustradores Kunturi & Yakana | Milo_ys'
+						url: '/azotea/kunturi-yakana.jpg',
+						alt: 'Imagen de los Ilustradores Kunturi & Yakana'
 					},
 					links: [
 						{
 							name: 'instagram',
 							url: 'https://www.instagram.com/kunturi_y_yakana/'
-						},
-						{ name: 'instagram', url: 'https://www.instagram.com/milo_ys/' }
+						}
 					],
-
 					description:
-						'Kunturi & Yakana tiene un enfoque cultural y educativo, relacionado con las naciones originarias de Chile y los andes centrales. Las ilustraciones van desde diseños simples y coloridos a complejos y detallados.  \nSe busca entregar conocimientos, generar respeto y valoración hacia los pueblos originarios a través de la ilustración.\nMilo_ys tiene un enfoque más personal, las ilustraciones varían desde creaciones de diseño propio a fanart de animaciones, anime, mangas y contenido BL (contenido no explícito y NFSW soft).',
+						'Kunturi & Yakana tiene un enfoque cultural y educativo, relacionado con las naciones originarias de Chile y los andes centrales. Las ilustraciones van desde diseños simples y coloridos a complejos y detallados.\nSe busca entregar conocimientos, generar respeto y valoración hacia los pueblos originarios a través de la ilustración.',
 
 					list: []
 				},
@@ -526,7 +520,7 @@ export const AZOTEA = {
 						{ name: 'twitter', url: 'https://twitter.com/Leeneal__' }
 					],
 					description:
-						'Leeneal Ilustración, nace en diciembre del 2021 y se activa en septiembre del 2022 en el primer evento en el qué participamos.\nRealizamos ilustraciones en un estilo Cute o Kawaii, el que usamos para crear diferentes productos, como papeleria en general (Stickers, libretas, prints entre otros.)\nAdemás presentamos productos sublimados y con serigrafí (Monederos, estuches, totebags, coles y más.)\nAl principio nuestras inspiraciones fueron las ilustraciones en el estilo lineal y por eso el nombre Leeneal, pero con el pasar del tiempo, hemos ido estudiando y agregando más colores y formas en mis composiciones.\nNuestro enfoque principal es poder crear productos funcionales para el día a día con lindos diseños, por eso los estuches, monederos, libretas y más.',
+						'Leeneal Ilustración, nace en diciembre del 2021 y se activa en septiembre del 2022 en el primer evento en el que el proyecto participa.\nRealizan ilustraciones en un estilo Cute o Kawaii, el que usan para crear diferentes productos, como papelería en general (Stickers, libretas, prints entre otros).\nAdemás, presentan productos sublimados y con serigrafía (Monederos, estuches, totebags, coles y más).\nAl principio, sus inspiraciones fueron las ilustraciones en el estilo lineal y de allí viene el nombre Leeneal, pero con el pasar del tiempo, han ido estudiando y agregando más colores y formas en sus composiciones.\nSu enfoque principal es poder crear productos funcionales para el día a día con lindos diseños, por eso los estuches, monederos, libretas y más.',
 					list: []
 				},
 				{
@@ -541,7 +535,7 @@ export const AZOTEA = {
 					},
 					links: [{ name: 'instagram', url: 'www.instagram.com/lunagatuna.art' }],
 					description:
-						'Soy una artista tradicional de técnica mixta y tatuadora de estilo dotwork. Mi trabajo está inspirado en la brujería, misticismo y la fantasía oscura. Muchas de mis obras están intervenidas de forma manual, algunos, como mis libretas, son un trabajo artesanal desde el corte hasta el armado. Mi trayectoria es hacer artículos duraderos y que todos se lleven una pieza única <3',
+						'Artista tradicional de técnica mixta y tatuadora de estilo dotwork. Su trabajo está inspirado en la brujería, misticismo y la fantasía oscura. Muchas de sus obras están intervenidas de forma manual, algunos, como sus libretas, son un trabajo artesanal desde el corte hasta el armado.\nSu trayectoria es hacer artículos duraderos y que todos se lleven una pieza única <3',
 
 					list: []
 				},
@@ -554,7 +548,7 @@ export const AZOTEA = {
 					image: { url: '/azotea/niño-pan.jpg', alt: 'Imagen del Ilustrador Regional Niño Pan' },
 					links: [{ name: 'instagram', url: 'www.instagram.com/elninopan' }],
 					description:
-						'Hola me llamo Niño Pan, me dedico a la ilustración digital y no sabría muy bien cómo definir mi estilo pero diría que es un tanto variable pero a la vez reconocible, dependiendo de lo que quiero dibujar, aplico distintas formas de trazado y coloreado.\nPor lo general lo que me inspira a dibujar son cosas que me pasan, que siento, que pienso, los espacios que habito, algunas personas que quiero, perritos que andan por la calle, la tristeza, los besitos, dudas existenciales y otras más. 🙂',
+						'Niño Pan se dedica a la ilustración digital y no sabría muy bien cómo definir su estilo, pero podría decirse  que es un tanto variable pero a la vez reconocible, dependiendo de lo que dibuja, ya que aplica distintas formas de trazado y coloreado.\nPor lo general, lo que le inspira a dibujar son cosas que le pasan, que siente, que piensa, los espacios que habita, algunas personas que quiere, perritos que andan por la calle, la tristeza, los besitos, dudas existenciales y otras más. 🙂',
 
 					list: []
 				},
@@ -575,7 +569,7 @@ export const AZOTEA = {
 						}
 					],
 					description:
-						'Como ilustrador, busco realizar trabajos tanto de carácter desde análogo y digital hasta técnicas mixtas, tratando de desarrollar un estilo que abarque las distintas influencias y experiencias que he tenido a lo largo de mi carrera de diseño gráfico, siempre interesado en crear elementos que sean llamativos visualmente.',
+						'Como ilustrador, busca realizar trabajos  desde tipo  análogo y digital hasta técnicas mixtas, tratando de desarrollar un estilo que abarque las distintas influencias y experiencias que ha tenido a lo largo de su carrera de diseño gráfico, siempre interesado en crear elementos que sean llamativos visualmente.',
 
 					list: []
 				},
@@ -596,8 +590,7 @@ export const AZOTEA = {
 						}
 					],
 					description:
-						'Dibujo cómics, viñetas de humor e historias largas. Me gusta retratar historias extrañas, personales y decadentes, pero también contrasto con un estilo de humor rápido y absurdo. En mis productos hay referencias a memes y cultura pop televisiva de los 90’s y 2000 de la televisión chilena, además de mascotas y personajes del imaginario chileno.',
-
+						'Dibuja cómics, viñetas de humor e historias largas. Le gusta retratar historias extrañas, personales y decadentes, pero también contrasta con un estilo de humor rápido y absurdo.\nEn sus productos hay referencias a memes y cultura pop televisiva de los 90’s y 2000 de la televisión chilena, además de mascotas y personajes del imaginario chileno.',
 					list: []
 				},
 				{
@@ -614,7 +607,7 @@ export const AZOTEA = {
 						}
 					],
 					description:
-						'7Seyuk se caracteriza por sus ilustraciones de líneas definidas y renderizados saturados, busca generar textura a base de pequeños detalles en los colores planos y principalmente se inspira en la mitología griega y oriental, retratando demonios y criaturas fantásticas humanizadas. El enfoque del ilustrador es implementar su estilo en creaciones propias, fanarts, contenido BL y arte sugerente.',
+						'7Seyuk se caracteriza por sus ilustraciones de líneas definidas y renderizados saturados, busca generar textura a base de pequeños detalles en los colores planos y principalmente se inspira en la mitología griega y oriental, retratando demonios y criaturas fantásticas humanizadas. El enfoque del ilustrador es implementar su estilo en creaciones propias, fanarts, contenido BL y arte sugerente.fue',
 					list: []
 				},
 				{
@@ -631,7 +624,7 @@ export const AZOTEA = {
 						}
 					],
 					description:
-						'Mi estilo se basa en jugar con las texturas análogas que se pueden lograr con herramientas digitales, otorgándole calidez a mis ilustraciones y retratando así animales, la naturaleza, diferentes comidas y elementos de la vida cotidiana. Me inspira mucho la música a la hora de dibujar, el trabajo de otros ilustradores, la narrativa y la fotografía, entre otros.\nHe estado presente en diversas ferias de ilustración y emprendimiento, destacando la participación que tuve en dos versiones anteriores del Festival Frijol Mágico, en 2020 y 2022.',
+						'Su estilo se basa en jugar con las texturas análogas que se pueden lograr con herramientas digitales, otorgándole calidez a sus ilustraciones y retratando así animales, la naturaleza, diferentes comidas y elementos de la vida cotidiana.\nLe inspira mucho la música a la hora de dibujar, el trabajo de otros ilustradores, la narrativa y la fotografía, entre otros.\nHa estado presente en diversas ferias de ilustración y emprendimiento, destacando la participación que tuve en dos versiones anteriores del Festival Frijol Mágico, en 2020 y 2022.',
 					list: []
 				},
 				{
@@ -649,8 +642,7 @@ export const AZOTEA = {
 						{ name: 'email', url: 'mailto:Camila.barevalo@gmail.com' }
 					],
 					description:
-						'Hola! Soy Cami, más conocida como Tsuki en el mundo de la ilustración. Soy curicana de nacimiento pero he vivido en muchos lugares de mi hermoso país, Chile, actualmente viviendo en la bella ciudad de La Serena desde hace años (mi ciudad favorita).\nLes hablaré un poquito de mi, soy mamá, emprendedora, ilustradora, gamer y diseñadora gráfica, disfruto de la naturaleza y de la belleza que puedo encontrar en mi diario vivir urbano. Comencé a dibujar desde muy pequeña, dibujaba aves y casas. A través de los años y la animación japonesa comenzó a inspirarme e impulsarme a crear mis propios personajes y trajes con sus transformaciones. Lo dejé con el tiempo porque no era una carrera que pudiese seguir en ese momento, pero luego de mucho meditarlo y un empujón de una conocida (gracias por eso Cata) decidí comenzar a ilustrar y compartir mi proceso. Fue difícil porque como novata recibía un sinfín de críticas más destructivas que constructivas y quise dejarlo muchas veces, pero me mantuve en el tiempo a pesar de eso y ¡aquí estoy!. Como madre primeriza me cuesta aún reencontrarme con mis tiempos artísticos pero de a poco vamos retomando la vida.\nActualmente, llevo un emprendimiento de impresiones y soluciones gráficas llamado BITA (las siglas de mi hijo), enfocado en el mundo del ilustrador y las pymes.\nLos formatos y materiales que uso para ilustrar son: Copic markers, Acuarelas y tableta digital.\nTsuki, Luna en japonés; “Mi arte se trata de llevar luz a donde más oscuridad encuentre”',
-
+						'Cami, mejor conocida como Tsuki en el mundo de la ilustración,nació en Curicó pero ha vivido en muchos lugares de Chile, y actualmente está viviendo en La Serena, su ciudad favorita.\nA través de los años, la animación japonesa comenzó la inspiró e impulsó a crear sus propios personajes y trajes con sus transformaciones. Dejó aquello un tiempo porque no era una carrera que pudiese seguir en ese momento, pero luego de pensarlo mejor y con el apoyo de amistades, comenzó a ilustrar y compartir su proceso.\nActualmente lleva un emprendimiento de impresiones y soluciones gráficas llamado BITA, enfocado en el mundo del ilustrador y las pymes.\nLos formatos y materiales que usa para ilustrar son: Copic Makers, acuarelas y tabletas digitales ',
 					list: []
 				},
 				{
@@ -670,8 +662,7 @@ export const AZOTEA = {
 						}
 					],
 					description:
-						'Definiría mi gráfica como  una mezcla de tinta china que aplica el pincel seco y achurados complementados con una paleta de colores vibrantes, tanto la línea como los rellenos en las formas deben significar algo. Mi arte se basa en la sensación de la emoción, expresada en hojas, hongos y patrones  danzarines, manchas de tinta esparcidas con movimiento y colores que ambientan lo que quiero transmitir, esas mismas emociones me inspiran para seguir creando cada día, incluyendo mi negatividad y mi ansiedad que he retratado ampliamente buscando representar eso mismo, para que los otros puedan entender tanto visual como físicamente la intensidad de las emociones que me atañen.',
-
+						'Su gráfica puede definirse como una mezcla de tinta china que aplica el pincel seco y achurados complementados con una paleta de colores vibrantes, tanto la línea como los rellenos en las formas deben significar algo.\nSu arte se basa en la sensación de la emoción, expresada en hojas, hongos y patrones  danzarines, manchas de tinta esparcidas con movimiento y colores que ambientan lo que quiere transmitir, esas mismas emociones la inspiran para seguir creando cada día, incluyendo su negatividad y ansiedad que ha retratado ampliamente, buscando representar eso mismo, para que los otros puedan entender tanto visual como físicamente la intensidad de las emociones que le atañen.',
 					list: []
 				}
 			]

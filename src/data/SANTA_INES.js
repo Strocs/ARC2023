@@ -114,7 +114,7 @@ export const SANTA_INES = {
 					category: 'Música',
 					time: '19:00',
 					image: {
-						url: '/santa-ines/elvira-hernández.jpg',
+						url: '/santa-ines/las-quintralas.jpg',
 						alt: 'Imagen de la Presentación de Las Quintralas de la Cuarta'
 					},
 					links: [],

@@ -139,20 +139,14 @@ export const MUSEO = {
 					subTitle: {},
 					category: 'Exposición de Artes Visuales',
 					time: '',
-					image: {},
+					image: {
+						url: '/arqueologico/r@stros.jpg',
+						alt: 'Afiche de la Exposición de Artes Visuales R@stros'
+					},
 					links: [],
 					description:
-						'A través de un profundo trabajo curatorial realizado por José de Nordenflycht, Doctor en Historia del Arte de la Universidad de Granada y director del departamento de Artes Integradas de la Universidad de Playa Ancha de Valparaíso, se construyó la exposición de artes visuales “R@stros”, en las que participan obras elegidas de ocho artistas visuales de diferentes comunas de la región de Coquimbo, con el fin de representar de alguna forma la territorialidad y la diversidad de expresiones que existen en nuestra región.\nLas/os artistas que participan son los siguientes:',
-					list: [
-						{ title: 'Mauricio Álvarez Collao, artista visual de Los Vilos', text: [] },
-						{ title: 'Claudia Campos Mendoza, artista visual de Illapel', text: [] },
-						{ title: 'Paz Alvial Reculé, artista visual de La Serena', text: [] },
-						{ title: 'Claudia Suárez Jansson, artista visual de Coquimbo', text: [] },
-						{ title: 'Aude Gutiérrez Barraza, artista visual de Vicuña', text: [] },
-						{ title: 'Mauricio Toro Goya, fotógrafo y artista visual de Coquimbo', text: [] },
-						{ title: 'Tatiana Alfaro Chávez, fotógrafa y artista visual de La Serena', text: [] },
-						{ title: 'Oskar Huerta, fotógrafo y artista visual de Ovalle', text: [] }
-					]
+						'A través de un profundo trabajo curatorial realizado por José de Nordenflycht, Doctor en Historia del Arte de la Universidad de Granada y director del departamento de Artes Integradas de la Universidad de Playa Ancha de Valparaíso, se construyó la exposición de artes visuales “R@stros”, en las que participan obras elegidas de ocho artistas visuales de diferentes comunas de la región de Coquimbo, con el fin de representar de alguna forma la territorialidad y la diversidad de expresiones que existen en nuestra región.',
+					list: []
 				}
 			]
 		},

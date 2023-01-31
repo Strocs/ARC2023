@@ -19,16 +19,16 @@ export const CENTRO = {
 	image: {},
 	schedule: [
 		{
-			day: 'Confirmar',
+			day: 'Domingo 12',
 			events: [
 				{
 					id: 'la-pelea-del-siglo',
 					name: 'La Pelea del Siglo',
 					subTitle: { title: 'Lugar:', text: 'Sector de la Catedral' },
 					category: 'Circo',
-					time: '12:00',
+					time: '11:00',
 					image: {
-						url: '/municipal/.jpg',
+						url: '/centro/la-pelea-del-siglo.jpg',
 						alt: 'Imagen de la presentación de La Pelea del Siglo'
 					},
 					links: [],
