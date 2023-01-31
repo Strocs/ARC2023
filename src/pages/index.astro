@@ -20,9 +20,7 @@ const { title, description, locations } = ARC_2023
 </Layout>
 
 <script type='module'>
-	import { getLocationStyles } from './src/utils/getLocationStyles'
-
-	const mapIcon = document.querySelectorAll('.names')
+	const mapLabels = document.querySelectorAll('.names')
 	const locations = document.querySelectorAll('[aria-label="location-info"]')
 	const header = document.querySelector('header').querySelector('div')
 	const footer = document.querySelector('footer')
@@ -31,74 +29,25 @@ const { title, description, locations } = ARC_2023
 	const socialMediaLinks = header.querySelectorAll('#social-networks')
 	const mapGuide = document.querySelector('#map-guide')
 
-	const colors = [
-		getLocationStyles('pale-purple'),
-		getLocationStyles('orange'),
-		getLocationStyles('black-pink'),
-		getLocationStyles('purple'),
-		getLocationStyles('pink'),
-		getLocationStyles('yellow'),
-		getLocationStyles('blue'),
-		getLocationStyles('red'),
-		getLocationStyles('pale-blue')
-	]
+	function getStylesByColor(color = '') {
+		return {
+			backgroundColor: `bg-${color}`,
+			fillColor: `fill-${color}`,
+			hoverTextColor: `hover:text-${color}`
+		}
+	}
 
-	// const colors = [
-	// 	{
-	// 		textColor: 'text-pale-purple',
-	// 		fillColor: 'fill-pale-purple',
-	// 		bgColor: 'bg-pale-purple',
-	// 		hoverColor: 'hover:text-pale-purple'
-	// 	},
-	// 	{
-	// 		textColor: 'text-orange',
-	// 		fillColor: 'fill-orange',
-	// 		bgColor: 'bg-orange',
-	// 		hoverColor: 'hover:text-orange'
-	// 	},
-	// 	{
-	// 		textColor: 'text-black-pink',
-	// 		fillColor: 'fill-black-pink',
-	// 		bgColor: 'bg-black-pink',
-	// 		hoverColor: 'hover:text-black-pink'
-	// 	},
-	// 	{
-	// 		textColor: 'text-purple',
-	// 		fillColor: 'fill-purple',
-	// 		bgColor: 'bg-purple',
-	// 		hoverColor: 'hover:text-purple'
-	// 	},
-	// 	{
-	// 		textColor: 'text-pink',
-	// 		fillColor: 'fill-pink',
-	// 		bgColor: 'bg-pink',
-	// 		hoverColor: 'hover:text-pink'
-	// 	},
-	// 	{
-	// 		textColor: 'text-yellow',
-	// 		fillColor: 'fill-yellow',
-	// 		bgColor: 'bg-yellow',
-	// 		hoverColor: 'hover:text-yellow'
-	// 	},
-	// 	{
-	// 		textColor: 'text-blue',
-	// 		fillColor: 'fill-blue',
-	// 		bgColor: 'bg-blue',
-	// 		hoverColor: 'hover:text-blue'
-	// 	},
-	// 	{
-	// 		textColor: 'text-red',
-	// 		fillColor: 'fill-red',
-	// 		bgColor: 'bg-red',
-	// 		hoverColor: 'hover:text-red'
-	// 	},
-	// 	{
-	// 		textColor: 'text-pale-blue',
-	// 		fillColor: 'fill-pale-blue',
-	// 		bgColor: 'bg-pale-blue',
-	// 		hoverColor: 'hover:text-pale-blue'
-	// 	}
-	// ]
+	const colors = [
+		getStylesByColor('pale-purple'),
+		getStylesByColor('orange'),
+		getStylesByColor('black-pink'),
+		getStylesByColor('purple'),
+		getStylesByColor('pink'),
+		getStylesByColor('yellow'),
+		getStylesByColor('blue'),
+		getStylesByColor('red'),
+		getStylesByColor('pale-blue')
+	]
 
 	function changeElementStyles(change, index) {
 		const changeBackgroundElements = [header, footer, downloadScheduleBtn, mapGuide]
@@ -136,7 +85,7 @@ const { title, description, locations } = ARC_2023
 		}
 	}
 
-	mapIcon.forEach((icon, index) =>
+	mapLabels.forEach((icon, index) =>
 		icon.addEventListener('click', () => {
 			locations.forEach((location, index) => {
 				showLocationsInfo(location, false, index)
@@ -147,7 +96,7 @@ const { title, description, locations } = ARC_2023
 		})
 	)
 
-	mapIcon.forEach((icon, index) =>
+	mapLabels.forEach((icon, index) =>
 		icon.addEventListener('touchend', () => {
 			locations.forEach((location) => {
 				showLocationsInfo(location, false, index)
