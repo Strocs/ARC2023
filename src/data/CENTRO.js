@@ -16,13 +16,10 @@ export const CENTRO = {
 		fillColor: 'fill-pink',
 		borderColor: 'border-pink'
 	},
-	image: {
-		url: '/centro/centro.svg',
-		alt: 'Ilustración del Centro de La Serena por Camipepe'
-	},
+	image: {},
 	schedule: [
 		{
-			day: 'Domingo 11',
+			day: 'Confirmar',
 			events: [
 				{
 					id: 'la-pelea-del-siglo',

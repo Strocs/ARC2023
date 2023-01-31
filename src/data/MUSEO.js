@@ -31,7 +31,7 @@ export const MUSEO = {
 					category: 'Documental',
 					time: '18:00',
 					image: {
-						url: '/municipal/el-arte-del-tiempo.jpg',
+						url: '/arqueologico/arte-del-tiempo.jpg',
 						alt: 'Imagen del documental El Arte del Tiempo'
 					},
 					links: [{ name: 'video', url: 'https://youtu.be/g8rAcq5wzdU' }],
@@ -54,7 +54,7 @@ export const MUSEO = {
 					category: 'Documental',
 					time: '19:15',
 					image: {
-						url: '/municipal/aqui-se-construye.jpg',
+						url: '/arqueologico/aqui-se-construye.jpg',
 						alt: 'Imagen del documental Aquí se Construye (o Ya no existe el lugar donde nací)'
 					},
 					links: [],
@@ -81,7 +81,7 @@ export const MUSEO = {
 					category: 'Cortometraje',
 					time: '18:00',
 					image: {
-						url: '/municipal/redención.jpg',
+						url: '/arqueologico/redencion.jpg',
 						alt: 'Imagen del cortometraje Redención'
 					},
 					links: [{ name: 'video', url: 'https://vimeo.com/702180992' }],
@@ -107,7 +107,7 @@ export const MUSEO = {
 					category: 'Largometraje',
 					time: '18:30',
 					image: {
-						url: '/municipal/proyecto-fantasma.jpg',
+						url: '/arqueologico/proyecto-fantasma.jpg',
 						alt: 'Imagen del largometraje Proyecto Fantasma'
 					},
 					links: [{ name: 'video', url: 'https://www.youtube.com/watch?v=R7QBysJcLKQ' }],
@@ -131,7 +131,7 @@ export const MUSEO = {
 			]
 		},
 		{
-			day: 'Jueves 9 hasta Sábado 11\nDe 10:30 a 17:30 horas',
+			day: 'Del 9 hasta el 11 de Feb\nDe 10:30 a 17:30 horas',
 			events: [
 				{
 					id: 'r@stros',
@@ -139,10 +139,7 @@ export const MUSEO = {
 					subTitle: {},
 					category: 'Exposición de Artes Visuales',
 					time: '',
-					image: {
-						url: '/municipal/r@stros.jpg',
-						alt: 'Imagen de la Exposición de artes visuales R@stros'
-					},
+					image: {},
 					links: [],
 					description:
 						'A través de un profundo trabajo curatorial realizado por José de Nordenflycht, Doctor en Historia del Arte de la Universidad de Granada y director del departamento de Artes Integradas de la Universidad de Playa Ancha de Valparaíso, se construyó la exposición de artes visuales “R@stros”, en las que participan obras elegidas de ocho artistas visuales de diferentes comunas de la región de Coquimbo, con el fin de representar de alguna forma la territorialidad y la diversidad de expresiones que existen en nuestra región.\nLas/os artistas que participan son los siguientes:',
@@ -169,7 +166,7 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/mauricio-álvarez-collao.jpg',
+						url: '/arqueologico/ALVAREZ.jpg',
 						alt: 'Imagen del artista visual Mauricio Álvarez Collao'
 					},
 					links: [
@@ -187,7 +184,7 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/claudia-campos-mendoza.jpg',
+						url: '/arqueologico/CAMPOS.jpg',
 						alt: 'Imagen de la artista visual Claudia Campos Mendoza'
 					},
 					links: [
@@ -205,7 +202,7 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/paz-alvial-reculé.jpg',
+						url: '/arqueologico/ALVIAL.jpg',
 						alt: 'Imagen de la artista visual Paz Alvial Reculé'
 					},
 					links: [{ name: 'web', url: ' http://pazalvial.blogspot.com/' }],
@@ -220,7 +217,7 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/claudia-suárez-jansson.jpg',
+						url: '/arqueologico/SUÁREZ.jpg',
 						alt: 'Imagen de la artista visual Claudia Suárez Jansson'
 					},
 					links: [
@@ -239,7 +236,7 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/aude-gutiérrez-barraza.jpg',
+						url: '/arqueologico/GUTIÉRREZ.jpg',
 						alt: 'Imagen de la artista visual Aude Gutiérrez Barraza'
 					},
 					links: [
@@ -257,7 +254,7 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/mauricio-toro-goya.jpg',
+						url: '/arqueologico/TORO.jpg',
 						alt: 'Imagen del artista visual Mauricio Toro Goya'
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/torogoya/?hl=es' }],
@@ -272,7 +269,7 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/tatiana-alfaro-chávez.jpg',
+						url: '/arqueologico/ALFARO.jpg',
 						alt: 'Imagen de la artista visual Tatiana Alfaro Chávez'
 					},
 					links: [
@@ -290,7 +287,7 @@ export const MUSEO = {
 					category: 'Artes Visuales',
 					time: '',
 					image: {
-						url: '/municipal/oskar-huerta.jpg',
+						url: '/arqueologico/HUERTA.jpg',
 						alt: 'Imagen del artista visual Oskar Huerta'
 					},
 					links: [

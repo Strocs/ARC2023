@@ -166,7 +166,7 @@ export const AZOTEA = {
 			]
 		},
 		{
-			day: 'Sábado 11 y Domingo 12\nDe 16:00 a 20:30 horas',
+			day: '11 y 12 de Febrero\nDe 16:00 a 20:30 horas',
 			events: [
 				{
 					id: 'anima-red',
@@ -527,7 +527,7 @@ export const AZOTEA = {
 					],
 					description:
 						'Leeneal Ilustración, nace en diciembre del 2021 y se activa en septiembre del 2022 en el primer evento en el qué participamos.\nRealizamos ilustraciones en un estilo Cute o Kawaii, el que usamos para crear diferentes productos, como papeleria en general (Stickers, libretas, prints entre otros.)\nAdemás presentamos productos sublimados y con serigrafí (Monederos, estuches, totebags, coles y más.)\nAl principio nuestras inspiraciones fueron las ilustraciones en el estilo lineal y por eso el nombre Leeneal, pero con el pasar del tiempo, hemos ido estudiando y agregando más colores y formas en mis composiciones.\nNuestro enfoque principal es poder crear productos funcionales para el día a día con lindos diseños, por eso los estuches, monederos, libretas y más.',
-					list: [{ title: 'Contacto:', text: ['+56 9 76730830'] }]
+					list: []
 				},
 				{
 					id: 'luna-gatuna',

@@ -22,7 +22,7 @@ export const MUNICIPAL = {
 	},
 	schedule: [
 		{
-			day: '10 de Febrero',
+			day: 'Viernes 10',
 			events: [
 				{
 					id: 'los-pasos-de-selena',
@@ -74,7 +74,7 @@ export const MUNICIPAL = {
 			]
 		},
 		{
-			day: '11 de Febrero',
+			day: 'Sábado 11',
 			events: [
 				{
 					id: 'soy',
@@ -136,7 +136,7 @@ export const MUNICIPAL = {
 			]
 		},
 		{
-			day: '12 de Febrero',
+			day: 'Domingo 12',
 			events: [
 				{
 					id: 'la-raiz-del-rosal',

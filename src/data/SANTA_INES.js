@@ -1,8 +1,9 @@
 export const SANTA_INES = {
 	id: 'centro-cultural-santa-ines',
 	title: 'Centro Cultural Santa Inés',
-	address: '',
-	extract: '',
+	address: 'Almagro #282 esquina, Manuel Antonio Matta, La Serena',
+	extract:
+		'El Centro Cultural Santa Inés será el corazón de las actividades literarias de ARC 2023, con una programación especial con enfoque de género, vinculada al feminismo, la diversidad y la mujer diseñada y gestionada por la Red Feminista del Libro, en la que se podrá disfrutar de literatura, danza, performance y música, en un espacio seguro que combinará lo artístico con la reflexión crítica.',
 	description:
 		'La Iglesia Santa Inés de La Serena fue un templo católico, cuyas instalaciones se encuentran ubicadas en la calle Diego de Almagro N°282, en la esquina de calle Matta, en la ciudad de La Serena, capital de la Región de Coquimbo.\nSu primera edificación duró sólo un par de años, pues fue incendiada durante el ataque efectuado contra la ciudad por parte del pirata Bartolomé Sharp en 1680.\nReconstruida en adobe, la iglesia fue destruida nuevamente en el año 1730 por un terremoto, quedando abandonada hasta los comienzos de la República. Fue reedificada en el año 1819, ocasión en la cual el templo tomó parte de su apariencia definitiva.\nEn el año 1840 fue efectuada una de sus más plenas restauraciones, cuando el auge minero trajo a la ciudad materiales constructivos modernos y técnicos especializados, lo que permitió renovarla estructuralmente. No obstante, es en 1870 cuando el templo asumió su forma actual, luego de que se cambiara su campanario lateral por una torre central de doble tambor, que corona el cuadrado frontal; a la que a su vez se le incorporaron dos pilastras de piedra a cada lado del portal, dejándola con una impronta neoclásica.\nLos terremotos que afectaron a la ciudad en los años siguientes no la dejaron indemne, pero fue el del año 1975 el que dejó a la iglesia en ruinas, lo que forzó su cierre al público.\nPese a que fue declarada Monumento Histórico en el año 1977, su restauración no se concretó hasta el año 2010, en que fue íntegramente reestablecida en el marco del Programa de Puesta en Valor del Patrimonio, de la Subsecretaría de Desarrollo Regional y Administrativo, Subdere; con el aporte del Banco Interamericano de Desarrollo, BID.\nDurante la restauración la Iglesia fue reconstruida con el adobe original tratado con técnicas modernas y se recuperaron los colores de la versión de 1870, blanco para el interior y rojo para el exterior. Sin embargo, luego de esta intervención, la Iglesia no retomó sus funciones como templo religioso, pues al estar desconsagrada desde el año 1983, ya no pudo volver a ser utilizada para dar misa. Producto de esto, el lugar fue convertido en un centro cultural, albergando hoy al Centro de Interpretación del Patrimonio Religioso desde el año 2010.\nActualmente se encuentra en manos del Departamento de Cultura del Municipio de La Serena y cuenta con información de las 14 iglesias del centro histórico de ciudad y de las fiestas religiosas que se celebran en el país. Además, en ella se presentan obras de teatro, exposiciones, talleres, seminarios y otras actividades de diversa índole cultural.',
 	links: [],
@@ -51,13 +52,13 @@ export const SANTA_INES = {
 				},
 				{
 					id: 'de-contruyendo-la-nacionalidad',
-					name: '(de)contruyendo la nacionalidad',
+					name: 'Tendedero Poético: (De) construyendo la nacionalidad',
 					subTitle: {},
 					category: 'Intervención Urbana',
 					time: '16:00',
 					image: {
 						url: '/santa-ines/deconstruyendo.jpg',
-						alt: 'Imagen de la Intervención Urbana (de)contruyendo la nacionalidad'
+						alt: 'Imagen de la Intervención Urbana Tendedero Poético: (De) construyendo la nacionalidad'
 					},
 					links: [],
 					description: '',
@@ -65,7 +66,7 @@ export const SANTA_INES = {
 				},
 				{
 					id: 'dj-free-tangas',
-					name: 'DJ: Free-tangas',
+					name: 'DJ: Free-tangas + Lectura Poética',
 					subTitle: { title: '', text: 'Lecturas poéticas feministas' },
 					category: 'Música',
 					time: '16:30',
@@ -91,7 +92,10 @@ export const SANTA_INES = {
 				{
 					id: 'elvira-hernández',
 					name: 'Elvira Hernández',
-					subTitle: {},
+					subTitle: {
+						title: 'Presentación:',
+						text: '“La bandera de Chile y una constitución fallida”'
+					},
 					category: 'Literatura',
 					time: '17:30',
 					image: {
@@ -137,7 +141,7 @@ export const SANTA_INES = {
 				{
 					id: 'valu',
 					name: 'Valu',
-					subTitle: { title: '', text: 'Habitus/Campo/Memoria (2020-2023)' },
+					subTitle: { title: 'Presentación:', text: 'Habitus/Campo/Memoria (2020-2023)' },
 					category: 'Performance',
 					time: '15:30',
 					image: {
@@ -151,22 +155,22 @@ export const SANTA_INES = {
 				},
 				{
 					id: 'sueños-diversos-y-derechos-con-versos',
-					name: 'Sueños diversos y derechos con versos',
+					name: 'Tendedero Poético: sueños diversos y derechos con versos',
 					subTitle: {},
 					category: 'Intervención Urbana',
 					time: '16:00',
 					image: {
 						url: '/santa-ines/sueños.jpg',
-						alt: 'Imagen de la Performance Sueños diversos y derechos con versos'
+						alt: 'Imagen de la Performance Tendedero Poético: sueños diversos y derechos con versos'
 					},
 					links: [],
 					description: '',
 					list: []
 				},
 				{
-					id: 'hit-latino-de-keimara',
-					name: 'Hit Latino de Keimara',
-					subTitle: {},
+					id: 'keimara',
+					name: 'Keimara',
+					subTitle: { title: 'Presentación Libro:', text: '“Hit Latino”' },
 					category: 'Literatura',
 					time: '16:30',
 					image: {
@@ -181,7 +185,10 @@ export const SANTA_INES = {
 				{
 					id: 'pía-barros',
 					name: 'Pía Barros',
-					subTitle: { title: '', text: 'Narrativa de la memoria en mujeres escritoras' },
+					subTitle: {
+						title: 'Presentación:',
+						text: 'Narrativa de la memoria en mujeres escritoras'
+					},
 					category: 'Literatura',
 					time: '17:30',
 					image: {
