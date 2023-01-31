@@ -1,15 +1,26 @@
 ---
-const { backgroundColor = 'bg-main', anchor, href, className } = Astro.props
+const {
+	styles = { backgroundColor: 'bg-main', borderColor: 'border-white', textColor: 'text-white' },
+	anchor,
+	href,
+	className,
+	invertedColors
+} = Astro.props
 
 const Element = anchor ? 'a' : 'button'
+
+const border = invertedColors ? styles.borderColor : 'border-white'
+const text = invertedColors ? styles.textColor : 'text-white'
+const background = invertedColors ? 'bg-white' : styles.backgroundColor
+const shadow = invertedColors ? styles.backgroundColor : 'bg-white'
 ---
 
 <Element
-	class={`button w-fit font-medium rounded-md leading-4 border-none bg-white transition-all ease-in duration-200 ${className}`}
+	class={`button w-fit font-medium rounded-md leading-4 border-none ${shadow} transition-all ease-in duration-200 ${className}`}
 	href={href}
 >
 	<span
-		class={`button_top block text-center ${backgroundColor} border-white rounded-md text-white border-2 py-2 px-6 -translate-y-[0.15rem] transition-all ease-in duration-100`}
+		class={`button_top block text-center ${background} ${border} rounded-md ${text} border-2 py-2 px-6 -translate-y-[0.15rem] transition-all ease-in duration-100`}
 		><slot /></span
 	>
 </Element>

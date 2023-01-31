@@ -1,7 +1,6 @@
 ---
 import { Icon } from 'astro-icon'
 import { getLocationById } from '../utils/getLocationById'
-import BackButton from './BackButton.astro'
 import ButtonLink from './ButtonLink.astro'
 const { query } = Astro.props
 const { id, title, extract, styles } = getLocationById(query)
@@ -26,12 +25,15 @@ if (title.includes('Estacionamiento')) {
 	<div class='flex flex-col gap-10'>
 		<h2 class='text-5xl leading-10 sm:text-6xl font-black py-2 sm:leading-[3rem]'>{newTitle}</h2>
 		<p class='font-normal text-justify'>{extract}</p>
-		<ButtonLink backgroundColor={styles.backgroundColor} anchor href={id} className='self-center'>
+		<ButtonLink styles={styles} anchor href={id} className='self-center'>
 			Más información y Programación<Icon name='mdi:arrow-top-right-thick' class='h-5 inline' />
 		</ButtonLink>
 	</div>
-	<ButtonLink backgroundColor={styles.backgroundColor} className='self-center'>
-		Cerrar <Icon class={`inline h-5 ml-1 ${styles.groupHoverTextColor}`} name='mdi:arrow-right-bold' />
+	<ButtonLink styles={styles} className='self-center'>
+		Cerrar <Icon
+			class={`inline h-5 ml-1 ${styles.groupHoverTextColor}`}
+			name='mdi:arrow-right-bold'
+		/>
 	</ButtonLink>
 </section>
 

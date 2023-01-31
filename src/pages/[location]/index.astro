@@ -4,13 +4,13 @@ import { ARC_2023 } from '../../data/ARC_2023'
 import Layout from '../../layouts/Layout.astro'
 import Title from '../../components/Title.astro'
 import Schedule from '../../components/Schedule.astro'
-import BackButton from '../../components/BackButton.astro'
 import PageContainer from '../../components/PageContainer.astro'
 import Header from '../../components/Header.astro'
 import Paragraph from '../../components/Paragraph.astro'
-import Contacts from '../../components/Contacts.astro'
+import RelevantLinks from '../../components/RelevantLinks.astro'
 import Image from '../../components/Image.astro'
 import Footer from '../../components/Footer.astro'
+import ButtonLink from '@components/ButtonLink.astro'
 
 export function getStaticPaths() {
 	const { locations } = ARC_2023
@@ -24,27 +24,25 @@ const { id, title, address, extract, description, links, styles, image } = Astro
 ---
 
 <Layout title={`ARC 2023 | ${title}`} description={extract}>
-	<Header
-		backgroundColor={styles.backgroundColor}
-		textColor={styles.textColor}
-		hoverTextColor={styles.hoverTextColor}
-		fillColor={styles.fillColor}
-	/>
+	<Header styles={styles} />
 	<PageContainer backgroundColor={styles.backgroundColor} borderColor={styles.borderColor}>
 		<Fragment slot='first-section'>
 			<Title>{title}</Title>
-			<span class='leading-none font-normal sm:font-medium'>{address}</span>
-			<Contacts links={links} hoverTextColor={styles.hoverTextColor} borderColor={styles.borderColor}/>
-			<Image url={image.url} alt={image.alt} />
+			<span class='text-xl'>{address}</span>
+			<RelevantLinks
+				links={links}
+				hoverTextColor={styles.hoverTextColor}
+				borderColor={styles.borderColor}
+			/>
+			{Object.hasOwn(image, 'url') && <Image url={image.url} alt={image.alt} />}
 			<Paragraph description={description} />
 		</Fragment>
 		<Fragment slot='second-section'>
-			<h2 class='text-4xl sm:text-5xl leading-9 font-bold'>Programación</h2>
+			<ButtonLink anchor href='/' styles={styles} invertedColors className='self-start'>
+				Volver <Icon class='inline h-5 group-hover:text-white' name='mdi:arrow-top-left-thick' />
+			</ButtonLink>
+			<h2 class='text-3xl sm:text-4xl leading-8 font-black'>Programación</h2>
 			<Schedule locationId={id} />
-			<BackButton hoverBackgroundColor={styles.hoverBackgroundColor} Element='a' link='/'>
-				<p class='inline group-hover:text-white'>Volver</p>
-				<Icon class='inline h-5 group-hover:text-white' name='mdi:arrow-u-left-top' />
-			</BackButton>
 		</Fragment>
 	</PageContainer>
 	<Footer backgroundColor={styles.backgroundColor} />

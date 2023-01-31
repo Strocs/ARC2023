@@ -2,35 +2,28 @@
 import LogoWithText from './LogoWithText.astro'
 import Navbar from './Navbar.astro'
 import ScheduleDownloader from './ScheduleDownloader.astro'
-// import SocialNetworks from './SocialNetworks.astro'
 import ToggleMenuButton from './ToggleMenuButton.astro'
 
-const {
-	backgroundColor = 'bg-main',
-	textColor = 'text-main',
-	hoverTextColor = 'hover:text-main',
-	fillColor = 'fill-main'
-} = Astro.props
+const { styles = { backgroundColor: 'bg-main' } } = Astro.props
 ---
 
 <header>
 	<div
-		class={`flex w-full items-center justify-between sm:justify-start sm:gap-14 fixed top-0 ${backgroundColor} bg-texture bg-4xl sm:bg-xl sm:px-14 px-4 py-2 z-50 transition-[background-color] duration-200 ease-in`}
+		class={`flex w-full items-center justify-between sm:justify-start sm:gap-14 fixed top-0 ${styles.backgroundColor} bg-texture bg-4xl sm:bg-xl sm:px-14 px-4 py-2 z-50 transition-[background-color] duration-200 ease-in`}
 	>
 		<ToggleMenuButton id='menu' />
 		<div class='flex text-white justify-between w-full gap-6'>
-			<LogoWithText fillColor={fillColor} />
+			<LogoWithText styles={styles} />
 			<div class='flex gap-14'>
-				<!-- <SocialNetworks hoverTextColor={hoverTextColor} /> -->
-				<ScheduleDownloader backgroundColor={backgroundColor} />
+				<ScheduleDownloader styles={styles} />
 			</div>
 		</div>
 		<ToggleMenuButton mobile id='menu-mobile' />
 	</div>
-	<Navbar hoverTextColor={hoverTextColor} backgroundColor={backgroundColor} textColor={textColor} />
+	<Navbar styles={styles} />
 </header>
 
-<script>
+<script type='module'>
 	const menu = document.querySelectorAll('input')
 	const navbar = document.querySelector('nav')
 

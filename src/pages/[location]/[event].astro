@@ -1,6 +1,5 @@
 ---
 import { Icon } from 'astro-icon'
-import BackButton from '../../components/BackButton.astro'
 import Schedule from '../../components/Schedule.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
@@ -8,9 +7,10 @@ import PageContainer from '../../components/PageContainer.astro'
 import Title from '../../components/Title.astro'
 import Layout from '../../layouts/Layout.astro'
 import Paragraph from '../../components/Paragraph.astro'
-import Contacts from '../../components/Contacts.astro'
+import RelevantLinks from '../../components/RelevantLinks.astro'
 import Image from '../../components/Image.astro'
 import { getEventById, getEventsPath, getLocationById } from '../../utils/'
+import ButtonLink from '@components/ButtonLink.astro'
 
 export function getStaticPaths() {
 	const eventsPath = getEventsPath()
@@ -30,25 +30,22 @@ const { styles, title } = locationInfo
 ---
 
 <Layout title={`ARC 2023 | ${name}`} description={description}>
-	<Header
-		backgroundColor={styles.backgroundColor}
-		textColor={styles.textColor}
-		hoverTextColor={styles.hoverTextColor}
-		fillColor={styles.fillColor}
-	/>
+	<Header styles={styles} />
 	<PageContainer backgroundColor={styles.backgroundColor} borderColor={styles.borderColor}>
 		<Fragment slot='first-section'>
-			<Title>{name}</Title>
-			{
-				Object.keys(subTitle).length !== 0 && (
-					<p class='-mt-3 text-md'>
-						<b>{subTitle.title}</b>
-						{subTitle.text}
-					</p>
-				)
-			}
-			<Contacts links={links} hoverTextColor={styles.hoverTextColor} />
-			<Image url={image.url} alt={image.alt} />
+			<div class='flex flex-col gap-4'>
+				<Title textColor={styles.textColor}>{name}</Title>
+				{
+					Object.keys(subTitle).length !== 0 && (
+						<p class='text-xl'>
+							<b>{subTitle.title}</b>
+							{subTitle.text}
+						</p>
+					)
+				}
+				<RelevantLinks links={links} hoverTextColor={styles.hoverTextColor} />
+			</div>
+			{Object.hasOwn(image, 'url') && <Image url={image.url} alt={image.alt} />}
 			<Paragraph description={description} />
 			{
 				list.length !== 0 && (
@@ -64,20 +61,26 @@ const { styles, title } = locationInfo
 					</ul>
 				)
 			}
+			<p class='text-3xl sm:text-4xl font-black my-14 leading-7'>
+				Disfruta el arte de <span class={styles.textColor}>{name}</span> en <span
+					class={styles.textColor}>{title}</span
+				>!
+			</p>
 		</Fragment>
 		<Fragment slot='second-section'>
+			<ButtonLink
+				anchor
+				href={`/${locationId}`}
+				styles={styles}
+				invertedColors
+				className='self-start'
+			>
+				Volver <Icon class='inline h-5 group-hover:text-white' name='mdi:arrow-top-left-thick' />
+			</ButtonLink>
 			<div class='flex items-center'>
-				<h2 class='text-4xl leading-9 font-bold'>En {title}</h2>
+				<h2 class='text-3xl sm:text-4xl leading-8 font-black'>En {title}</h2>
 			</div>
 			<Schedule locationId={locationId} eventId={eventId} />
-			<BackButton
-				hoverBackgroundColor={styles.hoverBackgroundColor}
-				Element='a'
-				link={`/${locationId}`}
-			>
-				<p class='inline group-hover:text-white'>Volver</p>
-				<Icon class='inline h-5 group-hover:text-white' name='mdi:arrow-u-left-top' />
-			</BackButton>
 		</Fragment>
 	</PageContainer>
 	<Footer backgroundColor={styles.backgroundColor} />
