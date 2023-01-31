@@ -20,7 +20,7 @@ export function getStaticPaths() {
 	}))
 }
 
-const { id, title, address, extract, description, links, styles, image } = Astro.props
+const { id, title, address, extract, description, links, styles, image, tickets } = Astro.props
 ---
 
 <Layout title={`ARC 2023 | ${title}`} description={extract}>
@@ -34,6 +34,18 @@ const { id, title, address, extract, description, links, styles, image } = Astro
 				hoverTextColor={styles.hoverTextColor}
 				borderColor={styles.borderColor}
 			/>
+			{
+				Object.hasOwn(tickets, 'url') && (
+					<ButtonLink invertedColors anchor href={tickets.url} styles={styles} className='my-8'>
+						Tickets <img class='h-8 inline' src='/ticket.svg' alt='' />
+					</ButtonLink>
+					// <div class='my-8'>
+					// 	<h3 class='text-xl'>
+					// 		Obtén tus entradas
+					// 	</h3>
+					// </div>
+				)
+			}
 			{Object.hasOwn(image, 'url') && <Image url={image.url} alt={image.alt} />}
 			<Paragraph description={description} />
 		</Fragment>

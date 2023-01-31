@@ -8,6 +8,7 @@ export const ESTACIONAMIENTO = {
 	description:
 		'Los estacionamientos de la Plaza de Armas fueron construidos entre los años 2008 y 2012, a través de un Proyecto Municipal de Desarrollo Privado. En su obra trabajaron más de 100 personas y durante su desarrollo, se encontraron una serie de osamentas, vasijas y otros elementos, que componían un deshuesadero de llamas que estaba ubicado en el lugar durante tiempos prehispánicos.',
 	links: [],
+	tickets: {},
 	styles: {
 		backgroundColor: 'bg-yellow',
 		textColor: 'text-yellow',
@@ -17,10 +18,7 @@ export const ESTACIONAMIENTO = {
 		fillColor: 'fill-yellow',
 		borderColor: 'border-yellow'
 	},
-	image: {
-		url: '/estacionamiento/estacionamiento.svg',
-		alt: 'Ilustración del Estacionamiento Plaza de Armas por Camipepe'
-	},
+	image: {},
 	schedule: [
 		{
 			day: 'Del 10 hasta el 12 de Feb\nDesde las 10:00 horas',

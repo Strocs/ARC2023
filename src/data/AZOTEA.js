@@ -1,13 +1,13 @@
 export const AZOTEA = {
 	id: 'azotea-arc',
 	title: 'Azotea ARC',
-	address: '',
-	direction: 'Calle Brasil N° 415, La Serena',
+	address: 'Calle Brasil N° 415, La Serena',
 	extract:
 		'Dj sets, ilustración, fotografía autoral y bandas de la Región de Coquimbo darán vida al espacio Azotea ARC, un lugar en el que las expresiones artísticas transforman un espacio no convencional en un espacio ideal para disfrutar del paso de la tarde desde una hermosa vista, como parte del concepto del Festival ARC 2023, que es transformar la forma en la que habitamos nuestra ciudad.',
 	description:
 		'Dj sets, ilustración, fotografía autoral y bandas de la Región de Coquimbo darán vida al espacio Azotea ARC, un lugar en el que las expresiones artísticas transforman un espacio no convencional en un espacio ideal para disfrutar del paso de la tarde desde una hermosa vista, como parte del concepto del Festival ARC 2023, que es transformar la forma en la que habitamos nuestra ciudad.',
-	links: [{ name: 'ticket', url: 'https://www.portaldisc.com/evento/azoteacarc2023' }],
+	links: [],
+	tickets: { name: 'ticket', url: 'https://www.portaldisc.com/evento/azoteacarc2023' },
 	styles: {
 		backgroundColor: 'bg-black-pink',
 		textColor: 'text-black-pink',
@@ -17,10 +17,7 @@ export const AZOTEA = {
 		groupHoverTextColor: 'group-hover:text-black-pink',
 		borderColor: 'border-black-pink'
 	},
-	image: {
-		url: '/azotea/azotea.svg',
-		alt: 'Ilustración de la Azotea Arc por Camipepe'
-	},
+	image: {},
 	schedule: [
 		{
 			day: 'Sábado 11\nDe 16:00 a 20:30 horas',

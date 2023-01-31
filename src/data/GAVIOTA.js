@@ -6,7 +6,8 @@ export const GAVIOTA = {
 		'El espacio de la escuela y compañía teatral, TeatroPuerto, será el lugar ideal para disfrutar de la belleza de las artes escénicas regionales, con su remodelada Sala Josefa, como parte del circuito artístico ciudadano que el Festival ARC 2023 desarrollará en el Centro de La Serena.',
 	description:
 		'Espacio La Gaviota se encuentra en la ciudad de La Serena, específicamente en el Barrio Almagro, el cual es parte del casco histórico de la ciudad declarado zona típica en el año 1981. El inmueble fue construido en el año 1920 y posee un estilo ecléctico característico de las construcciones que datan entre los años 1880 y 1940.\nEsta construcción que posee 100 años fue durante gran parte de su historia la vivienda de la familia Mascaró. A partir del año 1997 deja de ser una vivienda y sus dueños buscan nuevos arrendatarios. En el año 1998 y debido a la elección de la entonces senadora por la 4 º circunscripción, Evelyn Matthei, la casona pasa a ser la sede de la Unión Demócrata Independiente en la ciudad de La Serena, lo cual se mantuvo hasta el año 2014.\nEl año 2015 el inmueble se convierte en un espacio cultural dedicado a la creación, exhibición, investigación y difusión de las artes escénicas de la mano de la organización TeatroPuerto, quienes gracias a la adjudicación del programa Otras Instituciones Colaboradoras del Estado otorgado por el Ministerio de las Culturas, las artes y el patrimonio logran instalarse en este histórico barrio patrimonial y acrecentar la oferta artística y cultural de la ciudad.',
-	links: [{ name: 'ticket', url: 'https://www.portaldisc.com/evento/espaciolagaviotaarc2023' }],
+	links: [],
+	tickets: { name: 'ticket', url: 'https://www.portaldisc.com/evento/espaciolagaviotaarc2023' },
 	styles: {
 		backgroundColor: 'bg-orange',
 		textColor: 'text-orange',
@@ -16,10 +17,7 @@ export const GAVIOTA = {
 		fillColor: 'fill-orange',
 		borderColor: 'border-orange'
 	},
-	image: {
-		url: '/gaviota/gaviota.svg',
-		alt: 'Ilustración de Espacio La Gaviota por Camipepe'
-	},
+	image: {},
 	schedule: [
 		{
 			day: 'Viernes 10',

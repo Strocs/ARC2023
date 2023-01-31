@@ -7,6 +7,7 @@ export const FRONTIS = {
 	description:
 		'La Casa de Gobierno a fines del s. XVIII se ubicó frente a la Plaza de Armas en el lado norte sector poniente, posiblemente en un edificio proyectado por el ingeniero Pedro Rico en 1795, que se habría desalojado por el deterioro. Más tarde la Intendencia arrienda casa a algunos propietarios hasta fines del siglo pasado, cuando se construye frente a la Plaza, en su lado poniente, un edificio de dos pisos destinado a Intendencia, Correos y otros servicios públicos. Este edificio fue demolido a raíz del sismo de 1975. Hacia 1940 se impone e incorpora a la ciudad el estilo neocolonial. Corresponden a este estilo los edificios de la Municipalidad-Tribunales, el Banco Central, la Estación de Ferrocarril y el Palacio Arzobispal. El Inmueble de la Intendencia, se edifica dentro del "Plan Serena", impulsado por el gobierno de Gabriel González Videla (1946-1952), gracias al cual se logró un centro urbano de gran homogeneidad y con carácter propio. En 1952 se inauguró, en la ubicación original y su proyecto corresponde al arquitecto de la Dirección General de Obras Públicas señor Edwin Weil.\nEste es un Inmueble de Conservación Histórica, declarado de esta manera por el instrumento de planificación comunal. Además, está al interior de la Zona Típica “Centro Histórico de La Serena” por lo que está protegido por la Ley de Monumentos Nacionales.',
 	links: [],
+	tickets: {},
 	styles: {
 		backgroundColor: 'bg-blue',
 		textColor: 'text-blue',
@@ -16,10 +17,7 @@ export const FRONTIS = {
 		fillColor: 'fill-blue',
 		borderColor: 'border-blue'
 	},
-	image: {
-		url: '/frontis/frontis.svg',
-		alt: 'Ilustración del Frontis Gobierno Regional por Camipepe'
-	},
+	image: {},
 	schedule: [
 		{
 			day: 'Viernes 10',

@@ -6,10 +6,8 @@ export const CENTENARIO = {
 		'Grandes exponentes de la música regional y nacional darán vida a las jornadas de cierre del Festival ARC 2023, en una serie de conciertos que se realizarán el viernes 10, sábado 11 y domingo 12 de febrero en el Teatro Centenario de La Serena, espacio que en la actualidad está viviendo un resurgir como corazón de la actividad artística de la ciudad.',
 	description:
 		'Desde su edificación en el año 1945, el Teatro Centenario ha significado un espacio esencial para el arte y la cultura de la ciudad de La Serena, desarrollando en sus orígenes una cartelera relacionada con el entretenimiento más popular, en contraste con la figura del Teatro Nacional, espacio que en aquellos tiempos presentaba a la comunidad trabajos orquestales de música clásica y ópera.\nDe esta manera, este espacio funcionó principalmente como sala de cine desde su inauguración hasta 1999,  funcionamiento que estuvo a cargo de la Organización Cinematográfica Norte Limitada (ORCINOR).\nEmpezando el nuevo milenio hasta el año 2018, el Teatro Centenario desarrolló una variada cartelera, con diversas expresiones artísticas nacionales, locales e internacionales, en la que destacan festivales musicales, películas y documentales, estrenos exclusivos, entre otros.\nActualmente, el espacio presenta una renovada infraestructura, gracias al trabajo liderado por la empresa Teatro Centenario SPA, que ha desarrollado una variada programación musical con la que se busca dar nueva vida al espacio, devolviéndole la importancia que tenía para el desarrollo cultural de la ciudad.',
-	links: [
-		{ name: 'web', url: 'https://teatrocentenario.cl/' },
-		{ name: 'ticket', url: 'https://www.portaldisc.com/evento/teatrocentenariocarc2023' }
-	],
+	links: [{ name: 'web', url: 'https://teatrocentenario.cl/' }],
+	tickets: { name: 'ticket', url: 'https://www.portaldisc.com/evento/teatrocentenariocarc2023' },
 	styles: {
 		backgroundColor: 'bg-purple',
 		textColor: 'text-purple',
@@ -19,10 +17,7 @@ export const CENTENARIO = {
 		fillColor: 'fill-purple',
 		borderColor: 'border-purple'
 	},
-	image: {
-		url: '/centenario/centenario.svg',
-		alt: 'Ilustración del Teatro Centenario por Camipepe'
-	},
+	image: {},
 	schedule: [
 		{
 			day: 'Viernes 10\nDesde las 22:00 horas',
