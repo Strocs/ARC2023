@@ -1,24 +1,20 @@
 ---
-import ButtonLink from './ButtonLink.astro'
 import Mapa from './icons/Mapa.astro'
 ---
 
-<section id='map-container' class='w-screen h-screen relative cursor-grab'>
+<section id='map-container' class='w-screen h-screen relative cursor-grabbing'>
 	<div
 		id='map'
 		class='absolute w-[150%] h-fit sm:w-1/2 top-0 right-0 sm:left-0 -left-20 bottom-0 m-auto origin-top-left'
 	>
 		<Mapa />
 	</div>
-	<div class='absolute bottom-16 md:bottom-20 z-50 w-full flex justify-center'>
-		<ButtonLink style={{ opacity: '0' }} invertedColors>Volver a Centrar</ButtonLink>
-	</div>
 </section>
 
 <script>
 	const map = document.querySelector < HTMLElement > ('#map')
 	const mapContainer = document.querySelector('#map-container')
-	const resetButton = mapContainer.querySelector('button')
+	const resetButton = document.querySelector < HTMLElement > ('#reset-button')
 	const mapGuide = document.querySelector < HTMLElement > ('#map-guide')
 	let dx = 0
 	let dy = 0
@@ -26,19 +22,22 @@ import Mapa from './icons/Mapa.astro'
 	let panning = 0
 	let lastPoints = []
 
-	function changeCursorOnGrab() {
-		if (panning === 1) {
-			mapContainer.classList.remove('cursor-grab')
-			mapContainer.classList.add('cursor-grabbing')
-			return
-		}
-		mapContainer.classList.remove('cursor-grabbing')
-		mapContainer.classList.add('cursor-grab')
-	}
+	// function changeCursorOnGrab() {
+	// 	if (panning === 1) {
+	// 		mapContainer.classList.remove('cursor-grab')
+	// 		mapContainer.classList.add('cursor-grabbing')
+	// 		return
+	// 	}
+	// 	mapContainer.classList.remove('cursor-grabbing')
+	// 	mapContainer.classList.add('cursor-grab')
+	// }
 
 	function showResetButton() {
 		if (mapGuide.style.opacity === '1') {
 			mapGuide.style.opacity = '0'
+			mapGuide.addEventListener('transitionend', () => {
+				mapGuide.hidden = true
+			})
 		}
 		if (resetButton.style.opacity === '0') {
 			resetButton.style.opacity = '1'
@@ -108,7 +107,7 @@ import Mapa from './icons/Mapa.astro'
 			document.addEventListener('touchmove', onPointerMove)
 			document.addEventListener('touchend', onPointerUp)
 		}
-		changeCursorOnGrab()
+		// changeCursorOnGrab()
 		showResetButton()
 	}
 
@@ -135,7 +134,7 @@ import Mapa from './icons/Mapa.astro'
 				dy -= (averagePoint.y - top) * (scaleDiff - 1)
 			}
 		}
-		changeCursorOnGrab()
+		// changeCursorOnGrab()
 		update()
 		lastPoints = points
 	}
@@ -150,7 +149,7 @@ import Mapa from './icons/Mapa.astro'
 			return
 		}
 
-		changeCursorOnGrab()
+		// changeCursorOnGrab()
 
 		document.removeEventListener('mousemove', onPointerMove)
 		document.removeEventListener('mouseup', onPointerUp)

@@ -5,7 +5,8 @@ const {
 	href,
 	className,
 	invertedColors,
-	style
+	style,
+	id
 } = Astro.props
 
 const Element = anchor ? 'a' : 'button'
@@ -20,6 +21,7 @@ const shadow = invertedColors ? styles.backgroundColor : 'bg-white'
 	class={`button w-fit font-medium rounded-md leading-4 border-none ${shadow} transition-all ease-in duration-200 ${className}`}
 	href={href}
 	style={style}
+	id={id}
 >
 	<span
 		class={`button_top block text-center ${background} ${border} rounded-md ${text} border-2 py-2 px-6 -translate-y-[0.15rem] transition-all ease-in duration-100`}

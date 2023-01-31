@@ -6,6 +6,7 @@ import LocationInfo from '../components/LocationInfo.astro'
 import MapGuide from '../components/MapGuide.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+import ButtonLink from '@components/ButtonLink.astro'
 const { title, description, locations } = ARC_2023
 ---
 
@@ -14,6 +15,14 @@ const { title, description, locations } = ARC_2023
 	<main id='main-page' class='relative w-full h-auto overflow-hidden'>
 		{locations.map((location) => <LocationInfo query={location.id} />)}
 		<Map />
+		<ButtonLink
+			id='reset-button'
+			style={{ opacity: '0' }}
+			invertedColors
+			className='absolute mx-auto bottom-14 md:bottom-20 left-0 right-0'
+		>
+			Volver a Centrar
+		</ButtonLink>
 		<MapGuide />
 	</main>
 	<Footer fixed />
@@ -28,7 +37,7 @@ const { title, description, locations } = ARC_2023
 	const downloadScheduleBtn = header.querySelector('span')
 	const socialMediaLinks = header.querySelectorAll('#social-networks')
 	const navbar = document.querySelector('nav')
-	const resetButton = document.querySelector('#map-container').querySelector('button')
+	const resetButton = document.querySelector('#reset-button')
 	const spanResetButton = resetButton.querySelector('span')
 
 	function getStylesByColor(color = '') {
