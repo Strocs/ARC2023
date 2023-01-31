@@ -6,7 +6,10 @@
  * The web vitals script retrieves this at runtime from the `<web-vitals-data>`
  * element this component also injects.
  */
-const path = Object.entries(Astro.params).reduce((acc, [key, value]) => acc.replace(value as string, `[${key}]`), Astro.url.pathname)
+const path = Object.entries(Astro.params).reduce(
+	(acc, [key, value]) => acc.replace(value as string, `[${key}]`),
+	Astro.url.pathname
+)
 ---
 
 <web-vitals-data data-path={path}></web-vitals-data>
@@ -21,7 +24,7 @@ const path = Object.entries(Astro.params).reduce((acc, [key, value]) => acc.repl
 	if (analyticsId) {
 		webVitals({
 			analyticsId,
-			path: dataEl?.dataset.path || location.pathname,
+			path: dataEl?.dataset.path || location.pathname
 		})
 	}
 	function getConnectionSpeed(): string {
@@ -34,11 +37,11 @@ const path = Object.entries(Astro.params).reduce((acc, [key, value]) => acc.repl
 	}
 	function webVitals(options: VitalsOpts): void {
 		try {
-			onFID(metric => sendToAnalytics(metric, options))
-			onTTFB(metric => sendToAnalytics(metric, options))
-			onLCP(metric => sendToAnalytics(metric, options))
-			onCLS(metric => sendToAnalytics(metric, options))
-			onFCP(metric => sendToAnalytics(metric, options))
+			onFID((metric) => sendToAnalytics(metric, options))
+			onTTFB((metric) => sendToAnalytics(metric, options))
+			onLCP((metric) => sendToAnalytics(metric, options))
+			onCLS((metric) => sendToAnalytics(metric, options))
+			onFCP((metric) => sendToAnalytics(metric, options))
 		} catch (err) {
 			console.error('[Analytics]', err)
 		}
@@ -51,14 +54,14 @@ const path = Object.entries(Astro.params).reduce((acc, [key, value]) => acc.repl
 			href: location.href, // https://my-app.vercel.app/blog/my-test
 			event_name: metric.name, // TTFB
 			value: metric.value.toString(), // 60.20000000298023
-			speed: getConnectionSpeed(), // 4g
+			speed: getConnectionSpeed() // 4g
 		}
 		if (options.debug) {
 			console.log('[Analytics]', metric.name, JSON.stringify(body, null, 2))
 		}
 		const blob = new Blob([new URLSearchParams(body).toString()], {
 			// This content type is necessary for `sendBeacon`
-			type: 'application/x-www-form-urlencoded',
+			type: 'application/x-www-form-urlencoded'
 		})
 		if (navigator.sendBeacon) {
 			navigator.sendBeacon(vitalsUrl, blob)
@@ -67,7 +70,7 @@ const path = Object.entries(Astro.params).reduce((acc, [key, value]) => acc.repl
 				body: blob,
 				method: 'POST',
 				credentials: 'omit',
-				keepalive: true,
+				keepalive: true
 			})
 	}
 </script>

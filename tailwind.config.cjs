@@ -12,13 +12,15 @@ module.exports = {
 				purple: '#540060',
 				orange: '#fc7200',
 				'water-green': '#45989e',
+				'pale-purple': '#9A36CE',
 				red: '#BF0001',
 				blue: '#010f70',
+				bgBlack: '#1d011a'
 			},
 			backgroundImage: {
-				soon: 'url(/ARC23.jpg)',
-				icons: 'url(/Iconos.svg)',
+				image: 'url("https://i.ytimg.com/vi/yPWjkLcOvbg/maxresdefault.jpg")',
 				texture: 'url(/textura.svg)',
+				icons: 'url(/bg.svg)'
 			},
 			backgroundSize: {
 				xs: '20%',
@@ -28,9 +30,9 @@ module.exports = {
 				xl: '100%',
 				'2xl': '200%',
 				'3xl': '300%',
-				'4xl': '400%',
-			},
-		},
+				'4xl': '400%'
+			}
+		}
 	},
-	plugins: [],
+	plugins: []
 }

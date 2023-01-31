@@ -1,20 +1,22 @@
 ---
 import SocialNetworks from './SocialNetworks.astro'
+
 const sections = [
 	{ name: 'inicio', href: '/' },
-	{ name: 'festival', href: '/festival' },
+	{ name: 'festival', href: '/festival' }
 ]
-const { hoverTextColor, backgroundColor, textColor } = Astro.props
+
+const { styles } = Astro.props
 ---
 
 <nav
-	class={`${backgroundColor} flex flex-col justify-between gap-14 py-24 w-full max-w-md items-center md:items-start md:px-14 h-screen top-0 bottom-0 overflow-auto fixed z-40 motion-reduce:animate-none`}
+	class={`${styles.backgroundColor} flex flex-col justify-between gap-14 py-24 w-full max-w-md items-center md:items-start md:px-14 h-screen top-0 bottom-0 overflow-auto fixed z-40 motion-reduce:animate-none`}
 	style={{ opacity: '0', left: '-448px' }}
 >
-	<div class='flex flex-col gap-20'>
+	<div class="flex flex-col gap-20">
 		<ul class='text-white text-4xl flex flex-col gap-5'>
 			{
-				sections.map(section => (
+				sections.map((section) => (
 					<li class='hover:underline transition-all duration-200 ease-in'>
 						<a href={section.href}>{section.name.toUpperCase()}</a>
 					</li>
@@ -22,12 +24,14 @@ const { hoverTextColor, backgroundColor, textColor } = Astro.props
 			}
 		</ul>
 		<div class='flex flex-col gap-6'>
-			<SocialNetworks hoverTextColor={hoverTextColor} />
+			<SocialNetworks hoverTextColor={styles.hoverTextColor} />
 		</div>
 		<div class='flex md:hidden flex-col py-6'>
 			<p class='font-bold text-lg'>ARC 2023</p>
 			<p class='font-light'>
-				Desarrollado por <a class='underline' target='_blank' href='https://github.com/Strocs'>Strocs</a>
+				Desarrollado por <a class='underline' target='_blank' href='https://github.com/Strocs'
+					>Strocs</a
+				>
 			</p>
 		</div>
 	</div>

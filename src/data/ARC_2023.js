@@ -9,9 +9,10 @@ export const ARC_2023 = {
 	socialNetwork: [
 		{
 			url: 'https://www.instagram.com/festival_arc',
-			name: 'instagram',
+			name: 'instagram'
 		},
 		{ url: 'https://www.facebook.com/FestivalARC', name: 'facebook' },
-		{ url: 'https://twitter.com/FestivalARC', name: 'twitter' },
+		{ url: 'https://twitter.com/FestivalARC', name: 'twitter' }
 	],
+	locations: []
 }

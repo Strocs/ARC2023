@@ -1,13 +1,16 @@
 ---
-import Footer from '../components/Footer.astro';
+import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
 import Layout from '../layouts/Layout.astro'
+import { ARC_2023 } from '../data/ARC_2023'
+
+const { title, description } = ARC_2023
 ---
 
-<Layout title='Pronto Festival ARC 2023'>
+<Layout title={title} description={description}>
 	<Header />
-	<main class='grid place-content-center'>
-		<img class="h-full mt-14 lg:mt-10" src="/ARC23.jpg" alt="">
+	<main id='main-page' class='w-full h-screen bg-bgBlack flex items-center justify-center overflow-x-hidden'>
+		<img src='/ARC23.jpg' class='w-full aspect-auto min-w-[50rem] xl:mt-32' />
 	</main>
 	<Footer fixed />
 </Layout>

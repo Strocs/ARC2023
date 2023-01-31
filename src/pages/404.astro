@@ -7,13 +7,17 @@ import Layout from '../layouts/Layout.astro'
 
 <Layout title='Ups! Página no encontrada'>
 	<Header />
-	<main class='flex flex-col items-center justify-around h-screen bg-white'>
-		<section class='flex max-w-sm flex-col items-center gap-10'>
+	<main class='flex flex-col items-center justify-around h-screen'>
+		<section class='flex max-w-sm flex-col items-center gap-8'>
 			<div class='max-w-xs w-full'>
 				<Icon404 />
 			</div>
-			<h1 class='text-xl font-bold leading-6 text-slate-900'>Ups! Nuestros robots aún no trabajan en la página que buscabas</h1>
-			<a class='bg-main px-4 py-2 hover:scale-110 transition duration-200 ease-in' href='/'>Volver</a>
+			<h1 class='text-xl font-bold leading-6 text-slate-900'>
+				Ups! Nuestros robots aún no trabajan en la página que buscabas
+			</h1>
+			<a class='bg-main px-4 py-2 hover:scale-110 transition duration-200 ease-in' href='/'
+				>Volver</a
+			>
 		</section>
 	</main>
 	<Footer />
