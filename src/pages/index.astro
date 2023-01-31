@@ -19,15 +19,16 @@ const { title, description, locations } = ARC_2023
 	<Footer fixed />
 </Layout>
 
-<script type='module'>
+<script>
+	const locations = document.querySelectorAll < HTMLElement > ('[aria-label="location-info"]')
 	const mapLabels = document.querySelectorAll('.names')
-	const locations = document.querySelectorAll('[aria-label="location-info"]')
 	const header = document.querySelector('header').querySelector('div')
 	const footer = document.querySelector('footer')
 	const logo = document.getElementById('logo-text')
 	const downloadScheduleBtn = header.querySelector('span')
 	const socialMediaLinks = header.querySelectorAll('#social-networks')
 	const mapGuide = document.querySelector('#map-guide')
+	const navbar = document.querySelector('nav')
 
 	function getStylesByColor(color = '') {
 		return {
@@ -50,7 +51,7 @@ const { title, description, locations } = ARC_2023
 	]
 
 	function changeElementStyles(change, index) {
-		const changeBackgroundElements = [header, footer, downloadScheduleBtn, mapGuide]
+		const changeBackgroundElements = [header, footer, downloadScheduleBtn, mapGuide, navbar]
 		if (change) {
 			changeBackgroundElements.forEach((element) => {
 				element.classList.add(colors[index].backgroundColor)
@@ -88,10 +89,10 @@ const { title, description, locations } = ARC_2023
 	mapLabels.forEach((icon, index) =>
 		icon.addEventListener('click', () => {
 			locations.forEach((location, index) => {
-				showLocationsInfo(location, false, index)
+				showLocationsInfo(location, false)
 				changeElementStyles(false, index)
 			})
-			showLocationsInfo(locations[index], true, index)
+			showLocationsInfo(locations[index], true)
 			changeElementStyles(true, index)
 		})
 	)
@@ -99,10 +100,10 @@ const { title, description, locations } = ARC_2023
 	mapLabels.forEach((icon, index) =>
 		icon.addEventListener('touchend', () => {
 			locations.forEach((location) => {
-				showLocationsInfo(location, false, index)
+				showLocationsInfo(location, false)
 				changeElementStyles(false, index)
 			})
-			showLocationsInfo(locations[index], true, index)
+			showLocationsInfo(locations[index], true)
 			changeElementStyles(true, index)
 		})
 	)
@@ -119,7 +120,7 @@ const { title, description, locations } = ARC_2023
 			false
 		)
 		location.querySelector('button').addEventListener('click', () => {
-			showLocationsInfo(location, false, index)
+			showLocationsInfo(location, false)
 			changeElementStyles(false, index)
 		})
 	})
