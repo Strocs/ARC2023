@@ -17,45 +17,10 @@ const { styles = { backgroundColor: 'bg-main' } } = Astro.props
 			<ToggleMenuButton id='menu' />
 			<LogoWithText styles={styles} />
 		</div>
-		<ButtonLink anchor href='/PROGRAMA_ARC_2023.pdf' styles={styles} className='hidden md:flex'>Descarga la Programación</ButtonLink>
+		<ButtonLink anchor href='/PROGRAMA_ARC_2023.pdf' styles={styles} className='hidden md:flex'>
+			Descarga la Programación
+		</ButtonLink>
 		<ToggleMenuButton mobile id='menu-mobile' />
 	</div>
 </header>
 <Navbar styles={styles} />
-
-<script>
-	const menu = document.querySelectorAll('input')
-	const navbar = document.querySelector('nav')
-
-	function showNavBar(show) {
-		if (show) {
-			navbar.style.left = '0'
-			navbar.style.opacity = '1'
-		} else {
-			navbar.style.left = '-448px'
-		}
-	}
-
-	navbar.querySelectorAll('a').forEach((anchor) => {
-		anchor.addEventListener('click', () => {
-			showNavBar(false)
-		})
-	})
-
-	navbar.addEventListener('transitionend', (e) => {
-		if (navbar !== e.target) return
-		if (navbar.style.left === '-448px') {
-			navbar.style.opacity = '0'
-		}
-	})
-
-	menu.forEach((el) =>
-		el.addEventListener('change', (e) => {
-			if (e.target.checked) {
-				showNavBar(true)
-				return
-			}
-			showNavBar(false)
-		})
-	)
-</script>
