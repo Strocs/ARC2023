@@ -24,8 +24,8 @@ const { styles = { backgroundColor: 'bg-main' } } = Astro.props
 </header>
 
 <script>
-	const menu = document.querySelector('header').querySelectorAll('input')
-	const navbar = document.querySelector('header').querySelector('nav')
+	const menu = document.querySelectorAll('input')
+	const navbar = document.querySelector('nav')
 
 	function showNavBar(show) {
 		if (show) {
