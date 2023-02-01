@@ -29,26 +29,19 @@ const { title, description, locations } = ARC_2023
 </Layout>
 
 <script>
-	const locations = document.querySelectorAll < HTMLElement > ('[aria-label="location-info"]')
-	const mapLabels = document.querySelectorAll('.names')
-	const header = document.querySelector('header').querySelector('div')
+	import { getStylesByColor } from '../utils'
 	const footer = document.querySelector('footer')
-	const logo = document.getElementById('logo-text')
+	const header = document.querySelector('header').querySelector('div')
+	const logo = document.querySelector('header').querySelector('#logo-text')
+	const navbar = document.querySelector('header').querySelector('nav')
 	const downloadScheduleBtn = header.querySelector('span')
 	const socialMediaLinks = header.querySelectorAll('#social-networks')
-	const navbar = document.querySelector('nav')
+	const mapContainer = document.querySelector('#map-container')
+	const map = mapContainer.querySelector('div')
+	const mapLabels = map.querySelectorAll('.names')
+	const locationsInfo = document.querySelectorAll < HTMLElement > ('[aria-label="location-info"]')
 	const resetButton = document.querySelector('#reset-button')
 	const spanResetButton = resetButton.querySelector('span')
-
-	function getStylesByColor(color = '') {
-		return {
-			backgroundColor: `bg-${color}`,
-			fillColor: `fill-${color}`,
-			borderColor: `border-${color}`,
-			textColor: `text-${color}`,
-			hoverTextColor: `hover:text-${color}`
-		}
-	}
 
 	const colors = [
 		getStylesByColor('pale-purple'),
@@ -62,7 +55,7 @@ const { title, description, locations } = ARC_2023
 		getStylesByColor('pale-blue')
 	]
 
-	function changeElementStyles(change, index) {
+	function changeElementStyles(index, change) {
 		const changeBackgroundElements = [header, footer, downloadScheduleBtn, navbar, resetButton]
 		if (change) {
 			changeBackgroundElements.forEach((element) => {
@@ -103,41 +96,37 @@ const { title, description, locations } = ARC_2023
 	}
 
 	mapLabels.forEach((icon, index) =>
-		icon.addEventListener('click', () => {
-			locations.forEach((location, index) => {
-				showLocationsInfo(location, false)
-				changeElementStyles(false, index)
+		['mouseup', 'touchend'].forEach((event) =>
+			icon.addEventListener(event, () => {
+				locationsInfo.forEach((location, index) => {
+					showLocationsInfo(location, false)
+					changeElementStyles(index, false)
+				})
+				showLocationsInfo(locationsInfo[index], true)
+				changeElementStyles(index, true)
 			})
-			showLocationsInfo(locations[index], true)
-			changeElementStyles(true, index)
-		})
+		)
 	)
 
-	mapLabels.forEach((icon, index) =>
-		icon.addEventListener('touchend', () => {
-			locations.forEach((location) => {
-				showLocationsInfo(location, false)
-				changeElementStyles(false, index)
-			})
-			showLocationsInfo(locations[index], true)
-			changeElementStyles(true, index)
-		})
-	)
-
-	locations.forEach((location, index) => {
+	locationsInfo.forEach((location, index) => {
+		const closeLocationInfoButton = location.querySelector('button')
 		location.addEventListener(
 			'transitionend',
 			(e) => {
 				if (location !== e.target) return
 				if (location.style.right === '-448px') {
 					location.style.opacity = '0'
+					closeLocationInfoButton.removeEventListener('click', () => {
+						showLocationsInfo(location, false)
+						changeElementStyles(index, false)
+					})
 				}
 			},
 			false
 		)
-		location.querySelector('button').addEventListener('click', () => {
+		closeLocationInfoButton.addEventListener('click', () => {
 			showLocationsInfo(location, false)
-			changeElementStyles(false, index)
+			changeElementStyles(index, false)
 		})
 	})
 </script>

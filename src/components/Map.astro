@@ -2,9 +2,8 @@
 import Mapa from './icons/Mapa.astro'
 ---
 
-<section id='map-container' class='w-screen h-screen relative cursor-grabbing'>
+<section id='map-container' class='w-screen h-screen relative cursor-grab'>
 	<div
-		id='map'
 		class='absolute w-[150%] h-fit sm:w-1/2 top-0 right-0 sm:left-0 -left-20 bottom-0 m-auto origin-top-left'
 	>
 		<Mapa />
@@ -12,25 +11,16 @@ import Mapa from './icons/Mapa.astro'
 </section>
 
 <script>
-	const map = document.querySelector < HTMLElement > ('#map')
 	const mapContainer = document.querySelector('#map-container')
-	const resetButton = document.querySelector < HTMLElement > ('#reset-button')
+	const map = mapContainer.querySelector('div')
 	const mapGuide = document.querySelector < HTMLElement > ('#map-guide')
+	const resetButton = document.querySelector < HTMLElement > ('#reset-button')
+
 	let dx = 0
 	let dy = 0
 	let scale = 1
 	let panning = 0
 	let lastPoints = []
-
-	// function changeCursorOnGrab() {
-	// 	if (panning === 1) {
-	// 		mapContainer.classList.remove('cursor-grab')
-	// 		mapContainer.classList.add('cursor-grabbing')
-	// 		return
-	// 	}
-	// 	mapContainer.classList.remove('cursor-grabbing')
-	// 	mapContainer.classList.add('cursor-grab')
-	// }
 
 	function showResetButton() {
 		if (mapGuide.style.opacity === '1') {
@@ -111,7 +101,7 @@ import Mapa from './icons/Mapa.astro'
 		showResetButton()
 	}
 
-	const onPointerMove = (event) => {
+	function onPointerMove(event) {
 		event.preventDefault()
 		const points = getPoints(event)
 		const averagePoint = points.reduce(getMidpoint)
@@ -134,12 +124,11 @@ import Mapa from './icons/Mapa.astro'
 				dy -= (averagePoint.y - top) * (scaleDiff - 1)
 			}
 		}
-		// changeCursorOnGrab()
 		update()
 		lastPoints = points
 	}
 
-	const onPointerUp = (event) => {
+	function onPointerUp(event) {
 		event.preventDefault()
 		panning--
 		lastPoints.pop()
@@ -148,30 +137,21 @@ import Mapa from './icons/Mapa.astro'
 			lastPoints = getPoints(event)
 			return
 		}
-
-		// changeCursorOnGrab()
-
+		// TODO: implement disable label buttons on pointerUp if there was a movement of map
 		document.removeEventListener('mousemove', onPointerMove)
 		document.removeEventListener('mouseup', onPointerUp)
 		document.removeEventListener('touchmove', onPointerMove)
 		document.removeEventListener('touchend', onPointerUp)
 	}
 
-	// bound events
 	mapContainer.addEventListener('mousedown', onPointerDown)
 	mapContainer.addEventListener('touchstart', onPointerDown)
-
-	// unbound
 	mapContainer.addEventListener('wheel', (event) => onWheel(event))
 
-	function reset() {
+	resetButton.addEventListener('click', () => {
 		dx = 0
 		dy = 0
 		scale = 1
 		update()
-	}
-
-	resetButton.addEventListener('click', () => {
-		reset()
 	})
 </script>
