@@ -6,21 +6,17 @@ const { socialNetwork } = ARC_2023
 const { hoverTextColor = 'hover:text-main' } = Astro.props
 ---
 
-<div class='grid grid-flow-col gap-3 items-center'>
-	<p>Síguenos:</p>
-	<ul class='grid grid-flow-col gap-1'>
-		{
-			socialNetwork.map((social) => (
-				<li>
-					<a
-						id='social-networks'
-						class={`group block p-1 text-white transition-all duration-200 ease-in hover:bg-white ${hoverTextColor}`}
-						href={social.url}
-					>
-						<Icon name={`mdi:${social.name}`} class={'h-7 w-7'} />
-					</a>
-				</li>
-			))
-		}
-	</ul>
+<div class='grid grid-flow-col items-center gap-1'>
+	Síguenos:
+	{
+		socialNetwork.map((social) => (
+			<a
+				class={`group block rounded-md p-1 text-white transition-all duration-200 ease-in hover:bg-white ${hoverTextColor}`}
+				href={social.url}
+				aria-label={social.name}
+			>
+				<Icon name={`mdi:${social.name}`} class={'h-7 w-7'} />
+			</a>
+		))
+	}
 </div>

@@ -55,11 +55,12 @@ export const SANTA_INES = {
 					category: 'Intervención Urbana',
 					time: '16:00',
 					image: {
-						url: '/santa-ines/deconstruyendo.jpg',
+						url: '/santa-ines/tendedero-poetico.jpg',
 						alt: 'Imagen de la Intervención Urbana Tendedero Poético: (De) construyendo la nacionalidad'
 					},
 					links: [],
-					description: '',
+					description:
+						'El tendedero poético es una técnica de creación colectiva, donde el público asistente puede expresar su ideas, palabras o pensamientos creativos poéticos, para luego intervenir el espacio público con las creaciones de los y las asistentes.\nEsta actividad busca vincular a la comunidad con la escritura creativa in situ, para luego visibilizar/compartir sus escritos en dicho espacio.',
 					list: []
 				},
 				{
@@ -73,19 +74,9 @@ export const SANTA_INES = {
 						alt: 'Imagen de la presentación de DJ Free-tangas'
 					},
 					links: [],
-					description: '',
-					list: [
-						{
-							title: 'Integrantes:',
-							text: [
-								'Amaya Aristegui Muñoz',
-								'Natalie Gutiérrez Marín',
-								'Rayén Pojomovsky Aliste',
-								'Daniela Reinoso Olmos',
-								'Rodolfo Lucero Figueroa (audiovisualista/técnico)'
-							]
-						}
-					]
+					description:
+						'Les Freetangas se dedican a la música electrónica experimental de la región de Coquimbo que es gestada a inicios del año 2021.\nSus integrantes son Lili Peña-Gómez aka Lilith la Papisa, y Paulina Pinto aka Pinkhead, Pvprikv. Mezclan sonidos electrónicos con analógicos, incorporando el uso del charango, flauta doble y voz, abrazando la experimentación sonora en todas sus formas y dimensiones.\nLanzaron su primer track titulado "Contenta", y es parte del segundo compilado femenino y chileno "Revueltas" del Sello New Beats Latam junto a otras artistas nacionales. Pronto saldrá a la luz su siguiente track titulado “Agradecida” por el colectivo feminista Hotline de México en su próximo compilado. \nHan sido parte de la primera versión del festival femenino Indiefemm de Coquimbo. Y actualmente se encuentran trabajando en su primer EP denominado "Tanga Libre".',
+					list: []
 				},
 				{
 					id: 'elvira-hernández',
@@ -158,11 +149,12 @@ export const SANTA_INES = {
 					category: 'Intervención Urbana',
 					time: '16:00',
 					image: {
-						url: '/santa-ines/sueños.jpg',
+						url: '/santa-ines/tendedero-poetico2.jpg',
 						alt: 'Imagen de la Performance Tendedero Poético: sueños diversos y derechos con versos'
 					},
 					links: [],
-					description: '',
+					description:
+						'El tendedero poético es una técnica de creación colectiva, donde el público asistente puede expresar su ideas, palabras o pensamientos creativos poéticos, para luego intervenir el espacio público con las creaciones de los y las asistentes. Esta actividad busca vincular a la comunidad con la escritura creativa in situ, para luego visibilizar/compartir sus escritos en dicho espacio.',
 					list: []
 				},
 				{
@@ -177,7 +169,7 @@ export const SANTA_INES = {
 					},
 					links: [],
 					description:
-						'Hit Latino es un cómic sobre el estallido social de Chile del año 2019 que cuenta como estudiantes secundarios que, en vista de las injusticias y violencia hacia el pueblo, deciden crear un héroe que defienda a quienes luchan.',
+						'Joven talento en la ilustración regional. A sus cortos años ha participado en la publicación de 2 libros basados netamente en la ilustración Dibujantes anónimos 2 y 3 de Marsalado Ediciones y ha publicado su primer libro de cómic HIT latino, con la misma editorial. Paralelo a ello ha participado en la gráfica animada del destacado humorista nacional Felipe Avello.\nHit Latino es un cómic sobre el estallido social de Chile del año 2019 que cuenta como estudiantes secundarios que, en vista de las injusticias y violencia hacia el pueblo, deciden crear un héroe que defienda a quienes luchan.',
 					list: []
 				},
 				{

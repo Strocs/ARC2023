@@ -146,7 +146,7 @@ import Mapa from './icons/Mapa.astro'
 
 	mapContainer.addEventListener('mousedown', onPointerDown)
 	mapContainer.addEventListener('touchstart', onPointerDown)
-	mapContainer.addEventListener('wheel', (event) => onWheel(event))
+	mapContainer.addEventListener('wheel', onWheel)
 
 	resetButton.addEventListener('click', () => {
 		dx = 0
