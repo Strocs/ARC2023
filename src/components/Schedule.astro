@@ -6,20 +6,22 @@ const { locationId, eventId } = Astro.props
 const { styles, schedule } = getLocationById(locationId)
 ---
 
-<div class='flex flex-col gap-5'>
+<div class='grid gap-5'>
 	{
 		schedule.map(({ day, events }) => (
-			<div class='font-normal text-base relative flex flex-col gap-1'>
+			<div class='relative grid gap-1 text-base font-normal'>
 				<div class='leading-3'>
-					<p class='text-base sm:text-lg font-bold leading-3'>
-						{!!day && <Icon name='mdi:calendar-multiselect' class={`w-6 inline ${styles.textColor}`} />}
+					<p class='text-base font-bold leading-3 sm:text-lg'>
+						{!!day && (
+							<Icon name='mdi:calendar-multiselect' class={`inline w-6 ${styles.textColor}`} />
+						)}
 						{day.split('\n')[0]}
 					</p>
 					{!!day.split('\n')[1] && (
-						<span class='font-normal text-base pl-[1.85rem]'>{day.split('\n')[1]}</span>
+						<span class='pl-[1.85rem] text-base font-normal'>{day.split('\n')[1]}</span>
 					)}
 				</div>
-				<ul class='flex flex-col gap-1 mt-3'>
+				<ul class='mt-3 grid gap-1'>
 					{events.map((event) => (
 						<ScheduleItem styles={styles} locationId={locationId} event={event} eventId={eventId} />
 					))}

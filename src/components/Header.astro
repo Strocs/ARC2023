@@ -1,27 +1,27 @@
 ---
+import ButtonLink from './ButtonLink.astro'
 import LogoWithText from './LogoWithText.astro'
 import Navbar from './Navbar.astro'
-import ScheduleDownloader from './ScheduleDownloader.astro'
 import ToggleMenuButton from './ToggleMenuButton.astro'
 
 const { styles = { backgroundColor: 'bg-main' } } = Astro.props
 ---
 
-<header>
+<header
+	class={`w-full fixed top-0 ${styles.backgroundColor} bg-texture bg-4xl sm:bg-xl z-50 transition-[background-color] duration-200 ease-in`}
+>
 	<div
-		class={`flex w-full items-center justify-between sm:justify-start sm:gap-14 fixed top-0 ${styles.backgroundColor} bg-texture bg-4xl sm:bg-xl sm:px-14 px-4 py-2 z-50 transition-[background-color] duration-200 ease-in`}
+		class={'grid grid-flow-col w-full items-center justify-between sm:px-14 px-4 py-2 sm:gap-14'}
 	>
-		<ToggleMenuButton id='menu' />
-		<div class='flex text-white justify-between w-full gap-6'>
+		<div class='grid grid-flow-col gap-14'>
+			<ToggleMenuButton id='menu' />
 			<LogoWithText styles={styles} />
-			<div class='flex gap-14'>
-				<ScheduleDownloader styles={styles} />
-			</div>
 		</div>
+		<ButtonLink styles={styles} className='hidden md:flex'>Descarga la Programación</ButtonLink>
 		<ToggleMenuButton mobile id='menu-mobile' />
 	</div>
-	<Navbar styles={styles} />
 </header>
+<Navbar styles={styles} />
 
 <script>
 	const menu = document.querySelectorAll('input')

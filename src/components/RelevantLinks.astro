@@ -8,12 +8,11 @@ const { links, hoverTextColor, borderColor } = Astro.props
 	links.lenght !== 0 && (
 		<ul class='flex'>
 			{links.map(({ url, name }) => (
-				<li class={`flex gap-2 border-l-2 ${borderColor} px-2`}>
-					{name === 'ticket' && <p>Tickets:</p>}
-					<a href={url}>
+				<li class={`border-l-2 ${borderColor} px-2`}>
+					<a href={url} aria-label='medias'>
 						<Icon
 							class={`${hoverTextColor} h-6 w-6 transition-all duration-200`}
-							name={ name === 'tiktok' ? 'ic:baseline-tiktok' : `mdi:${name}`}
+							name={name === 'tiktok' ? 'ic:baseline-tiktok' : `mdi:${name}`}
 						/>
 					</a>
 				</li>

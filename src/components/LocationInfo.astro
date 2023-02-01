@@ -19,22 +19,22 @@ if (title.includes('Estacionamiento')) {
 <section
 	aria-label='location-info'
 	id={id}
-	class={`${styles.backgroundColor} flex flex-col gap-14 pb-28 md:pb-10 py-10 w-full max-w-[448px] px-10 h-auto bottom-0 top-12 absolute z-20 motion-reduce:animate-none`}
+	class={`${styles.backgroundColor} pb-28 md:pb-10 py-10 w-full max-w-[448px] px-10 h-auto bottom-0 top-12 absolute z-20 motion-reduce:animate-none`}
 	style={{ opacity: '0', right: '-448px' }}
 >
-	<div class='flex flex-col gap-10'>
-		<h2 class='text-5xl leading-10 sm:text-6xl font-black py-2 sm:leading-[3rem]'>{newTitle}</h2>
-		<p class='font-normal text-justify'>{extract}</p>
-		<ButtonLink styles={styles} anchor href={id} className='self-center'>
+	<article class='grid gap-12'>
+		<h2 class='py-2 text-5xl font-black leading-10 sm:text-6xl sm:leading-[3rem]'>{newTitle}</h2>
+		<p class='text-justify font-normal'>{extract}</p>
+		<ButtonLink styles={styles} anchor href={id} className='h-min place-self-center'>
 			Más información y Programación<Icon name='mdi:arrow-top-right-thick' class='h-5 inline' />
 		</ButtonLink>
-	</div>
-	<ButtonLink styles={styles} className='self-center'>
-		Cerrar <Icon
-			class={`inline h-5 ml-1 ${styles.groupHoverTextColor}`}
-			name='mdi:arrow-right-bold'
-		/>
-	</ButtonLink>
+		<ButtonLink styles={styles} className='h-min place-self-center'>
+			Cerrar <Icon
+				class={`inline h-5 ml-1 ${styles.groupHoverTextColor}`}
+				name='mdi:arrow-right-bold'
+			/>
+		</ButtonLink>
+	</article>
 </section>
 
 <style>

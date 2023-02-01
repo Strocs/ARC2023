@@ -5,12 +5,12 @@ const { city, days } = ARC_2023
 const { styles } = Astro.props
 ---
 
-<div class='flex text-white items-center gap-3'>
-	<a href='/' class='w-32'>
+<div class='grid grid-flow-col items-center gap-3 text-white'>
+	<a href='/' class='w-32' aria-label='home'>
 		<Logo fillColor={styles.fillColor} />
 	</a>
 	<div class='text-xs sm:text-sm'>
-		<p class='leading-4 font-semibold'>{days}</p>
-		<p class='leading-4 font-light'>{city}</p>
+		<p class='font-semibold leading-4'>{days}</p>
+		<p class='font-light leading-4'>{city}</p>
 	</div>
 </div>

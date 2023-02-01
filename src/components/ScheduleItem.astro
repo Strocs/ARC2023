@@ -10,10 +10,10 @@ const { styles, locationId, event, eventId } = Astro.props
 	} w-full group pl-6 transition-[background-color] py-2 duration-200 rounded-md ease-in`}
 >
 	<a href={`/${locationId}/${event.id}`}>
-		<div class='flex items-center gap-1 w-full'>
-			<div class='flex items-center gap-1 w-full'>
+		<div class='flex w-full items-center gap-1'>
+			<div class='flex w-full items-center gap-1'>
 				<Icon
-					name='mdi:play'
+					name='mdi:arrow-top-right-thick'
 					class={`w-5 inline flex-shrink-0 self-start ${
 						event.id === eventId ? 'text-white' : 'text-neutral-400'
 					}  group-hover:text-white`}
