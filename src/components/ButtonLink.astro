@@ -12,10 +12,10 @@ const {
 
 const Element = anchor ? 'a' : 'button'
 
-const border = invertedColors ? styles.borderColor : 'border-white'
-const text = invertedColors ? styles.textColor : 'text-white'
+const border = invertedColors ? styles.borderColor : id === 'estacionamiento-plaza-de-armas' ? 'border-neutral-700' : 'border-white'
+const text = invertedColors ? styles.textColor : id === 'estacionamiento-plaza-de-armas' ? 'text-neutral-700' : 'text-white'
 const background = invertedColors ? 'bg-white' : styles.backgroundColor
-const shadow = invertedColors ? styles.backgroundColor : 'bg-white'
+const shadow = invertedColors ? styles.backgroundColor : id === 'estacionamiento-plaza-de-armas' ? 'bg-neutral-700' : 'bg-white'
 ---
 
 <Element
