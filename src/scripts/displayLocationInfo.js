@@ -3,7 +3,6 @@ import {
 	footer,
 	header,
 	logo,
-	navbar,
 	downloadScheduleBtn,
 	socialMediaLinks,
 	locationsInfo,
@@ -23,8 +22,8 @@ const colors = [
 	getStylesByColor('pale-blue')
 ]
 
-function changeElementStyles(index, change) {
-	const changeBackgroundElements = [header, footer, downloadScheduleBtn, navbar, resetButton]
+export function changeElementStyles(index, change) {
+	const changeBackgroundElements = [header, footer, downloadScheduleBtn, resetButton]
 	if (change) {
 		changeBackgroundElements.forEach((element) => {
 			element.classList.add(colors[index].backgroundColor)
@@ -52,7 +51,7 @@ function changeElementStyles(index, change) {
 	}
 }
 
-function showLocationsInfo(element, show) {
+export function showLocationsInfo(element, show) {
 	if (show) {
 		element.style.right = '0'
 		element.style.zIndex = '20'

@@ -1,5 +1,4 @@
-const menu = document.querySelectorAll('input')
-const navbar = document.querySelector('nav')
+import { changeElementStyles, showLocationsInfo, locationsInfo, menu, navbar } from '.'
 
 function showNavBar(show) {
 	if (show) {
@@ -22,11 +21,16 @@ navbar.addEventListener('transitionend', (e) => {
 		navbar.style.opacity = '0'
 	}
 })
-
 menu.forEach((el) =>
 	el.addEventListener('change', (e) => {
 		if (e.target.checked) {
 			showNavBar(true)
+			if (window.location.pathname === '/') {
+				locationsInfo.forEach((location, index) => {
+					showLocationsInfo(location, false)
+					changeElementStyles(index, false)
+				})
+			}
 			return
 		}
 		showNavBar(false)
