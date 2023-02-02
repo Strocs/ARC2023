@@ -14,9 +14,9 @@ let scale = 1
 let panning = 0
 let lastPoints = []
 let prevPosition = { dx, dy }
-const handlers = []
+const listenerCallback = []
 
-function showUp(event, index) {
+function handleDisplayLocations(event, index) {
 	if (prevPosition.dx !== dx && prevPosition.dy !== dy) {
 		event.stopImmediatePropagation()
 		return
@@ -92,12 +92,12 @@ function onPointerDown(event) {
 
 	panning++
 
-	handlers.forEach((handler) => {
+	listenerCallback.forEach((handler) => {
 		mapLabels.forEach((icon) => {
 			icon.removeEventListener('pointerup', handler)
 		})
 	})
-	handlers.length = 0
+	listenerCallback.length = 0
 
 	if (panning === 1) {
 		document.addEventListener('mousemove', onPointerMove)
@@ -147,10 +147,10 @@ function onPointerUp(event) {
 
 	mapLabels.forEach((icon, index) => {
 		const pointerUpHandler = (event) => {
-			showUp(event, index)
+			handleDisplayLocations(event, index)
 		}
 
-		handlers.push(pointerUpHandler)
+		listenerCallback.push(pointerUpHandler)
 		icon.addEventListener('pointerup', pointerUpHandler)
 	})
 
@@ -175,7 +175,7 @@ resetButton.addEventListener('click', () => {
 
 mapLabels.forEach((icon, index) => {
 	icon.addEventListener('pointerup', (event) => {
-		showUp(event, index)
+		handleDisplayLocations(event, index)
 	})
 })
 
