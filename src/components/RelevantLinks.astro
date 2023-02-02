@@ -1,11 +1,11 @@
 ---
 import { Icon } from 'astro-icon'
 
-const { links, hoverTextColor, name } = Astro.props
+const { links, hoverTextColor } = Astro.props
 ---
 
 <div class='mt-4 grid w-fit grid-flow-col gap-2'>
-	<p class='text-lg font-medium'>Conoce más de {name}:</p>
+	<p class='text-lg font-medium'>Conoce más:</p>
 	<ul class='flex'>
 		{
 			links.map(({ url, name }) => (

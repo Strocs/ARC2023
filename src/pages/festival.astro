@@ -6,13 +6,13 @@ import Layout from '../layouts/Layout.astro'
 
 <Layout title='Conoce más de esta nueva versión'>
 	<Header />
-	<main class='flex h-full min-h-screen w-full bg-icons bg-contain bg-center bg-no-repeat'>
+	<main class='mx-auto flex min-h-screen flex-wrap justify-center gap-6 px-5 py-10 relative bg-contain bg-center bg-no-repeat xl:bg-icons'>
 		<article
-			class='relative mx-auto flex w-full max-w-7xl flex-wrap justify-center gap-10 py-28 px-4'
+			class='grid h-fit w-full max-w-3xl gap-4 text-neutral-700 sm:px-14'
 		>
-			<section class='flex w-full max-w-2xl flex-col gap-10 py-10 px-8 text-slate-900'>
+			<section class='w-full text-slate-900'>
 				<img src='/ARC23.png' alt='Logotipo Arc 2023' />
-				<div class='flex flex-col gap-3 text-justify'>
+				<div class='grid gap-3 text-justify'>
 					<p>
 						La experiencia de pandemia sanitaria durante los años anteriores significó un cambio en
 						los hábitos de las personas, obligando a un repliegue hacia los espacios privados,
@@ -54,7 +54,20 @@ import Layout from '../layouts/Layout.astro'
 					</p>
 				</div>
 			</section>
+			<section class="grid gap-6 w-full">
+				<p class="text-xl font-bold">Patrocinadores:</p>
+				<section class="flex flex-wrap items-center justify-center flex-shrink-0 gap-10 px-6">
+					<img width="300" class="w-fit h-14 aspect-[150/49]" src="/logos/logo-del-fuego.svg" alt="">
+					<img width="265" class="w-fit h-14 aspect-[53/30]" src="/logos/logo-ciudad-capital.svg" alt="">
+					<img width="300" class="w-fit h-14 aspect-[100/31]" src="/logos/logo-estacionamiento.svg" alt="">
+					<img width="192" class="w-fit h-14 aspect-[32/25]" src="/logos/logo-chronos.svg" alt="">
+					<img width="2226" class="w-fit h-14 aspect-[1113/361]" src="/logos/logo-transparencia.png" alt="">
+					<img width="1000" class="w-fit h-14 aspect-[20/7]" src="/logos/logo-portaldisc.png" alt="">
+					<img width="432" class="w-fit h-14 aspect-[108/29]" src="/logos/logo-inacap.png" alt="">
+				</section>
+			</section>
 		</article>
 	</main>
+	<section class="xl:hidden h-fit -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-7"><img class="w-full h-fit mx-auto" src='/bg-mobile.svg' alt='' /></section>
 	<Footer />
 </Layout>
