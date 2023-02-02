@@ -30,7 +30,7 @@ const { styles, title } = locationInfo
 ---
 
 <Layout title={`ARC 2023 | ${name}`} description={description}>
-	<Header styles={styles} />
+	<Header id={locationId} styles={styles} />
 	<PageContainer backgroundColor={styles.backgroundColor} borderColor={styles.borderColor}>
 		<Fragment slot='first-section'>
 			<div class='flex flex-col gap-4'>
@@ -60,11 +60,7 @@ const { styles, title } = locationInfo
 					</ul>
 				)
 			}
-			{
-				links.length !== 0 && (
-					<RelevantLinks links={links} hoverTextColor={styles.hoverTextColor} />
-				)
-			}
+			{links.length !== 0 && <RelevantLinks links={links} hoverTextColor={styles.hoverTextColor} />}
 			<p class='my-14 text-3xl font-black leading-7 sm:text-4xl'>
 				Disfruta el arte de <span class={styles.textColor}>{name}</span> en <span
 					class={styles.textColor}>{title}</span
@@ -73,6 +69,7 @@ const { styles, title } = locationInfo
 		</Fragment>
 		<Fragment slot='second-section'>
 			<ButtonLink
+				id={locationId}
 				anchor
 				href={`/${locationId}`}
 				styles={styles}
@@ -87,5 +84,5 @@ const { styles, title } = locationInfo
 			<Schedule locationId={locationId} eventId={eventId} />
 		</Fragment>
 	</PageContainer>
-	<Footer backgroundColor={styles.backgroundColor} />
+	<Footer id={locationId} backgroundColor={styles.backgroundColor} />
 </Layout>

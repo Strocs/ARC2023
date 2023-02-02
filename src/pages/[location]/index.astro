@@ -24,7 +24,7 @@ const { id, title, address, extract, description, links, styles, image, tickets 
 ---
 
 <Layout title={`ARC 2023 | ${title}`} description={extract}>
-	<Header styles={styles} />
+	<Header styles={styles} id={id} />
 	<PageContainer backgroundColor={styles.backgroundColor} borderColor={styles.borderColor}>
 		<Fragment slot='first-section'>
 			<Title>{title}</Title>
@@ -45,12 +45,12 @@ const { id, title, address, extract, description, links, styles, image, tickets 
 			}
 		</Fragment>
 		<Fragment slot='second-section'>
-			<ButtonLink anchor href='/' styles={styles} invertedColors className='self-start'>
+			<ButtonLink id={id} anchor href='/' styles={styles} invertedColors className='self-start'>
 				Volver <Icon class='inline h-5 group-hover:text-white' name='mdi:arrow-top-left-thick' />
 			</ButtonLink>
 			<h2 class='text-3xl font-black leading-8 sm:text-4xl'>Programación</h2>
 			<Schedule locationId={id} />
 		</Fragment>
 	</PageContainer>
-	<Footer backgroundColor={styles.backgroundColor} />
+	<Footer id={id} backgroundColor={styles.backgroundColor} />
 </Layout>

@@ -1,9 +1,10 @@
 ---
-const { fixed, backgroundColor = 'bg-main' } = Astro.props
+const { fixed, backgroundColor = 'bg-main', id } = Astro.props
+const text = id === 'estacionamiento-plaza-de-armas' ? 'text-neutral-700' : ''
 ---
 
 <footer
-	class={`flex flex-col md:flex-row justify-between items-center w-full py-2 gap-2 md:px-14 ${backgroundColor} ${
+	class={`flex flex-col md:flex-row justify-between items-center w-full py-2 gap-2 md:px-14 ${text} ${backgroundColor} ${
 		fixed ? 'fixed' : ''
 	} bottom-0 left-0 right-0 z-50 transition-[background-color] duration-200 ease-in bg-texture bg-4xl sm:bg-xl`}
 >
