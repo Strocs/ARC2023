@@ -82,6 +82,8 @@ function onWheel(event) {
 	dy -= (event.pageY - top) * (scaleDiff - 1)
 	update()
 	showResetButton()
+
+	prevPosition = { dx, dy }
 }
 
 function onPointerDown(event) {
