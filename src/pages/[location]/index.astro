@@ -29,31 +29,26 @@ const { id, title, address, extract, description, links, styles, image, tickets 
 		<Fragment slot='first-section'>
 			<Title>{title}</Title>
 			<span class='text-xl'>{address}</span>
-			<RelevantLinks
-				links={links}
-				hoverTextColor={styles.hoverTextColor}
-				borderColor={styles.borderColor}
-			/>
 			{
-				Object.hasOwn(tickets, 'url') && (
+				!!tickets.url && (
 					<ButtonLink invertedColors anchor href={tickets.url} styles={styles} className='my-8'>
-						Tickets <img class='aspect-[139/150] h-8 inline' src='/ticket.svg' alt='' />
+						Tickets <img class='inline aspect-[139/150] h-8' src='/ticket.svg' alt='' />
 					</ButtonLink>
-					// <div class='my-8'>
-					// 	<h3 class='text-xl'>
-					// 		Obtén tus entradas
-					// 	</h3>
-					// </div>
 				)
 			}
-			{Object.hasOwn(image, 'url') && <Image url={image.url} alt={image.alt} />}
+			{!!image.url && <Image url={image.url} alt={image.alt} />}
 			<Paragraph description={description} />
+			{
+				links.length !== 0 && (
+					<RelevantLinks links={links} hoverTextColor={styles.hoverTextColor} name={title} />
+				)
+			}
 		</Fragment>
 		<Fragment slot='second-section'>
 			<ButtonLink anchor href='/' styles={styles} invertedColors className='self-start'>
 				Volver <Icon class='inline h-5 group-hover:text-white' name='mdi:arrow-top-left-thick' />
 			</ButtonLink>
-			<h2 class='text-3xl sm:text-4xl leading-8 font-black'>Programación</h2>
+			<h2 class='text-3xl font-black leading-8 sm:text-4xl'>Programación</h2>
 			<Schedule locationId={id} />
 		</Fragment>
 	</PageContainer>
