@@ -8,8 +8,7 @@ import {
 	socialMediaLinks,
 	locationsInfo,
 	resetButton,
-	spanResetButton,
-	mapLabels
+	spanResetButton
 } from './'
 
 const colors = [
@@ -72,13 +71,6 @@ export function displayLocations(i) {
 	showLocationsInfo(locationsInfo[i], true)
 	changeElementStyles(i, true)
 }
-
-mapLabels.forEach((icon, index) => {
-	function showUp() {
-		displayLocations(index)
-	}
-	icon.addEventListener('pointerup', showUp)
-})
 
 locationsInfo.forEach((location, index) => {
 	const closeLocationInfoButton = location.querySelector('button')

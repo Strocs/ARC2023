@@ -1,10 +1,28 @@
-import { mapContainer, map, mapGuide, resetButton } from './'
+import {
+	mapContainer,
+	map,
+	mapGuide,
+	mapLabels,
+	displayLocations,
+	resetButton,
+	linkToMapOwners
+} from '.'
 
 let dx = 0
 let dy = 0
 let scale = 1
 let panning = 0
 let lastPoints = []
+let prevPosition = { dx, dy }
+const handlers = []
+
+function showUp(event, index) {
+	if (prevPosition.dx !== dx && prevPosition.dy !== dy) {
+		event.stopImmediatePropagation()
+		return
+	}
+	displayLocations(index)
+}
 
 function showResetButton() {
 	if (mapGuide.style.opacity === '1') {
@@ -74,6 +92,13 @@ function onPointerDown(event) {
 
 	panning++
 
+	handlers.forEach((handler) => {
+		mapLabels.forEach((icon) => {
+			icon.removeEventListener('pointerup', handler)
+		})
+	})
+	handlers.length = 0
+
 	if (panning === 1) {
 		document.addEventListener('mousemove', onPointerMove)
 		document.addEventListener('mouseup', onPointerUp)
@@ -120,6 +145,17 @@ function onPointerUp(event) {
 		return
 	}
 
+	mapLabels.forEach((icon, index) => {
+		const pointerUpHandler = (event) => {
+			showUp(event, index)
+		}
+
+		handlers.push(pointerUpHandler)
+		icon.addEventListener('pointerup', pointerUpHandler)
+	})
+
+	prevPosition = { dx, dy }
+
 	document.removeEventListener('mousemove', onPointerMove)
 	document.removeEventListener('mouseup', onPointerUp)
 	document.removeEventListener('touchmove', onPointerMove)
@@ -135,4 +171,14 @@ resetButton.addEventListener('click', () => {
 	dy = 0
 	scale = 1
 	update()
+})
+
+mapLabels.forEach((icon, index) => {
+	icon.addEventListener('pointerup', (event) => {
+		showUp(event, index)
+	})
+})
+
+linkToMapOwners.addEventListener('pointerup', () => {
+	window.open('https://camipepe.com')
 })
