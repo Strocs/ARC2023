@@ -96,7 +96,8 @@ function onPointerDown(event) {
 
 	listenerCallback.forEach((handler) => {
 		mapLabels.forEach((icon) => {
-			icon.removeEventListener('pointerup', handler)
+			icon.removeEventListener('touchend', handler)
+			icon.removeEventListener('mouseup', handler)
 		})
 	})
 	listenerCallback.length = 0
@@ -153,7 +154,8 @@ function onPointerUp(event) {
 		}
 
 		listenerCallback.push(pointerUpHandler)
-		icon.addEventListener('pointerup', pointerUpHandler)
+		icon.addEventListener('touchend', pointerUpHandler)
+		icon.addEventListener('mouseup', pointerUpHandler)
 	})
 
 	prevPosition = { dx, dy }
