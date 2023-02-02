@@ -11,11 +11,11 @@ const { styles } = Astro.props
 ---
 
 <nav
-	class={`${styles.backgroundColor} flex flex-col justify-between gap-14 py-24 w-full max-w-md items-center md:items-start md:px-14 h-screen top-0 bottom-0 overflow-auto fixed z-40 motion-reduce:animate-none`}
+	class={`${styles.backgroundColor} grid justify-items-center gap-14 py-24 w-full max-w-md items-center md:place-items-start md:px-14 h-screen top-0 bottom-0 overflow-auto fixed z-40 motion-reduce:animate-none`}
 	style={{ opacity: '0', left: '-448px' }}
 >
-	<div class='flex flex-col gap-20'>
-		<ul class='flex flex-col gap-5 text-4xl text-white'>
+	<div class='grid gap-20'>
+		<ul class='grid gap-5 text-4xl text-white'>
 			{
 				sections.map((section) => (
 					<li class='transition-all duration-200 ease-in hover:underline'>
@@ -24,7 +24,7 @@ const { styles } = Astro.props
 				))
 			}
 		</ul>
-		<div class='flex flex-col gap-6'>
+		<div class='grid gap-6'>
 			<ButtonLink anchor href='/PROGRAMA_ARC_2023.pdf' styles={styles} className='flex md:hidden '>Descarga la Programación</ButtonLink>
 			<SocialNetworks hoverTextColor={styles.hoverTextColor} />
 		</div>
