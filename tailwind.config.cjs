@@ -17,7 +17,6 @@ module.exports = {
 				blue: '#010f70'
 			},
 			backgroundImage: {
-				image: 'url("https://i.ytimg.com/vi/yPWjkLcOvbg/maxresdefault.jpg")',
 				texture: 'url(/textura.svg)',
 				icons: 'url(/bg.svg)'
 			},

@@ -22,26 +22,12 @@ const { title, description } = Astro.props
 		<meta property='og:site_name' content={title} />
 		<!-- <script defer src='/_vercel/insights/script.js'></script> -->
 	</head>
-	<body class='relative h-full scroll-smooth bg-white text-white'>
+	<body class='relative h-full scroll-smooth bg-white text-white '>
 		<!-- <TrackVitals /> -->
 		<slot />
 	</body>
 </html>
 <style is:global>
-	@font-face {
-		font-family: 'Gotham';
-		font-style: normal;
-		font-weight: 100;
-		font-display: swap;
-		src: url('/fonts/Gotham-Thin.woff2') format('woff2');
-	}
-	@font-face {
-		font-family: 'Gotham';
-		font-style: normal;
-		font-weight: 200;
-		font-display: swap;
-		src: url('/fonts/Gotham-XLight.woff2') format('woff2');
-	}
 	@font-face {
 		font-family: 'Gotham';
 		font-style: normal;
@@ -69,13 +55,6 @@ const { title, description } = Astro.props
 		font-weight: 700;
 		font-display: swap;
 		src: url('/fonts/Gotham-Bold.woff2') format('woff2');
-	}
-	@font-face {
-		font-family: 'Gotham';
-		font-style: normal;
-		font-weight: 800;
-		font-display: swap;
-		src: url('/fonts/Gotham-Black.woff2') format('woff2');
 	}
 	@font-face {
 		font-family: 'Gotham';
