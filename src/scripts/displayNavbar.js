@@ -1,4 +1,5 @@
-import { menu, navbar } from './'
+const menu = document.querySelectorAll('input')
+const navbar = document.querySelector('nav')
 
 function showNavBar(show) {
 	if (show) {
