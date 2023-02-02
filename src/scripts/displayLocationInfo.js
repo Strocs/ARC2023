@@ -39,9 +39,8 @@ export function changeElementStyles(index, change) {
 		if (index === 5) {
 			footer.classList.add('text-neutral-700')
 			header.classList.add('text-neutral-700')
-			downloadScheduleBtn.classList.add('text-neutral-700')
-			downloadScheduleBtn.classList.add('border-neutral-700')
-			downloadScheduleBtn.classList.add('border-neutral-700')
+			downloadScheduleBtn.classList.remove('text-white', 'border-white')
+			downloadScheduleBtn.classList.add('text-neutral-700', 'border-neutral-700')
 			downloadScheduleBtn.parentElement.classList.add('bg-neutral-700')
 		}
 	} else {
@@ -59,8 +58,8 @@ export function changeElementStyles(index, change) {
 		if (index === 5) {
 			footer.classList.remove('text-neutral-700')
 			header.classList.remove('text-neutral-700')
-			downloadScheduleBtn.classList.remove('text-neutral-700')
-			downloadScheduleBtn.classList.remove('border-neutral-700')
+			downloadScheduleBtn.classList.add('text-white', 'border-white')
+			downloadScheduleBtn.classList.remove('text-neutral-700', 'border-neutral-700')
 			downloadScheduleBtn.parentElement.classList.remove('bg-neutral-700')
 		}
 	}
