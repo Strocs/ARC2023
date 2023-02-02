@@ -1,4 +1,5 @@
 ---
+import { Icon } from 'astro-icon'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
 import Layout from '../layouts/Layout.astro'
@@ -6,13 +7,13 @@ import Layout from '../layouts/Layout.astro'
 
 <Layout title='Conoce más de esta nueva versión'>
 	<Header />
-	<main class='flex h-full min-h-screen w-full bg-icons bg-contain bg-center bg-no-repeat'>
-		<article
-			class='relative mx-auto flex w-full max-w-7xl flex-wrap justify-center gap-10 py-28 px-4'
-		>
-			<section class='flex w-full max-w-2xl flex-col gap-10 py-10 px-8 text-slate-900'>
+	<main
+		class='relative mx-auto flex min-h-screen flex-wrap justify-center gap-6 bg-contain bg-center bg-no-repeat px-5 py-10 xl:bg-icons'
+	>
+		<article class='grid h-fit w-full max-w-3xl gap-4 text-neutral-700 sm:px-14'>
+			<section class='w-full text-slate-900'>
 				<img src='/ARC23.png' alt='Logotipo Arc 2023' />
-				<div class='flex flex-col gap-3 text-justify'>
+				<div class='grid gap-3 text-justify'>
 					<p>
 						La experiencia de pandemia sanitaria durante los años anteriores significó un cambio en
 						los hábitos de las personas, obligando a un repliegue hacia los espacios privados,
@@ -54,7 +55,53 @@ import Layout from '../layouts/Layout.astro'
 					</p>
 				</div>
 			</section>
+			<section class="flex space-x-4 items-center">
+				<p class='text-xl font-bold'>Contáctanos:</p>
+				<a href='mailto:info@festivalarc.cl' aria-label="Email de Contacto">
+					<Icon name='mdi:email' class='h-8 inline hover:text-main transition-all duration-200' />
+				</a>
+			</section>
+			<section class='grid w-full gap-6'>
+				<p class='text-xl font-bold'>Patrocinadores:</p>
+				<section class='flex flex-shrink-0 flex-wrap items-center justify-center gap-10 px-6'>
+					<img
+						width='300'
+						class='aspect-[150/49] h-14 w-fit'
+						src='/logos/logo-del-fuego.svg'
+						alt='Logo de Del Fuego'
+					/>
+					<img
+						width='265'
+						class='aspect-[53/30] h-14 w-fit'
+						src='/logos/logo-ciudad-capital.svg'
+						alt='Logo de Ciudad Capital'
+					/>
+					<img
+						width='300'
+						class='aspect-[100/31] h-14 w-fit'
+						src='/logos/logo-estacionamiento.svg'
+						alt='Logo de Estacionamientos Subterraneos de La Serena'
+					/>
+					<img width='192' class='aspect-[32/25] h-14 w-fit' src='/logos/logo-chronos.svg' alt='Logo de Chronos Ingeniería' />
+					<img
+						width='2226'
+						class='aspect-[1113/361] h-14 w-fit'
+						src='/logos/logo-transparencia.png'
+						alt='Logo de IMREC'
+					/>
+					<img
+						width='1000'
+						class='aspect-[20/7] h-14 w-fit'
+						src='/logos/logo-portaldisc.png'
+						alt='Logo de Portaldisc'
+					/>
+					<img width='432' class='aspect-[108/29] h-14 w-fit' src='/logos/logo-inacap.png' alt='Logo ded Inacap' />
+				</section>
+			</section>
 		</article>
 	</main>
+	<section class='-mb-2 h-fit sm:-mb-4 md:-mb-6 lg:-mb-7 xl:hidden'>
+		<img class='mx-auto h-fit w-full' src='/bg-mobile.svg' alt='' />
+	</section>
 	<Footer />
 </Layout>

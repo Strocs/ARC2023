@@ -1,14 +1,15 @@
 ---
 import { Icon } from 'astro-icon'
 
-const { links, hoverTextColor, borderColor } = Astro.props
+const { links, hoverTextColor } = Astro.props
 ---
 
-{
-	links.lenght !== 0 && (
-		<ul class='flex'>
-			{links.map(({ url, name }) => (
-				<li class={`border-l-2 ${borderColor} px-2`}>
+<div class='mt-4 grid w-fit grid-flow-col gap-2'>
+	<p class='text-lg font-medium'>Conoce más:</p>
+	<ul class='flex'>
+		{
+			links.map(({ url, name }) => (
+				<li class='border-r-2 px-2'>
 					<a href={url} aria-label='medias'>
 						<Icon
 							class={`${hoverTextColor} h-6 w-6 transition-all duration-200`}
@@ -16,7 +17,7 @@ const { links, hoverTextColor, borderColor } = Astro.props
 						/>
 					</a>
 				</li>
-			))}
-		</ul>
-	)
-}
+			))
+		}
+	</ul>
+</div>

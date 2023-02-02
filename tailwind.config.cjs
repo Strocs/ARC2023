@@ -18,7 +18,8 @@ module.exports = {
 			},
 			backgroundImage: {
 				texture: 'url(/textura.svg)',
-				icons: 'url(/bg.svg)'
+				icons: 'url(/bg.svg)',
+				paper: 'url(/fondo-web.jpg)'
 			},
 			backgroundSize: {
 				xs: '20%',

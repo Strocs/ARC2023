@@ -2,6 +2,20 @@
 import { Icon } from 'astro-icon'
 
 const { styles, locationId, event, eventId } = Astro.props
+
+const hoverText = locationId === 'estacionamiento-plaza-de-armas' ? '' : 'group-hover:text-white'
+const textLight =
+	locationId === 'estacionamiento-plaza-de-armas'
+		? ''
+		: event.id === eventId
+		? 'text-white'
+		: 'text-neutral-400'
+const textDark =
+	locationId === 'estacionamiento-plaza-de-armas'
+		? ''
+		: event.id === eventId
+		? 'text-white'
+		: 'text-neutral-700'
 ---
 
 <li
@@ -14,31 +28,17 @@ const { styles, locationId, event, eventId } = Astro.props
 			<div class='flex w-full items-center gap-1'>
 				<Icon
 					name='mdi:arrow-top-right-thick'
-					class={`w-5 inline flex-shrink-0 self-start ${
-						event.id === eventId ? 'text-white' : 'text-neutral-400'
-					}  group-hover:text-white`}
+					class={`w-5 inline flex-shrink-0 self-start ${textLight}  ${hoverText}`}
 				/>
-				<p
-					class={`font-medium leading-4 group-hover:text-white pr-3 ${
-						event.id === eventId ? 'text-white' : 'text-neutral-700'
-					}`}
-				>
+				<p class={`font-medium leading-4 ${hoverText} pr-3 ${textDark}`}>
 					{event.name}
 				</p>
 			</div>
-			<span
-				class={`${
-					event.id === eventId ? 'text-white' : 'text-neutral-700'
-				}  font-normal text-sm block pr-3 self-start group-hover:text-white`}
-			>
+			<span class={`${textDark}  font-normal text-sm block pr-3 self-start ${hoverText}`}>
 				{event.time}
 			</span>
 		</div>
-		<span
-			class={` ${
-				event.id === eventId ? 'text-white' : 'text-neutral-700'
-			} font-light text-sm block -mt-1 pl-6 group-hover:text-white`}
-		>
+		<span class={` ${textDark} font-light text-sm block -mt-1 pl-6 ${hoverText}`}>
 			{event.category}
 		</span>
 	</a>
