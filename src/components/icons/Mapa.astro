@@ -2597,7 +2597,7 @@
 							class='fill-white'></path>
 					</g>
 					<g
-						class='names hover:scale-125 origin-center hover:translate-x-[-38px] hover:translate-y-[46px] transition duration-200 cursor-pointer ease-in'
+						class='names origin-center hover:scale-125 hover:translate-x-[-38px] hover:translate-y-[46px] transition duration-200 cursor-pointer ease-in'
 						id='svg-municipal'
 					>
 						<path d='m463.11 68.19-3.65-5.97h7.3l-3.65 5.97z' class='cls-3'></path>
@@ -2639,3 +2639,22 @@
 			</g>
 		</g>
 </svg>
+
+<style>
+	@keyframes shake {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(1px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+@media (width < 600px) {
+	.names {
+		animation: shake 1s infinite ease-in;
+	}
+}
+</style>
