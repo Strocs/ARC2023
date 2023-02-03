@@ -53,7 +53,7 @@ export const MUNICIPAL = {
 					id: 'greta',
 					name: 'Greta',
 					subTitle: { title: 'Compañía:', text: 'Corazón de Madera' },
-					category: 'Teatro',
+					category: 'Danza',
 					time: '19:00',
 					image: {
 						url: '/municipal/greta.jpg',
@@ -111,7 +111,7 @@ export const MUNICIPAL = {
 					id: 'en-este-lugar-una-y-otra-vez',
 					name: 'En Este Lugar Una y Otra Vez',
 					subTitle: {},
-					category: 'Teatro',
+					category: 'Danza',
 					time: '19:00',
 					image: {
 						url: '/municipal/en-este-lugar-una-y-otra-vez.jpg',
@@ -119,7 +119,7 @@ export const MUNICIPAL = {
 					},
 					links: [],
 					description:
-						'Un viaje de juegos e imaginarios de nuestras infancias propuestos como una experiencia escénica, para descubrir nuestra identidad y libertad, desarrollada a través de  un montaje que propone un espacio de libertad y tiempo de creación, que nos permite abrazar nuestras diferencias y volcar nuestra imaginación a la realidad.\nLa obra nace de un bello proceso de residencia creativa, realizado entre el laboratorio creativo de la Fundación Círculo Remolino y la Compañía Teatro Merkén.',
+						'En Este Lugar Una y Otra Vez invita a reflexionar sobre el estado del mundo actual, de las relaciones entre pasado, presente y futuro, de la esperanza y el desencanto que se respiran día a día, desde la mirada de dos generaciones diferentes, como la de una hija y su madre o de una estudiante y su profesora. La preocupación de ambas por una sociedad que sienten en decadencia, individualista y segregadora, es sobrellevada a través de un simple juego que realizan con el fin de alimentar la inocencia y esperanzas en el ser humano y su actuar.',
 					list: [
 						{
 							title: 'Intérpretes:',
@@ -161,7 +161,7 @@ export const MUNICIPAL = {
 					id: 'mandragora-el-sueño-continua',
 					name: 'Mandrágora, el sueño continúa',
 					subTitle: {},
-					category: 'Teatro',
+					category: 'Danza',
 					time: '19:00',
 					image: {
 						url: '/municipal/mandrágora-el-sueño-continúa.jpg',
