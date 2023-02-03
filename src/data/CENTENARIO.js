@@ -42,7 +42,7 @@ export const CENTENARIO = {
 					list: []
 				},
 				{
-					id: 'pajarxs-de-tierra',
+					id: 'pájarxs-de-tierra',
 					name: 'Pájarxs de Tierra',
 					subTitle: {},
 					category: 'Música',
@@ -186,7 +186,7 @@ export const CENTENARIO = {
 			day: 'Domingo 12\nDesde las 22:00 horas',
 			events: [
 				{
-					id: 'sequia',
+					id: 'sequía',
 					name: 'Sequía',
 					subTitle: {},
 					category: 'Música',
