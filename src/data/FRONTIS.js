@@ -25,7 +25,7 @@ export const FRONTIS = {
 				{
 					id: 'mushi',
 					name: 'Mushi, un espectáculo de bichos',
-					subTitle: { title: 'Compañía:', text: 'Circo Mushi' },
+					subTitle: { title: 'Presenta:', text: 'Compañía Teatro Gestual de Chile' },
 					category: 'Circo',
 					time: '21:00',
 					image: {
@@ -68,7 +68,7 @@ export const FRONTIS = {
 				{
 					id: 'concierto-el-señor-de-los-anillos',
 					name: 'Concierto El Señor de los Anillos Sinfónico',
-					subTitle: {},
+					subTitle: { title: 'Presenta:', text: 'Orquesta Filarmónica de La Antena y Coro Polifónico Academia Pedro Aguirre Cerda' },
 					category: 'Música',
 					time: '21:00',
 					image: {
@@ -77,30 +77,8 @@ export const FRONTIS = {
 					},
 					links: [],
 					description:
-						'Concierto presentado por la Orquesta Filarmónica de La Antena y coro polifónico Pedro Aguirre Cerda, en el que se realiza un viaje por la obra musical compuesta por Howard Shore, en las cintas El Hobbit y El Señor de los Anillos; la presentación musical se presenta un programa cronológico con las piezas más destacadas de las películas antes mencionadas.\nLa academia de música Pedro Aguirre Cerda es una institución de formación musical gratuita, que por más de 20 años ha impartido clases de forma gratuita en el sector de La Antena de la ciudad de La Serena, siendo esta la piedra angular de todo el movimiento musical sinfónico del sector en el cual se encuentra.',
-					list: [
-						{
-							title: 'Elenco:',
-							text: [
-								'Janet Barriga',
-								'Jessenia Jamet',
-								'Valeska Flores',
-								'Henry Ireland',
-								'Gonzalo Pastén',
-								'Fernando Godoy',
-								'Álvaro Leiva',
-								'Thais Guerrero',
-								'Felipe Gerald',
-								'Cristian Veg',
-								'Carla Ríos',
-								'Felipe Rivera',
-								'Tania Guerrero',
-								'Eduardo Navarrete',
-								'Valentina “Aérea”',
-								'Constanza Guerrero'
-							]
-						}
-					]
+						'Concierto presentado por la Orquesta Filarmónica de La Antena y coro polifónico Pedro Aguirre Cerda, en el que se realiza un viaje por la obra musical compuesta por Howard Shore, en las cintas El Hobbit y El Señor de los Anillos; la presentación musical se presenta un programa cronológico con las piezas más destacadas de las películas antes mencionadas.\n\bSobre la organización\b\nLa academia de música Pedro Aguirre Cerda es una institución de formación musical gratuita, que por más de 20 años ha impartido clases de forma gratuita en el sector de La Antena de la ciudad de La Serena, siendo esta la piedra angular de todo el movimiento musical sinfónico del sector en el cual se encuentra.',
+					list: []
 				}
 			]
 		},
@@ -110,7 +88,7 @@ export const FRONTIS = {
 				{
 					id: 'calle',
 					name: 'Calle',
-					subTitle: {},
+					subTitle: { title: 'Presenta:', text: 'Circo La Cuarta Estación' },
 					category: 'Circo',
 					time: '21:00',
 					image: {
