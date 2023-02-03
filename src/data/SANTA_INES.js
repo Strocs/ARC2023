@@ -164,7 +164,7 @@ export const SANTA_INES = {
 					category: 'Literatura',
 					time: '16:30',
 					image: {
-						url: '/santa-ines/keimara.jpg',
+						url: '/santa-ines/keimara.png',
 						alt: 'Imagen de la Presentación del Libro Hit Latino de Keimara'
 					},
 					links: [],
