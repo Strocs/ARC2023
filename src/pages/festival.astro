@@ -55,25 +55,66 @@ import Layout from '../layouts/Layout.astro'
 					</p>
 				</div>
 			</section>
-			<section class="flex space-x-4 items-center">
+			<section class='flex items-center space-x-4'>
 				<p class='text-xl font-bold'>Contáctanos:</p>
-				<a href='mailto:info@festivalarc.cl' aria-label="Email de Contacto">
+				<a href='mailto:info@festivalarc.cl' aria-label='Email de Contacto'>
 					<Icon name='mdi:email' class='h-8 inline hover:text-main transition-all duration-200' />
 				</a>
 			</section>
-			<section class='grid w-full gap-6'>
-				<p class='text-xl font-bold'>Patrocinadores:</p>
-				<section class='flex flex-shrink-0 flex-wrap items-center justify-center gap-10 px-6'>
+			<section class='my-10 flex flex-col flex-wrap justify-center gap-6 space-y-6 font-medium'>
+				<div
+					class='flex flex-shrink-0 flex-col flex-wrap items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-10'
+				>
+					<p>Organiza:</p>
 					<img
-						width='300'
-						class='aspect-[150/49] h-14 w-fit'
-						src='/logos/logo-del-fuego.svg'
-						alt='Logo de Del Fuego'
+						width='164'
+						class='aspect-[82/75] h-20 w-fit'
+						src='/logos/logo-seremi.svg'
+						alt='Logo del Seremi De La Región de Coquimbo'
 					/>
 					<img
-						width='265'
-						class='aspect-[53/30] h-14 w-fit'
-						src='/logos/logo-ciudad-capital.svg'
+						width='2226'
+						class='aspect-[1113/361] h-20 w-fit'
+						src='/logos/logo-transparencia.png'
+						alt='Logo de IMREC'
+					/>
+				</div>
+				<div
+					class='flex flex-shrink-0 flex-col flex-wrap items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-10'
+				>
+					<p>Colabora:</p>
+					<img
+						width='181'
+						class='aspect-[181/150] h-20 w-fit'
+						src='/logos/logo-muni.svg'
+						alt='Logo del Municipalidad de La Serena'
+					/>
+				</div>
+				<div
+					class='flex flex-shrink-0 flex-col flex-wrap items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-10'
+				>
+					<p>Tickets en:</p>
+					<img
+						width='1000'
+						class='aspect-[20/7] h-14 w-fit'
+						src='/logos/logo-portaldisc.png'
+						alt='Logo de Portaldisc'
+					/>
+				</div>
+				<div
+					class='flex flex-shrink-0 flex-col flex-wrap items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4'
+				>
+					<p>Agradecemos el apoyo de:</p>
+					<img
+						width='867'
+						class='aspect-[867/433] h-20 w-fit'
+						src='/logos/logo-centenario.png'
+						alt='Logo del Teatro Centenario'
+					/>
+					<img
+						width='1024'
+						class='aspect-[4/3] h-24 w-fit'
+						src='/logos/logo-ciudad-capital.png'
 						alt='Logo de Ciudad Capital'
 					/>
 					<img
@@ -82,21 +123,27 @@ import Layout from '../layouts/Layout.astro'
 						src='/logos/logo-estacionamiento.svg'
 						alt='Logo de Estacionamientos Subterraneos de La Serena'
 					/>
-					<img width='192' class='aspect-[32/25] h-14 w-fit' src='/logos/logo-chronos.svg' alt='Logo de Chronos Ingeniería' />
 					<img
-						width='2226'
-						class='aspect-[1113/361] h-14 w-fit'
-						src='/logos/logo-transparencia.png'
-						alt='Logo de IMREC'
+						width='354'
+						class='aspect-[59/38] h-24 w-fit'
+						src='/logos/logo-del-fuego.png'
+						alt='Logo de Del Fuego'
 					/>
+
 					<img
-						width='1000'
-						class='aspect-[20/7] h-14 w-fit'
-						src='/logos/logo-portaldisc.png'
-						alt='Logo de Portaldisc'
+						width='819'
+						class='aspect-[91/32] h-14 w-fit'
+						src='/logos/logo-cronos.png'
+						alt='Logo de Cronos Ingeniería'
 					/>
-					<img width='432' class='aspect-[108/29] h-14 w-fit' src='/logos/logo-inacap.png' alt='Logo ded Inacap' />
-				</section>
+
+					<img
+						width='2560'
+						class='aspect-[2560/731] h-14 w-fit'
+						src='/logos/logo-inacap.png'
+						alt='Logo ded Inacap'
+					/>
+				</div>
 			</section>
 		</article>
 	</main>

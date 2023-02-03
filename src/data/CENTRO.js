@@ -46,7 +46,7 @@ export const CENTRO = {
 			events: [
 				{
 					id: 'danza-afro-y-danza-espectaculo',
-					name: 'Danza Afro y Danza Espectáculo',
+					name: 'Danza Afro y Danza Espectáculo + Clown callejero',
 					subTitle: {
 						title: 'Lugar:',
 						text: 'Intersecciones calles Prat, O`Higgins, Cordovez y Balmaceda'
@@ -59,8 +59,8 @@ export const CENTRO = {
 					},
 					links: [],
 					description:
-						'La intervención de danza Afro consta de conectar al espectador con la visión expresiva de la danza africana como matriz cultural, rítmica y su legado en la afrodiáspora Latinoamérica, la cual difunde historia, estética y energía en su quehacer.\nPor su parte, la propuesta artística comprende un extracto de diferentes montajes de danza espectáculo, de las distintas escuelas y compañías que cada intérprete representa, las cuales reúnen las técnicas de Lirical Jazz, Jazz Dance y Ballroom Dance.\nEstas presentaciones serán acompañadas por un espectáculo clown de intervención callejera que buscará romper la cotidianeidad.',
-					list: [{ title: 'Artista:', text: ['Agrupación Astradanza'] }]
+						'La intervención de danza Afro consta de conectar al espectador con la visión expresiva de la danza africana como matriz cultural, rítmica y su legado en la afrodiáspora Latinoamérica, la cual difunde historia, estética y energía en su quehacer.\nPor su parte, la propuesta artística comprende un extracto de diferentes montajes de danza espectáculo, de las distintas escuelas y compañías que cada intérprete representa, las cuales reúnen las técnicas de Lirical Jazz, Jazz Dance y Ballroom Dance.\nEstas presentaciones serán acompañadas por un espectáculo clown de intervención callejera que buscará romper la cotidianeidad, a cargo del Payaso Metrayeta, artista que cuenta con 28 años de experiencia en esta disciplina, siendo uno de los precursores del concepto “Mimo de Calle” en las calles de la ciudad de La Serena.',
+					list: [{ title: 'Artista:', text: ['Agrupación Astradanza', 'Payaso Metrayeta'] }]
 				}
 			]
 		},

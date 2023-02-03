@@ -25,7 +25,7 @@ export const GAVIOTA = {
 				{
 					id: 'la-cantina-de-la-negra',
 					name: 'La Cantina de la Negra',
-					subTitle: '\bCompañía\b: La Chinchilla Subversiva',
+					subTitle: { title: 'Compañía:', text: 'La Chinchilla Subversiva' },
 					category: 'Teatro',
 					time: '19:00',
 					image: {
@@ -34,7 +34,7 @@ export const GAVIOTA = {
 					},
 					links: [],
 					description:
-						'Una densa bruma oculta los recuerdos de la miseria, alojados en desgastados muebles volcados, vasos derramados y ropajes repartidos que nos presentan un imaginario del mundo de la prostitución. Entre risas, llantos y tacones, se abren paso melodías de dos grandes obras del teatro nacional, “La Negra Ester” de Andrés Pérez y “Amores de Cantina” de Juán Radrigán dando origen a “La Cantina de la Negra”, una historia que se desarrolla en un prostíbulo de pueblo en el que trabajan Berta, Luana, Rosa y La China, quienes, a través de relatos biográficos, removidas por el luto, nos invitan a reflexionar sobre el mundo íntimo de las trabajadoras sexuales, sus dolores, sus heridas y sus anhelos.',
+						'Una densa bruma oculta los recuerdos de la miseria, alojados en desgastados muebles volcados, vasos derramados y ropajes repartidos que nos presentan un imaginario del mundo de la prostitución. Entre risas, llantos y tacones, se abren paso melodías de dos grandes obras del teatro nacional, “La Negra Ester” de Andrés Pérez y “Amores de Cantina” de Juán Radrigán, dando origen a “La Cantina de la Negra”, una historia que se desarrolla en un prostíbulo de pueblo en el que trabajan Berta, Luana, Rosa y La China, quienes, a través de relatos biográficos, removidas por el luto, nos invitan a reflexionar sobre el mundo íntimo de las trabajadoras sexuales, sus dolores, sus heridas y sus anhelos.',
 					list: [
 						{
 							title: 'Elenco:',
@@ -59,7 +59,7 @@ export const GAVIOTA = {
 				{
 					id: 'preciosas-y-ridiculas',
 					name: 'Preciosas y Ridículas',
-					subTitle: 'Compañía: Teatro Gárgaras',
+					subTitle: { title: 'Compañía:', text: 'Teatro Gárgaras' },
 					category: 'Teatro',
 					time: '19:00',
 					image: {
@@ -68,7 +68,7 @@ export const GAVIOTA = {
 					},
 					links: [],
 					description:
-						'Preciosas y Ridículas es una adaptación de  “Las Preciosas Ridículas” de Moliere. Dos doncellas llegan al palacio de su tío el Rey Luis XIV o Rey Sol luego de huir de dos pretendientes. La presencia de estas doncellas incomoda al rey, sus comportamientos están en contra de los modos de la época, el rey maquiavélicamente planea una venganza; contrata a dos Lacayos para que se hagan pasar por hombres sofisticados y elegantes. El Rey Sol desenmascara tal situación, finalmente en un acto de soberbia y moralidad, Luis XIV descarga su pedantería ante un mundo actual evolucionado. Preciosas y Ridículas es una adaptación de  “Las Preciosas Ridículas” de Moliere. El texto fue creado en el siglo XVII esta versión destaca el preciosismo antecesor al feminismo ante la mano autoritaria de Rey Luis XIV, máximo representante de la pedantería antecesor del machismo.\nEsta comedia conserva la fuerza, picardía y movimiento de los personajes protagónicos Madelón y su prima Cathos, junto a sus pretendientes Mascarilla y Jodelet todo entrelazado en la venganza del Rey Sol por la conductas de sus sobrinas, toda esta trama encubierta por Marotte sirvienta del palacio.\nPreciosas y Ridículas pertenece a Teatro Gárgaras fue estrenada en septiembre del 2022 en Centro Cultural Palace de Coquimbo.\nFunción por “ReactivArte”, programa de la Seremi de Culturas de la Región de Coquimbo, en Circo La Cuarta Estación, octubre de 2022.',
+						'Preciosas y Ridículas es una adaptación de  “Las Preciosas Ridículas” de Moliere. Dos doncellas llegan al palacio de su tío el Rey Luis XIV o Rey Sol luego de huir de dos pretendientes. La presencia de estas doncellas incomoda al rey, ya que sus comportamientos están en contra de los modos de la época, por lo que el rey maquiavélicamente planea una venganza; contrata a dos Lacayos para que se hagan pasar por hombres sofisticados y elegantes.\nFinalmente, el Rey Sol desenmascara tal situación, en un acto de soberbia y moralidad y descarga su pedantería ante un mundo actual evolucionado.\nEsta comedia conserva la fuerza, picardía y movimiento de los personajes protagónicos Madelón y su prima Cathos, junto a sus pretendientes Mascarilla y Jodelet todo entrelazado en la venganza del Rey Sol por la conductas de sus sobrinas, toda esta trama encubierta por Marotte sirvienta del palacio.\nPreciosas y Ridículas pertenece a Teatro Gárgaras fue estrenada en septiembre del 2022 en Centro Cultural Palace de Coquimbo.',
 					list: [
 						{
 							title: 'Dirección, Adaptación y Dramaturgia:',
@@ -97,7 +97,7 @@ export const GAVIOTA = {
 				{
 					id: 'los-de-alla',
 					name: 'Los de Allá',
-					subTitle: 'Compañía: Colectivo Con - Zumo Teatro',
+					subTitle: { title: 'Compañía:', text: 'Colectivo Con - Zumo Teatro' },
 					category: 'Teatro',
 					time: '19:00',
 					image: {

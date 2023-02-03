@@ -154,7 +154,7 @@ export const SANTA_INES = {
 					},
 					links: [],
 					description:
-						'El tendedero poético es una técnica de creación colectiva, donde el público asistente puede expresar su ideas, palabras o pensamientos creativos poéticos, para luego intervenir el espacio público con las creaciones de los y las asistentes. Esta actividad busca vincular a la comunidad con la escritura creativa in situ, para luego visibilizar/compartir sus escritos en dicho espacio.',
+						'El tendedero poético es una técnica de creación colectiva, donde el público asistente puede expresar su ideas, palabras o pensamientos creativos poéticos, para luego intervenir el espacio público con las creaciones de los y las asistentes. Esta actividad busca vincular a la comunidad con la escritura creativa in situ, para luego visibilizar/compartir sus escritos en dicho espacio.\n\bDirigido por:\b Pía Barros',
 					list: []
 				},
 				{
@@ -164,7 +164,7 @@ export const SANTA_INES = {
 					category: 'Literatura',
 					time: '16:30',
 					image: {
-						url: '/santa-ines/keimara.jpg',
+						url: '/santa-ines/keimara.png',
 						alt: 'Imagen de la Presentación del Libro Hit Latino de Keimara'
 					},
 					links: [],

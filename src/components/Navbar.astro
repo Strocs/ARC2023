@@ -1,6 +1,9 @@
 ---
+import { ARC_2023 } from 'src/data/ARC_2023'
 import ButtonLink from './ButtonLink.astro'
 import SocialNetworks from './SocialNetworks.astro'
+
+const { locations } = ARC_2023
 
 const sections = [
 	{ name: 'inicio', href: '/' },
@@ -14,18 +17,30 @@ const { styles } = Astro.props
 	class={`${styles.backgroundColor} grid justify-items-center gap-14 py-24 w-full max-w-md items-center md:place-items-start md:px-14 h-screen top-0 bottom-0 overflow-auto fixed z-40 motion-reduce:animate-none`}
 	style={{ opacity: '0', left: '-448px' }}
 >
-	<div class='grid gap-20'>
-		<ul class='grid gap-5 text-4xl text-white'>
+	<div class='grid gap-16 max-w-[18rem]'>
+		<ul class='grid gap-5 text-white'>
 			{
 				sections.map((section) => (
-					<li class='transition-all duration-200 ease-in hover:underline'>
+					<li class='text-4xl transition-all duration-200 ease-in hover:underline'>
 						<a href={section.href}>{section.name.toUpperCase()}</a>
 					</li>
 				))
 			}
 		</ul>
+		<ul class="text-md font-light">
+			<!-- <li class='font-medium'>Cónoce los espacios ARC 2023:</li> -->
+			{
+				locations.map((location) => (
+					<li class='transition-all duration-200 ease-in hover:underline'>
+						<a href={location.id}>• {location.title}</a>
+					</li>
+				))
+			}
+		</ul>
 		<div class='grid gap-6'>
-			<ButtonLink anchor href='/PROGRAMA_ARC_2023.pdf' styles={styles} className='flex md:hidden '>Descarga la Programación</ButtonLink>
+			<ButtonLink anchor href='/PROGRAMA_ARC_2023.pdf' styles={styles} className='flex md:hidden '>
+				Descarga la Programación
+			</ButtonLink>
 			<SocialNetworks hoverTextColor={styles.hoverTextColor} />
 		</div>
 		<div class='flex flex-col py-6 md:hidden'>

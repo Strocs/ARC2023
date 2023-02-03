@@ -103,7 +103,7 @@ export const MUSEO = {
 					name: 'Proyecto Fantasma',
 					subTitle: {},
 					category: 'Largometraje',
-					time: '18:30',
+					time: '18:15',
 					image: {
 						url: '/arqueologico/proyecto-fantasma.jpg',
 						alt: 'Imagen del largometraje Proyecto Fantasma'
@@ -143,7 +143,7 @@ export const MUSEO = {
 					},
 					links: [],
 					description:
-						'A través de un profundo trabajo curatorial realizado por José de Nordenflycht, Doctor en Historia del Arte de la Universidad de Granada y director del departamento de Artes Integradas de la Universidad de Playa Ancha de Valparaíso, se construyó la exposición de artes visuales “R@stros”, en las que participan obras elegidas de ocho artistas visuales de diferentes comunas de la región de Coquimbo, con el fin de representar de alguna forma la territorialidad y la diversidad de expresiones que existen en nuestra región.',
+						'El Festival de las Artes Región de Coquimbo iniciará su XII versión con la exposición R@STROS, exposición temporal que busca abrir un diálogo entre la colección del museo y el lenguaje de las artes visuales contemporáneas. Aquí las piezas se reconocen en su potencial sensible integrándose en una experiencia que activa “miradas”, desde una evidente referencia en muchas de ellas donde emergen rostros que son testimonios de rastros sobre el habitar de un territorio común. Y sobre esa compleja manera de entender lo común es que se instalan las miradas de ocho artistas que viven y trabajan en la Región de Coquimbo, para quienes el patrimonio es creativo, conflictivo e incierto.\nLa exposición estará abierta para todo público y de manera gratuita hasta el 25 de febrero de 2023.\nSobre el curador:\n\bJosé de Nordenflycht (1970)\b Doctor en Historia del Arte por la Universidad de Granada y Director del Departamento de Artes Integradas de la Universidad de Playa Ancha. Ha sido curador de exposiciones en el Museo Nacional de Bellas Artes de Chile, el Museo de Arte Contemporáneo de la Universidad de Chile, el Museo de la Educación Gabriela Mistral, el Museo Palacio Rioja de Viña del Mar, la Galería Macchina de la Escuela de Arte Universidad católica de Chile, el Architekturzentrum en Viena y el Museo della Civiltà Romana en Roma, entre otros espacios.',
 					list: []
 				}
 			]
@@ -166,7 +166,7 @@ export const MUSEO = {
 						{ name: 'facebook', url: 'https://www.facebook.com/macollao/' }
 					],
 					description:
-						'Mi labor como artista visual, desde el año 1993, ha tenido una trayectoria ascendente, logrando realizar una gran cantidad de exposiciones colectivas y más de una docena de muestras individuales, además he obtenido numerosos reconocimientos en concursos de pintura y Fondos de Cultura, entre los que destacan: 3 veces ganador del premio Ricardo Andwanter, ganador del premio Sergio Mortecinos en el concurso internacional de pintura “Valdivia y su rio”, primer premio de la región metropolitana en el concurso de la Cámara de Diputados, primer premio en el concurso “Gabriela Mistral” en La Serena, entre otros. También ejecuté dos proyectos financiados por los Fondos Bicentenario de la Municipalidad de Maipú.\nParalelo a la labor creativa, he desarrollado una amplia labor formativa en talleres de pintura, expresión mural y fotografía en instituciones públicas y privadas, desde el año 1995, actualmente realizo el taller de pintura municipal en Los Vilos.',
+						'\bMauricio Álvarez Collao (1971)\b es artista visual residente en Los Vilos. Licenciado en Arte por la Universidad de Chile. Con varias exposiciones colectivas y más de una docena de muestras individuales, he obtenido reconocimientos como el premio Ricardo Andwanter, el premio Sergio Montecinos y el premio “Gabriela Mistral” en La Serena, entre otros. Paralelo a su labor creativa, ha desarrollado una amplia labor formativa en talleres de pintura, expresión mural y fotografía en instituciones públicas y privadas, actualmente dicta el Taller de Pintura Municipal de Los Vilos.',
 					list: []
 				},
 				{
@@ -184,12 +184,12 @@ export const MUSEO = {
 						{ name: 'facebook', url: 'https://www.facebook.com/claudiaangelica.camposmendoza' }
 					],
 					description:
-						'Estudia Licenciatura en Arte, mención en Dibujo en la Pontificia Universidad Católica de Santiago. Después de titularse, en 1996, se radica en la región de Coquimbo, ejerciendo su oficio en diversos ámbitos como la docencia, ilustración de libros, ejecutora de proyectos artísticos y exposiciones individuales y colectivas.\nEn 2013, se lanza el libro “Arte y Cultura Diaguita Chilena”, de la arqueóloga Paola González, en el que la artista visual se encarga de ilustrar su contenido, con 401 diseños diaguita a mano alzada, con la técnica de acuarela pastosa sobre papel. A partir de esta experiencia, Campos se ha dedicado a profundizar en la temática ancestral a través de la recreación artística de distintas técnicas y formatos, apostando siempre a la construcción de propuestas artísticas, que contribuyen a generar identidad y arraigo nacional.',
+						'\bClaudia Campos (1970)\b es artista visual residente en Illapel. Licenciada en Arte con mención Dibujo en la Escuela de Arte de la UC. Su trabajo ha sido expuesto en exposiciones individuales y colectivas, así como en la ilustración de libros. En esto último destaca su trabajo en el libro "Arte y Cultura Diaguita Chilena" de la arqueóloga Paola González, en el que ilustra 401 diseños Diaguitas a mano alzada en la técnica de acuarela pastosa sobre papel. Su obra profundiza en la temática ancestral a través de la recreación artística en distintas técnicas y formatos apostando siempre a la construcción de propuestas artísticas que contribuyan a generar identidad y arraigo territorial.',
 					list: []
 				},
 				{
-					id: 'paz-alvial-reculé',
-					name: 'Paz Alvial Reculé',
+					id: 'paz-alvial-juan-alvear',
+					name: 'Paz Alvial & Juan Alvear',
 					subTitle: { title: '', text: 'Artista visual de La Serena' },
 					category: 'Artes Visuales',
 					time: '',
@@ -199,7 +199,7 @@ export const MUSEO = {
 					},
 					links: [{ name: 'web', url: ' http://pazalvial.blogspot.com/' }],
 					description:
-						'Comienza su formación artística, estudiando tres años de arquitectura en las Universidades Católica de Valparaíso y Andrés Bello en Santiago. Posteriormente, estudia y se recibe como Licenciada en Arte de la Pontificia Universidad Católica de Chile.\nA lo largo de sus años de ejercicio, se ha dedicado a la pintura en acrílico y óleo principalmente y, además, ha incursionado en libros de artistas e instalaciones. Tras una serie de exposiciones colectivas en La Serena y Coquimbo, el año 2001 participa en el 2° Circuito del Arte “Valle de Elqui”, con una serie de paisajes de la región de Coquimbo, que se exhiben en diferentes espacios, como la Municipalidad de Paihuano, Casa de la Cultura del Molle, Museo de Gualliguaica y Museo Gabriela Mistral en Vicuña.\nEn 2002, expone individualmente “Paisaje Interior”, en la Galería Carmen Codoceo, donde profundiza la temática del paisaje y también desarrolla la exposición individual  “Desnudos Interiores”, invitada por la Universidad Católica del Norte, en la Casa de la Cultura de Coquimbo, donde presenta una serie de desnudos femeninos.\nEn mayo de 2003, participa en la muestra colectiva “Pintoras del Norte Verde”, en la Casa de la Cultura Anahuac, del Parque Metropolitano en Santiago. En estas presentó trabajos con la figura humana, mostrando una fuerte filiación con el post impresionismo y el neo expresionismo.\nEl año 2006 participa con su libro de artista, “Memorial”, en la exposición colectiva itinerante “Fuori Luogo/Out of Place” 7ª, instancia que estuvo presente en diferentes espacios de Italia, como la Biblioteca Casanatense, en Roma; el Centro Per L`Arte Contemporánea Luigi Pecci, en Prato; en Biblioteca Cívica Bertoliana, en Vicenza y en el Museo MART, de Rovereto. Además, en 2007, participa con su libro de artista, “Letras de un Naufragio, en “Islands” 8ª Versión de Libro de Artista, donde vuelve a presentarse en la capital italiana.\nEn 2008 se adjudica el proyecto Fondart Regional, “Retratos de mujer”, que se exhibe en la sala Gabriela Mistral y posteriormente en el Museo del Limarí.\nMás adelante, participa en diversas exposiciones colectivas en la región de Coquimbo, entre ellas el Salón de Julio de 2017, organizado por la Universidad Católica del Norte, junto con presentarse individualmente en el Centro Musicartes, en diciembre de 2016.\nParalelamente a su trabajo creativo, Paz se forma como psicóloga y profundiza en arteterapia y musicoterapia, integrándolas en su trabajo de atención clínica y educacional. Desde 2015 a la fecha trabaja en el Programa de Acompañamiento y Acceso Efectivo a la Educación Superior de la Universidad Católica del Norte.',
+						'\bPaz Alvial (1973) & Juan Alvear (1971) | \bPaz Alvial es artista visual residente en La Serena. Licenciada en Arte de la Pontificia Universidad Católica. Su trabajo se ha dedicado principalmente a la pintura en acrílico y óleo, incursionado igualmente en libros de artista e instalaciones. Sobre el paisaje regional y la figura humana han sido sus obras expuestas en varios lugares de la región, Santiago y el extranjero.\nJunto a Juan Alvear, elabora el proyecto Imágenes Transitorias, en base a fotomontajes digitales e intervención con pintura acrílicas y acuarelas, produciendo imágenes sobre las transformaciones urbanas de Coquimbo.',
 					list: []
 				},
 				{
@@ -218,12 +218,12 @@ export const MUSEO = {
 						{ name: 'facebook', url: 'https://www.facebook.com/claudiasuarezartistavisual' }
 					],
 					description:
-						'Licenciada en Arte con mención en Pintura de la Pontificia Universidad Católica de Chile, Diplomado en Educación Superior UST 2010, Diplomado en Gestión Cultural Territorial UCN 2017 y Premio Regional de las Culturas, las Artes y el Patrimonio 2022.\n‍El redescubrir algunas labores estigmatizadas al sexo femenino como tejer, bordar, coser, cocinar, entre otros, la lleva a utilizarlas como herramientas para desarrollar su obra como artista y también como aporte social. No es casual que estos oficios textiles sean el medio para hablar de temáticas de género, estas labores han sido vistas como oficios y artes menores por un largo período, son realizadas en la intimidad y silencio de los hogares cuando las otras tareas ya están realizadas. El elegir este oficio para realizar su obra pone en valor el rol de las mujeres durante la historia de las comunidades y su conformación, las matriarcas, las abuelas, las hechiceras y curanderas.\n‍Con su obra pretende cuestionar los roles de género impuestos, invita a la reflexión acerca del Deber Ser Mujer en esta sociedad, a partir de su propia experiencia como hija, mujer y madre, narra una especie de bitácora de vida a través de su trabajo, haciendo pública su intimidad, temores y cuestionamientos. Apropiándose de su territorio/cuerpo que habita, su territorio doméstico y finalmente el territorio geográfico, su flora y fauna nativa. El habitar respetuoso con nuestro entorno y los seres con quienes lo compartimos.\n‍Tras un largo período de trabajar desde el territorio inmediato, nuestro cuerpo y entorno doméstico, paradojalmente durante el año 2020 en confinamiento, busca reconocer y dar visibilidad a las organizaciones comunitarias y vecinales lideradas por mujeres que conforman las Ollas Comunes de la conurbación La Serena/Coquimbo, ollas comunes que son el reflejo de una realidad que hicimos invisible. Buscando en su imaginario y recuerdos de su infancia en la década de los 80 y la significancia que ellas tenían para las comunidades, vinculando este imaginario a las canciones infantiles y a los objetos utilitarios que reconoce.\n‍Develar lo oculto, lo que no queremos ver, darle visibilidad a lo que nos molesta o incomoda, insectos con los que no queremos habitar, las malezas de nuestro jardín, los pelos, el hambre, las necesidades, la menstruación, nuestros cuerpos y sus formas diversas de habitarlo.',
+						'\bClaudia Suárez Jansson (1973)\b es artista visual residente en La Serena. Licenciada en Arte con mención Pintura en la Escuela de Arte de la UC. Integra la Agrupación de Intervenciones Textiles Urbanas Las Cuenta Puntos, la Mesa Regional de Educación Artística Región Coquimbo y la Mesa de las Artes de la Visualidad. Su obra resignifica desde una perspectiva de género a las “Labores del Sexo” a través de prácticas domésticas como tejer, bordar, coser y cocinar, transferidas al espacio político de la acción directa. Con una presencia permanente en muestras individuales y colectivas, recibió el Premio Regional de las Culturas, las Artes y el Patrimonio 2022.',
 					list: []
 				},
 				{
 					id: 'aude-gutiérrez-barraza',
-					name: 'Aude Gutiérrez Barraza',
+					name: 'Audé Gutiérrez Barraza',
 					subTitle: { title: '', text: 'Artista visual de Vicuña' },
 					category: 'Artes Visuales',
 					time: '',
@@ -236,12 +236,12 @@ export const MUSEO = {
 						{ name: 'instagram', url: 'https://www.instagram.com/audegutierrezb/?hl=es' }
 					],
 					description:
-						'Su formación profesional la realizó en Dinamarca, Francia y Alemania. Ha presentado numerosas exposiciones colectivas e individuales a nivel nacional, en las principales ciudades de la región de Coquimbo, así como en el exterior.\nColecciones privadas de arte en: España, Dinamarca, Alemania, Francia, Argentina, Estados Unidos, México y Chile. Estudios de pintura, cerámica, fotografía en Dinamarca; taller de grabado en Madrid, España y en Ruan, Francia.',
+						'\bAudé Gutiérrez (1949)\b es artista visual residente en Las Rojas. Nacido en Chañaral y radicado en la región de Coquimbo con más de cuatro décadas de trayectoria, trae a presencia en las retinas de sus espectadores los imaginarios y colores del paisaje nortino. Estudió pintura, grabado y cerámica en Dinamarca y otros países europeos. Ha presentado numerosas exposiciones colectivas e individuales a nivel nacional, en las principales ciudades de la IV Región, así como en el exterior. Sus obras están en colecciones privadas de  España, Dinamarca, Alemania, Francia, Argentina, Estados Unidos, México y Chile.',
 					list: []
 				},
 				{
-					id: 'mauricio-toro-goya',
-					name: 'Mauricio Toro Goya',
+					id: 'toro-goya',
+					name: 'Toro-Goya',
 					subTitle: { title: '', text: 'Fotógrafo y Artista visual de Coquimbo' },
 					category: 'Artes Visuales',
 					time: '',
@@ -251,7 +251,7 @@ export const MUSEO = {
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/torogoya/?hl=es' }],
 					description:
-						'Nacido en Vallenar en 1970, Mauricio Toro Goya vive en Coquimbo, donde ha desarrollado un importante trabajo como fotógrafo y como agente dinamizador cultural. Se ha vinculado a la fotografía desde su niñez, pues fue en su propia casa donde tomó contacto con los procedimientos químicos e hizo su rito de iniciación en el cuarto oscuro.\nDesde muy joven mantiene contacto con Sergio Larraín, el gran fotógrafo referencial chileno, quien pasó las últimas décadas en su exilio místico en el interior de la misma región. A través de un sostenido contacto epistolar, el chileno de Magnum ejerce sobre Toro Goya un papel de guía y maestro.\nPosteriormente, en México, perfecciona la técnica decimonónica del ambrotipo con el maestro Waldemaro Concha, antropólogo y fotógrafo.\nHa realizado más de 40 exposiciones, entre individuales y colectivas, en Latinoamérica Estados Unidos, Asia y Europa, y ha publicado al menos 21 libros con su obra.\nLa obra de Mauricio Toro Goya viene definida por dos constantes que se repiten a lo largo de sus series fotográficas: el uso de procedimientos antiguos, comúnmente el ambrotipo –que tuvo una gran vigencia entre 1852 y 1865-, abordados desde una lógica contemporánea, y el desarrollo de temáticas específicas que se manifiestan a través de puestas en escena de carácter alegórico.\nCon una vocación revisionista de toda la tradición iconográfica latinoamericana, muy especialmente la de matriz religiosa, su obra se construye por una serie de elementos cuidadosamente elegidos que se entremezclan para elaborar una compleja crítica social, histórica, cultural, económica y política que pone en cuestionamiento y tensa los discursos hegemónicos. A través del desnudo, la evocación ritual, el discurso político, la presencia a menudo desdramatizada y festiva de la muerte, la omnipresencia animal o los elementos propios de la cultura de masas y el consumo, su obra se hace cargo de la brutalidad y la violencia que esconden los procesos históricos que dan lugar a la identidad latinoamericana y a la conformación de las historias nacionales.\nLa tradición oral popular, las leyendas, los mitos, las construcciones literarias están entre sus fuentes de inspiración.',
+						'\bToro-Goya (1970)\b nacido en Vallenar es artista visual residente en La Serena. Trabaja desde el soporte fotográfico y sus técnicas tradicionales como el ambrotipo  Con exposiciones individuales y colectivas en América, Asia y Europa, su obra ha sido reconocida con varios premios y distinciones. Destacando el reconocimiento que el año 2016 le hizo el New York Times para el New York Annual Review, donde se seleccionó como uno de los 100 autores fotográficos a nivel mundial. Ha publicado más de una veintena de libros, que incluyen sus investigaciones y algunos de sus más recientes trabajos fotográficos.',
 					list: []
 				},
 				{
@@ -269,7 +269,7 @@ export const MUSEO = {
 						{ name: 'facebook', url: 'https://www.facebook.com/talleralfafotoartestatiana/' }
 					],
 					description:
-						'Nacida en el campamento minero de Chuquicamata, al norte de Chile (actualmente deshabitado), lugar en donde vivió hasta los siete años. Tras la muerte de su padre en 1987, se traslada junto a su madre a la ciudad de La Serena, Chile.\nSus padres y ancestros son originarios de la región de Coquimbo, de los valles del Limarí y de Elqui, y el 2019 es reconocida legalmente como descendiente diaguita por parte de su lado paterno.\nSu inquietud por las artes visuales comienza en su adolescencia, motivada por sus propios cuestionamientos e ideales rupturistas de las normas tradicionales dada por la sociedad de consumo, que la lleva a una búsqueda más profunda de su propia identidad.\nEn el año 2002, toma la decisión de trasladarse a Viña del Mar para estudiar la carrera Técnica de Fotografía en el CFT Ciartes Incacea, con el fin de profundizar sus inquietudes y desarrollar una mirada artística.\nDesde el 2004 sus obras han sido presentadas en diversas exposiciones colectivas en Chile, tal como Valparaíso, Punta Arenas, Santiago, Concepción, Antofagasta, La Serena, Coquimbo y Ovalle.\nHa destacado su participación en actividades organizadas en festivales como FIFV, FOCCO Y ARC en Chile. Además, ha desarrollado varios proyectos como gestora y co-ejecutora de proyectos financiados por el FONDART Regional y Nacional.\nTambién ha sido cofundadora del colectivo VAF (Viceral Acción Fotográfica) y Colectivo FIRC (Fotógrafos independientes de la región de Coquimbo).',
+						'\bTatiana Alfaro (1979)\b, artista visual residente en La Serena. Sus ancestros son originarios de los valles del Limarí y de Elqui, siendo reconocida como descendiente diaguita por parte de su lado paterno. Es licenciada en Fotografía en el Instituto Incacea/Ciarte. Participa activamente en festivales como FIFV, FOCCO y ARC. Ha sido cofundadora del colectivo Visceral Acción Fotográfica VAF y el Colectivo Fotógrafos independientes de la Región de Coquimbo, FIRC. Es autora de varios fotolibros, entre los que destaca “Paisaje Sugerido”.',
 					list: []
 				},
 				{
@@ -290,7 +290,7 @@ export const MUSEO = {
 						{ name: 'instagram', url: 'https://www.instagram.com/oskarhuertafoto/?hl=es' }
 					],
 					description:
-						'Vive y trabaja en Ovalle (1977). Licenciado en Fotografía Publicitaria en el instituto Incacea/Ciartes, donde recibe formación académica de parte de Jorge Gronemeyer, Gastón Salas y Alonso Yañez, entre otros (Viña del Mar 2005).\nSeleccionado en residencias y talleres con Claudi Carrera (España), Eunice Adorno (México), Luis Gonzales Palma (Guatemala), Fernando Montiel Klint (México), Carla Moller (Chile), Pio Figueiroa (Brasil), Bertrand Meunier (Francia) y Daniel Sosa (Uruguay).\nHa participado en diversas exposiciones colectivas, desde el año 2004 en Valparaíso, Viña del Mar, La Serena y Coquimbo, exponiendo, entre otros lugares, en el Parque Cultural ex Cárcel, como parte de las actividades del Festival Internacional de Fotografía de Valparaíso 2013 con exposición Utopía Colectiva (Valparaíso), Centro Cultural Iglesia Santa Inés con obra Habitat (La Serena) , Centro Cultural Palace, con obra Ciudad Fisura y Casa de las Artes, con obra Memoria Sensorial (Coquimbo).',
+						'\bOskar Huerta (1977)\b, artista visual residente en Ovalle. Es Licenciado en Fotografía Publicitaria en el instituto Incacea/Ciartes, orientando su trabajo hacia el campo formal del arte. Ha participado en diversas exposiciones colectivas en Valparaíso, Viña del Mar, La Serena, Coquimbo, Concepción y Santiago. Ha sido cofundador del colectivo Visceral Acción Fotográfica VAF y el Colectivo Fotógrafos Independientes de la Región de Coquimbo, FIRC. Es autor de varios fotolibros, entre los que destaca “Umbra”.',
 					list: []
 				}
 			]
