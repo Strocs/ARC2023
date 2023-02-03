@@ -32,7 +32,7 @@ const { styles } = Astro.props
 			{
 				locations.map((location) => (
 					<li class='transition-all duration-200 ease-in hover:underline'>
-						<a href={location.id}>• {location.title}</a>
+						<a href={`/${location.id}`}>• {location.title}</a>
 					</li>
 				))
 			}
