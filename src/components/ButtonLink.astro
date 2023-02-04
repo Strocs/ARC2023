@@ -6,16 +6,16 @@ const {
 	className,
 	invertedColors,
 	style,
-	id,
+	id = '',
 	download
 } = Astro.props
 
 const Element = anchor ? 'a' : 'button'
 
-const border = id === 'estacionamiento-plaza-de-armas' ? 'border-neutral-700' : invertedColors ? styles.borderColor : 'border-white'
-const text = id === 'estacionamiento-plaza-de-armas' ? 'text-neutral-700' : invertedColors ? styles.textColor : 'text-white'
+const border = id.includes('plaza') ? 'border-neutral-700' : invertedColors ? styles.borderColor : 'border-white'
+const text = id.includes('plaza') ? 'text-neutral-700' : invertedColors ? styles.textColor : 'text-white'
 const background = invertedColors ? 'bg-white' : styles.backgroundColor
-const shadow = id === 'estacionamiento-plaza-de-armas' ? 'bg-neutral-700' : invertedColors ? styles.backgroundColor : 'bg-white'
+const shadow = id.includes('plaza') ? 'bg-neutral-700' : invertedColors ? styles.backgroundColor : 'bg-white'
 ---
 
 <Element
