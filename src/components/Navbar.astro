@@ -10,15 +10,17 @@ const sections = [
 	{ name: 'festival', href: '/festival' }
 ]
 
-const { styles } = Astro.props
+const { styles, locationId = '' } = Astro.props
+
+const text = locationId.includes('estacionamiento') ? 'text-neutral-700' : 'text-white'
 ---
 
 <nav
-	class={`${styles.backgroundColor} grid justify-items-center gap-14 py-24 w-full max-w-md items-center md:place-items-start md:px-14 h-screen top-0 bottom-0 overflow-auto fixed z-40 motion-reduce:animate-none`}
+	class={`${styles.backgroundColor} ${text} grid justify-items-center gap-14 py-24 w-full max-w-md items-center md:place-items-start md:px-14 h-screen top-0 bottom-0 overflow-auto fixed z-40 motion-reduce:animate-none`}
 	style={{ opacity: '0', left: '-448px' }}
 >
 	<div class='grid gap-16 max-w-[18rem]'>
-		<ul class='grid gap-5 text-white'>
+		<ul class='grid gap-5'>
 			{
 				sections.map((section) => (
 					<li class='text-4xl transition-all duration-200 ease-in hover:underline'>
@@ -27,11 +29,10 @@ const { styles } = Astro.props
 				))
 			}
 		</ul>
-		<ul class="text-md font-light">
-			<!-- <li class='font-medium'>Cónoce los espacios ARC 2023:</li> -->
+		<ul class="text-md font-light grid gap-2">
 			{
 				locations.map((location) => (
-					<li class='transition-all duration-200 ease-in hover:underline'>
+					<li class='transition-all duration-200 ease-in hover:underline leading-5'>
 						<a href={`/${location.id}`}>• {location.title}</a>
 					</li>
 				))
@@ -41,7 +42,7 @@ const { styles } = Astro.props
 			<ButtonLink anchor href='/PROGRAMA_ARC23.pdf' styles={styles} className='flex md:hidden '>
 				Descarga la Programación
 			</ButtonLink>
-			<SocialNetworks hoverTextColor={styles.hoverTextColor} />
+			<SocialNetworks locationId={locationId} hoverTextColor={styles.hoverTextColor} />
 		</div>
 		<div class='flex flex-col py-6 md:hidden'>
 			<p class='text-lg font-bold'>ARC 2023</p>

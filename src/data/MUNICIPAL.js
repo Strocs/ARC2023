@@ -48,14 +48,14 @@ export const MUNICIPAL = {
 					]
 				},
 				{
-					id: 'greta',
-					name: 'Greta',
+					id: 'grieta',
+					name: 'Grieta',
 					subTitle: { title: 'Compañía:', text: 'Corazón de Madera' },
 					category: 'Danza',
 					time: '19:00',
 					image: {
-						url: '/municipal/greta.jpg',
-						alt: 'Imagen de la presentación de Greta'
+						url: '/municipal/grieta.jpg',
+						alt: 'Imagen de la presentación de Grieta'
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/laurenciaflamenca/' }],
 					description:
