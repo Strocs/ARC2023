@@ -39,7 +39,7 @@ const text = locationId.includes('estacionamiento') ? 'text-neutral-700' : 'text
 			}
 		</ul>
 		<div class='grid gap-6'>
-			<ButtonLink anchor href='/PROGRAMA_ARC23.pdf' styles={styles} className='flex md:hidden '>
+			<ButtonLink id={locationId} anchor href='/PROGRAMA_ARC23.pdf' styles={styles} className='flex md:hidden '>
 				Descarga la Programación
 			</ButtonLink>
 			<SocialNetworks locationId={locationId} hoverTextColor={styles.hoverTextColor} />
