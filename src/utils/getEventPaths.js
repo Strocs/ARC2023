@@ -8,7 +8,8 @@ export function getEventsPath() {
 			schedule.events.map((event) => {
 				return {
 					location: location.id,
-					event: event.id
+					event: event.id,
+					eventName: event.name
 				}
 			})
 		)

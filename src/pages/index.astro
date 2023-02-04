@@ -7,28 +7,30 @@ import MapGuide from '../components/MapGuide.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import ButtonLink from '@components/ButtonLink.astro'
+import { SearchEvents } from '@components/SearchEvents'
 const { title, description, locations } = ARC_2023
 ---
 
-<Layout title={title} description={description}>
-	<Header />
-	<main id='main-page' class='relative h-auto w-full overflow-hidden'>
-		{locations.map((location) => <LocationInfo query={location.id} />)}
-		<Map />
-		<ButtonLink
-			id='reset-button'
-			style={{ opacity: '0' }}
-			invertedColors
-			className='fixed mx-auto bottom-16 md:bottom-20 left-0 right-0'
-		>
-			Volver a Centrar
-		</ButtonLink>
-		<MapGuide />
-	</main>
-	<Footer fixed />
-</Layout>
+  <Layout title={title} description={description}>
+    <Header />
+    <main id='main-page' class='relative h-auto w-full overflow-hidden'>
+      {locations.map((location) => <LocationInfo query={location.id} />)}
+      <Map />
+      <ButtonLink
+        id='reset-button'
+        style={{ opacity: '0' }}
+        invertedColors
+        className='fixed mx-auto bottom-16 md:bottom-20 left-0 right-0'
+      >
+        Volver a Centrar
+      </ButtonLink>
+      <SearchEvents client:load />
+      <MapGuide />
+    </main>
+    <Footer fixed />
+  </Layout>
 
-<script src='../scripts/getDOMElements.js'></script>
-<script src='../scripts/displayLocationInfo.js'></script>
-<script src='../scripts/mapScripts.js'></script>
-<script src='../scripts/displayNavbar.js'></script>
+    <script src='../scripts/getDOMElements.js' />
+    <script src='../scripts/displayLocationInfo.js' />
+    <script src='../scripts/mapScripts.js' />
+    <script src='../scripts/displayNavbar.js' />
