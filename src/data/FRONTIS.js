@@ -37,6 +37,10 @@ export const FRONTIS = {
 					description:
 						'Obra familiar sobre insectos,  protagonizada por la mosca y su amiga. Esta mosca se siente más identificada con las abejas que con las moscas y junto con su amiga se embarcan en aventuras inolvidables, en donde los talentosos amigos de la mosca/abeja orientan a nuestros protagonistas  a través de los pastos al encuentro de momentos que jamás olvidarán.',
 					list: [
+						{ title: 'Dirección:', text: ['Juan Paulo Argandoña'] },
+						{ title: 'Dramaturgia:', text: ['Felipe Rivera'] },
+						{ title: 'Coreografía:', text: ['Tania Guerrero'] },
+						{ title: 'Músicos:', text: ['Felipe Geraldo', 'Pedro Rojas'] },
 						{
 							title: 'Elenco:',
 							text: [
@@ -44,17 +48,10 @@ export const FRONTIS = {
 								'Jessenia Jamet',
 								'Valeska Flores',
 								'Henry Ireland',
-								'Gonzalo Pastén',
-								'Fernando Godoy',
+								'Gonzalo Pasten',
 								'Álvaro Leiva',
-								'Thais Guerrero',
-								'Felipe Gerald',
-								'Cristian Veg',
+								'Cristian Vega',
 								'Carla Ríos',
-								'Felipe Rivera',
-								'Tania Guerrero',
-								'Eduardo Navarrete',
-								'Valentina “Aérea”',
 								'Constanza Guerrero'
 							]
 						}
@@ -68,14 +65,20 @@ export const FRONTIS = {
 				{
 					id: 'concierto-el-señor-de-los-anillos',
 					name: 'Concierto El Señor de los Anillos Sinfónico',
-					subTitle: { title: 'Presenta:', text: 'Orquesta Filarmónica de La Antena y Coro Polifónico Academia Pedro Aguirre Cerda' },
+					subTitle: {
+						title: 'Presenta:',
+						text: 'Orquesta Filarmónica de La Antena y Coro Polifónico Academia Pedro Aguirre Cerda'
+					},
 					category: 'Música',
 					time: '21:00',
 					image: {
 						url: '/frontis/orquesta-PAC.jpg',
 						alt: 'Imagen de la presentación del Concierto El Señor de los Anillos Sinfónico'
 					},
-					links: [],
+					links: [
+						{ name: 'instagram', url: 'https://www.instagram.com/orquesta_filarmonica_ofi/' },
+						{ name: 'instagram', url: 'https://www.instagram.com/academiapac/' }
+					],
 					description:
 						'Concierto presentado por la Orquesta Filarmónica de La Antena y coro polifónico Pedro Aguirre Cerda, en el que se realiza un viaje por la obra musical compuesta por Howard Shore, en las cintas El Hobbit y El Señor de los Anillos; la presentación musical se presenta un programa cronológico con las piezas más destacadas de las películas antes mencionadas.\n\bSobre la organización\b\nLa academia de música Pedro Aguirre Cerda es una institución de formación musical gratuita, que por más de 20 años ha impartido clases de forma gratuita en el sector de La Antena de la ciudad de La Serena, siendo esta la piedra angular de todo el movimiento musical sinfónico del sector en el cual se encuentra.',
 					list: []
@@ -95,7 +98,7 @@ export const FRONTIS = {
 						url: '/frontis/calle.jpg',
 						alt: 'Imagen de la presentación de Calle, obra de circo contemporáneo'
 					},
-					links: [],
+					links: [{ name: 'instagram', url: 'https://www.instagram.com/circolacuartaestacion/' }],
 					description:
 						'“Calle” es una obra dramática de circo contemporáneo, inspirada en relatos reales de abandono, vulnerabilidad y la violencia psicológica - física que podemos ver día a día en las poblaciones.\nLos personajes abordan las diferentes temáticas de la obra mediante el lenguaje del gesto, físico y expresivo, apoyado principalmente de coreografías grupales.',
 					list: [

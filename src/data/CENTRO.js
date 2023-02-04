@@ -45,8 +45,8 @@ export const CENTRO = {
 			day: 'Sábado 11\nDesde las 11:00 horas',
 			events: [
 				{
-					id: 'danza-afro-y-danza-espectaculo',
-					name: 'Danza Afro y Danza Espectáculo + Clown callejero',
+					id: 'danza-afro-danza-espectáculo-clown-callejero',
+					name: 'Danza Afro + Danza Espectáculo + Clown callejero',
 					subTitle: {
 						title: 'Lugar:',
 						text: 'Intersecciones calles Prat, O`Higgins, Cordovez y Balmaceda'
@@ -57,10 +57,10 @@ export const CENTRO = {
 						url: '/centro/danza-afro.jpg',
 						alt: 'Imagen de la Intervenciones de Danza Afro y Danza Espectáculo'
 					},
-					links: [],
+					links: [{ name: 'instagram', url: 'https://www.instagram.com/astradanzachile/' }],
 					description:
-						'La intervención de danza Afro consta de conectar al espectador con la visión expresiva de la danza africana como matriz cultural, rítmica y su legado en la afrodiáspora Latinoamérica, la cual difunde historia, estética y energía en su quehacer.\nPor su parte, la propuesta artística comprende un extracto de diferentes montajes de danza espectáculo, de las distintas escuelas y compañías que cada intérprete representa, las cuales reúnen las técnicas de Lirical Jazz, Jazz Dance y Ballroom Dance.\nEstas presentaciones serán acompañadas por un espectáculo clown de intervención callejera que buscará romper la cotidianeidad, a cargo del Payaso Metrayeta, artista que cuenta con 28 años de experiencia en esta disciplina, siendo uno de los precursores del concepto “Mimo de Calle” en las calles de la ciudad de La Serena.',
-					list: [{ title: 'Artista:', text: ['Agrupación Astradanza', 'Payaso Metrayeta'] }]
+						'La intervención de danza Afro consta de conectar al espectador con la visión expresiva de la danza africana como matriz cultural, rítmica y su legado en la afrodiáspora Latinoamérica, la cual difunde historia, estética y energía en su quehacer.\nPor su parte, la propuesta artística comprende un extracto de diferentes montajes de danza espectáculo, de las distintas escuelas y compañías que cada intérprete representa, las cuales reúnen las técnicas de Lirical Jazz, Jazz Dance y Ballroom Dance.\nEstas presentaciones serán acompañadas por un espectáculo clown de intervención callejera que buscará romper la cotidianeidad, a cargo del Metrayeta Clown, artista que cuenta con 28 años de experiencia en esta disciplina, siendo uno de los precursores del concepto “Mimo de Calle” en las calles de la ciudad de La Serena.',
+					list: [{ title: 'Artista:', text: ['Agrupación Astradanza', 'Metrayeta Clown'] }]
 				}
 			]
 		},
@@ -92,7 +92,7 @@ export const CENTRO = {
 						url: '/centro/la-pelea-del-siglo.jpg',
 						alt: 'Imagen de la presentación de La Pelea del Siglo'
 					},
-					links: [],
+					links: [{ name: 'instagram', url: 'https://www.instagram.com/cia.jengibreyzufrina/' }],
 					description:
 						'Espectáculo basado en la técnica de teatro de clown, que nos habla sobre la necesidad de la autodefensa en las mujeres. Entre risas y errores, Jengibre anima a Zufrina a aprender a defenderse.\nJengibre está convencida de que todas las mujeres tienen que aprender a defenderse de quien quiera hacerles daño, así es que decide enseñarle toda su técnica de boxeo a Zufrina, quien paso a paso seguirá todos sus consejos y se preparará para… La pelea del siglo.',
 					list: [

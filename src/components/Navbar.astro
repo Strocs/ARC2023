@@ -32,13 +32,13 @@ const { styles } = Astro.props
 			{
 				locations.map((location) => (
 					<li class='transition-all duration-200 ease-in hover:underline'>
-						<a href={location.id}>• {location.title}</a>
+						<a href={`/${location.id}`}>• {location.title}</a>
 					</li>
 				))
 			}
 		</ul>
 		<div class='grid gap-6'>
-			<ButtonLink anchor href='/PROGRAMA_ARC_2023.pdf' styles={styles} className='flex md:hidden '>
+			<ButtonLink anchor href='/PROGRAMA_ARC23.pdf' styles={styles} className='flex md:hidden '>
 				Descarga la Programación
 			</ButtonLink>
 			<SocialNetworks hoverTextColor={styles.hoverTextColor} />

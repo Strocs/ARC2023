@@ -20,19 +20,10 @@ const text = id === 'estacionamiento-plaza-de-armas' ? 'text-neutral-700' : ''
 			<ToggleMenuButton id='menu' />
 			<LogoWithText styles={styles} />
 		</div>
-		<div class='flex space-x-4 sm:space-x-14 items-center justify-end'>
-			<SearchEvents client:load />
-			<ButtonLink
-				id={id}
-				anchor
-				href='/PROGRAMA_ARC_2023.pdf'
-				styles={styles}
-				className='hidden md:flex'
-			>
-				Descarga la Programación
-			</ButtonLink>
-			<ToggleMenuButton mobile id='menu-mobile' />
-		</div>
+		<ButtonLink id={id} anchor href='/PROGRAMA_ARC23.pdf' styles={styles} className='hidden md:flex'>
+			Descarga la Programación
+		</ButtonLink>
+		<ToggleMenuButton mobile id='menu-mobile' />
 	</div>
 </header>
 <Navbar styles={styles} />

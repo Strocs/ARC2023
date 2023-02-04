@@ -35,7 +35,7 @@ export const AZOTEA = {
 					list: []
 				},
 				{
-					id: 'ria-orange',
+					id: 'ría-orange',
 					name: 'Ría  Orange',
 					subTitle: {},
 					category: 'Música',
@@ -50,7 +50,7 @@ export const AZOTEA = {
 					list: []
 				},
 				{
-					id: 'duerme-&-cae!',
+					id: 'duerme-y-cae',
 					name: 'Duerme & Cae!',
 					subTitle: {},
 					category: 'Música',
@@ -269,7 +269,7 @@ export const AZOTEA = {
 					list: []
 				},
 				{
-					id: 'camila-guaman',
+					id: 'camila-guamán',
 					name: 'Camila Guamán',
 					subTitle: {},
 					category: 'Ilustración',
@@ -537,7 +537,7 @@ export const AZOTEA = {
 					list: []
 				},
 				{
-					id: 'nino-pan',
+					id: 'niño-pan',
 					name: 'Niño Pan',
 					subTitle: {},
 					category: 'Ilustración',
