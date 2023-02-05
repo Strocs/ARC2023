@@ -112,7 +112,6 @@ function onPointerDown(event) {
 }
 
 function onPointerMove(event) {
-	event.preventDefault()
 	const points = getPoints(event)
 	const averagePoint = points.reduce(getMidpoint)
 	const averageLastPoint = lastPoints.reduce(getMidpoint)
