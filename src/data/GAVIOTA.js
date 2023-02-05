@@ -28,6 +28,7 @@ export const GAVIOTA = {
 					subTitle: { title: 'Compañía:', text: 'La Chinchilla Subversiva' },
 					category: 'Teatro',
 					time: '19:00',
+					timeTable: { day: 'el Viernes 10', time: 'a las 19:00 horas' },
 					image: {
 						url: '/gaviota/la-cantina-de-la-negra.jpg',
 						alt: 'Imagen de la presentación de la obra teatral La Cantina de la Negra'
@@ -64,6 +65,7 @@ export const GAVIOTA = {
 					subTitle: { title: 'Compañía:', text: 'Teatro Gárgaras' },
 					category: 'Teatro',
 					time: '19:00',
+					timeTable: { day: 'el Sábado 11', time: 'a las 19:00 horas' },
 					image: {
 						url: '/gaviota/preciosas-y-ridiculas.jpg',
 						alt: 'Imagen de la presentación de la obra teatral Preciosas y Ridículas'
@@ -102,6 +104,7 @@ export const GAVIOTA = {
 					subTitle: { title: 'Compañía:', text: 'Colectivo Con - Zumo Teatro' },
 					category: 'Teatro',
 					time: '19:00',
+					timeTable: { day: 'el Domingo 12', time: 'a las 19:00 horas' },
 					image: {
 						url: '/gaviota/los-de-alla.jpg',
 						alt: 'Imagen de la presentación de la obra teatral Los de Allá'

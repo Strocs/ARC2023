@@ -28,7 +28,7 @@ const { id, title, address, extract, description, links, styles, image, tickets 
 	<PageContainer backgroundColor={styles.backgroundColor} borderColor={styles.borderColor}>
 		<Fragment slot='first-section'>
 			<Title>{title}</Title>
-			<span class='text-xl'>{address}</span>
+			<span class='text-xl leading-6'>{address}</span>
 			{
 				!!tickets.url && (
 					<ButtonLink invertedColors anchor href={tickets.url} styles={styles} className='my-8'>

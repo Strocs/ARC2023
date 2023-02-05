@@ -28,6 +28,7 @@ export const CENTENARIO = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Viernes 10', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/moyanovsky.jpg',
 						alt: 'Imagen de la banda regional Sequía'
@@ -47,6 +48,7 @@ export const CENTENARIO = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Viernes 10', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/pajarxs.jpg',
 						alt: 'Imagen de la banda regional Pájaros de Tierra'
@@ -66,6 +68,7 @@ export const CENTENARIO = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Viernes 10', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/camila-moreno.jpg',
 						alt: 'Imagen de la artista nacional Camila Moreno'
@@ -96,6 +99,7 @@ export const CENTENARIO = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Sábado 11', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/luminar.jpg',
 						alt: 'Imagen de la banda nacional Ases Falsos'
@@ -115,6 +119,7 @@ export const CENTENARIO = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Sábado 11', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/hesper.jpg',
 						alt: 'Imagen de la banda regional Sequía'
@@ -146,6 +151,7 @@ export const CENTENARIO = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Sábado 11', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/marineros.jpg',
 						alt: 'Imagen de la banda nacional Marineros'
@@ -167,6 +173,7 @@ export const CENTENARIO = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Sábado 11', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/yorka.jpg',
 						alt: 'Imagen de la banda nacional Yorka'
@@ -191,6 +198,7 @@ export const CENTENARIO = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Domingo 12', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/sequia.jpg',
 						alt: 'Imagen de la banda regional Sequía'
@@ -216,6 +224,7 @@ export const CENTENARIO = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Domingo 12', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/flamantes.jpg',
 						alt: 'Imagen de la banda regional Flamantës'
@@ -241,6 +250,7 @@ export const CENTENARIO = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Domingo 12', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/ases-falsos.jpg',
 						alt: 'Imagen de la banda nacional Ases Falsos'

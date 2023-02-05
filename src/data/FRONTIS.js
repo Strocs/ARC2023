@@ -28,6 +28,7 @@ export const FRONTIS = {
 					subTitle: { title: 'Presenta:', text: 'Compañía Teatro Gestual de Chile' },
 					category: 'Circo',
 					time: '21:00',
+					timeTable: { day: 'el Viernes 10', time: 'a las 21:00 horas' },
 					image: {
 						url: '/frontis/mushi.jpg',
 						position: { marginTop: '2rem' },
@@ -71,6 +72,7 @@ export const FRONTIS = {
 					},
 					category: 'Música',
 					time: '21:00',
+					timeTable: { day: 'el Sábado 11', time: 'a las 21:00 horas' },
 					image: {
 						url: '/frontis/orquesta-PAC.jpg',
 						alt: 'Imagen de la presentación del Concierto El Señor de los Anillos Sinfónico'
@@ -94,6 +96,7 @@ export const FRONTIS = {
 					subTitle: { title: 'Presenta:', text: 'Circo La Cuarta Estación' },
 					category: 'Circo',
 					time: '21:00',
+					timeTable: { day: 'el Domingo 12', time: 'a las 21:00 horas' },
 					image: {
 						url: '/frontis/calle.jpg',
 						alt: 'Imagen de la presentación de Calle, obra de circo contemporáneo'

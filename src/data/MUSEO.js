@@ -28,6 +28,7 @@ export const MUSEO = {
 					subTitle: {},
 					category: 'Documental',
 					time: '18:00',
+					timeTable: { day: 'el Viernes 10', time: 'a las 18:00 horas' },
 					image: {
 						url: '/arqueologico/arte-del-tiempo.jpg',
 						alt: 'Imagen del documental El Arte del Tiempo'
@@ -51,6 +52,7 @@ export const MUSEO = {
 					subTitle: {},
 					category: 'Documental',
 					time: '19:15',
+					timeTable: { day: 'el Viernes 10', time: 'a las 19:15 horas' },
 					image: {
 						url: '/arqueologico/aqui-se-construye.jpg',
 						alt: 'Imagen del documental Aquí se Construye (o Ya no existe el lugar donde nací)'
@@ -78,6 +80,7 @@ export const MUSEO = {
 					subTitle: {},
 					category: 'Cortometraje',
 					time: '18:00',
+					timeTable: { day: 'el Sábado 11', time: 'a las 18:00 horas' },
 					image: {
 						url: '/arqueologico/redencion.jpg',
 						alt: 'Imagen del cortometraje Redención'
@@ -104,6 +107,7 @@ export const MUSEO = {
 					subTitle: {},
 					category: 'Largometraje',
 					time: '18:15',
+					timeTable: { day: 'el Sábado 11', time: 'a las 18:15 horas' },
 					image: {
 						url: '/arqueologico/proyecto-fantasma.jpg',
 						alt: 'Imagen del largometraje Proyecto Fantasma'
@@ -137,6 +141,7 @@ export const MUSEO = {
 					subTitle: {},
 					category: 'Exposición de Artes Visuales',
 					time: '',
+					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/r@stros.jpg',
 						alt: 'Afiche de la Exposición de Artes Visuales R@stros'
@@ -157,6 +162,7 @@ export const MUSEO = {
 					subTitle: { title: '', text: 'Artista visual de Los Vilos' },
 					category: 'Artes Visuales',
 					time: '',
+					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/ALVAREZ.jpg',
 						alt: 'Imagen del artista visual Mauricio Álvarez Collao'
@@ -175,6 +181,7 @@ export const MUSEO = {
 					subTitle: { title: '', text: 'Artista visual de Illapel' },
 					category: 'Artes Visuales',
 					time: '',
+					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/CAMPOS.jpg',
 						alt: 'Imagen de la artista visual Claudia Campos Mendoza'
@@ -193,6 +200,7 @@ export const MUSEO = {
 					subTitle: { title: '', text: 'Artista visual de La Serena' },
 					category: 'Artes Visuales',
 					time: '',
+					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/ALVIAL.jpg',
 						alt: 'Imagen de la artista visual Paz Alvial Reculé'
@@ -208,6 +216,7 @@ export const MUSEO = {
 					subTitle: { title: '', text: 'Artista visual de Coquimbo' },
 					category: 'Artes Visuales',
 					time: '',
+					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/SUÁREZ.jpg',
 						alt: 'Imagen de la artista visual Claudia Suárez Jansson'
@@ -227,6 +236,7 @@ export const MUSEO = {
 					subTitle: { title: '', text: 'Artista visual de Vicuña' },
 					category: 'Artes Visuales',
 					time: '',
+					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/GUTIÉRREZ.jpg',
 						alt: 'Imagen de la artista visual Aude Gutiérrez Barraza'
@@ -245,6 +255,7 @@ export const MUSEO = {
 					subTitle: { title: '', text: 'Fotógrafo y Artista visual de Coquimbo' },
 					category: 'Artes Visuales',
 					time: '',
+					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/TORO.jpg',
 						alt: 'Imagen del artista visual Mauricio Toro Goya'
@@ -260,6 +271,7 @@ export const MUSEO = {
 					subTitle: { title: '', text: 'Fotógrafa y Artista visual de La Serena' },
 					category: 'Artes Visuales',
 					time: '',
+					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/ALFARO.jpg',
 						alt: 'Imagen de la artista visual Tatiana Alfaro Chávez'
@@ -278,6 +290,7 @@ export const MUSEO = {
 					subTitle: { title: '', text: 'Fotógrafo y Artista visual de Ovalle' },
 					category: 'Artes Visuales',
 					time: '',
+					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/HUERTA.jpg',
 						alt: 'Imagen del artista visual Oskar Huerta'

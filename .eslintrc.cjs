@@ -1,6 +1,6 @@
 module.exports = {
 	// ...
-	extends: ['./node_modules/standard/eslintrc.json', 'plugin:astro/recommended'],
+	extends: ['standard', 'plugin:astro/recommended'],
 	rules: {
 		'no-tabs': 'off',
 		indent: 'off',

@@ -28,6 +28,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Sábado 11', time: 'de 16:00 a 20:30 horas' },
 					image: { url: '/azotea/dj-kabir.jpg', alt: 'Imagen del DJ Kabir' },
 					links: [],
 					description:
@@ -40,6 +41,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Sábado 11', time: 'de 16:00 a 20:30 horas' },
 					image: { url: '/azotea/ria-orange.jpg', alt: 'Imagen de la banda Ría Orange' },
 					links: [
 						{ name: 'spotify', url: 'https://www.instagram.com/riaorangee/' },
@@ -55,6 +57,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Sábado 11', time: 'de 16:00 a 20:30 horas' },
 					image: { url: '/azotea/duerme-cae.jpg', alt: 'Imagen de la banda Duerme y cae!' },
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/5RMewTvifqaXzb2uFHPNHu' },
@@ -70,6 +73,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Sábado 11', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/rosario-alfonso.jpg',
 						alt: 'Imagen de la artista Rosario Alfonso'
@@ -89,7 +93,7 @@ export const AZOTEA = {
 			]
 		},
 		{
-			day: 'Domingo 12\nDe 16:00 a 20:30 horas',
+			day: 'Domingo 12\nde 16:00 a 20:30 horas',
 			events: [
 				{
 					id: 'proyecto-quad',
@@ -97,6 +101,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: { url: '/azotea/quad.jpg', alt: 'Imagen de la banda QUAD' },
 					links: [{ name: 'soundcloud', url: 'https://soundcloud.com/proyectoquad' }],
 					description:
@@ -110,6 +115,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: { url: '/azotea/lig-folil.jpg', alt: 'Imagen de la artista Lig Folil' },
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/0Jh3Pqoi2DyUN3XrK7QBPE' },
@@ -128,6 +134,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/oscar-hauyon.jpg',
 						alt: 'Imagen del artista regional Oscar Hauyon'
@@ -148,6 +155,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Música',
 					time: '',
+					timeTable: { day: 'el Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: { url: '/azotea/adione.jpg', alt: 'Imagen del artista regional Adione' },
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/1I2pJ2vYfZH0WND1diKJ1l' },
@@ -161,7 +169,7 @@ export const AZOTEA = {
 			]
 		},
 		{
-			day: '11 y 12 de Febrero\nDe 16:00 a 20:30 horas',
+			day: '11 y 12 de Febrero\nde 16:00 a 20:30 horas',
 			events: [
 				{
 					id: 'anima-red',
@@ -169,6 +177,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/anima-red.jpg',
 						alt: 'Imagen de la Ilustradora Regional Anima Red'
@@ -186,6 +195,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/alvaro-rodrigo.jpg',
 						alt: 'Imagen del Ilustrador Regional Arodrigo49'
@@ -206,6 +216,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/astroglitter.jpg',
 						alt: 'Imagen de la Ilustradora Regional Astro Glitter'
@@ -226,6 +237,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/blue.jpg',
 						alt: 'Imagen de la Ilustradora Regional Blue Straycatt Art'
@@ -250,6 +262,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/camellia.jpg',
 						alt: 'Imagen de la Ilustradora Regional Camellia Liz'
@@ -274,6 +287,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/cami-guaman.jpg',
 						alt: 'Imagen de la Ilustradora Regional Camila Guamán'
@@ -299,6 +313,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/canela.jpg',
 						alt: 'Imagen de la Ilustradora Regional Canela'
@@ -323,6 +338,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/ch.jpg',
 						alt: 'Imagen de el emprendimiento Regional CE HACHE'
@@ -347,6 +363,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: { url: '/azotea/chilensis.jpg', alt: 'Imagen del Ilustrador Regional Chilensis' },
 					links: [
 						{ name: 'instagram', url: 'https://www.instagram.com/chilensisboy/' },
@@ -363,6 +380,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: { url: '/azotea/cleib.jpg', alt: 'Imagen de la Ilustradora Regional Cleib' },
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/_cleib/' }],
 					description:
@@ -375,6 +393,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/koneko.jpg',
 						alt: 'Imagen de la Ilustradora Regional Fran.koneko'
@@ -403,6 +422,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/intercultural.jpg',
 						alt: 'Imagen de la Ilustradora Regional Intecultural arte'
@@ -423,6 +443,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/isaedaliz.jpg',
 						alt: 'Imagen de la Ilustradora Regional Isa Edaliz'
@@ -443,6 +464,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/isafuentes.jpg',
 						alt: 'Imagen de la Ilustradora Regional Isabela Fuentes'
@@ -467,6 +489,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: { url: '/azotea/javivis.jpg', alt: 'Imagen del Ilustrador Regional Javivis' },
 					links: [
 						{
@@ -486,6 +509,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/kunturi-yakana.jpg',
 						alt: 'Imagen de los Ilustradores Kunturi & Yakana'
@@ -507,6 +531,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/leeneal.jpg',
 						alt: 'Imagen del equipo de ilustración Regional Leeneal Studio'
@@ -526,6 +551,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/luna-gatuna.jpg',
 						alt: 'Imagen de la Ilustradora Regional Luna Gatuna'
@@ -542,6 +568,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: { url: '/azotea/niño-pan.jpg', alt: 'Imagen del Ilustrador Regional Niño Pan' },
 					links: [{ name: 'instagram', url: 'www.instagram.com/elninopan' }],
 					description:
@@ -555,6 +582,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/pablo-design.jpg',
 						alt: 'Imagen del Ilustrador Regional Pablo Design'
@@ -576,6 +604,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/rotten-monkey.jpg',
 						alt: 'Imagen del Ilustrador Regional Rotten Monkey Inc'
@@ -596,6 +625,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: { url: '/azotea/seyuk.jpg', alt: 'Imagen de la Ilustradora Regional Seh yuk' },
 					links: [
 						{
@@ -613,6 +643,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: { url: '/azotea/shobian.jpg', alt: 'Imagen del Ilustrador Shobian' },
 					links: [
 						{
@@ -630,6 +661,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: { url: '/azotea/tsuki.jpg', alt: 'Imagen de la Ilustradora Regional Tsuki' },
 					links: [
 						{
@@ -648,6 +680,7 @@ export const AZOTEA = {
 					subTitle: {},
 					category: 'Ilustración',
 					time: '',
+					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/valestrina.jpg',
 						alt: 'Imagen de la Ilustradora Regional Valestrina'

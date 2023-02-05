@@ -25,7 +25,7 @@ const { location: locationId, event: eventId } = Astro.props
 const eventInfo = getEventById(eventId)
 const locationInfo = getLocationById(locationId)
 
-const { name, image, links, description, subTitle, list } = eventInfo
+const { name, image, links, description, subTitle, list, timeTable } = eventInfo
 const { styles, title } = locationInfo
 ---
 
@@ -43,6 +43,11 @@ const { styles, title } = locationInfo
 						</p>
 					)
 				}
+				<p class='text-lg leading-6'>
+					En <b class={styles.textColor}>{title}</b>
+					{timeTable.day}
+					{timeTable.time}
+				</p>
 			</div>
 			{!!image.url && <Image url={image.url} alt={image.alt} />}
 			<Paragraph description={description} />
@@ -63,8 +68,9 @@ const { styles, title } = locationInfo
 			{links.length !== 0 && <RelevantLinks links={links} hoverTextColor={styles.hoverTextColor} />}
 			<p class='my-14 text-3xl font-black leading-7 sm:text-4xl'>
 				Disfruta el arte de <span class={styles.textColor}>{name}</span> en <span
-					class={styles.textColor}>{title}</span
-				>!
+					class={styles.textColor}
+					>{title}
+				</span>!
 			</p>
 		</Fragment>
 		<Fragment slot='second-section'>

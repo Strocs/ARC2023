@@ -28,6 +28,7 @@ export const MUNICIPAL = {
 					subTitle: { title: 'Compañía:', text: 'La Colectiva Creación' },
 					category: 'Teatro',
 					time: '12:00',
+					timeTable: { day: 'el Viernes 10', time: 'a las 12:00 horas' },
 					image: {
 						url: '/municipal/los-pasos-de-selena.jpg',
 						alt: 'Imagen de la presentación de Los Pasos de Selena'
@@ -53,6 +54,7 @@ export const MUNICIPAL = {
 					subTitle: { title: 'Compañía:', text: 'Corazón de Madera' },
 					category: 'Danza',
 					time: '19:00',
+					timeTable: { day: 'el Viernes 10', time: 'a las 19:00 horas' },
 					image: {
 						url: '/municipal/grieta.jpg',
 						alt: 'Imagen de la presentación de Grieta'
@@ -78,6 +80,7 @@ export const MUNICIPAL = {
 					subTitle: {},
 					category: 'Teatro',
 					time: '12:00',
+					timeTable: { day: 'el Sábado 11', time: 'a las 12:00 horas' },
 					image: {
 						url: '/municipal/soy.jpg',
 						alt: 'Imagen de la presentación de Soy'
@@ -114,6 +117,7 @@ export const MUNICIPAL = {
 					subTitle: {},
 					category: 'Danza',
 					time: '19:00',
+					timeTable: { day: 'el Sábado 11', time: 'a las 19:00 horas' },
 					image: {
 						url: '/municipal/en-este-lugar-una-y-otra-vez.jpg',
 						alt: 'Imagen de la presentación de En Este Lugar Una y Otra Vez'
@@ -143,6 +147,7 @@ export const MUNICIPAL = {
 					subTitle: { title: 'Compañía:', text: 'Compañía Teatro del Elqui' },
 					category: 'Teatro',
 					time: '12:00',
+					timeTable: { day: 'el Domingo 12', time: 'a las 12:00 horas' },
 					image: {
 						url: '/municipal/la-raiz-del-rosal.jpg',
 						alt: 'Imagen de la presentación de La Raíz del Rosal'
@@ -163,6 +168,7 @@ export const MUNICIPAL = {
 					subTitle: { title: 'Compañía:', text: 'Academia Byfon' },
 					category: 'Danza',
 					time: '19:00',
+					timeTable: { day: 'el Domingo 12', time: 'a las 19:00 horas' },
 					image: {
 						url: '/municipal/mandrágora-el-sueño-continúa.jpg',
 						alt: 'Imagen de la presentación de Mandrágora, el sueño continúa'

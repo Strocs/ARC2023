@@ -29,6 +29,7 @@ export const ESTACIONAMIENTO = {
 					subTitle: {},
 					category: 'Nuevos Medios',
 					time: '',
+					timeTable: { day: 'del Viernes 10 hasta el Domingo 12', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/estacionamiento/velocidad-de-la-luz.jpg',
 						alt: 'Imagen de la presentación de Los Pasos de Selena'

@@ -28,6 +28,7 @@ export const SANTA_INES = {
 					subTitle: {},
 					category: 'Danza',
 					time: '15:30',
+					timeTable: { day: 'el Viernes 10', time: 'a las 15:30 horas' },
 					image: {
 						url: '/santa-ines/colectivo-la-manada.jpg',
 						alt: 'Imagen de la presentación del Colectivo La Manada'
@@ -54,6 +55,7 @@ export const SANTA_INES = {
 					subTitle: {},
 					category: 'Intervención Urbana',
 					time: '16:00',
+					timeTable: { day: 'el Viernes 10', time: 'a las 16:00 horas' },
 					image: {
 						url: '/santa-ines/tendedero-poetico.jpg',
 						alt: 'Imagen de la Intervención Urbana Tendedero Poético: (De) construyendo la nacionalidad'
@@ -69,6 +71,7 @@ export const SANTA_INES = {
 					subTitle: { title: '', text: 'Lecturas poéticas feministas' },
 					category: 'Música',
 					time: '16:30',
+					timeTable: { day: 'el Viernes 10', time: 'a las 16:30 horas' },
 					image: {
 						url: '/santa-ines/free-tangas.jpg',
 						alt: 'Imagen de la presentación de DJ Free-tangas'
@@ -87,6 +90,7 @@ export const SANTA_INES = {
 					},
 					category: 'Literatura',
 					time: '17:30',
+					timeTable: { day: 'el Viernes 10', time: 'a las 17:30 horas' },
 					image: {
 						url: '/santa-ines/elvira-hernández.jpg',
 						alt: 'Imagen del Lanzamiento del libro Elvira Hernández'
@@ -102,6 +106,7 @@ export const SANTA_INES = {
 					subTitle: { title: 'Lema:', text: '"Cuecas en voz de mujer"' },
 					category: 'Música',
 					time: '19:00',
+					timeTable: { day: 'el Viernes 10', time: 'a las 19:00 horas' },
 					image: {
 						url: '/santa-ines/las-quintralas.jpg',
 						alt: 'Imagen de la Presentación de Las Quintralas de la Cuarta'
@@ -133,6 +138,7 @@ export const SANTA_INES = {
 					subTitle: { title: 'Presentación:', text: 'Habitus/Campo/Memoria (2020-2023)' },
 					category: 'Performance',
 					time: '15:30',
+					timeTable: { day: 'el Sábado 11', time: 'a las 15:30 horas' },
 					image: {
 						url: '/santa-ines/valu.jpg',
 						alt: 'Imagen de la Performance Habitus/Campo/Memoria (2020-2023)'
@@ -148,6 +154,7 @@ export const SANTA_INES = {
 					subTitle: {},
 					category: 'Intervención Urbana',
 					time: '16:00',
+					timeTable: { day: 'el Sábado 11', time: 'a las 16:00 horas' },
 					image: {
 						url: '/santa-ines/tendedero-poetico2.jpg',
 						alt: 'Imagen de la Performance Tendedero Poético: sueños diversos y derechos con versos'
@@ -163,6 +170,7 @@ export const SANTA_INES = {
 					subTitle: { title: 'Presentación Libro:', text: '“Hit Latino”' },
 					category: 'Literatura',
 					time: '16:30',
+					timeTable: { day: 'el Sábado 11', time: 'a las 16:30 horas' },
 					image: {
 						url: '/santa-ines/keimara.png',
 						alt: 'Imagen de la Presentación del Libro Hit Latino de Keimara'
@@ -181,6 +189,7 @@ export const SANTA_INES = {
 					},
 					category: 'Literatura',
 					time: '17:30',
+					timeTable: { day: 'el Sábado 11', time: 'a las 17:30 horas' },
 					image: {
 						url: '/santa-ines/pía-barros.jpg',
 						alt: 'Imagen de la Presentación de Pía Barros'
@@ -196,6 +205,7 @@ export const SANTA_INES = {
 					subTitle: {},
 					category: 'Música',
 					time: '19:00',
+					timeTable: { day: 'el Sábado 11', time: 'a las 19:00 horas' },
 					image: {
 						url: '/santa-ines/pae.jpg',
 						alt: 'Imagen de la Presentación de PAE'

@@ -28,6 +28,7 @@ export const CENTRO = {
 					subTitle: { title: 'Lugar:', text: 'Intersección de las calles Balmaceda con Cordovez' },
 					category: 'Performance',
 					time: '',
+					timeTable: { day: 'el Viernes 10', time: 'desde las 11:00 horas' },
 					image: {
 						url: '/centro/pulso.jpg',
 						alt: 'Imagen de la Intervención de PULSO'
@@ -53,6 +54,7 @@ export const CENTRO = {
 					},
 					category: 'Danza',
 					time: '',
+					timeTable: { day: 'el Sábado 11', time: 'desde las 11:00 horas' },
 					image: {
 						url: '/centro/danza-afro.jpg',
 						alt: 'Imagen de la Intervenciones de Danza Afro y Danza Espectáculo'
@@ -73,6 +75,7 @@ export const CENTRO = {
 					subTitle: { title: 'Lugar:', text: 'La Recova' },
 					category: 'Danza',
 					time: '',
+					timeTable: { day: 'el Domingo 12', time: 'desde las 11:00 horas' },
 					image: {
 						url: '/centro/danza-flamenco.jpg',
 						alt: 'Imagen de la Intervención de Danza Flamenco'
@@ -88,6 +91,7 @@ export const CENTRO = {
 					subTitle: { title: 'Lugar:', text: 'Sector de la Catedral' },
 					category: 'Circo',
 					time: '',
+					timeTable: { day: 'el Domingo 12', time: 'desde las 11:00 horas' },
 					image: {
 						url: '/centro/la-pelea-del-siglo.jpg',
 						alt: 'Imagen de la presentación de La Pelea del Siglo'
