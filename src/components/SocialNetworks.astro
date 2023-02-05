@@ -8,17 +8,33 @@ const { hoverTextColor = 'hover:text-main', locationId = '' } = Astro.props
 const hoverBg = locationId.includes('estacionamiento') ? 'hover:bg-neutral-700' : 'hover:bg-white'
 ---
 
-<div class='grid grid-flow-col items-center gap-1 w-fit'>
-	Síguenos:
-	{
-		socialNetwork.map((social) => (
-			<a
-				class={`group block rounded-md p-1 text-current transition-all duration-200 ease-in ${hoverBg} ${hoverTextColor}`}
-				href={social.url}
-				aria-label={social.name}
-			>
-				<Icon name={`mdi:${social.name}`} class={'h-7 w-7'} />
-			</a>
-		))
-	}
+<div class='grid gap-2'>
+	<div class='grid w-fit grid-flow-col items-center gap-1'>
+		Síguenos:
+		{
+			socialNetwork.map((social) => (
+				<a
+					class={`group block rounded-md p-1 text-current transition-all duration-200 ease-in ${hoverBg} ${hoverTextColor}`}
+					href={social.url}
+					aria-label={social.name}
+				>
+					<Icon name={`mdi:${social.name}`} class='h-7 w-7' />
+				</a>
+			))
+		}
+	</div>
+	<div class='grid w-fit grid-flow-col items-center gap-1'>
+		Escucha nuestra Playlist:
+		{
+			(
+				<a
+					class={`group block rounded-md p-1 text-current transition-all duration-200 ease-in ${hoverBg} ${hoverTextColor}`}
+					href='https://open.spotify.com/playlist/6uOadrETubppCa82OIt3nQ?si=xI-3gEP-Rhq8zt-unqxV1w'
+					aria-label='spotify-list'
+				>
+					<Icon name='mdi:spotify' class='h-7 w-7' />
+				</a>
+			)
+		}
+	</div>
 </div>

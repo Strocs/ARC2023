@@ -7,7 +7,8 @@ import {
 	socialMediaLinks,
 	locationsInfo,
 	resetButton,
-	spanResetButton
+	spanResetButton,
+	searchBar
 } from './'
 
 const colors = [
@@ -30,6 +31,9 @@ export function changeElementStyles(index, change) {
 		})
 		spanResetButton.classList.add(colors[index].borderColor, colors[index].textColor)
 		spanResetButton.classList.remove('border-main', 'text-main')
+		searchBar.classList.add(colors[index].backgroundColor, colors[index].textColor)
+		searchBar.classList.remove('bg-main', 'text-main')
+
 		logo.classList.add(colors[index].fillColor)
 		logo.classList.remove('fill-main')
 		socialMediaLinks.forEach((link) => {
@@ -49,6 +53,8 @@ export function changeElementStyles(index, change) {
 		})
 		spanResetButton.classList.remove(colors[index].borderColor, colors[index].textColor)
 		spanResetButton.classList.add('border-main', 'text-main')
+		searchBar.classList.remove(colors[index].backgroundColor, colors[index].textColor)
+		searchBar.classList.add('bg-main', 'text-main')
 		logo.classList.remove(colors[index].fillColor)
 		logo.classList.add('fill-main')
 		socialMediaLinks.forEach((link) => {
