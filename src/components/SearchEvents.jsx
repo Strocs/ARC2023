@@ -36,7 +36,7 @@ export const SearchEvents = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault()
 		const { location, event } = filteredEvents[0]
-		window.location = location && `https://festivalarc.cl/${location}/${event}`
+		window.location = location && `/${location}/${event}`
 	}
 
 	return (
