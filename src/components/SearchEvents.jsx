@@ -72,7 +72,7 @@ export const SearchEvents = () => {
       {filteredEvents.map(({ location, event, eventName }) => (
         <li key={event}>
           <a
-            className='block rounded-md border-2 border-main bg-main py-1 px-2 text-center font-medium leading-4 text-white transition-all duration-200 ease-in hover:bg-white hover:text-main'
+            className='block rounded-md border-2 border-main bg-main bg-texture bg-6xl py-1 px-2 text-center font-medium leading-4 text-white transition-all duration-200 ease-in hover:bg-white hover:text-main'
             href={`${location}/${event}`}
           >
             <p className='inline'>{eventName}</p>
