@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
-import { getEventsPath, removeAccents } from 'src/utils'
+import { getSearchInfo, removeAccents } from 'src/utils'
 
 export const SearchEvents = () => {
 	const [inputValue, setInputValue] = useState('')
 	const [filteredEvents, setFilteredEvents] = useState([])
 	const searchEventRef = useRef(null)
-	const events = getEventsPath()
+
+	const listOfSearchItems = getSearchInfo()
 
 	useEffect(() => {
 		const closeDropdown = (e) => {
@@ -27,25 +28,26 @@ export const SearchEvents = () => {
 		setFilteredEvents([])
 		if (e.target.value.length <= 1) return
 		setFilteredEvents(
-			events
-				.filter((event) => removeAccents(event.eventName).includes(removeAccents(e.target.value)))
+			listOfSearchItems
+				.filter((event) => removeAccents(event.name).includes(removeAccents(e.target.value)))
 				.slice(0, 3)
 		)
 	}
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
-		const { location, event } = filteredEvents[0]
-		window.location = location && `/${location}/${event}`
+		const { path } = filteredEvents[0]
+		window.location = path
 	}
 
 	return (
 		<div className='fixed top-[4.3rem] right-0 left-0 mx-auto w-fit sm:top-20'>
 			<form
+				id='search-bar'
 				onSubmit={handleSubmit}
-				className='h-full rounded-md bg-main text-main transition-all duration-200 ease-in max-w-[12rem]'
+				className='h-full max-w-[12rem] rounded-md bg-main text-main'
 			>
-				<div className='flex h-9 -translate-y-[0.18rem] items-center rounded-md border-2 border-main bg-white px-3 transition-all duration-100 ease-in hover:-translate-y-[0rem]'>
+				<div className='flex h-9 -translate-y-[0.18rem] items-center rounded-md border-2 border-current bg-white px-3 transition-[transform] duration-100 ease-in hover:-translate-y-[0rem]'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						width='1rem'
@@ -59,23 +61,24 @@ export const SearchEvents = () => {
 						/>
 					</svg>
 					<input
-						className='w-full bg-white pl-2 text-sm outline-none placeholder:font-medium placeholder:text-main'
+						className='w-full bg-white pl-2 text-sm outline-none placeholder:font-medium placeholder:text-current'
 						type='text'
-						placeholder='Busca en ARC23'
+						placeholder='Descubre ARC23'
 						value={inputValue}
 						onChange={handleOnChange}
 						ref={searchEventRef}
 					/>
 				</div>
 			</form>
-			<ul className='mx-auto mt-2 grid max-w-[12rem] gap-1'>
-				{filteredEvents.map(({ location, event, eventName }) => (
-					<li key={event}>
+			<ul className='mx-auto mt-2 grid max-w-[12rem] gap-1 bg-transparent'>
+				{filteredEvents.map(({ name, path }) => (
+					<li key={name}>
 						<a
-							className='block rounded-md border-2 border-main bg-main bg-texture bg-6xl py-1 px-2 text-center font-medium leading-4 text-white transition-all duration-200 ease-in hover:bg-white hover:text-main'
-							href={`${location}/${event}`}
+							id='search-link'
+							className='block rounded-md border-2 border-main bg-main bg-texture bg-6xl py-1 px-2 text-center font-medium leading-4 text-white transition-all duration-100 ease-in hover:bg-white hover:text-main'
+							href={path}
 						>
-							<p className='inline'>{eventName}</p>
+							<p className='inline'>{name}</p>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								width='1rem'
