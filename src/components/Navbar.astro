@@ -45,17 +45,17 @@ const text = locationId.includes('estacionamiento') ? 'text-neutral-700' : 'text
 				anchor
 				href='/PROGRAMA_ARC23.pdf'
 				styles={styles}
-				className='flex md:hidden '
+				className='md:hidden'
 			>
 				Descarga la Programación
 			</ButtonLink>
 			<SocialNetworks locationId={locationId} hoverTextColor={styles.hoverTextColor} />
 		</div>
-		<div class="grid gap-2">
+		<div class="grid gap-2 text-center">
 			<p class=''>Proyecto Financiado por:</p>
-			<Seremi className='h-full w-full' />
+			<Seremi className='w-1/2 mx-auto' />
 		</div>
-		<div class='flex flex-col py-6 md:hidden'>
+		<div class='flex flex-col pb-6 md:hidden'>
 			<p class='text-lg font-bold'>ARC 2023</p>
 			<p class='font-light'>
 				Desarrollado por <a class='underline' target='_blank' href='https://github.com/Strocs'

@@ -63,7 +63,7 @@ export const SearchEvents = () => {
 					<input
 						className='w-full bg-white pl-2 text-sm outline-none placeholder:font-medium placeholder:text-current'
 						type='text'
-						placeholder='Descubre ARC23'
+						placeholder='Encuentra en ARC'
 						value={inputValue}
 						onChange={handleOnChange}
 						ref={searchEventRef}
