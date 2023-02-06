@@ -1,4 +1,4 @@
-// const isIphone = /iPhone/.test(navigator.userAgent)
+const isIphone = /iPhone/.test(navigator.userAgent)
 const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
 const safariVersion = isSafari && /Version\/([0-9.]+) Safari/.exec(navigator.userAgent)[1]
 
@@ -6,7 +6,7 @@ const safariVersion = isSafari && /Version\/([0-9.]+) Safari/.exec(navigator.use
 // 	document.body.innerHTML = `<p>Notamos que estas usando la versión de Safari ${safariVersion}. Para una mejor experiencia, considera actualizar tu navegador.</p>`
 // }
 
-if (isSafari && parseFloat(safariVersion) <= 13) {
+if (isSafari && parseFloat(safariVersion) <= 13 && !isIphone) {
 	alert(
 		`Notamos que estas usando la versión de Safari ${safariVersion}. Para una mejor experiencia, considera actualizar tu navegador.`
 	)
