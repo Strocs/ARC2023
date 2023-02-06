@@ -1,7 +1,10 @@
 export const MUSEO = {
 	id: 'museo-arqueologico-de-la-serena',
 	title: 'Museo Arqueológico de La Serena',
-	address: 'Cordovez esquina Cienfuegos, S/N, La Serena',
+	address: {
+		text: 'Cordovez esquina Cienfuegos, S/N, La Serena',
+		url: 'https://goo.gl/maps/1akVQKJW8knSXc3ZA'
+	},
 	extract:
 		'Las artes visuales y la creación audiovisual se darán cita en el Museo Arqueológico de La Serena, con grandes exponentes regionales y nacionales que llenarán de arte y cultura este mítico espacio cultural de La Serena, que forma parte del circuito del Festival ARC 2023.',
 	description:

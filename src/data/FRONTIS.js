@@ -1,7 +1,10 @@
 export const FRONTIS = {
 	id: 'frontis-gobierno-regional-de-coquimbo',
 	title: 'Frontis Gobierno Regional de Coquimbo',
-	address: 'Calle Arturo Prat N° 350, La Serena',
+	address: {
+		text: 'Calle Arturo Prat N° 350, La Serena',
+		url: 'https://goo.gl/maps/WsXnQHJ4AFCtRNKS6'
+	},
 	extract:
 		'Música orquestada, circo teatro y circo contemporáneo de la Región de Coquimbo llenarán de arte y cultura el corazón de la ciudad de La Serena, uniendo el quehacer diario de la comunidad con la belleza expresiva de lo escénico, creando un nuevo sentido a este emblemático espacio público',
 	description:

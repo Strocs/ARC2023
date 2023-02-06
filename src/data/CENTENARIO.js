@@ -1,7 +1,10 @@
 export const CENTENARIO = {
 	id: 'teatro-centenario',
 	title: 'Teatro Centenario',
-	address: 'Gregorio Cordovez N° 391, La Serena',
+	address: {
+		text: 'Gregorio Cordovez N° 391, La Serena',
+		url: 'https://goo.gl/maps/h6ZuCQsYrtsK6hbS6'
+	},
 	extract:
 		'Grandes exponentes de la música regional y nacional darán vida a las jornadas de cierre del Festival ARC 2023, en una serie de conciertos que se realizarán el viernes 10, sábado 11 y domingo 12 de febrero en el Teatro Centenario de La Serena, espacio que en la actualidad está viviendo un resurgir como corazón de la actividad artística de la ciudad.',
 	description:

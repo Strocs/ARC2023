@@ -1,8 +1,10 @@
 export const ESTACIONAMIENTO = {
 	id: 'estacionamiento-plaza-de-armas',
 	title: 'Estacionamiento Plaza de Armas',
-	address:
-		'Calle Los Carrera con Arturo Prat, a un costado del Gobierno Regional (Plaza de los Periodistas)',
+	address: {
+		text: 'Calle Los Carrera con Arturo Prat, a un costado del Gobierno Regional (Plaza de los Periodistas)',
+		url: 'https://goo.gl/maps/jMm8hEXnHQxAmcuA9'
+	},
 	extract:
 		'Un espacio inmersivo de proyecciones y visualidades invitarán a la comunidad a reflexionar a través de sus sentidos, a través de una inédita obra que dotará de un nuevo sentido a los estacionamientos de la Plaza de Armas de La Serena, espacio no convencional que será parte del recorrido del Festival ARC 2023. ',
 	description:

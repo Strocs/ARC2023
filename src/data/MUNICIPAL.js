@@ -1,7 +1,10 @@
 export const MUNICIPAL = {
 	id: 'teatro-municipal-de-la-serena',
 	title: 'Teatro Municipal de La Serena',
-	address: 'Calle Benavente N° 580, La Serena',
+	address: {
+		text: 'Calle Benavente N° 580, La Serena',
+		url: 'https://goo.gl/maps/7Zbnr3afijzjC9qQ8'
+	},
 	extract:
 		'Grandes obras de las artes escénicas regionales, con un enfoque educativo y familiar, se darán cita en el escenario del Teatro Municipal de La Serena, uno de los espacios culturales más importantes de la ciudad, cuya infraestructura es ideal para que la comunidad pueda disfrutar de una linda tarde de teatro. ',
 	description:

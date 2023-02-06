@@ -1,7 +1,10 @@
 export const GAVIOTA = {
 	id: 'espacio-la-gaviota',
 	title: 'Espacio La Gaviota',
-	address: 'Balmaceda N° 124, Barrio Almagro, La Serena',
+	address: {
+		text: 'Balmaceda N° 124, Barrio Almagro, La Serena',
+		url: 'https://goo.gl/maps/rA4HmLY6CNFL2XSb8'
+	},
 	extract:
 		'El espacio de la escuela y compañía teatral, TeatroPuerto, será el lugar ideal para disfrutar de la belleza de las artes escénicas regionales, con su remodelada Sala Josefa, como parte del circuito artístico ciudadano que el Festival ARC 2023 desarrollará en el Centro de La Serena.',
 	description:

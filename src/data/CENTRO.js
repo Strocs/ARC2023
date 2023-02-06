@@ -1,7 +1,7 @@
 export const CENTRO = {
 	id: 'centro-de-la-serena',
 	title: 'Centro de La Serena',
-	address: 'Visita cada evento para saber en qué lugar se realizarán',
+	address: { text: 'Visita cada evento para saber en qué lugar se realizarán' },
 	extract:
 		'La versión 2023 del Festival ARC busca dar un nuevo sentido al uso de los espacios públicos, transformándolos en el escenario ideal para disfrutar del arte y la cultura. El centro de la ciudad de La Serena, capital regional de la Región de Coquimbo, se llenará de vida, color y energía con una serie de intervenciones artísticas que buscan acercar el derecho a la cultura a la comunidad a través de la acción de entrar en su cotidianidad.',
 	description:
@@ -25,7 +25,11 @@ export const CENTRO = {
 				{
 					id: 'pulso',
 					name: 'PULSO',
-					subTitle: { title: 'Lugar:', text: 'Intersección de las calles Balmaceda con Cordovez' },
+					subTitle: {
+						title: 'Lugar:',
+						text: 'Intersección de las calles Balmaceda con Cordovez',
+						url: 'https://goo.gl/maps/r1FsgHRgK7ehaNDYA'
+					},
 					category: 'Performance',
 					time: '',
 					timeTable: { day: 'el Viernes 10', time: 'desde las 11:00 horas' },
@@ -50,7 +54,8 @@ export const CENTRO = {
 					name: 'Danza Afro + Danza Espectáculo + Clown callejero',
 					subTitle: {
 						title: 'Lugar:',
-						text: 'Intersecciones calles Prat, O`Higgins, Cordovez y Balmaceda'
+						text: 'Intersecciones calles Prat, O`Higgins, Cordovez y Balmaceda',
+						url: 'https://goo.gl/maps/gyJBoyQYbTA7toMd6'
 					},
 					category: 'Danza',
 					time: '',
@@ -72,7 +77,11 @@ export const CENTRO = {
 				{
 					id: 'danza-flamenco',
 					name: 'Danza Flamenco',
-					subTitle: { title: 'Lugar:', text: 'La Recova' },
+					subTitle: {
+						title: 'Lugar:',
+						text: 'La Recova',
+						url: 'https://goo.gl/maps/peaQ1z8GmGJtSzyZA'
+					},
 					category: 'Danza',
 					time: '',
 					timeTable: { day: 'el Domingo 12', time: 'desde las 11:00 horas' },
@@ -88,7 +97,11 @@ export const CENTRO = {
 				{
 					id: 'la-pelea-del-siglo',
 					name: 'La Pelea del Siglo',
-					subTitle: { title: 'Lugar:', text: 'Sector de la Catedral' },
+					subTitle: {
+						title: 'Lugar:',
+						text: 'Sector de la Catedral',
+						url: 'https://goo.gl/maps/R17Mth5ZQyM4pkNe6'
+					},
 					category: 'Circo',
 					time: '',
 					timeTable: { day: 'el Domingo 12', time: 'desde las 11:00 horas' },

@@ -4,7 +4,8 @@ module.exports = {
 	rules: {
 		'no-tabs': 'off',
 		indent: 'off',
-		'space-before-function-paren': 'off'
+		'space-before-function-paren': 'off',
+		'multiline-ternary': 'off'
 	},
 	// ...
 	overrides: [

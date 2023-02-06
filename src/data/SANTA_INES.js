@@ -1,7 +1,10 @@
 export const SANTA_INES = {
 	id: 'centro-cultural-santa-ines',
 	title: 'Centro Cultural Santa Inés',
-	address: 'Almagro #282 esquina, Manuel Antonio Matta, La Serena',
+	address: {
+		text: 'Almagro #282 esquina, Manuel Antonio Matta, La Serena',
+		url: 'https://goo.gl/maps/BKaGVgLsroCbxUWQ6'
+	},
 	extract:
 		'El Centro Cultural Santa Inés será el corazón de las actividades literarias de ARC 2023, con una programación especial con enfoque de género, vinculada al feminismo, la diversidad y la mujer diseñada y gestionada por la Red Feminista del Libro, en la que se podrá disfrutar de literatura, danza, performance y música, en un espacio seguro que combinará lo artístico con la reflexión crítica.',
 	description:

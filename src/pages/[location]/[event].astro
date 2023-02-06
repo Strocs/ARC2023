@@ -36,11 +36,23 @@ const { styles, title } = locationInfo
 			<div class='flex flex-col gap-4'>
 				<Title textColor={styles.textColor}>{name}</Title>
 				{
-					!!subTitle.title && (
-						<p class='text-xl'>
+					!!subTitle.title && !!subTitle.url ? (
+						<a
+							href={subTitle.url}
+							target='_blank'
+							class={`text-base transition-all duration-100 sm:text-xl ${styles.hoverTextColor}`}
+						>
 							<b>{subTitle.title}</b>
 							{subTitle.text}
-						</p>
+							<Icon name='mdi:arrow-top-right-thick' class='inline w-5' />
+						</a>
+					) : (
+						!!subTitle.title && (
+							<p class='text-xl'>
+								<b>{subTitle.title}</b>
+								{subTitle.text}
+							</p>
+						)
 					)
 				}
 				<p class='text-lg leading-6'>
