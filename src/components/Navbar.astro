@@ -1,6 +1,7 @@
 ---
 import { ARC_2023 } from 'src/data/ARC_2023'
 import ButtonLink from './ButtonLink.astro'
+import Seremi from './icons/Seremi.astro'
 import SocialNetworks from './SocialNetworks.astro'
 
 const { locations } = ARC_2023
@@ -19,7 +20,7 @@ const text = locationId.includes('estacionamiento') ? 'text-neutral-700' : 'text
 	class={`${styles.backgroundColor} ${text} grid justify-items-center gap-14 py-24 w-full max-w-md items-center md:place-items-start md:px-14 h-screen top-0 bottom-0 overflow-auto fixed z-40 motion-reduce:animate-none`}
 	style={{ opacity: '0', left: '-448px' }}
 >
-	<div class='grid gap-16 max-w-[18rem]'>
+	<div class='grid max-w-[18rem] gap-16'>
 		<ul class='grid gap-5'>
 			{
 				sections.map((section) => (
@@ -29,20 +30,30 @@ const text = locationId.includes('estacionamiento') ? 'text-neutral-700' : 'text
 				))
 			}
 		</ul>
-		<ul class="text-md font-light grid gap-2">
+		<ul class='text-md grid gap-2 font-light'>
 			{
 				locations.map((location) => (
-					<li class='transition-all duration-200 ease-in hover:underline leading-5'>
+					<li class='leading-5 transition-all duration-200 ease-in hover:underline'>
 						<a href={`/${location.id}`}>• {location.title}</a>
 					</li>
 				))
 			}
 		</ul>
 		<div class='grid gap-6'>
-			<ButtonLink id={locationId} anchor href='/PROGRAMA_ARC23.pdf' styles={styles} className='flex md:hidden '>
+			<ButtonLink
+				id={locationId}
+				anchor
+				href='/PROGRAMA_ARC23.pdf'
+				styles={styles}
+				className='flex md:hidden '
+			>
 				Descarga la Programación
 			</ButtonLink>
 			<SocialNetworks locationId={locationId} hoverTextColor={styles.hoverTextColor} />
+		</div>
+		<div class="grid gap-2">
+			<p class=''>Proyecto Financiado por:</p>
+			<Seremi className='h-full w-full' />
 		</div>
 		<div class='flex flex-col py-6 md:hidden'>
 			<p class='text-lg font-bold'>ARC 2023</p>
@@ -59,5 +70,14 @@ const text = locationId.includes('estacionamiento') ? 'text-neutral-700' : 'text
 	nav {
 		transition: left 500ms;
 		transition-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+		overflow-y: scroll;
+		scrollbar-width: none; /* Firefox */
+		-ms-overflow-style: none; /* Internet Explorer 10+ */
+	}
+
+	nav::-webkit-scrollbar {
+		/* WebKit */
+		width: 0;
+		height: 0;
 	}
 </style>

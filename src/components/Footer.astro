@@ -12,10 +12,10 @@ const text = id === 'estacionamiento-plaza-de-armas' ? 'text-neutral-700' : ''
 		fixed ? 'fixed' : ''
 	} bottom-0 left-0 right-0 z-50 transition-[background-color] duration-200 ease-in bg-texture bg-4xl sm:bg-xl`}
 >
-	<div class='flex justify-center space-x-4 md:items-center md:space-x-8 h-fit'>
-		<div class='flex items-center space-x-4 flex-shrink-0 w-fit'>
+	<div class='flex h-fit justify-center space-x-4 md:items-center md:space-x-8'>
+		<div class='flex w-fit flex-shrink-0 items-center space-x-4'>
 			<p class='text-sm md:text-base'>Organiza:</p>
-			<Seremi />
+			<Seremi className='h-[38px] w-12 md:h-[42px] md:w-14' />
 			<IMREC />
 		</div>
 		<div class='flex items-center space-x-4'>
@@ -23,7 +23,7 @@ const text = id === 'estacionamiento-plaza-de-armas' ? 'text-neutral-700' : ''
 			<LaSerena />
 		</div>
 	</div>
-	<div class='hidden gap-4 items-center justify-around md:grid md:grid-flow-col'>
+	<div class='hidden items-center justify-around gap-4 md:grid md:grid-flow-col'>
 		<p class='text-lg font-bold leading-3'>ARC 2023</p>
 		|
 		<p class='font-light leading-3'>

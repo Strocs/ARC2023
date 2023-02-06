@@ -177,8 +177,8 @@ export const MUNICIPAL = {
 					description:
 						'La obra cita a un movimiento de vanguardia chileno llamado Mandrágora, fundado en 1938 por los poetas Teófilo Cid Enrique Gómez Correa y Braulio Arenas. Específicamente tomando del movimiento, la utopía, lo telúrico y la imaginación como componentes necesarios y resignificando las imágenes poéticas a través del collage.',
 					list: [
-						{ title: 'Dirección Artística:', text: ['Jaime Alfaro Castillo Ndwazi'] },
-						{ title: 'Dirección General:', text: ['Jacqueline Pacheco Castillo'] },
+						{ title: 'Dirección Artística:', text: ['Jaime Alfaro Ngwazi'] },
+						{ title: 'Dirección General:', text: ['Jacqueline Pacheco Jorquera'] },
 						{
 							title: 'Intérpretes Escénicos:',
 							text: [

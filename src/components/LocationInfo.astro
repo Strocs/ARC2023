@@ -19,7 +19,9 @@ if (title.includes('Estacionamiento')) {
 <section
 	aria-label='location-info'
 	id={id}
-	class={`${styles.backgroundColor} ${title.includes('Estacionamiento') ? 'text-neutral-700' : ''} pb-28 md:pb-20 py-10 w-full max-w-[448px] px-10 overflow-y-auto h-auto bottom-0 top-12 absolute z-20 motion-reduce:animate-none`}
+	class={`${styles.backgroundColor} ${
+		title.includes('Estacionamiento') ? 'text-neutral-700' : ''
+	} pb-28 md:pb-20 py-10 w-full max-w-[448px] px-10 overflow-y-auto h-auto bottom-0 top-12 absolute z-20 motion-reduce:animate-none`}
 	style={{ opacity: '0', right: '-448px' }}
 >
 	<article class='grid gap-8 sm:gap-12'>
@@ -29,10 +31,7 @@ if (title.includes('Estacionamiento')) {
 			Más información y Programación<Icon name='mdi:arrow-top-right-thick' class='h-5 inline' />
 		</ButtonLink>
 		<ButtonLink id={id} styles={styles} className='h-min place-self-center'>
-			Cerrar <Icon
-				class='inline h-5 ml-1'
-				name='mdi:arrow-right-bold'
-			/>
+			Cerrar <Icon class='inline h-5 ml-1' name='mdi:arrow-right-bold' />
 		</ButtonLink>
 	</article>
 </section>
@@ -41,5 +40,15 @@ if (title.includes('Estacionamiento')) {
 	section {
 		transition: right 500ms;
 		transition-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+	}
+	section {
+		overflow-y: scroll;
+		scrollbar-width: none; /* Firefox */
+		-ms-overflow-style: none; /* Internet Explorer 10+ */
+	}
+	section::-webkit-scrollbar {
+		/* WebKit */
+		width: 0;
+		height: 0;
 	}
 </style>
