@@ -46,14 +46,12 @@ const { styles, title } = locationInfo
 							{subTitle.text}
 							<Icon name='mdi:arrow-top-right-thick' class='inline w-5' />
 						</a>
-					) : (
-						!!subTitle.title && (
-							<p class='text-xl'>
-								<b>{subTitle.title}</b>
-								{subTitle.text}
-							</p>
-						)
-					)
+					) : !!subTitle.text || !!subTitle.title ? (
+						<p class='text-xl'>
+							<b>{subTitle.title}</b>
+							{subTitle.text}
+						</p>
+					) : null
 				}
 				<p class='text-lg leading-6'>
 					En <b class={styles.textColor}>{title}</b>
