@@ -229,6 +229,62 @@ export const SANTA_INES = {
 					list: []
 				}
 			]
+		},
+		{
+			day: 'Viernes 10 y Sábado 11\nEspacios para la Infancia',
+			events: [
+				{
+					id: 'taller-de-collage',
+					name: 'Taller de Collage',
+					subTitle: {},
+					category: 'Actividad simultánea',
+					time: '15:30',
+					timeTable: { day: 'el Viernes 10 y Sábado 11', time: 'a las 15:30 horas' },
+					image: {
+						url: '',
+						alt: '',
+						styles: {}
+					},
+					links: [],
+					description:
+						'Además de la programación, el espacio habilitará un lugar para las infancias con divertidos talleres de collage, máscaras poéticas y títeres literarios, con el fin de generar un espacio seguro donde quienes cuidan puedan disfrutar tranquilamente de la diversa programación',
+					list: []
+				},
+				{
+					id: 'taller-de-títeres-literarios',
+					name: 'Taller de títeres literarios',
+					subTitle: {},
+					category: 'Actividad simultánea',
+					time: '16:30',
+					timeTable: { day: 'el Viernes 10 y Sábado 11', time: 'a las 16:30 horas' },
+					image: {
+						url: '',
+						alt: '',
+						styles: {}
+					},
+					links: [],
+					description:
+						'Además de la programación, el espacio habilitará un lugar para las infancias con divertidos talleres de collage, máscaras poéticas y títeres literarios, con el fin de generar un espacio seguro donde quienes cuidan puedan disfrutar tranquilamente de la diversa programación',
+					list: []
+				},
+				{
+					id: 'taller-de-máscaras-poéticas',
+					name: 'Taller de máscaras poéticas',
+					subTitle: {},
+					category: 'Actividad simultánea',
+					time: '17:30',
+					timeTable: { day: 'el Viernes 10 y Sábado 11', time: 'a las 17:30 horas' },
+					image: {
+						url: '',
+						alt: '',
+						styles: {}
+					},
+					links: [],
+					description:
+						'Además de la programación, el espacio habilitará un lugar para las infancias con divertidos talleres de collage, máscaras poéticas y títeres literarios, con el fin de generar un espacio seguro donde quienes cuidan puedan disfrutar tranquilamente de la diversa programación',
+					list: []
+				}
+			]
 		}
 	]
 }
