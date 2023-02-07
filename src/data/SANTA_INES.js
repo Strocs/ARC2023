@@ -236,7 +236,7 @@ export const SANTA_INES = {
 				{
 					id: 'taller-de-collage',
 					name: 'Taller de Collage',
-					subTitle: {},
+					subTitle: { title: '', text: 'Espacios para la Infancia' },
 					category: 'Actividad simultánea',
 					time: '15:30',
 					timeTable: { day: 'el Viernes 10 y Sábado 11', time: 'a las 15:30 horas' },
@@ -253,7 +253,7 @@ export const SANTA_INES = {
 				{
 					id: 'taller-de-títeres-literarios',
 					name: 'Taller de títeres literarios',
-					subTitle: {},
+					subTitle: { title: '', text: 'Espacios para la Infancia' },
 					category: 'Actividad simultánea',
 					time: '16:30',
 					timeTable: { day: 'el Viernes 10 y Sábado 11', time: 'a las 16:30 horas' },
@@ -270,7 +270,7 @@ export const SANTA_INES = {
 				{
 					id: 'taller-de-máscaras-poéticas',
 					name: 'Taller de máscaras poéticas',
-					subTitle: {},
+					subTitle: { title: '', text: 'Espacios para la Infancia' },
 					category: 'Actividad simultánea',
 					time: '17:30',
 					timeTable: { day: 'el Viernes 10 y Sábado 11', time: 'a las 17:30 horas' },
