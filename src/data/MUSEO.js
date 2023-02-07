@@ -239,7 +239,7 @@ export const MUSEO = {
 						{ name: 'facebook', url: 'https://www.facebook.com/claudiasuarezartistavisual' }
 					],
 					description:
-						'\bClaudia Suárez Jansson (1973)\b es artista visual residente en La Serena. Licenciada en Arte con mención Pintura en la Escuela de Arte de la UC. Integra la Agrupación de Intervenciones Textiles Urbanas Las Cuenta Puntos, la Mesa Regional de Educación Artística Región Coquimbo y la Mesa de las Artes de la Visualidad. Su obra resignifica desde una perspectiva de género a las “Labores del Sexo” a través de prácticas domésticas como tejer, bordar, coser y cocinar, transferidas al espacio político de la acción directa. Con una presencia permanente en muestras individuales y colectivas, recibió el Premio Regional de las Culturas, las Artes y el Patrimonio 2022.',
+						'\bClaudia Suárez Jansson (1973)\b es artista visual residente en La Serena. Licenciada en Arte con mención Pintura en la Escuela de Arte de la UC. Integra la Agrupación de Intervenciones Textiles Urbanas Las Cuenta Puntos y la Mesa Regional de Educación Artística Región Coquimbo. Su obra resignifica desde una perspectiva de género a las “Labores del Sexo” a través de prácticas domésticas como tejer, bordar, coser y cocinar, transferidas al espacio político de la acción directa. Con una presencia permanente en muestras individuales y colectivas, recibió el Premio Regional de las Culturas, las Artes y el Patrimonio 2022.',
 					list: []
 				},
 				{
