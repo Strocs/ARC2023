@@ -45,7 +45,7 @@ export const SearchEvents = () => {
 			<form
 				id='search-bar'
 				onSubmit={handleSubmit}
-				className='h-full max-w-[12rem] rounded-md bg-main text-main'
+				className='h-full max-w-[12.6rem] rounded-md bg-main text-main'
 			>
 				<div className='flex h-9 -translate-y-[0.18rem] items-center rounded-md border-2 border-current bg-white px-3 transition-[transform] duration-100 ease-in hover:-translate-y-[0rem]'>
 					<svg
@@ -61,9 +61,9 @@ export const SearchEvents = () => {
 						/>
 					</svg>
 					<input
-						className='w-full bg-white pl-2 text-sm outline-none placeholder:font-medium placeholder:text-current'
+						className='w-full bg-white pl-2 text-sm outline-none font-medium placeholder:font-normal placeholder:text-current'
 						type='text'
-						placeholder='Encuentra en ARC'
+						placeholder='Encuentra en ARC23'
 						value={inputValue}
 						onChange={handleOnChange}
 						ref={searchEventRef}
