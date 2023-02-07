@@ -78,11 +78,14 @@ const { styles, title } = locationInfo
 				)
 			}
 			{links.length !== 0 && <RelevantLinks links={links} hoverTextColor={styles.hoverTextColor} />}
-			<p class='my-14 text-3xl font-black leading-7 sm:text-4xl'>
-				Disfruta el arte de <span class={styles.textColor}>{name}</span> en <span
-					class={styles.textColor}>{title}</span
-				>!
-			</p>
+			{
+				!!image.url && (
+					<p class='my-14 text-3xl font-black leading-7 sm:text-4xl'>
+						Disfruta el arte de <span class={styles.textColor}>{name}</span> en{' '}
+						<span class={styles.textColor}>{title}</span>!
+					</p>
+				)
+			}
 		</Fragment>
 		<Fragment slot='second-section'>
 			<ButtonLink
