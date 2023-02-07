@@ -34,7 +34,8 @@ export const SANTA_INES = {
 					timeTable: { day: 'el Viernes 10', time: 'a las 15:30 horas' },
 					image: {
 						url: '/santa-ines/colectivo-la-manada.jpg',
-						alt: 'Imagen de la presentación del Colectivo La Manada'
+						alt: 'Imagen de la presentación del Colectivo La Manada',
+						styles: { aspectRatio: 'aspect-[986/1249]', height: '709', width: '560' }
 					},
 					links: [],
 					description:
@@ -61,7 +62,8 @@ export const SANTA_INES = {
 					timeTable: { day: 'el Viernes 10', time: 'a las 16:00 horas' },
 					image: {
 						url: '/santa-ines/tendedero-poetico.jpg',
-						alt: 'Imagen de la Intervención Urbana Tendedero Poético: (De) construyendo la nacionalidad'
+						alt: 'Imagen de la Intervención Urbana Tendedero Poético: (De) construyendo la nacionalidad',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [],
 					description:
@@ -77,7 +79,8 @@ export const SANTA_INES = {
 					timeTable: { day: 'el Viernes 10', time: 'a las 16:30 horas' },
 					image: {
 						url: '/santa-ines/free-tangas.jpg',
-						alt: 'Imagen de la presentación de DJ Free-tangas'
+						alt: 'Imagen de la presentación de DJ Free-tangas',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [],
 					description:
@@ -96,7 +99,8 @@ export const SANTA_INES = {
 					timeTable: { day: 'el Viernes 10', time: 'a las 17:30 horas' },
 					image: {
 						url: '/santa-ines/elvira-hernández.jpg',
-						alt: 'Imagen del Lanzamiento del libro Elvira Hernández'
+						alt: 'Imagen del Lanzamiento del libro Elvira Hernández',
+						styles: { aspectRatio: 'aspect-[1456/1381]', height: '531', width: '560' }
 					},
 					links: [],
 					description:
@@ -112,7 +116,8 @@ export const SANTA_INES = {
 					timeTable: { day: 'el Viernes 10', time: 'a las 19:00 horas' },
 					image: {
 						url: '/santa-ines/las-quintralas.jpg',
-						alt: 'Imagen de la Presentación de Las Quintralas de la Cuarta'
+						alt: 'Imagen de la Presentación de Las Quintralas de la Cuarta',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [],
 					description:
@@ -144,7 +149,8 @@ export const SANTA_INES = {
 					timeTable: { day: 'el Sábado 11', time: 'a las 15:30 horas' },
 					image: {
 						url: '/santa-ines/valu.jpg',
-						alt: 'Imagen de la Performance Habitus/Campo/Memoria (2020-2023)'
+						alt: 'Imagen de la Performance Habitus/Campo/Memoria (2020-2023)',
+						styles: { aspectRatio: 'aspect-[240/239]', height: '558', width: '560' }
 					},
 					links: [],
 					description:
@@ -160,7 +166,8 @@ export const SANTA_INES = {
 					timeTable: { day: 'el Sábado 11', time: 'a las 16:00 horas' },
 					image: {
 						url: '/santa-ines/tendedero-poetico2.jpg',
-						alt: 'Imagen de la Performance Tendedero Poético: sueños diversos y derechos con versos'
+						alt: 'Imagen de la Performance Tendedero Poético: sueños diversos y derechos con versos',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [],
 					description:
@@ -176,7 +183,8 @@ export const SANTA_INES = {
 					timeTable: { day: 'el Sábado 11', time: 'a las 16:30 horas' },
 					image: {
 						url: '/santa-ines/keimara.png',
-						alt: 'Imagen de la Presentación del Libro Hit Latino de Keimara'
+						alt: 'Imagen de la Presentación del Libro Hit Latino de Keimara',
+						styles: { aspectRatio: 'aspect-[1/1]', height: '560', width: '560' }
 					},
 					links: [],
 					description:
@@ -195,7 +203,8 @@ export const SANTA_INES = {
 					timeTable: { day: 'el Sábado 11', time: 'a las 17:30 horas' },
 					image: {
 						url: '/santa-ines/pía-barros.jpg',
-						alt: 'Imagen de la Presentación de Pía Barros'
+						alt: 'Imagen de la Presentación de Pía Barros',
+						styles: { aspectRatio: 'aspect-[1365/2048]', height: '840', width: '560' }
 					},
 					links: [],
 					description:
@@ -211,7 +220,8 @@ export const SANTA_INES = {
 					timeTable: { day: 'el Sábado 11', time: 'a las 19:00 horas' },
 					image: {
 						url: '/santa-ines/pae.jpg',
-						alt: 'Imagen de la Presentación de PAE'
+						alt: 'Imagen de la Presentación de PAE',
+						styles: { aspectRatio: 'aspect-[1000/1499]', height: '839', width: '560' }
 					},
 					links: [],
 					description:

@@ -8,10 +8,10 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 import { SearchEvents } from '@components/SearchEvents'
-const { title, description, locations } = ARC_2023
+const { title, extract, locations } = ARC_2023
 ---
 
-  <Layout title={title} description={description}>
+  <Layout title={title} description={extract}>
     <Header />
     <main id='main-page' class='relative h-auto w-full overflow-hidden'>
       {locations.map((location) => <LocationInfo query={location.id} />)}

@@ -34,8 +34,8 @@ export const FRONTIS = {
 					timeTable: { day: 'el Viernes 10', time: 'a las 21:00 horas' },
 					image: {
 						url: '/frontis/mushi.jpg',
-						position: { marginTop: '2rem' },
-						alt: 'Imagen de la presentación de Mushi, un espectáculo de bichos'
+						alt: 'Imagen de la presentación de Mushi, un espectáculo de bichos',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [],
 					description:
@@ -78,7 +78,8 @@ export const FRONTIS = {
 					timeTable: { day: 'el Sábado 11', time: 'a las 21:00 horas' },
 					image: {
 						url: '/frontis/orquesta-PAC.jpg',
-						alt: 'Imagen de la presentación del Concierto El Señor de los Anillos Sinfónico'
+						alt: 'Imagen de la presentación del Concierto El Señor de los Anillos Sinfónico',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{ name: 'instagram', url: 'https://www.instagram.com/orquesta_filarmonica_ofi/' },
@@ -102,7 +103,8 @@ export const FRONTIS = {
 					timeTable: { day: 'el Domingo 12', time: 'a las 21:00 horas' },
 					image: {
 						url: '/frontis/calle.jpg',
-						alt: 'Imagen de la presentación de Calle, obra de circo contemporáneo'
+						alt: 'Imagen de la presentación de Calle, obra de circo contemporáneo',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/circolacuartaestacion/' }],
 					description:

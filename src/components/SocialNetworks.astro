@@ -1,7 +1,7 @@
 ---
 import { Icon } from 'astro-icon'
 import { ARC_2023 } from '../data/ARC_2023'
-const { socialNetwork } = ARC_2023
+const { links } = ARC_2023
 
 const { hoverTextColor = 'hover:text-main', locationId = '' } = Astro.props
 
@@ -13,7 +13,7 @@ const hoverBg = locationId.includes('estacionamiento') ? 'hover:bg-neutral-700' 
 		Síguenos:
 		<ul class='grid grid-flow-col gap-1'>
 			{
-				socialNetwork.map((social) => (
+				links.map((social) => (
 					<li>
 						<a
 							class={`group block rounded-md p-1 text-current transition-all duration-200 ease-in ${hoverBg} ${hoverTextColor}`}

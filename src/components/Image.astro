@@ -1,5 +1,11 @@
 ---
-const { url, alt } = Astro.props
+const { url, alt, styles } = Astro.props
 ---
 
-<img height='405' class='my-10 w-full rounded-xl object-contain' src={url} alt={alt} />
+<img
+	height={styles.height}
+	width={styles.width}
+	class={`${styles.aspectRatio} my-10 w-full rounded-xl object-contain`}
+	src={url}
+	alt={alt}
+/>

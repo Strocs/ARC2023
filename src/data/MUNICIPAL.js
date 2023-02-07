@@ -34,7 +34,8 @@ export const MUNICIPAL = {
 					timeTable: { day: 'el Viernes 10', time: 'a las 12:00 horas' },
 					image: {
 						url: '/municipal/los-pasos-de-selena.jpg',
-						alt: 'Imagen de la presentación de Los Pasos de Selena'
+						alt: 'Imagen de la presentación de Los Pasos de Selena',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/lacolectiva.creacion/' }],
 					description:
@@ -60,7 +61,8 @@ export const MUNICIPAL = {
 					timeTable: { day: 'el Viernes 10', time: 'a las 19:00 horas' },
 					image: {
 						url: '/municipal/grieta.jpg',
-						alt: 'Imagen de la presentación de Grieta'
+						alt: 'Imagen de la presentación de Grieta',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/laurenciaflamenca/' }],
 					description:
@@ -86,7 +88,8 @@ export const MUNICIPAL = {
 					timeTable: { day: 'el Sábado 11', time: 'a las 12:00 horas' },
 					image: {
 						url: '/municipal/soy.jpg',
-						alt: 'Imagen de la presentación de Soy'
+						alt: 'Imagen de la presentación de Soy',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{ name: 'instagram', url: 'https://www.instagram.com/companiateatromerken/' },
@@ -123,7 +126,8 @@ export const MUNICIPAL = {
 					timeTable: { day: 'el Sábado 11', time: 'a las 19:00 horas' },
 					image: {
 						url: '/municipal/en-este-lugar-una-y-otra-vez.jpg',
-						alt: 'Imagen de la presentación de En Este Lugar Una y Otra Vez'
+						alt: 'Imagen de la presentación de En Este Lugar Una y Otra Vez',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/zona.de.obras/' }],
 					description:
@@ -153,7 +157,8 @@ export const MUNICIPAL = {
 					timeTable: { day: 'el Domingo 12', time: 'a las 12:00 horas' },
 					image: {
 						url: '/municipal/la-raiz-del-rosal.jpg',
-						alt: 'Imagen de la presentación de La Raíz del Rosal'
+						alt: 'Imagen de la presentación de La Raíz del Rosal',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [],
 					description:
@@ -174,7 +179,8 @@ export const MUNICIPAL = {
 					timeTable: { day: 'el Domingo 12', time: 'a las 19:00 horas' },
 					image: {
 						url: '/municipal/mandrágora-el-sueño-continúa.jpg',
-						alt: 'Imagen de la presentación de Mandrágora, el sueño continúa'
+						alt: 'Imagen de la presentación de Mandrágora, el sueño continúa',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/danzabyfon/' }],
 					description:

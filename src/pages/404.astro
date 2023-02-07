@@ -1,4 +1,5 @@
 ---
+import ButtonLink from '@components/ButtonLink.astro'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
 import Icon404 from '../components/icons/Icon404.astro'
@@ -7,18 +8,18 @@ import Layout from '../layouts/Layout.astro'
 
 <Layout title='Ups! Página no encontrada'>
 	<Header />
-	<main class='flex h-screen flex-col items-center justify-around'>
-		<section class='flex max-w-sm flex-col items-center gap-8'>
-			<div class='w-full max-w-xs'>
+	<main class='h-full w-full m-auto'>
+		<section class='grid h-full max-w-sm place-content-center mx-auto gap-8'>
+			<div class='w-full max-w-xs mx-auto'>
 				<Icon404 />
 			</div>
-			<h1 class='text-xl font-bold leading-6 text-slate-900'>
+			<h1 class='text-xl text-center font-bold leading-6 text-neutral-700'>
 				Ups! Nuestros robots aún no trabajan en la página que buscabas
 			</h1>
-			<a class='bg-main px-4 py-2 transition duration-200 ease-in hover:scale-110' href='/'
-				>Volver</a
-			>
+			<ButtonLink anchor invertedColors href='/' className='w-fit mx-auto h-fit'>
+				Volver
+			</ButtonLink>
 		</section>
 	</main>
-	<Footer />
+	<Footer fixed />
 </Layout>

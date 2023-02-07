@@ -1,11 +1,15 @@
 ---
+import Paragraph from '@components/Paragraph.astro'
 import { Icon } from 'astro-icon'
+import { ARC_2023 } from 'src/data/ARC_2023'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
 import Layout from '../layouts/Layout.astro'
+
+const { email, subTitle, extract, description, sponsors } = ARC_2023
 ---
 
-<Layout title='Conoce más de esta nueva versión'>
+<Layout title='Conoce más de esta nueva versión' description={extract}>
 	<Header />
 	<main
 		class='relative mx-auto flex min-h-screen flex-wrap justify-center gap-6 bg-contain bg-center bg-no-repeat px-5 py-10 xl:bg-icons'
@@ -13,155 +17,28 @@ import Layout from '../layouts/Layout.astro'
 		<article class='grid h-fit w-full max-w-3xl gap-4 text-neutral-700 sm:px-14'>
 			<section class='w-full text-slate-900'>
 				<img src='/ARC23.png' alt='Logotipo Arc 2023' class='aspect-[5/4]' />
-				<p class='mb-10 text-center text-sm sm:-mt-10 max-w-md mx-auto'>
-					<b
-						>Proyecto Organizado y Financiado por el Ministerio de las Culturas, las Artes y el
-						Patrionio.</b
-					>
+				<p class='mx-auto mb-10 max-w-md text-center text-sm sm:-mt-10'>
+					<b>{subTitle}</b>
 				</p>
-				<div class='grid gap-3 text-justify'>
-					<p>
-						La experiencia de pandemia sanitaria significó un cambio en los hábitos de las personas,
-						obligando a un repliegue hacia los espacios privados, aislamiento y desuso de calles,
-						plazas y centros culturales, impactando indudablemente en el estado de ánimo y
-						comportamiento de la población.
-					</p>
-					<p>
-						La recuperación de los espacios públicos representa un desafío para las instituciones y
-						especialmente para el <b>Ministerio de las Culturas, las Artes y el Patrimonio</b>.
-						Existe una preocupación por la seguridad pública como eje trascendental para que las
-						personas vuelvan a circular por las calles, pero, además, existe el reto de generar
-						espacios atractivos y de impacto cultural en la ciudadanía y es ahí donde nuestra <b
-							>Seremi de las Culturas, Artes y Patrimonio</b
-						>, asume este desafío.
-					</p>
-					<p>
-						En ese contexto, el Festival ARC 2023, financiado por el <b
-							>Ministerio de las Culturas, las Artes y el Patrimonio</b
-						>, organizado por la <b
-							>Secretaría Regional Ministerial de las Culturas, las Artes y el Patrimonio de la
-							Región de Coquimbo</b
-						>, en colaboración con el <b>Municipio de La Serena</b>, busca incidir en cambiar la
-						forma de habitar la ciudad, estableciendo un circuito artístico cultural caminable en la
-						ciudad de La Serena, recorriendo espacios destinados a la literatura, la ilustración,
-						las artes escénicas, el circo, artes visuales y música. De esta manera, nuestra
-						propuesta busca resignificar la experiencia de caminar la ciudad, haciendo que las
-						personas se apropien de las calles desde la cultura, ofreciendo un panorama veraniego
-						alternativo y novedoso para la región, ocupando espacios convencionales y no
-						convencionales para las manifestaciones artísticas.
-					</p>
-					<p>
-						Además, es de interés programático resaltar los artistas e iniciativas culturales de la
-						región de Coquimbo. El compromiso del Festival ARC es dar espacio a las distintas
-						expresiones artísticas de las Provincias de Choapa, Limarí y Elqui. Para ello, se
-						contempla la participación de artistas y compañías locales de destacada trayectoria y de
-						gran proyección.
-					</p>
-					<p>
-						El fin último es poner en el centro la cultura como un derecho humano contribuyendo a la
-						democratización cultural, a la vez que promovemos la democracia cultural, donde el arte
-						crea comunidad, fortaleciendo los vínculos y el tejido social. De esta forma, queremos
-						propender a que las personas, comunidades y territorios puedan desarrollar sus
-						expresiones y manifestaciones culturales y que también puedan tener el derecho a acceder
-						y participar de la cultura libremente.
-					</p>
-				</div>
+				<Paragraph description={description} />
 			</section>
 			<section class='flex items-center space-x-4'>
 				<p class='text-xl font-bold'>Contáctanos:</p>
-				<a href='mailto:info@festivalarc.cl' aria-label='Email de Contacto'>
+				<a href={`mailto:${email}`} aria-label='Email de Contacto'>
 					<Icon name='mdi:email' class='h-8 inline hover:text-main transition-all duration-200' />
 				</a>
 			</section>
 			<section class='my-10 flex flex-col flex-wrap justify-center gap-6 space-y-6 font-medium'>
-				<div
-					class='flex flex-shrink-0 flex-col flex-wrap items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-10'
-				>
-					<p>Organiza:</p>
-					<img
-						width='164'
-						class='aspect-[82/75] h-20 w-fit'
-						src='/logos/logo-seremi.svg'
-						alt='Logo del Seremi De La Región de Coquimbo'
-					/>
-					<img
-						width='2226'
-						class='aspect-[1113/361] h-20 w-fit'
-						src='/logos/logo-transparencia.png'
-						alt='Logo de IMREC'
-					/>
-				</div>
-				<div
-					class='flex flex-shrink-0 flex-col flex-wrap items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-10'
-				>
-					<p>Colabora:</p>
-					<img
-						width='181'
-						class='aspect-[181/150] h-20 w-fit'
-						src='/logos/logo-muni.svg'
-						alt='Logo del Municipalidad de La Serena'
-					/>
-				</div>
-				<div
-					class='flex flex-shrink-0 flex-col flex-wrap items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-10'
-				>
-					<p>Tickets en:</p>
-					<img
-						width='1000'
-						class='aspect-[20/7] h-14 w-fit'
-						src='/logos/logo-portaldisc.png'
-						alt='Logo de Portaldisc'
-					/>
-				</div>
-				<div
-					class='flex flex-shrink-0 flex-col flex-wrap items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4'
-				>
-					<p>Agradecemos el apoyo de:</p>
-					<img
-						width='867'
-						class='aspect-[867/433] h-20 w-fit'
-						src='/logos/logo-centenario.png'
-						alt='Logo del Teatro Centenario'
-					/>
-					<img
-						width='1024'
-						class='aspect-[4/3] h-24 w-fit'
-						src='/logos/logo-ciudad-capital.png'
-						alt='Logo de Ciudad Capital'
-					/>
-					<img
-						width='300'
-						class='aspect-[100/31] h-14 w-fit'
-						src='/logos/logo-estacionamiento.svg'
-						alt='Logo de Estacionamientos Subterraneos de La Serena'
-					/>
-					<img
-						width='354'
-						class='aspect-[59/38] h-24 w-fit'
-						src='/logos/logo-del-fuego.png'
-						alt='Logo de Del Fuego'
-					/>
-
-					<img
-						width='819'
-						class='aspect-[91/32] h-14 w-fit'
-						src='/logos/logo-cronos.png'
-						alt='Logo de Cronos Ingeniería'
-					/>
-
-					<img
-						width='2560'
-						class='aspect-[2560/731] h-14 w-fit'
-						src='/logos/logo-inacap.png'
-						alt='Logo de Inacap'
-					/>
-					<img
-						width='300'
-						class='aspect-[300/67] h-14 w-fit'
-						src='/logos/logo-dulce.svg'
-						alt='Logo de Dulces Besos Pastelería'
-					/>
-				</div>
+				{
+					sponsors.map(({ title, logos }) => (
+						<div class='flex flex-shrink-0 flex-col flex-wrap items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-10'>
+							<p>{title}</p>
+							{logos.map(({ image, alt, styles }) => (
+								<img class={`${styles.aspectRatio} ${styles.height} w-fit`} src={image} alt={alt} />
+							))}
+						</div>
+					))
+				}
 			</section>
 		</article>
 	</main>

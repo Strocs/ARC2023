@@ -34,7 +34,8 @@ export const ESTACIONAMIENTO = {
 					timeTable: { day: 'del Viernes 10 hasta el Domingo 12', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/estacionamiento/velocidad-de-la-luz.jpg',
-						alt: 'Imagen de la presentación de Los Pasos de Selena'
+						alt: 'Imagen de la performance de La Velocidad de la Luz',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/lavelocidad.delaluz/' }],
 					description:

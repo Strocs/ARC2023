@@ -34,7 +34,8 @@ export const CENTENARIO = {
 					timeTable: { day: 'el Viernes 10', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/moyanovsky.jpg',
-						alt: 'Imagen de la banda regional Sequía'
+						alt: 'Imagen de la banda regional Moyanovsky',
+						styles: { aspectRatio: 'aspect-[1260/1249]', height: '555', width: '560' }
 					},
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/2eOTz2ayXSbgg70UbP3LGl' },
@@ -54,7 +55,8 @@ export const CENTENARIO = {
 					timeTable: { day: 'el Viernes 10', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/pajarxs.jpg',
-						alt: 'Imagen de la banda regional Pájaros de Tierra'
+						alt: 'Imagen de la banda regional Pájaros de Tierra',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{ name: 'youtube', url: 'https://www.youtube.com/@pajarxsdetierra3633' },
@@ -74,7 +76,8 @@ export const CENTENARIO = {
 					timeTable: { day: 'el Viernes 10', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/camila-moreno.jpg',
-						alt: 'Imagen de la artista nacional Camila Moreno'
+						alt: 'Imagen de la artista nacional Camila Moreno',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{ name: 'web', url: 'https://www.camila-moreno.com/' },
@@ -105,7 +108,8 @@ export const CENTENARIO = {
 					timeTable: { day: 'el Sábado 11', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/luminar.jpg',
-						alt: 'Imagen de la banda nacional Ases Falsos'
+						alt: 'Imagen de la banda regional Luminar',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/31I9RFL89cedcCzFRbhJi8' },
@@ -125,7 +129,8 @@ export const CENTENARIO = {
 					timeTable: { day: 'el Sábado 11', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/hesper.jpg',
-						alt: 'Imagen de la banda regional Sequía'
+						alt: 'Imagen de la banda regional Hesper',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/1zGDpCu4CIMZCFfE9FeaEL' },
@@ -157,7 +162,8 @@ export const CENTENARIO = {
 					timeTable: { day: 'el Sábado 11', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/marineros.jpg',
-						alt: 'Imagen de la banda nacional Marineros'
+						alt: 'Imagen de la banda nacional Marineros',
+						styles: { aspectRatio: 'aspect-[1260/1249]', height: '555', width: '560' }
 					},
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/6EwwcDTg6CKzsuWq7Xbd7D' },
@@ -179,7 +185,8 @@ export const CENTENARIO = {
 					timeTable: { day: 'el Sábado 11', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/yorka.jpg',
-						alt: 'Imagen de la banda nacional Yorka'
+						alt: 'Imagen de la banda nacional Yorka',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{ name: 'spotify', url: ' https://open.spotify.com/artist/71bG6LIwKMYALxV8WuIezn' },
@@ -204,7 +211,8 @@ export const CENTENARIO = {
 					timeTable: { day: 'el Domingo 12', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/sequia.jpg',
-						alt: 'Imagen de la banda regional Sequía'
+						alt: 'Imagen de la banda regional Sequía',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [],
 					description:
@@ -230,7 +238,8 @@ export const CENTENARIO = {
 					timeTable: { day: 'el Domingo 12', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/flamantes.jpg',
-						alt: 'Imagen de la banda regional Flamantës'
+						alt: 'Imagen de la banda regional Flamantës',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/3kropYxIZkoH8nSlWbtPmb' },
@@ -256,7 +265,8 @@ export const CENTENARIO = {
 					timeTable: { day: 'el Domingo 12', time: 'desde las 22:00 horas' },
 					image: {
 						url: '/centenario/ases-falsos.jpg',
-						alt: 'Imagen de la banda nacional Ases Falsos'
+						alt: 'Imagen de la banda nacional Ases Falsos',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{ name: 'web', url: 'https://asesfalsos.cl' },

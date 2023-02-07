@@ -35,7 +35,8 @@ export const CENTRO = {
 					timeTable: { day: 'el Viernes 10', time: 'desde las 11:00 horas' },
 					image: {
 						url: '/centro/pulso.jpg',
-						alt: 'Imagen de la Intervención de PULSO'
+						alt: 'Imagen de la Intervención de PULSO',
+						styles: { aspectRatio: 'aspect-[105/107]', height: '571', width: '560' }
 					},
 					links: [],
 					description:
@@ -62,7 +63,8 @@ export const CENTRO = {
 					timeTable: { day: 'el Sábado 11', time: 'desde las 11:00 horas' },
 					image: {
 						url: '/centro/danza-afro.jpg',
-						alt: 'Imagen de la Intervenciones de Danza Afro y Danza Espectáculo'
+						alt: 'Imagen de la Intervenciones de Danza Afro y Danza Espectáculo',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/astradanzachile/' }],
 					description:
@@ -87,7 +89,8 @@ export const CENTRO = {
 					timeTable: { day: 'el Domingo 12', time: 'desde las 11:00 horas' },
 					image: {
 						url: '/centro/danza-flamenco.jpg',
-						alt: 'Imagen de la Intervención de Danza Flamenco'
+						alt: 'Imagen de la Intervención de Danza Flamenco',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [],
 					description:
@@ -107,7 +110,8 @@ export const CENTRO = {
 					timeTable: { day: 'el Domingo 12', time: 'desde las 11:00 horas' },
 					image: {
 						url: '/centro/la-pelea-del-siglo.jpg',
-						alt: 'Imagen de la presentación de La Pelea del Siglo'
+						alt: 'Imagen de la presentación de La Pelea del Siglo',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/cia.jengibreyzufrina/' }],
 					description:

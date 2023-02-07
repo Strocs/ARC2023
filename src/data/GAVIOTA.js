@@ -34,7 +34,8 @@ export const GAVIOTA = {
 					timeTable: { day: 'el Viernes 10', time: 'a las 19:00 horas' },
 					image: {
 						url: '/gaviota/la-cantina-de-la-negra.jpg',
-						alt: 'Imagen de la presentación de la obra teatral La Cantina de la Negra'
+						alt: 'Imagen de la presentación de la obra teatral La Cantina de la Negra',
+						styles: { aspectRatio: 'aspect-[1260/1697]', height: '754', width: '560' }
 					},
 					links: [
 						{ name: 'instagram', url: 'https://www.instagram.com/cialachinchillasubversiva/' }
@@ -71,7 +72,8 @@ export const GAVIOTA = {
 					timeTable: { day: 'el Sábado 11', time: 'a las 19:00 horas' },
 					image: {
 						url: '/gaviota/preciosas-y-ridiculas.jpg',
-						alt: 'Imagen de la presentación de la obra teatral Preciosas y Ridículas'
+						alt: 'Imagen de la presentación de la obra teatral Preciosas y Ridículas',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/teatrogargaras/' }],
 					description:
@@ -110,7 +112,8 @@ export const GAVIOTA = {
 					timeTable: { day: 'el Domingo 12', time: 'a las 19:00 horas' },
 					image: {
 						url: '/gaviota/los-de-alla.jpg',
-						alt: 'Imagen de la presentación de la obra teatral Los de Allá'
+						alt: 'Imagen de la presentación de la obra teatral Los de Allá',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [],
 					description:

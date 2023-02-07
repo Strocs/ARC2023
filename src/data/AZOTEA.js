@@ -29,7 +29,11 @@ export const AZOTEA = {
 					category: 'Música',
 					time: '',
 					timeTable: { day: 'el Sábado 11', time: 'de 16:00 a 20:30 horas' },
-					image: { url: '/azotea/dj-kabir.jpg', alt: 'Imagen del DJ Kabir' },
+					image: {
+						url: '/azotea/dj-kabir.jpg',
+						alt: 'Imagen del DJ Kabir',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
+					},
 					links: [],
 					description:
 						'Dj Kabir aka Don Pingüino (1982) tiene sus comienzos en la música en el año 2001 en la ciudad de Santiago. Se acerca a las máquinas de ritmo y sintetizadores , invitado por su gran amigo Bryan Phillips aka Galambo. Su inquietud por la música radica en la exploración de nuevos sonidos, que están plasmados en sus primeros live sets.\nLas primeras incursiones musicales se dan en contexto de extensas sesiones de jamming en diversos eventos privados, destacando su buen gusto musical principalmente electrónico y rock.\nA mediados del año 2015 conoce al dj Claudio Val, con el cual comienza una relación de amistad e intercambio de conocimiento además de producir en conjunto eventos masivos del género. También comienza a relacionarse con la escena de su ciudad La Serena, conociendo a los dj en ejercicio y participando con estos en diversos eventos y reuniones.\nDesde el año 2018, y al alero de Pingüino Club, comienza un ciclo de sesiones de música electrónica, denominas “Electroschop”, logrando consolidar una escena desde el underground, pasando por este evento grandes artistas nacionales como Umho , Mañungo, Alejandro Vivanco, además de exponentes internacionales, como el dj y productor, Valentino Kanzyani y el tornamesista argentino, Lucas Ferro.\nKabir,  a la fecha ha participado en innumerables eventos del género electrónico,  compartiendo escenario con grandes artistas nacionales e internacionales. Su estilo va arraigado al underground, como el \bminimal/techno/house, saliéndose de lo masivo y popular.\b',
@@ -42,7 +46,11 @@ export const AZOTEA = {
 					category: 'Música',
 					time: '',
 					timeTable: { day: 'el Sábado 11', time: 'de 16:00 a 20:30 horas' },
-					image: { url: '/azotea/ria-orange.jpg', alt: 'Imagen de la banda Ría Orange' },
+					image: {
+						url: '/azotea/ria-orange.jpg',
+						alt: 'Imagen de la banda Ría Orange',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
+					},
 					links: [
 						{ name: 'spotify', url: 'https://www.instagram.com/riaorangee/' },
 						{ name: 'youtube', url: 'https://www.youtube.com/channel/UCaFtDdOkWCbR9mcRWnaZbTw' }
@@ -58,7 +66,11 @@ export const AZOTEA = {
 					category: 'Música',
 					time: '',
 					timeTable: { day: 'el Sábado 11', time: 'de 16:00 a 20:30 horas' },
-					image: { url: '/azotea/duerme-cae.jpg', alt: 'Imagen de la banda Duerme y cae!' },
+					image: {
+						url: '/azotea/duerme-cae.jpg',
+						alt: 'Imagen de la banda Duerme y cae!',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
+					},
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/5RMewTvifqaXzb2uFHPNHu' },
 						{ name: 'instagram', url: 'https://www.instagram.com/duermeycae/' }
@@ -76,7 +88,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/rosario-alfonso.jpg',
-						alt: 'Imagen de la artista Rosario Alfonso'
+						alt: 'Imagen de la artista Rosario Alfonso',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{
@@ -102,7 +115,11 @@ export const AZOTEA = {
 					category: 'Música',
 					time: '',
 					timeTable: { day: 'el Domingo 12', time: 'de 16:00 a 20:30 horas' },
-					image: { url: '/azotea/quad.jpg', alt: 'Imagen de la banda QUAD' },
+					image: {
+						url: '/azotea/quad.jpg',
+						alt: 'Imagen de la banda QUAD',
+						styles: { aspectRatio: 'aspect-[1260/1453]', height: '646', width: '560' }
+					},
 					links: [{ name: 'soundcloud', url: 'https://soundcloud.com/proyectoquad' }],
 					description:
 						'QUAD es un proyecto musical y sonoro que se basa en la utilización de cuadrafonía en sus presentaciones en directo, en donde por medio de atmósferas y texturas muy cambiantes, además de sonoridades contratantes entre la oscuridad, el brillo, la complejidad y la simpleza, generan un entorno sonoro envolvente, dinámico y avasallador sin dejar de lado sensaciones de introspección, imaginación, tranquilidad y belleza.\nEn esta línea, la cuadrafonía (tecnología de sonido envolvente consistente en 4 altavoces que rodean al auditor) aporta un espacio de escucha escasamente visto en espacios no especializados y que entrega una experiencia sonora totalmente nueva y atractiva al público.\nDespués del lanzamiento del disco Estado de Ida el año 2018, QUAD ha realizado presentaciones en variados espacios y contextos, tales como museos, playas, salas de eventos y salas de conciertos, teniendo todos ellos en común la habilitación de un espacio para la escucha cuadrafónica y la participación libre del público.\nTras un largo tiempo de inactividad, este 2023 QUAD retoma su trabajo, preparando su segundo álbum titulado Curriculum Vitae el cual verá la luz el segundo semestre de este año, renovando su lenguaje musical al incorporar instrumentos y elementos del rock y el metal progresivo que complementan a las sonoridades electrónicas y atmosféricas que caracterizan su anterior entrega.',
@@ -116,7 +133,11 @@ export const AZOTEA = {
 					category: 'Música',
 					time: '',
 					timeTable: { day: 'el Domingo 12', time: 'de 16:00 a 20:30 horas' },
-					image: { url: '/azotea/lig-folil.jpg', alt: 'Imagen de la artista Lig Folil' },
+					image: {
+						url: '/azotea/lig-folil.jpg',
+						alt: 'Imagen de la artista Lig Folil',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
+					},
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/0Jh3Pqoi2DyUN3XrK7QBPE' },
 						{ name: 'soundcloud', url: 'https://soundcloud.com/lig-folil' },
@@ -137,7 +158,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/oscar-hauyon.jpg',
-						alt: 'Imagen del artista regional Oscar Hauyon'
+						alt: 'Imagen del artista regional Oscar Hauyon',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{ name: 'web', url: 'https://oscarhauyon.cl/' },
@@ -156,7 +178,11 @@ export const AZOTEA = {
 					category: 'Música',
 					time: '',
 					timeTable: { day: 'el Domingo 12', time: 'de 16:00 a 20:30 horas' },
-					image: { url: '/azotea/adione.jpg', alt: 'Imagen del artista regional Adione' },
+					image: {
+						url: '/azotea/adione.jpg',
+						alt: 'Imagen del artista regional Adione',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
+					},
 					links: [
 						{ name: 'spotify', url: 'https://open.spotify.com/artist/1I2pJ2vYfZH0WND1diKJ1l' },
 						{ name: 'instagram', url: 'https://www.instagram.com/adionemusic/?hl=es' }
@@ -180,7 +206,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/anima-red.jpg',
-						alt: 'Imagen de la Ilustradora Regional Anima Red'
+						alt: 'Imagen de la Ilustradora Regional Anima Red',
+						styles: { aspectRatio: 'aspect-[1260/1789]', height: '795', width: '560' }
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/anima.red' }],
 
@@ -198,7 +225,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/alvaro-rodrigo.jpg',
-						alt: 'Imagen del Ilustrador Regional Arodrigo49'
+						alt: 'Imagen del Ilustrador Regional Arodrigo49',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{
@@ -219,7 +247,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/astroglitter.jpg',
-						alt: 'Imagen de la Ilustradora Regional Astro Glitter'
+						alt: 'Imagen de la Ilustradora Regional Astro Glitter',
+						styles: { aspectRatio: 'aspect-[45/37]', height: '460', width: '560' }
 					},
 					links: [
 						{
@@ -240,7 +269,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/blue.jpg',
-						alt: 'Imagen de la Ilustradora Regional Blue Straycatt Art'
+						alt: 'Imagen de la Ilustradora Regional Blue Straycatt Art',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{
@@ -265,7 +295,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/camellia.jpg',
-						alt: 'Imagen de la Ilustradora Regional Camellia Liz'
+						alt: 'Imagen de la Ilustradora Regional Camellia Liz',
+						styles: { aspectRatio: 'aspect-[90/107]', height: '666', width: '560' }
 					},
 					links: [
 						{
@@ -290,7 +321,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/cami-guaman.jpg',
-						alt: 'Imagen de la Ilustradora Regional Camila Guamán'
+						alt: 'Imagen de la Ilustradora Regional Camila Guamán',
+						styles: { aspectRatio: 'aspect-[180/227]', height: '706', width: '560' }
 					},
 					links: [
 						{
@@ -316,7 +348,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/canela.jpg',
-						alt: 'Imagen de la Ilustradora Regional Canela'
+						alt: 'Imagen de la Ilustradora Regional Canela',
+						styles: { aspectRatio: 'aspect-[315/221]', height: '393', width: '560' }
 					},
 					links: [
 						{
@@ -341,7 +374,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/ch.jpg',
-						alt: 'Imagen de el emprendimiento Regional CE HACHE'
+						alt: 'Imagen de el emprendimiento Regional CE HACHE',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{
@@ -364,7 +398,11 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
-					image: { url: '/azotea/chilensis.jpg', alt: 'Imagen del Ilustrador Regional Chilensis' },
+					image: {
+						url: '/azotea/chilensis.jpg',
+						alt: 'Imagen del Ilustrador Regional Chilensis',
+						styles: { aspectRatio: 'aspect-[84/125]', height: '833', width: '560' }
+					},
 					links: [
 						{ name: 'instagram', url: 'https://www.instagram.com/chilensisboy/' },
 						{ name: 'email', url: 'mailto:chilensisboy@gmail.com' }
@@ -381,7 +419,11 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
-					image: { url: '/azotea/cleib.jpg', alt: 'Imagen de la Ilustradora Regional Cleib' },
+					image: {
+						url: '/azotea/cleib.jpg',
+						alt: 'Imagen de la Ilustradora Regional Cleib',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
+					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/_cleib/' }],
 					description:
 						'Su trabajo está inspirado en el cartoon antiguo hasta los dibujos de los 90`s, esas líneas definen lo que hace hasta el día de hoy.\nLe agrada elegir ideas que representan su realidad y la de muchas personas, lo que genera una conexión con situaciones que son parte de la cotidianidad de la gente, con un toque de ironía que llama a reírse y burlarse de lo evidente, crudo y difícil de la vida, siempre sin ánimos de ofender, pero respetando esa subjetividad que provoca el arte.',
@@ -396,7 +438,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/koneko.jpg',
-						alt: 'Imagen de la Ilustradora Regional Fran.koneko'
+						alt: 'Imagen de la Ilustradora Regional Fran.koneko',
+						styles: { aspectRatio: 'aspect-[630/431]', height: '383', width: '560' }
 					},
 					links: [
 						{
@@ -425,7 +468,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/intercultural.jpg',
-						alt: 'Imagen de la Ilustradora Regional Intecultural arte'
+						alt: 'Imagen de la Ilustradora Regional Intecultural arte',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{
@@ -446,7 +490,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/isaedaliz.jpg',
-						alt: 'Imagen de la Ilustradora Regional Isa Edaliz'
+						alt: 'Imagen de la Ilustradora Regional Isa Edaliz',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{
@@ -467,7 +512,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/isafuentes.jpg',
-						alt: 'Imagen de la Ilustradora Regional Isabela Fuentes'
+						alt: 'Imagen de la Ilustradora Regional Isabela Fuentes',
+						styles: { aspectRatio: 'aspect-[315/233]', height: '414', width: '560' }
 					},
 					links: [
 						{
@@ -490,7 +536,11 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
-					image: { url: '/azotea/javivis.jpg', alt: 'Imagen del Ilustrador Regional Javivis' },
+					image: {
+						url: '/azotea/javivis.jpg',
+						alt: 'Imagen del Ilustrador Regional Javivis',
+						styles: { aspectRatio: 'aspect-[630/629]', height: '559', width: '560' }
+					},
 					links: [
 						{
 							name: 'instagram',
@@ -512,7 +562,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/kunturi-yakana.jpg',
-						alt: 'Imagen de los Ilustradores Kunturi & Yakana'
+						alt: 'Imagen de los Ilustradores Kunturi & Yakana',
+						styles: { aspectRatio: 'aspect-[600/793]', height: '740', width: '560' }
 					},
 					links: [
 						{
@@ -534,7 +585,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/leeneal.jpg',
-						alt: 'Imagen del equipo de ilustración Regional Leeneal Studio'
+						alt: 'Imagen del equipo de ilustración Regional Leeneal Studio',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{ name: 'instagram', url: 'https://www.instagram.com/leeneal__/' },
@@ -554,7 +606,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/luna-gatuna.jpg',
-						alt: 'Imagen de la Ilustradora Regional Luna Gatuna'
+						alt: 'Imagen de la Ilustradora Regional Luna Gatuna',
+						styles: { aspectRatio: 'aspect-[180/151]', height: '470', width: '560' }
 					},
 					links: [{ name: 'instagram', url: 'www.instagram.com/lunagatuna.art' }],
 					description:
@@ -569,7 +622,11 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
-					image: { url: '/azotea/niño-pan.jpg', alt: 'Imagen del Ilustrador Regional Niño Pan' },
+					image: {
+						url: '/azotea/niño-pan.jpg',
+						alt: 'Imagen del Ilustrador Regional Niño Pan',
+						styles: { aspectRatio: 'aspect-[1260/883]', height: '392', width: '560' }
+					},
 					links: [{ name: 'instagram', url: 'www.instagram.com/elninopan' }],
 					description:
 						'Niño Pan se dedica a la ilustración digital y no sabría muy bien cómo definir su estilo, pero podría decirse  que es un tanto variable pero a la vez reconocible, dependiendo de lo que dibuja, ya que aplica distintas formas de trazado y coloreado.\nPor lo general, lo que le inspira a dibujar son cosas que le pasan, que siente, que piensa, los espacios que habita, algunas personas que quiere, perritos que andan por la calle, la tristeza, los besitos, dudas existenciales y otras más. 🙂',
@@ -585,7 +642,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/pablo-design.jpg',
-						alt: 'Imagen del Ilustrador Regional Pablo Design'
+						alt: 'Imagen del Ilustrador Regional Pablo Design',
+						styles: { aspectRatio: 'aspect-[1/1]', height: '560', width: '560' }
 					},
 					links: [
 						{
@@ -607,7 +665,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/rotten-monkey.jpg',
-						alt: 'Imagen del Ilustrador Regional Rotten Monkey Inc'
+						alt: 'Imagen del Ilustrador Regional Rotten Monkey Inc',
+						styles: { aspectRatio: 'aspect-[180/223]', height: '649', width: '560' }
 					},
 					links: [
 						{
@@ -626,7 +685,11 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
-					image: { url: '/azotea/seyuk.jpg', alt: 'Imagen de la Ilustradora Regional Seh yuk' },
+					image: {
+						url: '/azotea/seyuk.jpg',
+						alt: 'Imagen de la Ilustradora Regional Seh yuk',
+						styles: { aspectRatio: 'aspect-[630/533]', height: '474', width: '560' }
+					},
 					links: [
 						{
 							name: 'instagram',
@@ -644,7 +707,11 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
-					image: { url: '/azotea/shobian.jpg', alt: 'Imagen del Ilustrador Shobian' },
+					image: {
+						url: '/azotea/shobian.jpg',
+						alt: 'Imagen del Ilustrador Shobian',
+						styles: { aspectRatio: 'aspect-[1260/1201]', height: '539', width: '560' }
+					},
 					links: [
 						{
 							name: 'instagram',
@@ -662,7 +729,11 @@ export const AZOTEA = {
 					category: 'Ilustración',
 					time: '',
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
-					image: { url: '/azotea/tsuki.jpg', alt: 'Imagen de la Ilustradora Regional Tsuki' },
+					image: {
+						url: '/azotea/tsuki.jpg',
+						alt: 'Imagen de la Ilustradora Regional Tsuki',
+						styles: { aspectRatio: 'aspect-[315/419]', height: '745', width: '560' }
+					},
 					links: [
 						{
 							name: 'instagram',
@@ -683,7 +754,8 @@ export const AZOTEA = {
 					timeTable: { day: 'el Sábado 11 y Domingo 12', time: 'de 16:00 a 20:30 horas' },
 					image: {
 						url: '/azotea/valestrina.jpg',
-						alt: 'Imagen de la Ilustradora Regional Valestrina'
+						alt: 'Imagen de la Ilustradora Regional Valestrina',
+						styles: { aspectRatio: 'aspect-[4/3]', height: '420', width: '560' }
 					},
 					links: [
 						{

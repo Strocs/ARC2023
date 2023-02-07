@@ -34,7 +34,8 @@ export const MUSEO = {
 					timeTable: { day: 'el Viernes 10', time: 'a las 18:00 horas' },
 					image: {
 						url: '/arqueologico/arte-del-tiempo.jpg',
-						alt: 'Imagen del documental El Arte del Tiempo'
+						alt: 'Imagen del documental El Arte del Tiempo',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [{ name: 'video', url: 'https://youtu.be/g8rAcq5wzdU' }],
 					description:
@@ -58,7 +59,8 @@ export const MUSEO = {
 					timeTable: { day: 'el Viernes 10', time: 'a las 19:15 horas' },
 					image: {
 						url: '/arqueologico/aqui-se-construye.jpg',
-						alt: 'Imagen del documental Aquí se Construye (o Ya no existe el lugar donde nací)'
+						alt: 'Imagen del documental Aquí se Construye (o Ya no existe el lugar donde nací)',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [],
 					description:
@@ -86,7 +88,8 @@ export const MUSEO = {
 					timeTable: { day: 'el Sábado 11', time: 'a las 18:00 horas' },
 					image: {
 						url: '/arqueologico/redencion.jpg',
-						alt: 'Imagen del cortometraje Redención'
+						alt: 'Imagen del cortometraje Redención',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [{ name: 'video', url: 'https://vimeo.com/702180992' }],
 					description:
@@ -113,7 +116,8 @@ export const MUSEO = {
 					timeTable: { day: 'el Sábado 11', time: 'a las 18:15 horas' },
 					image: {
 						url: '/arqueologico/proyecto-fantasma.jpg',
-						alt: 'Imagen del largometraje Proyecto Fantasma'
+						alt: 'Imagen del largometraje Proyecto Fantasma',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [{ name: 'video', url: 'https://www.youtube.com/watch?v=R7QBysJcLKQ' }],
 					description:
@@ -147,7 +151,8 @@ export const MUSEO = {
 					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/r@stros.jpg',
-						alt: 'Afiche de la Exposición de Artes Visuales R@stros'
+						alt: 'Afiche de la Exposición de Artes Visuales R@stros',
+						styles: { aspectRatio: 'aspect-[150/299]', height: '1116', width: '560' }
 					},
 					links: [],
 					description:
@@ -168,7 +173,8 @@ export const MUSEO = {
 					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/ALVAREZ.jpg',
-						alt: 'Imagen del artista visual Mauricio Álvarez Collao'
+						alt: 'Imagen del artista visual Mauricio Álvarez Collao',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{ name: 'instagram', url: 'https://www.instagram.com/mauricioalvarezcollao/?hl=es' },
@@ -187,7 +193,8 @@ export const MUSEO = {
 					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/CAMPOS.jpg',
-						alt: 'Imagen de la artista visual Claudia Campos Mendoza'
+						alt: 'Imagen de la artista visual Claudia Campos Mendoza',
+						styles: { aspectRatio: 'aspect-[70/79]', height: '632', width: '560' }
 					},
 					links: [
 						{ name: 'instagram', url: 'https://www.instagram.com/artistaclaudiacampos/?hl=es' },
@@ -206,7 +213,8 @@ export const MUSEO = {
 					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/ALVIAL.jpg',
-						alt: 'Imagen de la artista visual Paz Alvial Reculé'
+						alt: 'Imagen de la artista visual Paz Alvial Reculé',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [{ name: 'web', url: ' http://pazalvial.blogspot.com/' }],
 					description:
@@ -222,7 +230,8 @@ export const MUSEO = {
 					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/SUÁREZ.jpg',
-						alt: 'Imagen de la artista visual Claudia Suárez Jansson'
+						alt: 'Imagen de la artista visual Claudia Suárez Jansson',
+						styles: { aspectRatio: 'aspect-[315/356]', height: '633', width: '560' }
 					},
 					links: [
 						{ name: 'web', url: 'https://www.claudiasuarezjansson.com/' },
@@ -242,7 +251,8 @@ export const MUSEO = {
 					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/GUTIÉRREZ.jpg',
-						alt: 'Imagen de la artista visual Aude Gutiérrez Barraza'
+						alt: 'Imagen de la artista visual Aude Gutiérrez Barraza',
+						styles: { aspectRatio: 'aspect-[252/347]', height: '771', width: '560' }
 					},
 					links: [
 						{ name: 'web', url: 'http://audegutierrezb.blogspot.com/' },
@@ -261,7 +271,8 @@ export const MUSEO = {
 					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/TORO.jpg',
-						alt: 'Imagen del artista visual Mauricio Toro Goya'
+						alt: 'Imagen del artista visual Mauricio Toro-Goya',
+						styles: { aspectRatio: 'aspect-[210/289]', height: '771', width: '560' }
 					},
 					links: [{ name: 'instagram', url: 'https://www.instagram.com/torogoya/?hl=es' }],
 					description:
@@ -277,7 +288,8 @@ export const MUSEO = {
 					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/ALFARO.jpg',
-						alt: 'Imagen de la artista visual Tatiana Alfaro Chávez'
+						alt: 'Imagen de la artista visual Tatiana Alfaro Chávez',
+						styles: { aspectRatio: 'aspect-[3/2]', height: '373', width: '560' }
 					},
 					links: [
 						{ name: 'instagram', url: 'https://www.instagram.com/noisyeyesimagen/?hl=es' },
@@ -296,7 +308,8 @@ export const MUSEO = {
 					timeTable: { day: 'del Jueves 9 hasta el Sábado 11', time: 'de 10:30 a 17:30 horas' },
 					image: {
 						url: '/arqueologico/HUERTA.jpg',
-						alt: 'Imagen del artista visual Oskar Huerta'
+						alt: 'Imagen del artista visual Oskar Huerta',
+						styles: { aspectRatio: 'aspect-[1260/1811]', height: '805', width: '560' }
 					},
 					links: [
 						{

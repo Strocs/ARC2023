@@ -61,7 +61,7 @@ const { styles, title } = locationInfo
 					{timeTable.time}
 				</p>
 			</div>
-			{!!image.url && <Image url={image.url} alt={image.alt} />}
+			{!!image.url && <Image url={image.url} alt={image.alt} styles={image.styles} />}
 			<Paragraph description={description} />
 			{
 				list.length !== 0 && (
