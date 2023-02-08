@@ -1,7 +1,7 @@
 export const AZOTEA = {
 	id: 'azotea-arc',
 	title: 'Azotea ARC',
-	address: { text: 'Calle Brasil N° 415, La Serena', url: 'https://goo.gl/maps/5PCHGweGVQgkHHet5' },
+	address: { text: 'Calle Brasil N° 405, La Serena', url: 'httpshttps://goo.gl/maps/Y93Dfy7R1HfKjzYh6' },
 	extract:
 		'Dj sets, ilustración, fotografía autoral y bandas de la Región de Coquimbo darán vida al espacio Azotea ARC, un lugar en el que las expresiones artísticas transforman un espacio no convencional en un espacio ideal para disfrutar del paso de la tarde desde una hermosa vista, como parte del concepto del Festival ARC 2023, que es transformar la forma en la que habitamos nuestra ciudad.',
 	description:
