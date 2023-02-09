@@ -31,11 +31,18 @@ const { email, subTitle, extract, description, sponsors } = ARC_2023
 			<section class='my-10 flex flex-col flex-wrap justify-center gap-6 space-y-6 font-medium'>
 				{
 					sponsors.map(({ title, logos }) => (
-						<div class='flex flex-shrink-0 flex-col flex-wrap items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-10'>
+						<div class='flex flex-shrink-0 flex-col flex-wrap items-center space-y-4 sm:flex-row sm:space-y-4 sm:space-x-10'>
 							<p>{title}</p>
-							{logos.map(({ image, alt, styles }) => (
-								<img class={`${styles.aspectRatio} ${styles.height} w-fit`} src={image} alt={alt} />
-							))}
+							{logos.map(({ image, alt, styles, link }) => {
+								const imgElement = (
+									<img
+										class={`${styles.aspectRatio} ${styles.height} w-fit`}
+										src={image}
+										alt={alt}
+									/>
+								)
+								return !link ? <Fragment>{imgElement}</Fragment> : <a href={link}>{imgElement}</a>
+							})}
 						</div>
 					))
 				}

@@ -37,12 +37,14 @@ export const ARC_2023 = {
 				{
 					image: '/logos/logo-seremi.svg',
 					styles: { aspectRatio: 'aspect-[82/75]', height: 'h-20' },
-					alt: 'Logo del Seremi de la Región de Coquimbo'
+					alt: 'Logo del Seremi de la Región de Coquimbo',
+					link: 'https://www.cultura.gob.cl/coquimbo/'
 				},
 				{
 					image: '/logos/logo-transparencia.png',
 					styles: { aspectRatio: 'aspect-[1113/361]', height: 'h-20' },
-					alt: 'Logo de IMREC'
+					alt: 'Logo de IMREC',
+					link: 'https://imrec.cl/'
 				}
 			]
 		},
@@ -52,7 +54,8 @@ export const ARC_2023 = {
 				{
 					image: '/logos/logo-muni.svg',
 					styles: { aspectRatio: 'aspect-[181/150]', height: 'h-20' },
-					alt: 'Logo de la Ilustre Municipalidad de La Serena'
+					alt: 'Logo de la Ilustre Municipalidad de La Serena',
+					link: 'http://www.laserena.cl/'
 				}
 			]
 		},
@@ -62,7 +65,8 @@ export const ARC_2023 = {
 				{
 					image: '/logos/logo-portaldisc.png',
 					styles: { aspectRatio: 'aspect-[20/7]', height: 'h-14' },
-					alt: 'Logo de Portaldisc'
+					alt: 'Logo de Portaldisc',
+					link: 'https://www.portaldisc.com/buscar/ARC%202023'
 				}
 			]
 		},
@@ -72,22 +76,38 @@ export const ARC_2023 = {
 				{
 					image: '/logos/logo-centenario.png',
 					styles: { aspectRatio: 'aspect-[867/433]', height: 'h-20' },
-					alt: 'Logo del Teatro Centenario'
+					alt: 'Logo del Teatro Centenario',
+					link: 'https://teatrocentenario.cl/'
 				},
 				{
 					image: '/logos/logo-ciudad-capital.png',
-					styles: { aspectRatio: 'aspect-[4/3]', height: 'h-24' },
-					alt: 'Logo de Ciudad Capital'
+					styles: { aspectRatio: 'aspect-[4/3]', height: 'h-28' },
+					alt: 'Logo de Ciudad Capital',
+					link: 'https://ciudadcapitallaserena.cl/'
+				},
+				{
+					image: '/logos/logo-inacap.png',
+					styles: { aspectRatio: 'aspect-[2560/731]', height: 'h-14' },
+					alt: 'Logo de Inacap',
+					link: 'https://portales.inacap.cl/'
 				},
 				{
 					image: '/logos/logo-estacionamiento.svg',
-					styles: { aspectRatio: 'aspect-[100/31]', height: 'h-14' },
-					alt: 'Logo de Estacionamientos Subterráneos de La Serena'
+					styles: { aspectRatio: 'aspect-[100/31]', height: 'h-20' },
+					alt: 'Logo de Estacionamientos Subterráneos de La Serena',
+					link: ''
 				},
 				{
 					image: '/logos/logo-del-fuego.png',
-					styles: { aspectRatio: 'aspect-[59/38]', height: 'h-24' },
-					alt: 'Logo de Del Fuego'
+					styles: { aspectRatio: 'aspect-[59/38]', height: 'h-28' },
+					alt: 'Logo de Del Fuego',
+					link: 'https://www.instagram.com/cerveceriadelfuego/?hl=es'
+				},
+				{
+					image: '/logos/logo-terrazza.png',
+					styles: { aspectRatio: 'aspect-[1080/467]', height: 'h-24' },
+					alt: 'Logo de Terrazza',
+					link: 'https://instagram.com/terrazzachile?igshid=Yzg5MTU1MDY='
 				},
 				{
 					image: '/logos/logo-cronos.png',
@@ -95,14 +115,10 @@ export const ARC_2023 = {
 					alt: 'Logo de Cronos Ingeniería'
 				},
 				{
-					image: '/logos/logo-inacap.png',
-					styles: { aspectRatio: 'aspect-[2560/731]', height: 'h-14' },
-					alt: 'Logo de Inacap'
-				},
-				{
 					image: '/logos/logo-dulce.svg',
-					styles: { aspectRatio: 'aspect-[300/67]', height: 'h-14' },
-					alt: 'Logo de Dulces Besos Pastelería'
+					styles: { aspectRatio: 'aspect-[300/67]', height: 'h-20' },
+					alt: 'Logo de Dulces Besos Pastelería',
+					link: 'https://www.instagram.com/besos_dulces_pasteleria/'
 				}
 			]
 		}
