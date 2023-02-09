@@ -26,12 +26,12 @@ export const ESTACIONAMIENTO = {
 			day: 'Del 10 hasta el 12 de Feb\nDesde las 10:00 horas',
 			events: [
 				{
-					id: 'la-velocidad-de-la-luz',
-					name: 'La Velocidad de la Luz',
-					subTitle: {},
-					category: 'Nuevos Medios',
+					id: 'bajo-simulación',
+					name: 'Bajo Simulación',
+					subTitle: { title: 'Colectivo:', text: 'La Velocidad de la Luz' },
+					category: 'Instalación Multimedia',
 					time: '',
-					timeTable: { day: 'del Viernes 10 hasta el Domingo 12', time: 'desde las 22:00 horas' },
+					timeTable: { day: 'del Viernes 10 hasta el Domingo 12', time: 'de 10:00 a 21:00 horas' },
 					image: {
 						url: '/estacionamiento/velocidad-de-la-luz.jpg',
 						alt: 'Imagen de la performance de La Velocidad de la Luz',
