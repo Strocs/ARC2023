@@ -1,6 +1,4 @@
 ---
-import TrackVitals from '../components/TrackVitals.astro'
-
 const { title, description } = Astro.props
 ---
 
@@ -23,7 +21,6 @@ const { title, description } = Astro.props
 		<script defer src='/_vercel/insights/script.js'></script>
 		</head>
 	<body class='relative h-screen scroll-smooth bg-white text-white bg-paper bg-cover xl:bg-sm'>
-		<TrackVitals />
 		<slot />
 	</body>
 </html>
